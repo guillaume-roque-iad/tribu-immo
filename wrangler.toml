@@ -1,0 +1,5 @@
+name = "tribu-immo-guillaume-roque"
+compatibility_date = "2025-06-01"
+
+[assets]
+directory = "."
