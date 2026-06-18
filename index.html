@@ -16,6 +16,7 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
 <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/></noscript>
+<link rel="preload" as="image" href="img-guillaume.webp" type="image/webp" fetchpriority="high"/>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","name":"La Tribu Immo — Guillaume Roque iad France","url":"https://tribu-immo.com","telephone":"0662108396","address":{"@type":"PostalAddress","postalCode":"11100","addressLocality":"Narbonne","addressRegion":"Occitanie","addressCountry":"FR"},"sameAs":["https://www.google.com/maps?cid=10249811500579735043","https://www.instagram.com/guillaumeroqueiad/","https://www.facebook.com/guillaumeroque.immobilier/","https://www.linkedin.com/in/guillaume-roque-07a3bb8a/"]}
 </script>
@@ -245,7 +246,7 @@ body{font-family:'Inter',-apple-system,sans-serif;color:var(--noir);background:v
 footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
 .ft{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:36px}
 .fb p{font-size:13px;color:rgba(255,255,255,.72);line-height:1.65;margin-top:14px;max-width:260px}
-.fc h4{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.75);margin-bottom:14px}
+.fc h3{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.75);margin-bottom:14px}
 .fc a{display:block;font-size:13px;color:rgba(255,255,255,.82);text-decoration:none;margin-bottom:9px;transition:color .2s}
 .fc a:hover{color:#fff;text-decoration:underline}
 .fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
@@ -271,6 +272,8 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
 }
 @media(max-width:600px){
   .qnav{display:none}
+  .fc a{padding:7px 0}
+  .fc h3{margin-top:8px}
   .metrics{grid-template-columns:1fr 1fr}
   .fgrid{grid-template-columns:1fr}
   .cgrid{grid-template-columns:1fr}
@@ -314,6 +317,7 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
   <a href="#rejoindre" class="nb-cta">Rejoindre la Tribu</a>
 </nav>
 
+<main>
 <!-- HERO -->
 <section class="hero">
   <div>
@@ -332,7 +336,7 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
     </div>
   </div>
   <div class="hero-right">
-    <img src="img-33a3d9d00780.jpg" alt="Guillaume Roque, manager iad France" class="hero-photo" width="420" height="560" fetchpriority="high"/>
+    <picture><source type="image/webp" srcset="img-guillaume.webp"/><img src="img-guillaume.jpg" alt="Guillaume Roque, manager iad France" class="hero-photo" width="420" height="560" fetchpriority="high"/></picture>
     <div class="hero-card">
       <strong>Guillaume Roque</strong>
       <span>Manager Platinum Partner · iad France</span>
@@ -400,7 +404,7 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
 <!-- GUILLAUME -->
 <section class="guil">
   <div class="guil-img">
-    <img src="img-33a3d9d00780.jpg" alt="Guillaume Roque, manager iad France" class="guil-photo" width="480" height="600" loading="lazy"/>
+    <picture><source type="image/webp" srcset="img-guillaume.webp"/><img src="img-guillaume.jpg" alt="Guillaume Roque, manager iad France" class="guil-photo" width="480" height="600" loading="lazy"/></picture>
     <div class="guil-tag"><strong>Manager Platinum Partner</strong><span>iad France · depuis 2013</span></div>
   </div>
   <div>
@@ -433,7 +437,7 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
   </div>
   <div style="position:relative;display:flex;align-items:center;gap:12px;margin-top:8px">
     <button type="button" aria-label="Avis précédent" onclick="carPrev()" style="width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(0,0,0,.12);background:#fff;font-size:20px;cursor:pointer;color:#333;flex-shrink:0;transition:all .2s;display:flex;align-items:center;justify-content:center" onmouseover="this.style.background='#00B4EC';this.style.color='#fff';this.style.borderColor='#00B4EC'" onmouseout="this.style.background='#fff';this.style.color='#333';this.style.borderColor='rgba(0,0,0,.12)'">&#8592;</button>
-    <div style="overflow:hidden;flex:1;border-radius:16px">
+    <div style="overflow:hidden;flex:1;border-radius:16px;min-height:320px">
       <div id="carTrack" style="display:flex;transition:transform .45s cubic-bezier(.4,0,.2,1)"></div>
     </div>
     <button type="button" aria-label="Avis suivant" onclick="carNext()" style="width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(0,0,0,.12);background:#fff;font-size:20px;cursor:pointer;color:#333;flex-shrink:0;transition:all .2s;display:flex;align-items:center;justify-content:center" onmouseover="this.style.background='#00B4EC';this.style.color='#fff';this.style.borderColor='#00B4EC'" onmouseout="this.style.background='#fff';this.style.color='#333';this.style.borderColor='rgba(0,0,0,.12)'">&#8594;</button>
@@ -681,6 +685,8 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
 <footer>
   <div class="ft">
@@ -689,7 +695,7 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
       <p>La Tribu Immo by Guillaume Roque · Réseau de mandataires immobiliers iad France · Présent en France, dans les DOM et dans 8 pays.</p>
     </div>
     <div class="fc">
-      <h4>Rejoindre iad</h4>
+      <h3>Rejoindre iad</h3>
       <a href="article-1.html">Devenir mandataire</a>
       <a href="article-2.html">Mandataire vs agent</a>
       <a href="article-3.html">Revenus iad</a>
@@ -697,7 +703,7 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
       <a href="#rejoindre">Contact</a>
     </div>
     <div class="fc">
-      <h4>Immobilier local</h4>
+      <h3>Immobilier local</h3>
       <a href="article-narbonne.html">Narbonne</a>
       <a href="article-beziers.html">Béziers</a>
       <a href="article-aude.html">Aude</a>
@@ -706,14 +712,14 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
       <a href="article-saint-pons.html">Saint-Pons</a>
     </div>
     <div class="fc">
-      <h4>Guides & outils</h4>
+      <h3>Guides & outils</h3>
       <a href="guide-1-mandataire-iad.html" target="_blank">Guide mandataire</a>
       <a href="guide-2-vendre.html" target="_blank">Guide vendeur</a>
       <a href="guide-3-acheter.html" target="_blank">Guide acheteur</a>
       <a href="https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque/estimation" target="_blank">Estimation gratuite</a>
     </div>
     <div class="fc">
-      <h4>Suivez-nous</h4>
+      <h3>Suivez-nous</h3>
       <a href="https://www.google.com/maps?cid=10249811500579735043" target="_blank" rel="noopener">Avis Google</a>
       <a href="https://www.instagram.com/guillaumeroqueiad/" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.facebook.com/guillaumeroque.immobilier/" target="_blank" rel="noopener">Facebook</a>
