@@ -737,6 +737,16 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
       btn.disabled = true;
       btn.textContent = 'Envoi en cours\u2026';
 
+      /* La chaine de redirection Google peut prendre une vingtaine de secondes
+         alors que le traitement serveur, lui, dure 2 a 3 s. On confirme donc au
+         bout de 6 s sans attendre la fin du transport, tout en continuant a
+         ecouter la reponse reelle pour signaler une erreur eventuelle. */
+      var confirme = false;
+      var optimiste = setTimeout(function () {
+        confirme = true;
+        tribuAfficherSucces();
+      }, 6000);
+
       /* Envoi POST : les coordonnees ne transitent plus dans l'URL. */
       fetch(TRIBU_EXEC, { method: 'POST', body: donnees })
         .then(function (r) {
@@ -744,12 +754,16 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
           return r.text();
         })
         .then(function (t) {
-          if (t && t.indexOf('error') !== -1 && t.indexOf('"ok"') === -1) {
+          if (t && t.indexOf('"ok":false') !== -1) {
             throw new Error('reponse en erreur');
           }
+          clearTimeout(optimiste);
           tribuAfficherSucces();
         })
-        .catch(function () { tribuReplia(donnees, btn); });
+        .catch(function () {
+          clearTimeout(optimiste);
+          if (!confirme) { tribuReplia(donnees, btn); }
+        });
     }
     </script>
     <div id="fs" style="display:none;text-align:center;padding:48px 20px">
