@@ -60,7 +60,17 @@ nav{background:var(--bleu);padding:16px 6vw;display:flex;justify-content:space-b
 .article-card strong{font-size:13px;font-weight:800;font-style:italic;color:#000;line-height:1.3;display:block}
 footer{background:#006390;padding:24px 6vw;text-align:center}
 footer p{font-size:11px;color:rgba(255,255,255,0.82)}
+
+.encadre-sources{border-left-color:#EA584A;background:#FFF6F4}
+.encadre-sources p{color:#7A2C21}
+.encadre-sources a{color:#7A2C21;font-weight:700}
 </style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Vendre vite sans brader : la méthode du juste prix en 2026", "description": "Vendre vite sans brader votre bien en 2026 : la méthode du juste prix expliquée par Guillaume Roque, iad France. Estimation, positionnement et négociation.", "inLanguage": "fr-FR", "author": {"@type": "Person", "name": "Guillaume Roque", "url": "https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque"}, "publisher": {"@type": "Organization", "name": "La Tribu Immo", "url": "https://tribu-immo.com/"}, "datePublished": "2026-07-10", "dateModified": "2026-07-10", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://tribu-immo.com/article-juste-prix"}, "url": "https://tribu-immo.com/article-juste-prix"}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://tribu-immo.com/"}, {"@type": "ListItem", "position": 2, "name": "Vendre vite sans brader : la méthode du juste prix", "item": "https://tribu-immo.com/article-juste-prix"}]}
+</script>
 </head>
 <body>
 <nav>
@@ -119,6 +129,8 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
   <h3>Le rôle du conseiller</h3>
   <p>Au-delà de l'estimation, le conseiller construit une stratégie : mise en valeur du bien, photos soignées, diffusion large sur les portails, sélection des acheteurs réellement solvables et conduite de la négociation. C'est cet accompagnement qui transforme un juste prix en vente réussie, sereine et rapide.</p>
 
+  <div class="encadre encadre-sources"><p><strong>D'où viennent ces chiffres ?</strong> Les fourchettes de prix indiquées sur cette page sont des <strong>repères de terrain indicatifs</strong>, arrêtés au 12 août 2026 à partir des biens observés sur le secteur. Ce ne sont ni des moyennes statistiques certifiées ni des valeurs d'expertise. Les données de référence sont publiques et vérifiables : la base <a href="https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres" target="_blank" rel="noopener">DVF (demandes de valeurs foncières)</a> recense les transactions réelles enregistrées par l'administration fiscale, et l'<a href="https://www.insee.fr/fr/statistiques/2011101?geo=COM-11262" target="_blank" rel="noopener">INSEE</a> publie les données du parc de logements. Le prix d'un bien précis dépend de son état, de son exposition, de ses extérieurs, de son étage et de son emplacement exact : seule une visite permet de l'établir.</p></div>
+
   <div class="cta">
     <h3>Vous souhaitez connaître la vraie valeur de votre bien ?</h3>
     <p>Guillaume Roque et la Tribu Immo vous proposent une estimation locale, gratuite et sans engagement.</p>
@@ -129,7 +141,7 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
     <img class="auteur-photo" src="https://tribu-immo.com/photo-guillaume.jpg" alt="Guillaume Roque" width="64" height="64" loading="lazy" decoding="async"/>
     <div class="auteur-info">
       <strong>Guillaume Roque</strong>
-      <span>Manager Platinum Partner iad France depuis 2013 · Basé à Narbonne<br/>130+ conseillers actifs · Présent dans l'Aude, l'Hérault, le Tarn et à l'international</span>
+      <span>Manager Platinum Partner iad France depuis 2013 · Basé à Narbonne<br/>organisation de plus de 130 conseillers · Présent dans l'Aude, l'Hérault, le Tarn et à l'international</span>
     </div>
   </div>
 </div>
@@ -140,6 +152,17 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
 </div>
 
 <footer><p>La Tribu Immo by Guillaume Roque · tribu-immo.com · +33 6 62 10 83 96</p></footer>
+<script>
+/* Mémorise l'origine de la visite (page d'entrée, référent, UTM) pour la durée
+   de la session, afin de rattacher une candidature à sa source. Aucun cookie. */
+(function(){try{var s=window.sessionStorage;if(s&&!s.getItem('tribu_entree')){
+s.setItem('tribu_entree',location.pathname+location.search);
+s.setItem('tribu_referent',document.referrer||'(acces direct)');
+var p=new URLSearchParams(location.search),u=[];
+['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){
+var v=p.get(k);if(v){u.push(k+'='+v);}});
+s.setItem('tribu_utm',u.join(' | ')||'(aucun)');}}catch(e){}})();
+</script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4bf99401a6d845f5b8042887b18e8608"}'></script><!-- Fin Cloudflare Web Analytics -->
 </body>
 </html>

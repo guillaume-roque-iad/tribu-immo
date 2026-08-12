@@ -81,6 +81,9 @@ footer{background:#006390;padding:28px 6vw;display:flex;justify-content:space-be
 footer .logo{font-size:18px;font-weight:900;font-style:italic;color:#fff;letter-spacing:-0.03em}
 footer small{font-size:10px;color:rgba(255,255,255,0.4)}
 </style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://tribu-immo.com/"}, {"@type": "ListItem", "position": 2, "name": "Mandataire iad vs agent immobilier : les vraies differences", "item": "https://tribu-immo.com/article-2"}]}
+</script>
 </head>
 <body>
 
@@ -157,7 +160,7 @@ footer small{font-size:10px;color:rgba(255,255,255,0.4)}
     <li>0,5% a 1% au niveau 4</li>
     <li>0,2% a 1% au niveau 5</li>
   </ul>
-  <p>Ces commissions manageriales creent un revenu passif qui s'accumule au fil du temps, independamment de votre propre activite de vente.</p>
+  <p>Ces commissions manageriales dependent des ventes effectivement realisees et encaissees par les conseillers de votre organisation, et non de votre propre activite de vente. Elles sont variables, sans montant ni regularite garantis.</p>
 
   <h2>Qui devrait choisir le statut de mandataire iad ?</h2>
   <p>Le statut de mandataire iad convient particulierement aux profils suivants :</p>
@@ -179,7 +182,7 @@ footer small{font-size:10px;color:rgba(255,255,255,0.4)}
     <div class="auteur-avatar">GR</div>
     <div class="auteur-info">
       <strong>Guillaume Roque</strong>
-      <span>Manager Platinum Partner iad France depuis 2013 · Coordinateur de formation · 130+ conseillers actifs</span>
+      <span>Manager Platinum Partner iad France depuis 2013 · Coordinateur de formation · organisation de plus de 130 conseillers</span>
     </div>
   </div>
 
@@ -187,11 +190,11 @@ footer small{font-size:10px;color:rgba(255,255,255,0.4)}
 
   <div class="article-auteur">
     <div class="auteur-avatar" style="width:60px;height:60px;border-radius:50%;border:3px solid var(--bleu);overflow:hidden;flex-shrink:0">
-      <img src="https://tribu-immo.com/photo-guillaume.jpg" alt="Guillaume Roque" style="width:100%;height:100%;object-fit:cover;object-position:top"/>
+      <img src="https://tribu-immo.com/photo-guillaume.jpg" alt="Guillaume Roque" width="64" height="64" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:top"/>
     </div>
     <div class="auteur-info">
       <strong>Guillaume Roque</strong>
-      <span>Manager Platinum Partner iad France depuis 2013 · Coordinateur de formation · 130+ conseillers actifs dans 8 pays</span>
+      <span>Manager Platinum Partner iad France depuis 2013 · Coordinateur de formation · organisation de plus de 130 conseillers dans 8 pays</span>
     </div>
   </div>
 <div class="articles-lies">
@@ -216,6 +219,17 @@ footer small{font-size:10px;color:rgba(255,255,255,0.4)}
   <div class="logo">iAD <span style="font-size:10px;font-weight:700;letter-spacing:0.2em;font-style:normal">IMMOBILIER</span></div>
   <small>La Tribu Immo by Guillaume Roque · tribu-immo.com · +33 6 62 10 83 96</small>
 </footer>
+<script>
+/* Mémorise l'origine de la visite (page d'entrée, référent, UTM) pour la durée
+   de la session, afin de rattacher une candidature à sa source. Aucun cookie. */
+(function(){try{var s=window.sessionStorage;if(s&&!s.getItem('tribu_entree')){
+s.setItem('tribu_entree',location.pathname+location.search);
+s.setItem('tribu_referent',document.referrer||'(acces direct)');
+var p=new URLSearchParams(location.search),u=[];
+['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(function(k){
+var v=p.get(k);if(v){u.push(k+'='+v);}});
+s.setItem('tribu_utm',u.join(' | ')||'(aucun)');}}catch(e){}})();
+</script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4bf99401a6d845f5b8042887b18e8608"}'></script><!-- Fin Cloudflare Web Analytics -->
 </body>
 </html>
