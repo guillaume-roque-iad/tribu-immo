@@ -677,6 +677,14 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
     function tribuAfficherSucces() {
       var fs = document.getElementById('fs'), fm = document.getElementById('fm');
       if (fs && fm) { fs.style.display = 'block'; fm.style.display = 'none'; }
+      /* Marqueur de conversion : cree une page vue distincte dans Cloudflare
+         Web Analytics, sans cookie ni identifiant. */
+      try {
+        if (window.history && history.pushState &&
+            location.pathname.indexOf('/candidature-envoyee') === -1) {
+          history.pushState({}, '', '/candidature-envoyee');
+        }
+      } catch (e) {}
     }
 
     function tribuErreur(f, btn, donnees) {
@@ -844,5 +852,6 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
 </footer>
 
 <script>function onFormOK() { document.getElementById("fs").style.display="block"; document.getElementById("fm").style.display="none"; }</script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4bf99401a6d845f5b8042887b18e8608"}'></script><!-- Fin Cloudflare Web Analytics -->
 </body>
 </html>
