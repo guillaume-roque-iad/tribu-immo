@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tribu-immo.com/sitemap.xml
