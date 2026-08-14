@@ -9,16 +9,16 @@
 <link rel="canonical" href="https://tribu-immo.com/guide-2-vendre"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--bleu:#00709C;--corail:#EA584A;--gris:#444;--gris-clair:#F4F9FC;--bleu-fonce:#005F80}
+:root{--bleu:#00709C;--corail:#EA584A;--corail-fonce:#C03A2B;--gris:#444;--gris-clair:#F4F9FC;--bleu-fonce:#005F80}
 body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333;background:#fff;font-size:15px;line-height:1.7}
 nav{background:var(--bleu);padding:14px 6vw;display:flex;justify-content:space-between;align-items:center;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .nav-logo{color:#fff;font-weight:900;font-size:16px;text-decoration:none;letter-spacing:-0.02em}
-.nav-logo span{font-size:9px;display:block;font-weight:600;letter-spacing:0.2em;opacity:0.7}
-.nav-btn{background:var(--corail);color:#fff;font-size:11px;font-weight:700;padding:8px 18px;border-radius:100px;text-decoration:none}
+.nav-logo span{font-size:11.5px;display:block;font-weight:600;letter-spacing:0.2em;opacity:1;color:#FFE9E5}
+.nav-btn{background:var(--corail-fonce);color:#fff;font-size:11px;font-weight:700;padding:8px 18px;border-radius:100px;text-decoration:none}
 .cover{background:var(--bleu);padding:50px 6vw 40px;display:grid;grid-template-columns:1fr 200px;gap:30px;align-items:center}
-.cover-tag{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,.92);font-weight:700;margin-bottom:10px}
+.cover-tag{font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,.92);font-weight:700;margin-bottom:10px}
 .cover h1{font-size:30px;font-weight:900;color:#fff;line-height:1.1;letter-spacing:-0.02em;margin-bottom:12px}
-.cover h1 em{color:var(--corail);font-style:normal}
+.cover h1 em{color:#FFE9E5;font-style:normal}
 .cover-sous{font-size:12px;color:rgba(255,255,255,0.75);margin-bottom:20px}
 .cover-auteur{display:flex;align-items:center;gap:14px;background:rgba(0,0,0,0.35);border-radius:8px;padding:14px 18px;border:1px solid rgba(255,255,255,0.2)}
 .cover-photo{width:48px;height:48px;border-radius:50%;border:2px solid var(--corail);object-fit:cover;object-position:top center}
@@ -27,7 +27,7 @@ nav{background:var(--bleu);padding:14px 6vw;display:flex;justify-content:space-b
 .cover-stats{display:flex;flex-direction:column;gap:10px}
 .cover-stat{text-align:center;background:rgba(255,255,255,0.12);border-radius:8px;padding:14px 10px;border-top:3px solid var(--corail)}
 .cover-stat strong{display:block;font-size:26px;font-weight:900;color:#fff;line-height:1}
-.cover-stat span{font-size:9px;color:rgba(255,255,255,.92);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-top:4px;display:block}
+.cover-stat span{font-size:11.5px;color:rgba(255,255,255,.92);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-top:4px;display:block}
 .content{max-width:800px;margin:0 auto;padding:40px 6vw}
 h2{font-size:20px;font-weight:900;color:var(--bleu);margin:36px 0 6px;letter-spacing:-0.02em}
 .sep{height:2px;background:var(--bleu);margin-bottom:12px;border:none;width:50px}
@@ -40,7 +40,7 @@ ul li::before{content:'→';color:var(--corail);font-weight:700;position:absolut
 .encadre p{margin:0;font-size:13px;color:var(--bleu-fonce);font-weight:500}
 .etapes{display:flex;flex-direction:column;gap:8px;margin:14px 0}
 .etape{display:flex;align-items:stretch;gap:0;background:var(--gris-clair);border-radius:6px;overflow:hidden}
-.etape-num{background:var(--corail);color:#fff;font-size:16px;font-weight:900;width:38px;min-width:38px;display:flex;align-items:center;justify-content:center}
+.etape-num{background:var(--corail-fonce);color:#fff;font-size:16px;font-weight:900;width:38px;min-width:38px;display:flex;align-items:center;justify-content:center}
 .etape-body{padding:12px 16px}
 .etape-body strong{display:block;font-size:13px;font-weight:800;color:#000;margin-bottom:3px}
 .etape-body p{font-size:12px;color:var(--gris);margin:0;line-height:1.6}
@@ -53,7 +53,7 @@ ul li::before{content:'→';color:var(--corail);font-weight:700;position:absolut
 .cta{background:var(--bleu-fonce);border-radius:12px;padding:28px;text-align:center;margin:36px 0}
 .cta h3{font-size:18px;font-weight:900;color:#fff;margin-bottom:6px;letter-spacing:-0.01em}
 .cta p{font-size:12px;color:rgba(255,255,255,0.75);margin-bottom:16px}
-.cta a{background:var(--corail);color:#fff;font-size:12px;font-weight:800;padding:12px 28px;border-radius:100px;text-decoration:none;display:inline-block}
+.cta a{background:var(--corail-fonce);color:#fff;font-size:12px;font-weight:800;padding:12px 28px;border-radius:100px;text-decoration:none;display:inline-block}
 .cta-contact{margin-top:12px;font-size:11px;color:rgba(255,255,255,0.5)}
 footer{background:#006390;padding:20px 6vw;text-align:center}
 footer p{font-size:11px;color:rgba(255,255,255,0.82)}
@@ -89,9 +89,9 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
 @media(max-width:760px){
   nav{padding:12px 4vw;gap:10px}
   .nav-brand{min-width:0;gap:8px}
-  .nav-name{font-size:10px}
+  .nav-name{font-size:11.5px}
   .nav-sep{height:24px}
-  .nav-cta{font-size:10px;padding:8px 14px;transform:none;white-space:nowrap;flex-shrink:0}
+  .nav-cta{font-size:11.5px;padding:8px 14px;transform:none;white-space:nowrap;flex-shrink:0}
   .nav-logo-iad{height:24px!important}
   .article-hero{padding:52px 6vw 40px}
   .article-hero h1{font-size:clamp(24px,7vw,32px)}
@@ -107,19 +107,110 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
   .guide-liens{padding:24px 6vw 36px}
 }
 @media(max-width:420px){
-  .nav-name{font-size:9px}
-  .nav-cta{font-size:9.5px;padding:7px 11px}
+  .nav-name{font-size:11.5px}
+  .nav-cta{font-size:11.5px;padding:7px 11px}
   .auteur-photo{width:56px;height:56px}
 }
 
 @media(max-width:760px){.cover{padding:40px 6vw!important}.cover h1{font-size:clamp(22px,6.4vw,28px)!important}.cover-stats{flex-wrap:wrap;gap:10px}}
 /* cover-mobile */
+
+.resume{background:var(--gris-clair,#F4F9FC);border-left:4px solid var(--bleu,#00709C);padding:22px 26px;margin:26px 0;border-radius:0 8px 8px 0}
+.resume h2{font-size:15px;margin:0 0 12px;text-transform:uppercase;letter-spacing:.08em;color:#00567A}
+.resume ul{margin:0;padding-left:20px}.resume li{margin-bottom:8px}
+.etapes-num{padding-left:22px;margin:16px 0}.etapes-num li{margin-bottom:10px}
 </style>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "Article", "headline": "Guide du vendeur — Comment vendre son bien au meilleur prix", "description": "Le guide du vendeur : préparer son bien, fixer le juste prix, réunir les diagnostics, diffuser l'annonce et négocier jusqu'à la signature chez le notaire.", "inLanguage": "fr-FR", "author": {"@type": "Person", "name": "Guillaume Roque", "url": "https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque"}, "publisher": {"@type": "Organization", "name": "La Tribu Immo", "url": "https://tribu-immo.com/"}, "datePublished": "2026-04-14", "dateModified": "2026-04-14", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://tribu-immo.com/guide-2-vendre"}, "url": "https://tribu-immo.com/guide-2-vendre"}
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@context": "https://schema.org",
+   "@type": "Article",
+   "headline": "Guide du vendeur — Comment vendre son bien au meilleur prix",
+   "description": "Le guide du vendeur : préparer son bien, fixer le juste prix, réunir les diagnostics, diffuser l'annonce et négocier jusqu'à la signature chez le notaire.",
+   "inLanguage": "fr-FR",
+   "author": {
+    "@id": "https://tribu-immo.com/#guillaume-roque"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "La Tribu Immo",
+    "url": "https://tribu-immo.com/"
+   },
+   "datePublished": "2026-04-14",
+   "dateModified": "2026-08-14",
+   "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://tribu-immo.com/guide-2-vendre",
+    "datePublished": "2026-08-14",
+    "dateModified": "2026-08-14",
+    "inLanguage": "fr-FR"
+   },
+   "url": "https://tribu-immo.com/guide-2-vendre"
+  },
+  {
+   "@type": "Person",
+   "@id": "https://tribu-immo.com/#guillaume-roque",
+   "name": "Guillaume Roque",
+   "jobTitle": "Conseiller immobilier indépendant iad — agent commercial EI, manager",
+   "url": "https://tribu-immo.com/guillaume-roque",
+   "worksFor": {
+    "@id": "https://tribu-immo.com/#organisation"
+   },
+   "workLocation": {
+    "@type": "Place",
+    "name": "Narbonne, Narbonnais et Minervois"
+   },
+   "sameAs": [
+    "https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque",
+    "https://www.linkedin.com/in/guillaume-roque-07a3bb8a/",
+    "https://www.google.com/maps?cid=10249811500579735043"
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://tribu-immo.com/#organisation",
+   "name": "La Tribu Immo",
+   "url": "https://tribu-immo.com/",
+   "telephone": "+33662108396",
+   "email": "guillaume.roque@iadfrance.fr",
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Aude"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Hérault"
+    }
+   ],
+   "founder": {
+    "@id": "https://tribu-immo.com/#guillaume-roque"
+   }
+  }
+ ]
+}
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://tribu-immo.com/"}, {"@type": "ListItem", "position": 2, "name": "Comment vendre son bien au meilleur prix", "item": "https://tribu-immo.com/guide-2-vendre"}]}
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Accueil",
+   "item": "https://tribu-immo.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Comment vendre son bien au meilleur prix",
+   "item": "https://tribu-immo.com/guide-2-vendre"
+  }
+ ]
+}
 </script>
 </head>
 <body>
@@ -128,11 +219,11 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
     <img src="/logo-iad.webp" width="170" height="120" alt="iad Immobilier" style="height:40px;width:auto"/>
     <div style="width:1px;height:36px;background:rgba(255,255,255,0.3)"></div>
     <div style="color:#fff;font-size:13px;font-weight:800;font-style:italic;line-height:1.25">
-      La <span style="color:var(--corail)">Tribu Immo</span><br/>
+      La <span style="color:#FFE9E5">Tribu Immo</span><br/>
       <span style="font-size:11px;font-weight:600;font-style:normal;opacity:0.85">by Guillaume Roque</span>
     </div>
   </div>
-  <a href="https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque" target="_blank" style="background:var(--corail);color:#fff;font-size:11px;font-weight:800;font-style:italic;padding:10px 20px;border-radius:100px;text-decoration:none;transform:rotate(-2deg);display:inline-block">Rejoindre la Tribu !</a>
+  <a href="https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque" data-evt="clic-profil-iad" target="_blank" style="background:var(--corail-fonce);color:#fff;font-size:11px;font-weight:800;font-style:italic;padding:10px 20px;border-radius:100px;text-decoration:none;transform:rotate(-2deg);display:inline-block">Rejoindre la Tribu !</a>
 </nav>
 <div class="cover">
   <div class="cover-left">
@@ -143,14 +234,12 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
       <img class="cover-photo" src="/photo-guillaume-rond.webp" width="72" height="96" loading="lazy" decoding="async" alt="Guillaume Roque"/>
       <div class="cover-auteur-info">
         <strong>Guillaume Roque</strong>
-        <span>Manager Platinum Partner iad France<br/>depuis 2013 · plus de 130 conseillers · 8 pays</span>
+        <span>Conseiller immobilier indépendant iad · manager<br/>depuis 2013 · organisation de plus de 130 conseillers · Aude et Hérault</span>
       </div>
     </div>
   </div>
   <div class="cover-stats"><div class="cover-stat"><strong>6</strong><span>étapes
-clés</span></div><div class="cover-stat"><strong>95%</strong><span>acheteurs
-en ligne</span></div><div class="cover-stat"><strong>3 mois</strong><span>délai moyen
-vente</span></div></div>
+clés</span></div><div class="cover-stat"><strong>Web</strong><span>première étape<br/>de la recherche</span></div><div class="cover-stat"><strong>Prix</strong><span>premier levier<br/>du délai de vente</span></div></div>
 </div>
 <div class="btn-print">
   <button onclick="window.print()">
@@ -159,6 +248,16 @@ vente</span></div></div>
   </button>
 </div>
 <div class="content">
+<section class="resume">
+  <h2>À retenir</h2>
+  <ul>
+    <li>Le <strong>prix de mise en vente</strong> est le premier déterminant du délai : un bien correctement positionné déclenche des visites dès les premières semaines.</li>
+    <li>Les <strong>diagnostics</strong> doivent être commandés avant la mise en ligne, pas au moment du compromis.</li>
+    <li>Un bien qui ne se visite pas après trois semaines de diffusion pose un problème de prix, pas de photo.</li>
+    <li>Le vendeur peut <strong>refuser une offre au prix</strong> : l'accepter n'est jamais une obligation.</li>
+  </ul>
+</section>
+
 
   <h2>Introduction</h2>
   <hr class="sep"/>
@@ -191,7 +290,43 @@ vente</span></div></div>
 
   <div class="encadre"><p>Bon à savoir : en tant que vendeur, vous avez le droit de refuser une offre même au prix demandé. Votre conseiller iad vous accompagne de A à Z pour sécuriser et optimiser votre transaction.</p></div>
 
-  <div class="cta">
+  
+<h2>Combien de temps prend une vente, réellement ?</h2>
+<hr class="sep"/>
+<p>Une vente se déroule en deux temps qu'il ne faut pas confondre :</p>
+<table class="tableau">
+  <thead><tr><th>Phase</th><th>Ce qui s'y joue</th><th>Ce qui l'allonge</th></tr></thead>
+  <tbody>
+    <tr><td>Commercialisation</td><td>De la mise en ligne à l'offre acceptée</td><td>Un prix trop haut, des photos qui ne montrent pas le bien, un dossier incomplet</td></tr>
+    <tr><td>Réalisation</td><td>Du compromis à l'acte authentique</td><td>Le délai d'obtention du prêt, les purges de droits de préemption, l'attente de documents de copropriété</td></tr>
+  </tbody>
+</table>
+<p>La première phase dépend largement de vous. La seconde beaucoup moins : elle suit un calendrier
+administratif et bancaire sur lequel personne n'a la main.</p>
+
+<h2>Les erreurs qui coûtent le plus cher</h2>
+<hr class="sep"/>
+<ul>
+  <li><strong>Partir d'un prix « pour voir »</strong>, quitte à baisser ensuite. Un bien qui traîne se dévalorise dans l'esprit des acquéreurs, qui suivent les annonces bien plus longtemps qu'on ne l'imagine.</li>
+  <li><strong>Attendre le compromis pour commander les diagnostics.</strong> Un diagnostic défavorable découvert tardivement rouvre la négociation au pire moment.</li>
+  <li><strong>Masquer un défaut.</strong> Il ressort à la visite, ou plus tard, avec un risque juridique. Mieux vaut l'annoncer et le chiffrer.</li>
+  <li><strong>Multiplier les mandats simples</strong> en pensant élargir la diffusion : le bien apparaît alors à des prix différents sur les mêmes portails, ce qui inquiète l'acquéreur.</li>
+  <li><strong>Refuser les retours de visite.</strong> Trois acquéreurs qui font la même remarque disent quelque chose d'utile.</li>
+</ul>
+
+<h2>Préparer son bien avant les visites</h2>
+<hr class="sep"/>
+<p>Sans travaux et sans dépense significative, trois actions changent la perception :</p>
+<ol class="etapes-num">
+  <li><strong>Désencombrer</strong> : l'acquéreur doit voir le volume, pas les affaires. C'est l'action au meilleur rendement.</li>
+  <li><strong>Réparer les petits défauts visibles</strong> — poignée qui se détache, joint noirci, ampoule morte. Chacun est mineur ; leur accumulation suggère un bien mal entretenu.</li>
+  <li><strong>Soigner la lumière</strong> : volets ouverts, rideaux dégagés, visites calées sur les heures les plus lumineuses.</li>
+</ol>
+<div class="encadre"><p>Les photos comptent parce qu'elles déclenchent la visite — mais elles ne font
+jamais vendre à elles seules. Elles doivent ressembler au bien, faute de quoi la visite se solde par une
+déception qui ferme la négociation.</p></div>
+
+<div class="cta">
     <h3>Vous souhaitez vendre votre bien ?</h3>
     <p>Guillaume Roque vous propose une estimation gratuite et un accompagnement<br/>personnalisé de A à Z, sans engagement.</p>
     <a href="/vendre-maison-narbonne">Demander une estimation →</a>

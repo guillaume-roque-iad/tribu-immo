@@ -9,16 +9,16 @@
 <link rel="canonical" href="https://tribu-immo.com/guide-3-acheter"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-:root{--bleu:#00709C;--corail:#EA584A;--gris:#444;--gris-clair:#F4F9FC;--bleu-fonce:#005F80}
+:root{--bleu:#00709C;--corail:#EA584A;--corail-fonce:#C03A2B;--gris:#444;--gris-clair:#F4F9FC;--bleu-fonce:#005F80}
 body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#333;background:#fff;font-size:15px;line-height:1.7}
 nav{background:var(--bleu);padding:14px 6vw;display:flex;justify-content:space-between;align-items:center;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .nav-logo{color:#fff;font-weight:900;font-size:16px;text-decoration:none;letter-spacing:-0.02em}
-.nav-logo span{font-size:9px;display:block;font-weight:600;letter-spacing:0.2em;opacity:0.7}
-.nav-btn{background:var(--corail);color:#fff;font-size:11px;font-weight:700;padding:8px 18px;border-radius:100px;text-decoration:none}
+.nav-logo span{font-size:11.5px;display:block;font-weight:600;letter-spacing:0.2em;opacity:1;color:#FFE9E5}
+.nav-btn{background:var(--corail-fonce);color:#fff;font-size:11px;font-weight:700;padding:8px 18px;border-radius:100px;text-decoration:none}
 .cover{background:var(--bleu);padding:50px 6vw 40px;display:grid;grid-template-columns:1fr 200px;gap:30px;align-items:center}
-.cover-tag{font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,.92);font-weight:700;margin-bottom:10px}
+.cover-tag{font-size:11.5px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,.92);font-weight:700;margin-bottom:10px}
 .cover h1{font-size:30px;font-weight:900;color:#fff;line-height:1.1;letter-spacing:-0.02em;margin-bottom:12px}
-.cover h1 em{color:var(--corail);font-style:normal}
+.cover h1 em{color:#FFE9E5;font-style:normal}
 .cover-sous{font-size:12px;color:rgba(255,255,255,0.75);margin-bottom:20px}
 .cover-auteur{display:flex;align-items:center;gap:14px;background:rgba(0,0,0,0.35);border-radius:8px;padding:14px 18px;border:1px solid rgba(255,255,255,0.2)}
 .cover-photo{width:48px;height:48px;border-radius:50%;border:2px solid var(--corail);object-fit:cover;object-position:top center}
@@ -27,7 +27,7 @@ nav{background:var(--bleu);padding:14px 6vw;display:flex;justify-content:space-b
 .cover-stats{display:flex;flex-direction:column;gap:10px}
 .cover-stat{text-align:center;background:rgba(255,255,255,0.12);border-radius:8px;padding:14px 10px;border-top:3px solid var(--corail)}
 .cover-stat strong{display:block;font-size:26px;font-weight:900;color:#fff;line-height:1}
-.cover-stat span{font-size:9px;color:rgba(255,255,255,.92);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-top:4px;display:block}
+.cover-stat span{font-size:11.5px;color:rgba(255,255,255,.92);font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-top:4px;display:block}
 .content{max-width:800px;margin:0 auto;padding:40px 6vw}
 h2{font-size:20px;font-weight:900;color:var(--bleu);margin:36px 0 6px;letter-spacing:-0.02em}
 .sep{height:2px;background:var(--bleu);margin-bottom:12px;border:none;width:50px}
@@ -40,7 +40,7 @@ ul li::before{content:'→';color:var(--corail);font-weight:700;position:absolut
 .encadre p{margin:0;font-size:13px;color:var(--bleu-fonce);font-weight:500}
 .etapes{display:flex;flex-direction:column;gap:8px;margin:14px 0}
 .etape{display:flex;align-items:stretch;gap:0;background:var(--gris-clair);border-radius:6px;overflow:hidden}
-.etape-num{background:var(--corail);color:#fff;font-size:16px;font-weight:900;width:38px;min-width:38px;display:flex;align-items:center;justify-content:center}
+.etape-num{background:var(--corail-fonce);color:#fff;font-size:16px;font-weight:900;width:38px;min-width:38px;display:flex;align-items:center;justify-content:center}
 .etape-body{padding:12px 16px}
 .etape-body strong{display:block;font-size:13px;font-weight:800;color:#000;margin-bottom:3px}
 .etape-body p{font-size:12px;color:var(--gris);margin:0;line-height:1.6}
@@ -53,7 +53,7 @@ ul li::before{content:'→';color:var(--corail);font-weight:700;position:absolut
 .cta{background:var(--bleu-fonce);border-radius:12px;padding:28px;text-align:center;margin:36px 0}
 .cta h3{font-size:18px;font-weight:900;color:#fff;margin-bottom:6px;letter-spacing:-0.01em}
 .cta p{font-size:12px;color:rgba(255,255,255,0.75);margin-bottom:16px}
-.cta a{background:var(--corail);color:#fff;font-size:12px;font-weight:800;padding:12px 28px;border-radius:100px;text-decoration:none;display:inline-block}
+.cta a{background:var(--corail-fonce);color:#fff;font-size:12px;font-weight:800;padding:12px 28px;border-radius:100px;text-decoration:none;display:inline-block}
 .cta-contact{margin-top:12px;font-size:11px;color:rgba(255,255,255,0.5)}
 footer{background:#006390;padding:20px 6vw;text-align:center}
 footer p{font-size:11px;color:rgba(255,255,255,0.82)}
@@ -93,9 +93,9 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
 @media(max-width:760px){
   nav{padding:12px 4vw;gap:10px}
   .nav-brand{min-width:0;gap:8px}
-  .nav-name{font-size:10px}
+  .nav-name{font-size:11.5px}
   .nav-sep{height:24px}
-  .nav-cta{font-size:10px;padding:8px 14px;transform:none;white-space:nowrap;flex-shrink:0}
+  .nav-cta{font-size:11.5px;padding:8px 14px;transform:none;white-space:nowrap;flex-shrink:0}
   .nav-logo-iad{height:24px!important}
   .article-hero{padding:52px 6vw 40px}
   .article-hero h1{font-size:clamp(24px,7vw,32px)}
@@ -111,19 +111,110 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
   .guide-liens{padding:24px 6vw 36px}
 }
 @media(max-width:420px){
-  .nav-name{font-size:9px}
-  .nav-cta{font-size:9.5px;padding:7px 11px}
+  .nav-name{font-size:11.5px}
+  .nav-cta{font-size:11.5px;padding:7px 11px}
   .auteur-photo{width:56px;height:56px}
 }
 
 @media(max-width:760px){.cover{padding:40px 6vw!important}.cover h1{font-size:clamp(22px,6.4vw,28px)!important}.cover-stats{flex-wrap:wrap;gap:10px}}
 /* cover-mobile */
+
+.resume{background:var(--gris-clair,#F4F9FC);border-left:4px solid var(--bleu,#00709C);padding:22px 26px;margin:26px 0;border-radius:0 8px 8px 0}
+.resume h2{font-size:15px;margin:0 0 12px;text-transform:uppercase;letter-spacing:.08em;color:#00567A}
+.resume ul{margin:0;padding-left:20px}.resume li{margin-bottom:8px}
+.etapes-num{padding-left:22px;margin:16px 0}.etapes-num li{margin-bottom:10px}
 </style>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "Article", "headline": "Guide de l'acheteur — réussir son achat immobilier", "description": "Le guide de l'acheteur : définir son budget, visiter efficacement, faire une offre, sécuriser son financement et suivre les étapes jusqu'à la remise des clés.", "inLanguage": "fr-FR", "author": {"@type": "Person", "name": "Guillaume Roque", "url": "https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque"}, "publisher": {"@type": "Organization", "name": "La Tribu Immo", "url": "https://tribu-immo.com/"}, "datePublished": "2026-08-12", "dateModified": "2026-08-12", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://tribu-immo.com/guide-3-acheter"}, "url": "https://tribu-immo.com/guide-3-acheter"}
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@context": "https://schema.org",
+   "@type": "Article",
+   "headline": "Guide de l'acheteur — réussir son achat immobilier",
+   "description": "Le guide de l'acheteur : définir son budget, visiter efficacement, faire une offre, sécuriser son financement et suivre les étapes jusqu'à la remise des clés.",
+   "inLanguage": "fr-FR",
+   "author": {
+    "@id": "https://tribu-immo.com/#guillaume-roque"
+   },
+   "publisher": {
+    "@type": "Organization",
+    "name": "La Tribu Immo",
+    "url": "https://tribu-immo.com/"
+   },
+   "datePublished": "2026-08-12",
+   "dateModified": "2026-08-14",
+   "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://tribu-immo.com/guide-3-acheter",
+    "datePublished": "2026-08-14",
+    "dateModified": "2026-08-14",
+    "inLanguage": "fr-FR"
+   },
+   "url": "https://tribu-immo.com/guide-3-acheter"
+  },
+  {
+   "@type": "Person",
+   "@id": "https://tribu-immo.com/#guillaume-roque",
+   "name": "Guillaume Roque",
+   "jobTitle": "Conseiller immobilier indépendant iad — agent commercial EI, manager",
+   "url": "https://tribu-immo.com/guillaume-roque",
+   "worksFor": {
+    "@id": "https://tribu-immo.com/#organisation"
+   },
+   "workLocation": {
+    "@type": "Place",
+    "name": "Narbonne, Narbonnais et Minervois"
+   },
+   "sameAs": [
+    "https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque",
+    "https://www.linkedin.com/in/guillaume-roque-07a3bb8a/",
+    "https://www.google.com/maps?cid=10249811500579735043"
+   ]
+  },
+  {
+   "@type": "Organization",
+   "@id": "https://tribu-immo.com/#organisation",
+   "name": "La Tribu Immo",
+   "url": "https://tribu-immo.com/",
+   "telephone": "+33662108396",
+   "email": "guillaume.roque@iadfrance.fr",
+   "areaServed": [
+    {
+     "@type": "AdministrativeArea",
+     "name": "Aude"
+    },
+    {
+     "@type": "AdministrativeArea",
+     "name": "Hérault"
+    }
+   ],
+   "founder": {
+    "@id": "https://tribu-immo.com/#guillaume-roque"
+   }
+  }
+ ]
+}
 </script>
 <script type="application/ld+json">
-{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://tribu-immo.com/"}, {"@type": "ListItem", "position": 2, "name": "Les étapes clés pour réussir son achat immobilier", "item": "https://tribu-immo.com/guide-3-acheter"}]}
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Accueil",
+   "item": "https://tribu-immo.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Les étapes clés pour réussir son achat immobilier",
+   "item": "https://tribu-immo.com/guide-3-acheter"
+  }
+ ]
+}
 </script>
 </head>
 <body>
@@ -132,11 +223,11 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
     <img src="/logo-iad.webp" width="170" height="120" alt="iad Immobilier" style="height:40px;width:auto"/>
     <div style="width:1px;height:36px;background:rgba(255,255,255,0.3)"></div>
     <div style="color:#fff;font-size:13px;font-weight:800;font-style:italic;line-height:1.25">
-      La <span style="color:var(--corail)">Tribu Immo</span><br/>
+      La <span style="color:#FFE9E5">Tribu Immo</span><br/>
       <span style="font-size:11px;font-weight:600;font-style:normal;opacity:0.85">by Guillaume Roque</span>
     </div>
   </div>
-  <a href="https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque" target="_blank" style="background:var(--corail);color:#fff;font-size:11px;font-weight:800;font-style:italic;padding:10px 20px;border-radius:100px;text-decoration:none;transform:rotate(-2deg);display:inline-block">Rejoindre la Tribu !</a>
+  <a href="https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque" data-evt="clic-profil-iad" target="_blank" style="background:var(--corail-fonce);color:#fff;font-size:11px;font-weight:800;font-style:italic;padding:10px 20px;border-radius:100px;text-decoration:none;transform:rotate(-2deg);display:inline-block">Rejoindre la Tribu !</a>
 </nav>
 <div class="cover">
   <div class="cover-left">
@@ -147,14 +238,13 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
       <img class="cover-photo" src="/photo-guillaume-rond.webp" width="72" height="96" loading="lazy" decoding="async" alt="Guillaume Roque"/>
       <div class="cover-auteur-info">
         <strong>Guillaume Roque</strong>
-        <span>Manager Platinum Partner iad France<br/>depuis 2013 · plus de 130 conseillers · 8 pays</span>
+        <span>Conseiller immobilier indépendant iad · manager<br/>depuis 2013 · organisation de plus de 130 conseillers · Aude et Hérault</span>
       </div>
     </div>
   </div>
   <div class="cover-stats"><div class="cover-stat"><strong>6</strong><span>étapes
 clés</span></div><div class="cover-stat"><strong>35%</strong><span>taux
-d'endettement max</span></div><div class="cover-stat"><strong>3 mois</strong><span>délai moyen
-achat</span></div></div>
+d'endettement max</span></div><div class="cover-stat"><strong>Financement</strong><span>ce qui cadence<br/>le calendrier</span></div></div>
 </div>
 <div class="btn-print">
   <button onclick="window.print()">
@@ -163,6 +253,16 @@ achat</span></div></div>
   </button>
 </div>
 <div class="content">
+<section class="resume">
+  <h2>À retenir</h2>
+  <ul>
+    <li>Le <strong>financement se prépare avant les visites</strong> : sans capacité d'emprunt établie, une offre a peu de poids.</li>
+    <li>Le taux d'endettement est plafonné à <strong>35 %</strong> des revenus, assurance comprise (recommandation du Haut Conseil de stabilité financière).</li>
+    <li>Le prix d'achat n'est pas le coût total : frais de notaire, garantie, travaux, charges et taxe foncière s'y ajoutent.</li>
+    <li>La <strong>visite ne suffit pas</strong> : le dossier de copropriété et l'urbanisme disent souvent l'essentiel.</li>
+  </ul>
+</section>
+
 
   <h2>Introduction</h2>
   <hr class="sep"/>
@@ -194,7 +294,42 @@ achat</span></div></div>
 
   <div class="encadre"><p>Conseil : préparez votre dossier de financement avant de commencer les visites. Un acheteur avec un accord de principe bancaire est bien plus crédible et peut négocier de meilleures conditions avec le vendeur.</p></div>
 
-  <div class="cta">
+  
+<h2>Ce qu'il faut vérifier avant de faire une offre</h2>
+<hr class="sep"/>
+<p>Une part des mauvaises surprises se lit dans des documents, pas pendant la visite :</p>
+<ul>
+  <li><strong>En copropriété</strong> : les trois derniers procès-verbaux d'assemblée générale, les travaux votés et non encore appelés, le montant réel des charges, l'état des impayés.</li>
+  <li><strong>En maison</strong> : la conformité de l'assainissement, l'existence d'autorisations pour les extensions et vérandas, la nature du terrain.</li>
+  <li><strong>Dans tous les cas</strong> : l'état des risques, le document d'urbanisme communal — qui indique ce qui peut être construit autour — et les éventuelles servitudes.</li>
+</ul>
+
+<h2>Le coût réel d'un achat</h2>
+<hr class="sep"/>
+<table class="tableau">
+  <thead><tr><th>Poste</th><th>À quel moment</th><th>Souvent oublié</th></tr></thead>
+  <tbody>
+    <tr><td>Frais d'acquisition (dits « frais de notaire »)</td><td>À la signature de l'acte</td><td>Nettement plus élevés dans l'ancien que dans le neuf</td></tr>
+    <tr><td>Garantie du prêt</td><td>À la mise en place du crédit</td><td>Caution ou hypothèque, selon la banque</td></tr>
+    <tr><td>Travaux</td><td>Après l'achat</td><td>À chiffrer par un professionnel <em>avant</em> l'offre, pas après</td></tr>
+    <tr><td>Charges de copropriété</td><td>Chaque trimestre</td><td>Un ascenseur, un chauffage collectif ou une piscine pèsent durablement</td></tr>
+    <tr><td>Taxe foncière</td><td>Chaque année</td><td>Très variable d'une commune à l'autre, à demander au vendeur</td></tr>
+  </tbody>
+</table>
+
+<h2>Faire une offre qui a des chances d'aboutir</h2>
+<hr class="sep"/>
+<ol class="etapes-num">
+  <li><strong>Formuler l'offre par écrit</strong>, avec un prix, une durée de validité et les conditions suspensives.</li>
+  <li><strong>Joindre une preuve de sérieux</strong> : simulation bancaire, accord de principe, justificatif d'apport. C'est ce qui départage deux offres proches.</li>
+  <li><strong>Argumenter une offre inférieure</strong> par des éléments objectifs — travaux chiffrés, défaut constaté — plutôt que par le principe de la négociation.</li>
+  <li><strong>Se donner une limite à l'avance</strong> et s'y tenir : la surenchère se décide à froid, pas dans l'émotion d'une visite.</li>
+</ol>
+<div class="encadre"><p>Le <strong>délai de rétractation de dix jours</strong> après la signature du
+compromis bénéficie à l'acquéreur : il court à compter de la notification et permet de renoncer sans
+justification ni pénalité.</p></div>
+
+<div class="cta">
     <h3>Vous avez un projet d'achat immobilier ?</h3>
     <p>Guillaume Roque vous accompagne dans votre recherche et votre négociation.<br/>Sans frais supplémentaires pour l'acheteur.</p>
     <a href="/#rejoindre">Échanger avec Guillaume →</a>
@@ -207,8 +342,8 @@ achat</span></div></div>
       <img src="/photo-guillaume-avatar.webp" alt="Guillaume Roque" width="64" height="64" loading="lazy" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:top"/>
     </div>
     <div class="auteur-info">
-      <strong>Guillaume Roque</strong>
-      <span>Manager Platinum Partner iad France depuis 2013 · Coordinateur de formation · organisation de plus de 130 conseillers dans 8 pays</span>
+      <strong><a href="/guillaume-roque">Guillaume Roque</a></strong>
+      <span>Conseiller immobilier indépendant iad · manager depuis 2013 · Coordinateur de formation · organisation de plus de 130 conseillers · intervient à Narbonne, dans le Narbonnais, le Minervois et plusieurs secteurs de l'Aude et de l'Hérault</span>
     </div>
   </div>
 <div class="guide-liens"><h2>Aller plus loin</h2><ul><li><a href="/article-narbonne">Le marché immobilier à Narbonne en 2026</a></li><li><a href="/article-minervois">Acheter dans le Minervois : ce qu'il faut savoir</a></li><li><a href="/article-vendre-appartement-narbonne">Les quartiers de Narbonne en pratique</a></li><li><a href="/#rejoindre">Poser vos questions à Guillaume</a></li></ul></div>
