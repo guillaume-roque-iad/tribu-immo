@@ -155,6 +155,27 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
 .cta-local h3{color:#fff;margin:0 0 10px;border:none;padding:0}
 .cta-local p{color:rgba(255,255,255,.93);margin-bottom:16px}
 .cta-local .article-cta-btn{background:#fff;color:var(--bleu,#00709C)}
+
+.bandeau-cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;background:#fff;
+ border:1px solid #DCE7EE;border-radius:14px;box-shadow:0 10px 40px rgba(0,0,0,.18);
+ padding:18px 22px;display:flex;gap:20px;align-items:center;justify-content:space-between;
+ max-width:900px;margin:0 auto;font-size:13.5px;line-height:1.6;color:#333}
+.bandeau-cookies strong{display:block;font-size:14px;color:#00567A;margin-bottom:4px}
+.bandeau-cookies p{margin:0}
+.bandeau-cookies a{color:#00567A;text-decoration:underline}
+.bc-btn{display:flex;gap:10px;flex-shrink:0}
+.bc-btn button{font-family:inherit;font-size:13px;font-weight:700;padding:11px 22px;
+ border-radius:100px;cursor:pointer;border:2px solid #00567A;white-space:nowrap}
+.bc-refuser{background:#fff;color:#00567A}
+.bc-accepter{background:#00567A;color:#fff}
+.bc-refuser:hover{background:#F4F9FC}
+.bc-accepter:hover{background:#00415C}
+.lien-consentement{background:none;border:none;padding:0;font:inherit;color:#fff;opacity:.85;
+ text-decoration:underline;cursor:pointer}
+.lien-consentement:hover{opacity:1}
+@media(max-width:760px){.bandeau-cookies{flex-direction:column;align-items:stretch;gap:14px;
+ left:10px;right:10px;bottom:10px;padding:16px 18px}.bc-btn button{flex:1}}
+@media print{.bandeau-cookies{display:none!important}}
 </style>
 <script type="application/ld+json">
 {
@@ -286,7 +307,7 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
   <div class="articles-grid"><a href="/article-narbonne" class="article-card"><span>À lire aussi</span><strong>Immobilier à Narbonne en 2026</strong></a><a href="/article-aude" class="article-card"><span>À lire aussi</span><strong>Immobilier dans l'Aude en 2026</strong></a><a href="/article-minervois" class="article-card"><span>À lire aussi</span><strong>Immobilier dans le Minervois en 2026</strong></a></div>
 </div>
 
-<footer><p>La Tribu Immo by Guillaume Roque · tribu-immo.com · +33 6 62 10 83 96</p></footer>
+<footer><p>La Tribu Immo by Guillaume Roque · tribu-immo.com · +33 6 62 10 83 96 · <button type="button" class="lien-consentement" onclick="tribuRetirerConsentement()">Retirer mon consentement à la mesure d'audience</button></p></footer>
 <script>
 /* Mémorise l'origine de la visite (page d'entrée, référent, UTM) pour la durée
    de la session, afin de rattacher une candidature à sa source. Aucun cookie. */
@@ -299,5 +320,121 @@ var v=p.get(k);if(v){u.push(k+'='+v);}});
 s.setItem('tribu_utm',u.join(' | ')||'(aucun)');}}catch(e){}})();
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4bf99401a6d845f5b8042887b18e8608"}'></script><!-- Fin Cloudflare Web Analytics -->
+
+<!-- Mesure d'audience Google Analytics 4 — chargée uniquement après consentement -->
+<div id="bandeau-cookies" class="bandeau-cookies" role="dialog" aria-live="polite"
+     aria-label="Consentement à la mesure d'audience">
+  <div class="bc-txt">
+    <strong>Mesure d'audience</strong>
+    <p>Ce site utilise Google Analytics pour comprendre comment ses pages sont consultées.
+    Cet outil dépose des cookies et transmet des données à Google. Il ne se déclenche
+    qu'avec votre accord, et le site fonctionne exactement de la même façon si vous refusez.
+    <a href="/mentions-legales">Consulter la politique relative aux cookies</a>.</p>
+  </div>
+  <div class="bc-btn">
+    <button type="button" id="bc-refuser" class="bc-refuser">Refuser</button>
+    <button type="button" id="bc-accepter" class="bc-accepter">Accepter</button>
+  </div>
+</div>
+<script>
+(function () {
+  var ID = 'G-84HH2T5FZV', CLE = 'tribu_consentement_mesure';
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  window.gtag = gtag;
+
+  /* Refus par défaut, y compris pour les usages publicitaires (Consent Mode v2). */
+  gtag('consent', 'default', {
+    ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+    analytics_storage: 'denied', functionality_storage: 'granted',
+    security_storage: 'granted', wait_for_update: 500
+  });
+
+  var charge = false;
+  function chargerMesure() {
+    if (charge) { return; }
+    charge = true;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag('config', ID, { anonymize_ip: true, send_page_view: true });
+  }
+
+  function lire() { try { return localStorage.getItem(CLE); } catch (e) { return null; } }
+  function ecrire(v) { try { localStorage.setItem(CLE, v); } catch (e) {} }
+
+  var bandeau = document.getElementById('bandeau-cookies');
+  function masquer() { if (bandeau) { bandeau.style.display = 'none'; } }
+
+  function accepter() {
+    ecrire('accepte');
+    gtag('consent', 'update', { analytics_storage: 'granted' });
+    chargerMesure();
+    masquer();
+  }
+  function refuser() { ecrire('refuse'); masquer(); }
+
+  window.tribuRetirerConsentement = function () {
+    ecrire('refuse');
+    try { document.cookie.split(';').forEach(function (c) {
+      var n = c.split('=')[0].trim();
+      if (n.indexOf('_ga') === 0) {
+        document.cookie = n + '=; Max-Age=0; path=/';
+        document.cookie = n + '=; Max-Age=0; path=/; domain=.' + location.hostname;
+      }
+    }); } catch (e) {}
+    alert('Votre consentement a été retiré. La mesure Google Analytics est désactivée sur ce site.');
+    location.reload();
+  };
+
+  var choix = lire();
+  if (choix === 'accepte') { gtag('consent', 'update', { analytics_storage: 'granted' }); chargerMesure(); masquer(); }
+  else if (choix === 'refuse') { masquer(); }
+
+  var a = document.getElementById('bc-accepter'), r = document.getElementById('bc-refuser');
+  if (a) { a.addEventListener('click', accepter); }
+  if (r) { r.addEventListener('click', refuser); }
+
+  /* ---- Événements de conversion ----
+     tribuEvt empile dans dataLayer : si la mesure est refusée, rien n'est transmis. */
+  window.tribuEvt = function (nom, params) { gtag('event', nom, params || {}); };
+
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest ? e.target.closest('[data-evt]') : null;
+    if (!el) { return; }
+    var m = { 'clic-telephone': 'clic_telephone', 'clic-email': 'clic_email',
+              'clic-profil-iad': 'clic_profil_iad',
+              'clic-sortant-iad-estimation': 'clic_sortant_iad_estimation',
+              'clic-estimation': 'clic_estimation' };
+    var nom = m[el.getAttribute('data-evt')];
+    if (nom) { window.tribuEvt(nom, { page: location.pathname }); }
+  }, true);
+
+  /* Ouverture d'un formulaire : premier champ activé. */
+  ['fm', 'fm-estim'].forEach(function (id) {
+    var f = document.getElementById(id);
+    if (!f) { return; }
+    var vu = false;
+    f.addEventListener('focusin', function () {
+      if (vu) { return; }
+      vu = true;
+      window.tribuEvt(id === 'fm' ? 'formulaire_recrutement_ouvert' : 'formulaire_estimation_ouvert',
+                      { page: location.pathname });
+    });
+  });
+
+  /* Téléchargement d'un guide : bouton d'impression PDF. */
+  var imp = document.querySelector('.btn-print button');
+  if (imp) { imp.addEventListener('click', function () {
+    window.tribuEvt('guide_telecharge', { page: location.pathname }); }); }
+
+  /* Pages de confirmation atteintes directement (rechargement, partage de lien). */
+  if (location.pathname.indexOf('/candidature-envoyee') === 0) { window.tribuEvt('candidature_envoyee', { origine: 'page' }); }
+  if (location.pathname.indexOf('/estimation-demandee') === 0) { window.tribuEvt('estimation_demandee', { origine: 'page' }); }
+})();
+</script>
+<!-- Fin mesure d'audience -->
 </body>
 </html>
