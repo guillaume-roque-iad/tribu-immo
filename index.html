@@ -303,6 +303,53 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
 .frgpd strong{color:#4B5563;font-weight:700}
 
 .hero-slogan{font-size:18px;font-weight:500;font-style:italic;color:rgba(255,255,255,0.88);margin:-10px 0 24px;letter-spacing:-.01em}
+
+/* ===== Adaptation aux petits écrans ===== */
+@media(max-width:1024px){
+  .hero>div,.hero-right,.guil>div,.guil-img{min-width:0}
+}
+@media(max-width:760px){
+  .hero{padding:56px 6vw;min-height:0}
+  .hero h1{font-size:clamp(28px,7.4vw,42px)}
+  .hero-slogan{font-size:16px;margin:-6px 0 20px}
+  .hero-sub{font-size:16px;margin-bottom:30px}
+  .hero-btns{margin-bottom:40px;gap:10px}
+  .btn-w,.btn-o{padding:14px 24px;font-size:13.5px}
+  .hero-stats{flex-wrap:wrap;row-gap:22px;padding-top:30px}
+  .hs{flex:1 1 42%;min-width:0;padding-right:14px;margin-right:14px}
+  .hs:nth-child(2n){border-right:none;padding-right:0;margin-right:0}
+  .hs strong{font-size:30px}
+  .navbar{padding:0 4vw;gap:10px}
+  .nb-brand{gap:8px;min-width:0}
+  .nb-logo{height:24px}
+  .nb-sep{height:20px}
+  .nb-name{font-size:10.5px}
+  .nb-cta{font-size:12px;padding:9px 16px;white-space:nowrap;flex-shrink:0}
+  .guil{padding:64px 6vw;gap:40px}
+}
+@media(max-width:420px){
+  .nb-name{font-size:9.5px}
+  .nb-cta{font-size:11px;padding:8px 13px}
+  .hs strong{font-size:26px}
+  .hs span{font-size:10px}
+}
+
+@media(max-width:600px){
+  .metric{padding:32px 12px}
+  .metric strong{font-size:40px}
+  .metric span{font-size:11px;letter-spacing:.06em}
+}
+@media(max-width:420px){
+  .hero-card{left:-10px;padding:12px 14px}
+  .hero-rating{top:-10px;right:-8px;padding:11px 14px}
+  .metric{padding:26px 8px}
+  .metric strong{font-size:34px}
+  .metric span{font-size:10px}
+}
+
+/* Une seule barre collante : le menu de liens défile, la barre de marque reste */
+.qnav{position:static}
+.navbar{top:0}
 </style>
 </head>
 <body>

@@ -71,6 +71,33 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
 .encadre-sources{border-left-color:#EA584A;background:#FFF6F4}
 .encadre-sources p{color:#7A2C21}
 .encadre-sources a{color:#7A2C21;font-weight:700}
+
+/* ===== Adaptation aux petits écrans ===== */
+@media(max-width:760px){
+  nav{padding:12px 4vw;gap:10px}
+  .nav-brand{min-width:0;gap:8px}
+  .nav-name{font-size:10px}
+  .nav-sep{height:24px}
+  .nav-cta{font-size:10px;padding:8px 14px;transform:none;white-space:nowrap;flex-shrink:0}
+  .nav-logo-iad{height:24px!important}
+  .article-hero{padding:52px 6vw 40px}
+  .article-hero h1{font-size:clamp(24px,7vw,32px)}
+  .article-body{padding:36px 6vw}
+  .articles-lies{padding:36px 6vw}
+  .cta{padding:28px 22px}
+  .cta h3{font-size:18px}
+  .auteur{flex-direction:column;text-align:center;gap:14px}
+  table{display:block;width:100%;overflow-x:auto}
+  .som,.franc,.encadre{padding:16px 18px}
+  .etapes li{padding:14px 16px 14px 52px}
+  .etapes li::before{left:14px}
+  .guide-liens{padding:24px 6vw 36px}
+}
+@media(max-width:420px){
+  .nav-name{font-size:9px}
+  .nav-cta{font-size:9.5px;padding:7px 11px}
+  .auteur-photo{width:56px;height:56px}
+}
 </style>
 <script type="application/ld+json">
 {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://tribu-immo.com/"}, {"@type": "ListItem", "position": 2, "name": "Immobilier dans les Hauts Cantons de l'Hérault 2026", "item": "https://tribu-immo.com/article-herault-hauts-cantons"}]}
