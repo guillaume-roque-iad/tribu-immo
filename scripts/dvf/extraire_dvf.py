@@ -172,11 +172,34 @@ def serie(mutations: list[dict]) -> dict:
 
 # ─────────────────────────────────────────────────────────── lecture des sources
 
+def url_source(chemin: str) -> str:
+    """Construit l'URL officielle d'un fichier communal à partir de sa clé de cache.
+
+    La clé de cache et les clés du dictionnaire `EMPREINTES` sont de la forme
+    `<annee>/<departement>/<insee>.csv`. L'arborescence publiée par Etalab
+    intercale un segment `communes` que cette clé ne porte pas :
+
+        clé    : 2024/34/34245.csv
+        URL    : …/latest/csv/2024/communes/34/34245.csv
+
+    Concaténer la clé à la racine produisait une URL sans ce segment, donc un
+    HTTP 404, et la vérification `--avec-sources` échouait silencieusement sur
+    « sources inaccessibles ». Le segment est désormais inséré ici, à un seul
+    endroit, et la forme de la clé est contrôlée pour que l'erreur ne puisse pas
+    réapparaître sans être signalée.
+    """
+    elements = chemin.split("/")
+    if len(elements) != 3:
+        raise ValueError(f"Chemin DVF invalide : {chemin}")
+    annee, departement, fichier = elements
+    return f"{RACINE_DVF}/{annee}/communes/{departement}/{fichier}"
+
+
 def telecharger(chemin: str) -> str:
     local = CACHE / chemin
     if local.exists():
         return local.read_text(encoding="utf-8")
-    with urllib.request.urlopen(f"{RACINE_DVF}/{chemin}", timeout=180) as reponse:
+    with urllib.request.urlopen(url_source(chemin), timeout=180) as reponse:
         texte = reponse.read().decode("utf-8")
     local.parent.mkdir(parents=True, exist_ok=True)
     local.write_text(texte, encoding="utf-8")
@@ -691,17 +714,56 @@ def verifier() -> int:
     ]
 
     sources_disponibles = CACHE.exists() or "--avec-sources" in sys.argv
+    resume_sources = ""
     if sources_disponibles:
         try:
             mutations, journal, empreintes = charger()
             recalcules = calculer(mutations)
             ecarts = []
+
+            # 1. les 18 fichiers attendus ont bien été lus
+            if len(empreintes) != len(EMPREINTES):
+                ecarts.append(f"{len(empreintes)} fichiers lus contre {len(EMPREINTES)} attendus")
+
+            # 2. chaque empreinte SHA-256 correspond à celle de la publication
+            divergentes = [c for c, v in empreintes.items() if not v["conforme"]]
+            for chemin in divergentes:
+                ecarts.append(f"empreinte différente pour {chemin} — le millésime DVF a changé, "
+                              f"relancer --recalculer plutôt que de modifier les données publiées")
+
+            # 3. le volume de mutations retenues est retrouvé
             if journal["retenues"] != publie["exclusions"]["retenues"]:
                 ecarts.append(f"{journal['retenues']} mutations retenues contre "
                               f"{publie['exclusions']['retenues']} publiées")
-            if recalcules != resultats:
-                ecarts.append("les résultats recalculés diffèrent des résultats publiés")
+
+            # 4. le journal complet des exclusions est retrouvé
+            for cle, attendu in publie["exclusions"].items():
+                if journal.get(cle, 0) != attendu:
+                    ecarts.append(f"exclusions/{cle} : {journal.get(cle, 0)} contre {attendu}")
+
+            # 5. toutes les séries, consolidées comme annuelles, sont identiques
+            for commune, bloc in recalcules.items():
+                for type_bien, entree in bloc["types"].items():
+                    publiee = resultats.get(commune, {}).get("types", {}).get(type_bien)
+                    if entree != publiee:
+                        for champ in set(entree) | set(publiee or {}):
+                            if champ == "par_annee":
+                                continue
+                            if entree.get(champ) != (publiee or {}).get(champ):
+                                ecarts.append(f"{commune}/{type_bien}/{champ} : "
+                                              f"{entree.get(champ)} recalculé contre "
+                                              f"{(publiee or {}).get(champ)} publié")
+                        for annee, serie_an in entree.get("par_annee", {}).items():
+                            attendue = (publiee or {}).get("par_annee", {}).get(annee)
+                            if serie_an != attendue:
+                                ecarts.append(f"{commune}/{type_bien}/{annee} : "
+                                              f"{serie_an} recalculé contre {attendue} publié")
+
             controles.append(("recalcul depuis les fichiers officiels", ecarts))
+            conformes = len(empreintes) - len(divergentes)
+            resume_sources = (f"{len(empreintes)} fichiers officiels téléchargés · "
+                              f"{conformes} empreintes SHA-256 conformes sur {len(empreintes)} · "
+                              f"{journal['retenues']} mutations recalculées")
         except Exception as erreur:  # réseau indisponible, source déplacée…
             controles.append(("recalcul depuis les fichiers officiels",
                               [f"sources inaccessibles : {erreur}"]))
@@ -713,10 +775,12 @@ def verifier() -> int:
             print(f"     {anomalie}")
         total += len(anomalies)
 
+    if resume_sources:
+        print(f"\n{resume_sources}")
     if not sources_disponibles:
-        print("ℹ️  recalcul depuis les fichiers officiels non exécuté : aucun cache local "
-              "dans scripts/dvf/sources/. Lancer --recalculer sur une machine disposant "
-              "d'un accès réseau pour l'effectuer et alimenter le cache.")
+        print("\nℹ️  recalcul depuis les fichiers officiels non exécuté : ni cache local dans "
+              "scripts/dvf/sources/, ni option --avec-sources. Sur une machine disposant d'un "
+              "accès réseau, lancer : extraire_dvf.py --verifier --avec-sources")
 
     publiees = sum(1 for b in resultats.values() for e in b["types"].values() if e["publie"])
     print(f"\n{publiees} séries publiées sur {len(resultats) * 2} · "
