@@ -1,0 +1,40 @@
+# En-têtes HTTP du site — lus par Cloudflare Workers (static assets).
+# Ce fichier n'est jamais servi : Cloudflare l'interprète puis l'exclut des
+# ressources publiques, comme _redirects.
+#
+# Les redirections (.html vers URL sans extension, www vers domaine nu) restent
+# gérées par les Redirect Rules de la zone Cloudflare et ne sont pas touchées ici.
+
+/*
+  # Empêche le navigateur de deviner un type MIME différent de celui annoncé.
+  X-Content-Type-Options: nosniff
+
+  # Le référent complet reste interne au site ; vers l'extérieur, seule l'origine
+  # est transmise, et rien du tout en cas de passage HTTPS vers HTTP.
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Le site n'utilise ni caméra, ni micro, ni géolocalisation : on les refuse.
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+  # Protection contre l'intégration du site dans une iframe tierce.
+  # X-Frame-Options pour les navigateurs anciens, frame-ancestors pour les autres.
+  X-Frame-Options: SAMEORIGIN
+  Content-Security-Policy: frame-ancestors 'self'
+
+  # HSTS. Vérifié avant activation le 15/08/2026 : http://tribu-immo.com et
+  # http://www.tribu-immo.com redirigent tous deux vers https://tribu-immo.com.
+  # Volontairement SANS includeSubDomains et SANS preload : les deux engagent
+  # l'ensemble des sous-domaines, présents et à venir, et ne se révoquent pas
+  # rapidement. À n'ajouter qu'après avoir vérifié chaque sous-domaine.
+  Strict-Transport-Security: max-age=31536000
+
+  # Politique de sécurité du contenu, en observation seulement.
+  # Elle n'est pas encore appliquée : le site charge des scripts en ligne et des
+  # gestionnaires onsubmit/onclick, et les formulaires envoient vers Google Apps
+  # Script. Une CSP appliquée trop tôt casserait l'estimation et la candidature.
+  # Inventaire des ressources réellement chargées :
+  #   scripts   : en ligne, Cloudflare Web Analytics, Google Tag Manager (GA4)
+  #   styles    : en ligne, Google Fonts
+  #   polices   : fonts.gstatic.com
+  #   connexions: Google Apps Script (formulaires), Cloudflare Insights, GA4
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://cloudflareinsights.com https://static.cloudflareinsights.com https://www.google-analytics.com https://region1.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'

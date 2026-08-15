@@ -144,6 +144,12 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
 @media(max-width:760px){.bandeau-cookies{flex-direction:column;align-items:stretch;gap:14px;
  left:10px;right:10px;bottom:10px;padding:16px 18px}.bc-btn button{flex:1}}
 @media print{.bandeau-cookies{display:none!important}}
+
+/* Lien d'évitement : hors écran, il revient au premier plan dès qu'il a le focus
+   clavier. Premier élément atteignable, il permet de sauter la navigation. */
+.skip-link{position:absolute;left:-9999px;top:0;z-index:9999;background:#00567A;color:#fff;
+padding:12px 18px;font-size:14px;font-weight:700;text-decoration:none;border-radius:0 0 8px 0}
+.skip-link:focus{left:0}
 </style>
 <script type="application/ld+json">
 {
@@ -164,12 +170,12 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
     "url": "https://tribu-immo.com/"
    },
    "datePublished": "2026-08-12",
-   "dateModified": "2026-08-14",
+   "dateModified": "2026-08-15",
    "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://tribu-immo.com/guide-3-acheter",
     "datePublished": "2026-08-14",
-    "dateModified": "2026-08-14",
+    "dateModified": "2026-08-15",
     "inLanguage": "fr-FR"
    },
    "url": "https://tribu-immo.com/guide-3-acheter"
@@ -239,6 +245,8 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
 </script>
 </head>
 <body>
+<a class="skip-link" href="#contenu-principal">Aller au contenu principal</a>
+
 <nav>
   <div style="display:flex;align-items:center;gap:16px">
     <img src="/logo-iad.webp" width="170" height="120" alt="iad Immobilier" style="height:40px;width:auto"/>
@@ -250,6 +258,7 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
   </div>
   <a href="https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque" data-evt="clic-profil-iad" target="_blank" style="background:var(--corail-fonce);color:#fff;font-size:11px;font-weight:800;font-style:italic;padding:10px 20px;border-radius:100px;text-decoration:none;transform:rotate(-2deg);display:inline-block">Rejoindre la Tribu !</a>
 </nav>
+<main id="contenu-principal">
 <div class="cover">
   <div class="cover-left">
     <div class="cover-tag">Guide de l'acheteur 2026</div>
@@ -273,7 +282,7 @@ d'endettement max</span></div><div class="cover-stat"><strong>Financement</stron
     Imprimer / Sauvegarder en PDF
   </button>
 </div>
-<div class="content">
+<article class="content">
 <section class="resume">
   <h2>À retenir</h2>
   <ul>
@@ -357,7 +366,7 @@ justification ni pénalité.</p></div>
     <a href="/#rejoindre">Échanger avec Guillaume →</a>
   </div>
 
-</div>
+</article>
 
   <div class="article-auteur">
     <div class="auteur-avatar" style="width:60px;height:60px;border-radius:50%;border:3px solid var(--bleu);overflow:hidden;flex-shrink:0">
@@ -369,6 +378,7 @@ justification ni pénalité.</p></div>
     </div>
   </div>
 <div class="guide-liens"><h2>Aller plus loin</h2><ul><li><a href="/article-narbonne">Le marché immobilier à Narbonne en 2026</a></li><li><a href="/article-minervois">Acheter dans le Minervois : ce qu'il faut savoir</a></li><li><a href="/article-vendre-appartement-narbonne">Les quartiers de Narbonne en pratique</a></li><li><a href="/#rejoindre">Poser vos questions à Guillaume</a></li></ul></div>
+</main>
 <footer><p>La Tribu Immo by Guillaume Roque · tribu-immo.com · +33 6 62 10 83 96 · <button type="button" class="lien-consentement" onclick="tribuRetirerConsentement()">Retirer mon consentement à la mesure d'audience</button></p></footer>
 <script>
 /* Mémorise l'origine de la visite (page d'entrée, référent, UTM) pour la durée

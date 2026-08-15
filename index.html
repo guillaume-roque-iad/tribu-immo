@@ -476,9 +476,17 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
 @media(max-width:760px){.bandeau-cookies{flex-direction:column;align-items:stretch;gap:14px;
  left:10px;right:10px;bottom:10px;padding:16px 18px}.bc-btn button{flex:1}}
 @media print{.bandeau-cookies{display:none!important}}
+
+/* Lien d'évitement : hors écran, il revient au premier plan dès qu'il a le focus
+   clavier. Premier élément atteignable, il permet de sauter la navigation. */
+.skip-link{position:absolute;left:-9999px;top:0;z-index:9999;background:#00567A;color:#fff;
+padding:12px 18px;font-size:14px;font-weight:700;text-decoration:none;border-radius:0 0 8px 0}
+.skip-link:focus{left:0}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#contenu-principal">Aller au contenu principal</a>
+
 
 <!-- QUICKNAV -->
 <div class="qnav">
@@ -514,7 +522,7 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
   <a href="#rejoindre" class="nb-cta">Rejoindre la Tribu</a>
 </nav>
 
-<main>
+<main id="contenu-principal">
 <!-- HERO -->
 <section class="hero">
   <div>
@@ -871,7 +879,6 @@ footer{background:var(--bleu-fonce);padding:56px 8vw 36px}
         <div class="fti"><strong>45 minutes en visioconférence</strong> : le métier au quotidien, le statut d'agent commercial, les frais à prévoir, vos questions</div>
         <div class="fti"><strong>Sans engagement</strong> et sans pression commerciale</div>
         <div class="fti"><strong>Aucune promesse de revenu</strong> : l'activité est entièrement variable</div>
-      </div>
       </div>
   </div>
   <div class="fr">
