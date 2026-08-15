@@ -4,8 +4,8 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Baromètre immobilier Narbonne, Minervois et Biterrois</title>
-<meta name="description" content="Comment lire les prix immobiliers de Narbonne, du Minervois et du Biterrois : sources officielles, méthode et limites des données."/>
+<title>Prix immobiliers Narbonne, Carcassonne, Hauts Cantons (DVF)</title>
+<meta name="description" content="Prix médians des maisons et appartements à Narbonne, Carcassonne, Lézignan, Quarante, Saint-Chinian et Saint-Pons, calculés sur les ventes DVF 2023-2025."/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://tribu-immo.com/barometre-immobilier-narbonne-minervois"/>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800&display=swap" rel="stylesheet"/>
@@ -17,11 +17,11 @@
    "@type": "WebPage",
    "@id": "https://tribu-immo.com/barometre-immobilier-narbonne-minervois#page",
    "url": "https://tribu-immo.com/barometre-immobilier-narbonne-minervois",
-   "name": "Baromètre immobilier Narbonne, Minervois et Biterrois",
-   "description": "Comment lire les prix immobiliers de Narbonne, du Minervois et du Biterrois : sources officielles, méthode et limites des données.",
+   "name": "Prix immobiliers Narbonne, Carcassonne et Hauts Cantons : médianes DVF 2023-2025",
+   "description": "Prix médians des maisons et des appartements à Narbonne, Carcassonne, Lézignan-Corbières, Quarante, Saint-Chinian et Saint-Pons-de-Thomières, calculés à partir des demandes de valeurs foncières (DVF) pour les ventes enregistrées du 1er janvier 2023 au 31 décembre 2025. Méthode, exclusions, nombre de mutations retenues et script d'extraction publiés.",
    "inLanguage": "fr-FR",
    "datePublished": "2026-08-14",
-   "dateModified": "2026-08-14",
+   "dateModified": "2026-08-15",
    "isPartOf": {
     "@id": "https://tribu-immo.com/#site"
    },
@@ -41,11 +41,11 @@
   {
    "@type": "Article",
    "@id": "https://tribu-immo.com/barometre-immobilier-narbonne-minervois#article",
-   "headline": "Baromètre immobilier Narbonne, Minervois et Biterrois : sources, méthode et limites",
-   "description": "Guide méthodologique pour lire les prix immobiliers de Narbonne, du Minervois et du Biterrois : où trouver les données officielles, comment les interpréter et ce qu'elles ne disent pas. Aucun chiffre n'est publié tant que le calcul n'a pas été effectué et vérifié sur les données officielles.",
+   "headline": "Prix immobiliers à Narbonne, Carcassonne et dans les Hauts Cantons : médianes calculées sur les ventes DVF 2023-2025",
+   "description": "Prix médians des maisons et des appartements à Narbonne, Carcassonne, Lézignan-Corbières, Quarante, Saint-Chinian et Saint-Pons-de-Thomières, calculés à partir des demandes de valeurs foncières (DVF) pour les ventes enregistrées du 1er janvier 2023 au 31 décembre 2025. Méthode, exclusions, nombre de mutations retenues et script d'extraction publiés.",
    "inLanguage": "fr-FR",
    "datePublished": "2026-08-14",
-   "dateModified": "2026-08-14",
+   "dateModified": "2026-08-15",
    "author": {
     "@id": "https://tribu-immo.com/#guillaume-roque"
    },
@@ -55,23 +55,49 @@
    "mainEntityOfPage": {
     "@id": "https://tribu-immo.com/barometre-immobilier-narbonne-minervois#page"
    },
-   "articleSection": "Méthode",
+   "articleSection": "Données locales",
    "about": [
     {
      "@type": "City",
      "name": "Narbonne",
+     "identifier": "11262",
      "addressRegion": "Occitanie",
      "addressCountry": "FR"
     },
     {
-     "@type": "Place",
-     "name": "Minervois",
-     "description": "Territoire viticole à cheval sur l'Aude et l'Hérault"
+     "@type": "City",
+     "name": "Carcassonne",
+     "identifier": "11069",
+     "addressRegion": "Occitanie",
+     "addressCountry": "FR"
     },
     {
-     "@type": "Place",
-     "name": "Biterrois",
-     "description": "Bassin de Béziers, dans l'Hérault"
+     "@type": "City",
+     "name": "Lézignan-Corbières",
+     "identifier": "11203",
+     "addressRegion": "Occitanie",
+     "addressCountry": "FR"
+    },
+    {
+     "@type": "City",
+     "name": "Quarante",
+     "identifier": "34226",
+     "addressRegion": "Occitanie",
+     "addressCountry": "FR"
+    },
+    {
+     "@type": "City",
+     "name": "Saint-Chinian",
+     "identifier": "34245",
+     "addressRegion": "Occitanie",
+     "addressCountry": "FR"
+    },
+    {
+     "@type": "City",
+     "name": "Saint-Pons-de-Thomières",
+     "identifier": "34284",
+     "addressRegion": "Occitanie",
+     "addressCountry": "FR"
     },
     {
      "@type": "Thing",
@@ -79,7 +105,11 @@
     },
     {
      "@type": "Thing",
-     "name": "Transactions immobilières"
+     "name": "Demandes de valeurs foncières"
+    },
+    {
+     "@type": "Thing",
+     "name": "Prix médian au mètre carré"
     }
    ],
    "citation": [
@@ -110,7 +140,11 @@
      },
      "url": "https://www.insee.fr/"
     }
-   ]
+   ],
+   "temporalCoverage": "2023-01-01/2025-12-31",
+   "isBasedOn": {
+    "@id": "https://tribu-immo.com/barometre-immobilier-narbonne-minervois#donnees"
+   }
   },
   {
    "@type": "Person",
@@ -177,8 +211,146 @@
     {
      "@type": "ListItem",
      "position": 3,
-     "name": "Baromètre immobilier Narbonne, Minervois et Biterrois",
+     "name": "Prix immobiliers Narbonne, Carcassonne et Hauts Cantons : médianes DVF 2023-2025",
      "item": "https://tribu-immo.com/barometre-immobilier-narbonne-minervois"
+    }
+   ]
+  },
+  {
+   "@type": "Dataset",
+   "@id": "https://tribu-immo.com/barometre-immobilier-narbonne-minervois#donnees",
+   "name": "Prix médians des logements vendus à Narbonne, Carcassonne, Lézignan-Corbières, Quarante, Saint-Chinian et Saint-Pons-de-Thomières, 2023-2025",
+   "description": "Médianes de prix, de surface et de prix au mètre carré calculées à partir des demandes de valeurs foncières, après regroupement par mutation et exclusion des mutations multiples, des locaux commerciaux et des cessions symboliques. 6 148 mutations retenues sur 8 712 examinées. Aucune statistique n'est publiée en dessous de 30 mutations.",
+   "url": "https://tribu-immo.com/barometre-immobilier-narbonne-minervois",
+   "inLanguage": "fr-FR",
+   "temporalCoverage": "2023-01-01/2025-12-31",
+   "dateModified": "2026-08-15",
+   "license": "https://www.etalab.gouv.fr/licence-ouverte-open-licence",
+   "creator": {
+    "@id": "https://tribu-immo.com/#guillaume-roque"
+   },
+   "publisher": {
+    "@id": "https://tribu-immo.com/#organisation"
+   },
+   "measurementTechnique": "Médiane des mutations retenues, regroupées par id_mutation ; prix au mètre carré calculé vente par vente puis médiané",
+   "variableMeasured": [
+    {
+     "@type": "PropertyValue",
+     "name": "Prix médian d'une maison vendue à Narbonne",
+     "value": 228000,
+     "unitCode": "EUR",
+     "measurementMethod": "médiane sur 1097 mutations"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Prix médian d'un appartement vendu à Narbonne",
+     "value": 100000,
+     "unitCode": "EUR",
+     "measurementMethod": "médiane sur 2032 mutations"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Prix médian d'une maison vendue à Carcassonne",
+     "value": 148200,
+     "unitCode": "EUR",
+     "measurementMethod": "médiane sur 1169 mutations"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Prix médian d'un appartement vendu à Carcassonne",
+     "value": 67500,
+     "unitCode": "EUR",
+     "measurementMethod": "médiane sur 1125 mutations"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Prix médian d'une maison vendue à Lézignan-Corbières",
+     "value": 150000,
+     "unitCode": "EUR",
+     "measurementMethod": "médiane sur 354 mutations"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Prix médian d'un appartement vendu à Lézignan-Corbières",
+     "value": 77350,
+     "unitCode": "EUR",
+     "measurementMethod": "médiane sur 106 mutations"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Prix médian d'une maison vendue à Quarante",
+     "value": 114000,
+     "unitCode": "EUR",
+     "measurementMethod": "médiane sur 86 mutations"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Prix médian d'une maison vendue à Saint-Chinian",
+     "value": 127000,
+     "unitCode": "EUR",
+     "measurementMethod": "médiane sur 89 mutations"
+    },
+    {
+     "@type": "PropertyValue",
+     "name": "Prix médian d'une maison vendue à Saint-Pons-de-Thomières",
+     "value": 59894,
+     "unitCode": "EUR",
+     "measurementMethod": "médiane sur 74 mutations"
+    }
+   ],
+   "spatialCoverage": [
+    {
+     "@type": "City",
+     "name": "Narbonne",
+     "identifier": "11262"
+    },
+    {
+     "@type": "City",
+     "name": "Carcassonne",
+     "identifier": "11069"
+    },
+    {
+     "@type": "City",
+     "name": "Lézignan-Corbières",
+     "identifier": "11203"
+    },
+    {
+     "@type": "City",
+     "name": "Quarante",
+     "identifier": "34226"
+    },
+    {
+     "@type": "City",
+     "name": "Saint-Chinian",
+     "identifier": "34245"
+    },
+    {
+     "@type": "City",
+     "name": "Saint-Pons-de-Thomières",
+     "identifier": "34284"
+    }
+   ],
+   "isBasedOn": {
+    "@type": "Dataset",
+    "name": "Demandes de valeurs foncières (DVF)",
+    "url": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres",
+    "creator": {
+     "@type": "GovernmentOrganization",
+     "name": "Direction générale des finances publiques"
+    }
+   },
+   "distribution": [
+    {
+     "@type": "DataDownload",
+     "encodingFormat": "application/json",
+     "contentUrl": "https://tribu-immo.com/scripts/dvf/resultats-2023-2025.json",
+     "name": "Résultats calculés, avec journal des exclusions et empreintes des sources"
+    },
+    {
+     "@type": "DataDownload",
+     "encodingFormat": "text/x-python",
+     "contentUrl": "https://tribu-immo.com/scripts/dvf/extraire_dvf.py",
+     "name": "Script d'extraction et de calcul reproductible"
     }
    ]
   }
@@ -333,38 +505,147 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
 </nav>
 
 
-<nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/">Accueil</a> › <a href="/article-estimation-narbonne">Estimation immobilière à Narbonne</a> › <span aria-current="page">Baromètre Narbonne, Minervois et Biterrois</span></nav>
+<nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/">Accueil</a> › <a href="/article-estimation-narbonne">Estimation immobilière à Narbonne</a> › <span aria-current="page">Prix immobiliers Narbonne, Carcassonne et Hauts Cantons</span></nav>
 <div class="article-hero">
-  <div class="article-label">Méthode</div>
-  <h1>Baromètre immobilier <em>Narbonne, Minervois et Biterrois</em></h1>
+  <div class="article-label">Données locales</div>
+  <h1>Prix immobiliers à Narbonne, Carcassonne et dans les Hauts Cantons&nbsp;: <br/><em>les médianes DVF 2023-2025</em></h1>
   <div class="article-meta">
     <span>Par <a href="/guillaume-roque">Guillaume Roque</a></span>
     <span>•</span><span>Conseiller immobilier indépendant iad</span>
     <span>•</span><span>Publié le 14 août 2026</span>
-    <span>•</span><span>Mise à jour : 14 août 2026</span>
+    <span>•</span><span>Mise à jour : 15 août 2026</span>
   </div>
 </div>
 
 <div class="article-body">
 <section class="resume">
-    <h2>À retenir</h2>
+    <h2>Les points essentiels</h2>
+    <p>Les chiffres ci-dessous sont calculés à partir des demandes de valeurs foncières (DVF), la base des
+    ventes réellement enregistrées chez le notaire. Ils portent sur les trois dernières années complètes,
+    du 1<sup>er</sup> janvier 2023 au 31 décembre 2025.</p>
     <ul>
-      <li>Cette page explique <strong>comment lire un prix immobilier local</strong> et d'où viennent les chiffres que l'on trouve en ligne.</li>
-      <li>La seule base de référence est <strong>DVF</strong>, qui recense les <strong>prix réellement enregistrés</strong> chez le notaire — et non les prix affichés dans les annonces.</li>
-      <li>Une <strong>médiane décrit un secteur, mais elle ne permet pas d'estimer précisément un logement</strong>. Deux biens proches peuvent se vendre à des niveaux différents selon leur état, leur exposition, leurs extérieurs, leur stationnement, leur performance énergétique et leur emplacement exact.</li>
-      <li>Aucun chiffre n'est publié ici tant que le calcul n'a pas été effectué et vérifié sur les données officielles.</li>
+      <li>Une maison vendue à Narbonne l'a été à un prix médian de <strong>228&nbsp;000&nbsp;€</strong>,
+      sur 1&nbsp;097 ventes retenues. Un appartement&nbsp;: <strong>100&nbsp;000&nbsp;€</strong>, sur
+      2&nbsp;032 ventes.</li>
+      <li>À Carcassonne, la médiane est de <strong>148&nbsp;200&nbsp;€</strong> pour une maison et de
+      <strong>67&nbsp;500&nbsp;€</strong> pour un appartement. À Lézignan-Corbières,
+      <strong>150&nbsp;000&nbsp;€</strong> et <strong>77&nbsp;350&nbsp;€</strong>.</li>
+      <li>Dans les villages des Hauts Cantons, les médianes sont nettement plus basses et reposent sur peu
+      de ventes&nbsp;: <strong>127&nbsp;000&nbsp;€</strong> à Saint-Chinian (89 ventes),
+      <strong>114&nbsp;000&nbsp;€</strong> à Quarante (86 ventes),
+      <strong>59&nbsp;894&nbsp;€</strong> à Saint-Pons-de-Thomières (74 ventes).</li>
+      <li>Maisons et appartements sont comptés séparément. Les mélanger produirait un chiffre qui ne
+      correspond à aucun bien réel.</li>
+      <li>Aucune statistique n'est publiée en dessous de 30 ventes. Trois séries sur douze restent donc
+      vides&nbsp;: le marché de l'appartement dans les trois villages.</li>
+      <li>Une médiane décrit un ensemble de ventes, pas un logement. L'écart entre deux biens de même
+      surface dans la même commune peut être considérable, et DVF ne contient ni l'état, ni l'exposition,
+      ni les extérieurs, ni la performance énergétique.</li>
     </ul>
   </section>
+  <h2>Prix médians enregistrés entre 2023 et 2025</h2>
+  <p>Chaque ligne correspond à des ventes réellement signées, regroupées par mutation, filtrées et
+  recalculées. La colonne « ventes retenues » indique sur combien de transactions repose la médiane&nbsp;:
+  c'est elle qui donne son poids au chiffre.</p>
+  <table>
+    <thead><tr><th>Commune</th><th>Type</th><th>Ventes retenues</th><th>Prix médian</th>
+    <th>Moitié centrale des ventes</th><th>Surface médiane</th><th>Prix au m² bâti</th></tr></thead>
+    <tbody>
+      <tr><td><a href="/article-narbonne">Narbonne</a></td><td>Maison</td><td>1097</td><td><strong>228&nbsp;000&nbsp;€</strong></td><td>172&nbsp;500&nbsp;€ à 300&nbsp;000&nbsp;€</td><td>89&nbsp;m²</td><td>2699&nbsp;€ · terrain 257&nbsp;m²</td></tr>
+      <tr><td><a href="/article-narbonne">Narbonne</a></td><td>Appartement</td><td>2032</td><td><strong>100&nbsp;000&nbsp;€</strong></td><td>73&nbsp;000&nbsp;€ à 140&nbsp;700&nbsp;€</td><td>47&nbsp;m²</td><td>2222&nbsp;€ · terrain —</td></tr>
+      <tr><td><a href="/article-carcassonne">Carcassonne</a></td><td>Maison</td><td>1169</td><td><strong>148&nbsp;200&nbsp;€</strong></td><td>115&nbsp;000&nbsp;€ à 196&nbsp;600&nbsp;€</td><td>91&nbsp;m²</td><td>1638&nbsp;€ · terrain 303&nbsp;m²</td></tr>
+      <tr><td><a href="/article-carcassonne">Carcassonne</a></td><td>Appartement</td><td>1125</td><td><strong>67&nbsp;500&nbsp;€</strong></td><td>53&nbsp;000&nbsp;€ à 90&nbsp;000&nbsp;€</td><td>55&nbsp;m²</td><td>1253&nbsp;€ · terrain —</td></tr>
+      <tr><td><a href="/article-lezignan">Lézignan-Corbières</a></td><td>Maison</td><td>354</td><td><strong>150&nbsp;000&nbsp;€</strong></td><td>108&nbsp;606&nbsp;€ à 200&nbsp;000&nbsp;€</td><td>89&nbsp;m²</td><td>1761&nbsp;€ · terrain 257&nbsp;m²</td></tr>
+      <tr><td><a href="/article-lezignan">Lézignan-Corbières</a></td><td>Appartement</td><td>106</td><td><strong>77&nbsp;350&nbsp;€</strong></td><td>63&nbsp;070&nbsp;€ à 92&nbsp;150&nbsp;€</td><td>58&nbsp;m²</td><td>1390&nbsp;€ · terrain —</td></tr>
+      <tr><td><a href="/article-quarante">Quarante</a></td><td>Maison</td><td>86</td><td><strong>114&nbsp;000&nbsp;€</strong></td><td>68&nbsp;800&nbsp;€ à 214&nbsp;800&nbsp;€</td><td>90&nbsp;m²</td><td>1508&nbsp;€ · terrain 122&nbsp;m²</td></tr>
+      <tr><td><a href="/article-quarante">Quarante</a></td><td>Appartement</td><td>0</td><td colspan="4"><em>Volume de transactions insuffisant pour publier une statistique robuste.</em></td></tr>
+      <tr><td><a href="/article-saint-chinian">Saint-Chinian</a></td><td>Maison</td><td>89</td><td><strong>127&nbsp;000&nbsp;€</strong></td><td>70&nbsp;000&nbsp;€ à 190&nbsp;000&nbsp;€</td><td>80&nbsp;m²</td><td>1606&nbsp;€ · terrain 105&nbsp;m²</td></tr>
+      <tr><td><a href="/article-saint-chinian">Saint-Chinian</a></td><td>Appartement</td><td>2</td><td colspan="4"><em>Volume de transactions insuffisant pour publier une statistique robuste.</em></td></tr>
+      <tr><td><a href="/article-saint-pons">Saint-Pons-de-Thomières</a></td><td>Maison</td><td>74</td><td><strong>59&nbsp;894&nbsp;€</strong></td><td>38&nbsp;250&nbsp;€ à 92&nbsp;841&nbsp;€</td><td>69&nbsp;m²</td><td>793&nbsp;€ · terrain 66&nbsp;m²</td></tr>
+      <tr><td><a href="/article-saint-pons">Saint-Pons-de-Thomières</a></td><td>Appartement</td><td>14</td><td colspan="4"><em>Volume de transactions insuffisant pour publier une statistique robuste.</em></td></tr>
+    </tbody>
+  </table>
+  <p class="source-note"><em>Source&nbsp;: demandes de valeurs foncières (DVF), direction générale des
+  finances publiques, millésime publié le 18&nbsp;mai&nbsp;2026, extrait le 15&nbsp;août&nbsp;2026.
+  Période&nbsp;: 1<sup>er</sup> janvier 2023 au 31 décembre 2025. Codes INSEE vérifiés auprès de
+  l'API Découpage administratif de l'État.</em></p>
 
-  <h2>Pourquoi cette page ne publie encore aucun chiffre</h2>
-  <p>Publier une médiane suppose de l'avoir calculée, pas de l'avoir recopiée. Tant que l'extraction et le
-  calcul n'ont pas été menés sur les données officielles, aucune valeur ne figure ici. Un chiffre approximatif
-  présenté comme une référence causerait plus de tort qu'une absence de chiffre&nbsp;: il servirait d'ancrage
-  dans une négociation, alors qu'il ne reposerait sur rien.</p>
-  <p>En attendant, cette page donne ce qui est immédiatement utile&nbsp;: <strong>où trouver les données
-  vous-même</strong>, <strong>comment les lire</strong>, et <strong>ce qu'elles ne disent pas</strong>.</p>
+  <div class="encadre">
+    <p>La colonne « moitié centrale des ventes » donne l'intervalle dans lequel se situent 50&nbsp;% des
+    transactions, un quart restant en dessous et un quart au-dessus. À Quarante, cet intervalle va de
+    68&nbsp;800&nbsp;€ à 214&nbsp;800&nbsp;€ pour une maison&nbsp;: c'est cette dispersion, et non la
+    médiane seule, qui décrit réellement le marché d'un village.</p>
+  </div>
 
-  <h2>Les sources officielles, consultables directement</h2>
+  <h3>Pourquoi le prix au m² d'une maison doit être lu avec prudence</h3>
+  <p>DVF enregistre la surface bâtie, jamais la valeur du terrain séparément. Le prix au mètre carré d'une
+  maison rapporte donc le prix total — terrain compris — à la seule surface habitable. Deux maisons
+  identiques, l'une sur 100&nbsp;m² de terrain et l'autre sur 2&nbsp;000&nbsp;m², afficheront un prix au m²
+  très différent sans que le bâti y soit pour quoi que ce soit. C'est pourquoi la surface de terrain médiane
+  figure dans le tableau. Pour un appartement, l'indicateur ne pose pas ce problème.</p>
+
+  <h2>Année par année, là où le volume le permet</h2>
+  <p>Seules Narbonne, Carcassonne et Lézignan-Corbières atteignent, chaque année, un nombre de ventes
+  suffisant. Pour les trois villages, le découpage annuel descend sous le seuil de publication&nbsp;: seule
+  la médiane sur trois ans est publiée.</p>
+  <table>
+    <thead><tr><th>Commune et type</th><th>2023</th><th>2024</th><th>2025</th></tr></thead>
+    <tbody>
+      <tr><td>Narbonne — maison</td><td>230&nbsp;000&nbsp;€<br/><em>347 ventes</em></td><td>224&nbsp;700&nbsp;€<br/><em>359 ventes</em></td><td>230&nbsp;900&nbsp;€<br/><em>391 ventes</em></td></tr>
+      <tr><td>Narbonne — appartement</td><td>100&nbsp;500&nbsp;€<br/><em>710 ventes</em></td><td>95&nbsp;000&nbsp;€<br/><em>597 ventes</em></td><td>103&nbsp;820&nbsp;€<br/><em>725 ventes</em></td></tr>
+      <tr><td>Carcassonne — maison</td><td>152&nbsp;000&nbsp;€<br/><em>441 ventes</em></td><td>140&nbsp;870&nbsp;€<br/><em>364 ventes</em></td><td>149&nbsp;150&nbsp;€<br/><em>364 ventes</em></td></tr>
+      <tr><td>Carcassonne — appartement</td><td>66&nbsp;000&nbsp;€<br/><em>387 ventes</em></td><td>68&nbsp;900&nbsp;€<br/><em>352 ventes</em></td><td>68&nbsp;250&nbsp;€<br/><em>386 ventes</em></td></tr>
+      <tr><td>Lézignan-Corbières — maison</td><td>165&nbsp;625&nbsp;€<br/><em>106 ventes</em></td><td>140&nbsp;000&nbsp;€<br/><em>121 ventes</em></td><td>147&nbsp;400&nbsp;€<br/><em>127 ventes</em></td></tr>
+      <tr><td>Lézignan-Corbières — appartement</td><td>71&nbsp;500&nbsp;€<br/><em>43 ventes</em></td><td><em>26 ventes — non publié</em></td><td>86&nbsp;000&nbsp;€<br/><em>37 ventes</em></td></tr>
+    </tbody>
+  </table>
+  <div class="encadre">
+    <p>Ces écarts d'une année à l'autre ne constituent pas une tendance. Trois points ne dessinent pas une
+    courbe, et une médiane bouge aussi lorsque change la composition de ce qui s'est vendu&nbsp;: davantage
+    de petites surfaces une année, davantage de maisons rénovées l'année suivante. Aucune conclusion sur
+    l'évolution des prix n'est tirée ici.</p>
+  </div>
+
+  <h2>Comment ces chiffres ont été calculés</h2>
+  <p>Une ligne DVF n'est pas une vente. Une même transaction produit autant de lignes que de lots et de
+  parcelles concernés, et le prix y est <strong>répété à l'identique sur chacune</strong>. Additionner les
+  lignes reviendrait à compter plusieurs fois le même prix — c'est l'erreur la plus fréquente dans les
+  chiffres que l'on trouve en ligne. Les lignes ont donc été regroupées par identifiant de mutation.</p>
+  <p>Sur 20&nbsp;273 lignes lues et 8&nbsp;712 mutations examinées, 6&nbsp;148 ont été retenues. Voici ce
+  qui a été écarté, et pourquoi&nbsp;:</p>
+  <table>
+    <thead><tr><th>Écarté</th><th>Nombre</th><th>Raison</th></tr></thead>
+    <tbody>
+      <tr><td>Mutations autres que « Vente »</td><td>1&nbsp;234 lignes</td><td>Ventes en l'état futur
+      d'achèvement, adjudications, échanges, expropriations, terrains à bâtir&nbsp;: ils ne décrivent pas
+      le même marché.</td></tr>
+      <tr><td>Mutations sans logement</td><td>1&nbsp;223</td><td>Terrains nus, dépendances seules&nbsp;:
+      aucun prix de logement à en tirer.</td></tr>
+      <tr><td>Mutations comprenant un local commercial ou industriel</td><td>667</td><td>Le prix mêle des
+      biens de nature différente sous une seule valeur.</td></tr>
+      <tr><td>Mutations portant sur plusieurs logements</td><td>541</td><td>Le prix unitaire n'y est pas
+      calculable.</td></tr>
+      <tr><td>Ventes de moins de 1&nbsp;000&nbsp;€</td><td>117</td><td>Cessions à titre symbolique, pas des
+      prix de marché.</td></tr>
+      <tr><td>Valeur foncière absente ou nulle</td><td>16</td><td>Donnée manquante à la source.</td></tr>
+      <tr><td>Surface bâtie nulle ou absente</td><td>0</td><td>Aucun cas après les filtres précédents.</td></tr>
+    </tbody>
+  </table>
+  <p>L'indicateur publié est la <strong>médiane</strong> et non la moyenne&nbsp;: quelques ventes
+  exceptionnelles déplacent une moyenne, pas une médiane. Le prix au mètre carré est la médiane des
+  rapports prix/surface calculés vente par vente, et non le rapport de deux médianes.</p>
+  <div class="encadre">
+    <p>Le script d'extraction et le fichier de résultats sont publiés&nbsp;:
+    <a href="/scripts/dvf/extraire_dvf.py">extraire_dvf.py</a> et
+    <a href="/scripts/dvf/resultats-2023-2025.json">resultats-2023-2025.json</a>. Ce dernier contient
+    l'empreinte SHA-256 de chacun des 18 fichiers sources utilisés. N'importe qui peut retélécharger les
+    données officielles et refaire le calcul.</p>
+  </div>
+  <p>Une limite subsiste, et elle est signalée plutôt que masquée&nbsp;: une vente portant sur des parcelles
+  situées dans plusieurs communes n'apparaît que partiellement dans le fichier d'une commune. Ces cas sont
+  rares et ne sont pas détectables à partir d'un fichier communal isolé.</p>
+
+<h2>Les sources officielles, consultables directement</h2>
   <table>
     <thead><tr><th>Source</th><th>Ce qu'elle contient</th><th>Ce qu'elle ne contient pas</th></tr></thead>
     <tbody>
@@ -405,19 +686,26 @@ footer p{font-size:11px;color:rgba(255,255,255,0.82)}
     médiane situe un secteur&nbsp;; elle ne remplace jamais l'examen d'un bien précis.</p>
   </div>
 
-  <h2>Le périmètre couvert</h2>
-  <p>Lorsque les calculs seront publiés, ils porteront sur trois ensembles distincts, parce qu'ils ne
-  fonctionnent pas de la même façon&nbsp;:</p>
+    <h2>Les communes couvertes, et celles qui ne le sont pas</h2>
+  <p>Six communes sont traitées, parce qu'elles atteignent un volume de ventes qui autorise un calcul&nbsp;:
+  Narbonne, Carcassonne, Lézignan-Corbières, Quarante, Saint-Chinian et Saint-Pons-de-Thomières.</p>
   <ul>
-    <li><strong>Narbonne et le Grand Narbonne</strong>, où le centre ancien, la couronne pavillonnaire et le littoral forment des marchés séparés.</li>
-    <li><strong>Le Minervois</strong>, audois et héraultais, marché de villages à faibles volumes, très hétérogène d'une commune à l'autre.</li>
-    <li><strong>Le Biterrois</strong>, où les écarts de valeur sont marqués sur de courtes distances.</li>
+    <li><strong>Narbonne</strong> concentre à elle seule 3&nbsp;129 des 6&nbsp;148 ventes retenues, dont
+    deux tiers d'appartements&nbsp;: c'est la seule commune du périmètre où le marché de l'appartement est
+    dominant.</li>
+    <li><strong>Carcassonne et Lézignan-Corbières</strong> présentent un équilibre différent, avec une
+    médiane maison inférieure d'un tiers à celle de Narbonne.</li>
+    <li><strong>Quarante, Saint-Chinian et Saint-Pons-de-Thomières</strong> sont des marchés de village&nbsp;:
+    entre 74 et 89 ventes de maisons en trois ans, soit une trentaine par an au maximum. Leur médiane n'est
+    publiée que sur la période complète.</li>
   </ul>
-  <p>Chaque ensemble sera traité séparément, avec le nombre de mutations retenues, la période exacte et la
-  date de calcul. Les communes comptant trop peu de ventes ne seront pas publiées&nbsp;: mieux vaut aucun
-  chiffre qu'un chiffre reposant sur trois transactions.</p>
+  <p>Les autres communes du Minervois et des Hauts Cantons ne figurent pas dans ce tableau, et c'est
+  volontaire&nbsp;: leur volume annuel se compte en quelques unités. Une médiane calculée sur trois ventes
+  n'est pas une statistique, c'est un accident. Pour ces communes,
+  <a href="https://app.dvf.etalab.gouv.fr/" target="_blank" rel="noopener">l'explorateur DVF d'Etalab</a>
+  permet de consulter les transactions une par une, ce qui reste la lecture la plus honnête.</p>
 
-  <h2>Pour un bien précis, la démarche est différente</h2>
+<h2>Pour un bien précis, la démarche est différente</h2>
   <p>Un baromètre donne un ordre de grandeur de secteur. Pour un logement identifié, seule une estimation
   réalisée sur place, appuyée sur des ventes réellement comparables, permet de fixer un prix défendable
   face à un acquéreur et à sa banque. Cette estimation est gratuite et sans engagement, et elle ne constitue

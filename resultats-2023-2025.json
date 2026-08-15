@@ -1,0 +1,515 @@
+{
+ "source": {
+  "jeu_de_donnees": "Demandes de valeurs foncières (DVF)",
+  "producteur": "Direction générale des finances publiques",
+  "diffusion": "https://www.data.gouv.fr/datasets/demandes-de-valeurs-foncieres",
+  "fichiers": "https://files.data.gouv.fr/geo-dvf/latest/csv/<annee>/communes/<departement>/<insee>.csv",
+  "millesime_publie_le": "2026-05-18",
+  "telecharge_le": "2026-08-15",
+  "licence": "Licence Ouverte / Open Licence (Etalab)",
+  "codes_insee_verifies_aupres_de": "https://geo.api.gouv.fr/communes"
+ },
+ "methode": {
+  "periode": "2023-01-01 au 2025-12-31",
+  "annees_completes": [
+   "2023",
+   "2024",
+   "2025"
+  ],
+  "regroupement": "par id_mutation (la valeur foncière est répétée sur chaque ligne d'une même mutation)",
+  "nature_mutation_retenue": "Vente",
+  "logements_par_mutation": 1,
+  "dependances": "tolérées (garage, cave, remise) car vendues avec le logement",
+  "seuil_de_publication": 30,
+  "indicateur": "médiane",
+  "prix_m2": "médiane des rapports prix/surface calculés mutation par mutation",
+  "avertissement_maisons": "surface_reelle_bati ne comprend pas le terrain : pour une maison, le prix au m² bâti intègre implicitement la valeur du terrain, d'où la publication de la surface de terrain médiane.",
+  "limite_connue": "une mutation portant sur des parcelles situées dans plusieurs communes n'apparaît que partiellement dans un fichier communal ; ces cas sont rares et non détectables à partir d'un fichier communal isolé."
+ },
+ "exclusions": {
+  "lignes_lues": 20273,
+  "lignes_hors_vente": 1234,
+  "mutations_vues": 8712,
+  "exclu_valeur_multiple": 0,
+  "exclu_valeur_absente": 16,
+  "exclu_valeur_symbolique": 117,
+  "exclu_local_commercial": 667,
+  "exclu_multi_locaux": 541,
+  "exclu_aucun_local": 1223,
+  "exclu_surface_nulle": 0,
+  "retenues": 6148
+ },
+ "empreintes_sources": {
+  "2023/11/11069.csv": {
+   "sha256": "a643de129c09c12a7875104d67b08ef47813e7702e2a92082731df30b28bb72c",
+   "octets": 462410
+  },
+  "2024/11/11069.csv": {
+   "sha256": "714e4d1bea18eeb1fe2722f9142ed3ec02eb26adae2188f8049e7d4fd6fbbca6",
+   "octets": 397648
+  },
+  "2025/11/11069.csv": {
+   "sha256": "6b8226616c2fae406824d9acc35c957b20a82cbca9520455e12b404e43029bd9",
+   "octets": 396144
+  },
+  "2023/11/11203.csv": {
+   "sha256": "5f7bb44d5b74c40e085e7899b7b2fcaedc64676330c9a7a25515adace8a0f997",
+   "octets": 97395
+  },
+  "2024/11/11203.csv": {
+   "sha256": "8f2503940c8abc424a324f02df1f53958e2c61f9e75c4fc71331e37560ecacf5",
+   "octets": 83293
+  },
+  "2025/11/11203.csv": {
+   "sha256": "8c20c9952e0a561ce725ba1fb0826b058b4100b55201026e384f3916a14b4514",
+   "octets": 93889
+  },
+  "2023/11/11262.csv": {
+   "sha256": "5e2b4ca37fd9322c462968cccc2e80788ea4f1206271bf9b98a9f8d4cfdd8087",
+   "octets": 580433
+  },
+  "2024/11/11262.csv": {
+   "sha256": "6ecdd0bcccbfe0a558efc9ec6fc53fe164fb667c8295503e3ddd90c898377d56",
+   "octets": 576880
+  },
+  "2025/11/11262.csv": {
+   "sha256": "31f31d65217c9bca486d4ef5de54ad927046bda1d36dcac84c427a602287fde0",
+   "octets": 576426
+  },
+  "2023/34/34226.csv": {
+   "sha256": "2d85a9fcf90d6af177aaeb4f44e7d3b70dc1fada6f372b6352d0ac6be9527acc",
+   "octets": 34648
+  },
+  "2024/34/34226.csv": {
+   "sha256": "9c8ad0baa890a81e85ce7f94934bb80f560c8cd75e3d718c694e24820a4ddf1a",
+   "octets": 30834
+  },
+  "2025/34/34226.csv": {
+   "sha256": "a5ef6087f92e876431d2a9e19bd2c0b670a5b594eb258e8ef90baa680f2632fb",
+   "octets": 26060
+  },
+  "2023/34/34245.csv": {
+   "sha256": "35a988f8773fc0b342867595c9f4466fe871f54332ee5b282c30a3a0bdda010a",
+   "octets": 27282
+  },
+  "2024/34/34245.csv": {
+   "sha256": "92655978bf602f8733cbaacbd53ee32ba4d3172ccf9d84c47b7da6e4784cdd9c",
+   "octets": 18035
+  },
+  "2025/34/34245.csv": {
+   "sha256": "89f45a427e7ce096cb2a8ab2527ec7c2ac51f4acdaf053a7d273503b99627d60",
+   "octets": 23745
+  },
+  "2023/34/34284.csv": {
+   "sha256": "67efb7408b028597be620dd982cc351035d63b35ad60d3cad416840cc661eece",
+   "octets": 52416
+  },
+  "2024/34/34284.csv": {
+   "sha256": "62e3aadc637297d823b341e00d0f479c134293d0645fd47f6614f4b9fe3659a3",
+   "octets": 24183
+  },
+  "2025/34/34284.csv": {
+   "sha256": "8cf89b12558123ece374bf4d2aec40091820509a21ea027210d512b204fe8f11",
+   "octets": 27067
+  }
+ },
+ "resultats": {
+  "Narbonne": {
+   "code_insee": "11262",
+   "types": {
+    "Maison": {
+     "nombre_mutations": 1097,
+     "publie": true,
+     "prix_median": 228000,
+     "prix_q1": 172500,
+     "prix_q3": 300000,
+     "surface_mediane": 89,
+     "terrain_median": 257,
+     "prix_m2_median": 2699,
+     "prix_m2_q1": 2133,
+     "prix_m2_q3": 3415,
+     "par_annee": {
+      "2023": {
+       "nombre_mutations": 347,
+       "publie": true,
+       "prix_median": 230000,
+       "prix_m2_median": 2771,
+       "surface_mediane": 89
+      },
+      "2024": {
+       "nombre_mutations": 359,
+       "publie": true,
+       "prix_median": 224700,
+       "prix_m2_median": 2761,
+       "surface_mediane": 88
+      },
+      "2025": {
+       "nombre_mutations": 391,
+       "publie": true,
+       "prix_median": 230900,
+       "prix_m2_median": 2637,
+       "surface_mediane": 89
+      }
+     }
+    },
+    "Appartement": {
+     "nombre_mutations": 2032,
+     "publie": true,
+     "prix_median": 100000,
+     "prix_q1": 73000,
+     "prix_q3": 140700,
+     "surface_mediane": 47,
+     "terrain_median": 0,
+     "prix_m2_median": 2222,
+     "prix_m2_q1": 1691,
+     "prix_m2_q3": 2820,
+     "par_annee": {
+      "2023": {
+       "nombre_mutations": 710,
+       "publie": true,
+       "prix_median": 100500,
+       "prix_m2_median": 2201,
+       "surface_mediane": 47
+      },
+      "2024": {
+       "nombre_mutations": 597,
+       "publie": true,
+       "prix_median": 95000,
+       "prix_m2_median": 2126,
+       "surface_mediane": 45
+      },
+      "2025": {
+       "nombre_mutations": 725,
+       "publie": true,
+       "prix_median": 103820,
+       "prix_m2_median": 2300,
+       "surface_mediane": 47
+      }
+     }
+    }
+   }
+  },
+  "Carcassonne": {
+   "code_insee": "11069",
+   "types": {
+    "Maison": {
+     "nombre_mutations": 1169,
+     "publie": true,
+     "prix_median": 148200,
+     "prix_q1": 115000,
+     "prix_q3": 196600,
+     "surface_mediane": 91,
+     "terrain_median": 303,
+     "prix_m2_median": 1638,
+     "prix_m2_q1": 1286,
+     "prix_m2_q3": 2034,
+     "par_annee": {
+      "2023": {
+       "nombre_mutations": 441,
+       "publie": true,
+       "prix_median": 152000,
+       "prix_m2_median": 1667,
+       "surface_mediane": 90
+      },
+      "2024": {
+       "nombre_mutations": 364,
+       "publie": true,
+       "prix_median": 140870,
+       "prix_m2_median": 1597,
+       "surface_mediane": 90
+      },
+      "2025": {
+       "nombre_mutations": 364,
+       "publie": true,
+       "prix_median": 149150,
+       "prix_m2_median": 1618,
+       "surface_mediane": 93
+      }
+     }
+    },
+    "Appartement": {
+     "nombre_mutations": 1125,
+     "publie": true,
+     "prix_median": 67500,
+     "prix_q1": 53000,
+     "prix_q3": 90000,
+     "surface_mediane": 55,
+     "terrain_median": 0,
+     "prix_m2_median": 1253,
+     "prix_m2_q1": 1072,
+     "prix_m2_q3": 1500,
+     "par_annee": {
+      "2023": {
+       "nombre_mutations": 387,
+       "publie": true,
+       "prix_median": 66000,
+       "prix_m2_median": 1216,
+       "surface_mediane": 56
+      },
+      "2024": {
+       "nombre_mutations": 352,
+       "publie": true,
+       "prix_median": 68900,
+       "prix_m2_median": 1262,
+       "surface_mediane": 56
+      },
+      "2025": {
+       "nombre_mutations": 386,
+       "publie": true,
+       "prix_median": 68250,
+       "prix_m2_median": 1287,
+       "surface_mediane": 55
+      }
+     }
+    }
+   }
+  },
+  "Lézignan-Corbières": {
+   "code_insee": "11203",
+   "types": {
+    "Maison": {
+     "nombre_mutations": 354,
+     "publie": true,
+     "prix_median": 150000,
+     "prix_q1": 108606,
+     "prix_q3": 200000,
+     "surface_mediane": 89,
+     "terrain_median": 257,
+     "prix_m2_median": 1761,
+     "prix_m2_q1": 1277,
+     "prix_m2_q3": 2128,
+     "par_annee": {
+      "2023": {
+       "nombre_mutations": 106,
+       "publie": true,
+       "prix_median": 165625,
+       "prix_m2_median": 1838,
+       "surface_mediane": 90
+      },
+      "2024": {
+       "nombre_mutations": 121,
+       "publie": true,
+       "prix_median": 140000,
+       "prix_m2_median": 1695,
+       "surface_mediane": 85
+      },
+      "2025": {
+       "nombre_mutations": 127,
+       "publie": true,
+       "prix_median": 147400,
+       "prix_m2_median": 1767,
+       "surface_mediane": 88
+      }
+     }
+    },
+    "Appartement": {
+     "nombre_mutations": 106,
+     "publie": true,
+     "prix_median": 77350,
+     "prix_q1": 63070,
+     "prix_q3": 92150,
+     "surface_mediane": 58,
+     "terrain_median": 0,
+     "prix_m2_median": 1390,
+     "prix_m2_q1": 1033,
+     "prix_m2_q3": 1700,
+     "par_annee": {
+      "2023": {
+       "nombre_mutations": 43,
+       "publie": true,
+       "prix_median": 71500,
+       "prix_m2_median": 1356,
+       "surface_mediane": 55
+      },
+      "2024": {
+       "nombre_mutations": 26,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      },
+      "2025": {
+       "nombre_mutations": 37,
+       "publie": true,
+       "prix_median": 86000,
+       "prix_m2_median": 1467,
+       "surface_mediane": 59
+      }
+     }
+    }
+   }
+  },
+  "Quarante": {
+   "code_insee": "34226",
+   "types": {
+    "Maison": {
+     "nombre_mutations": 86,
+     "publie": true,
+     "prix_median": 114000,
+     "prix_q1": 68800,
+     "prix_q3": 214800,
+     "surface_mediane": 90,
+     "terrain_median": 122,
+     "prix_m2_median": 1508,
+     "prix_m2_q1": 891,
+     "prix_m2_q3": 1901,
+     "par_annee": {
+      "2023": {
+       "nombre_mutations": 32,
+       "publie": true,
+       "prix_median": 124750,
+       "prix_m2_median": 1554,
+       "surface_mediane": 87
+      },
+      "2024": {
+       "nombre_mutations": 29,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      },
+      "2025": {
+       "nombre_mutations": 25,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      }
+     }
+    },
+    "Appartement": {
+     "nombre_mutations": 0,
+     "publie": false,
+     "motif": "Volume de transactions insuffisant pour publier une statistique robuste.",
+     "par_annee": {
+      "2023": {
+       "nombre_mutations": 0,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      },
+      "2024": {
+       "nombre_mutations": 0,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      },
+      "2025": {
+       "nombre_mutations": 0,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      }
+     }
+    }
+   }
+  },
+  "Saint-Chinian": {
+   "code_insee": "34245",
+   "types": {
+    "Maison": {
+     "nombre_mutations": 89,
+     "publie": true,
+     "prix_median": 127000,
+     "prix_q1": 70000,
+     "prix_q3": 190000,
+     "surface_mediane": 80,
+     "terrain_median": 105,
+     "prix_m2_median": 1606,
+     "prix_m2_q1": 1025,
+     "prix_m2_q3": 2092,
+     "par_annee": {
+      "2023": {
+       "nombre_mutations": 25,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      },
+      "2024": {
+       "nombre_mutations": 32,
+       "publie": true,
+       "prix_median": 145750,
+       "prix_m2_median": null,
+       "surface_mediane": null
+      },
+      "2025": {
+       "nombre_mutations": 32,
+       "publie": true,
+       "prix_median": 134500,
+       "prix_m2_median": null,
+       "surface_mediane": null
+      }
+     }
+    },
+    "Appartement": {
+     "nombre_mutations": 2,
+     "publie": false,
+     "motif": "Volume de transactions insuffisant pour publier une statistique robuste.",
+     "par_annee": {
+      "2023": {
+       "nombre_mutations": 0,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      },
+      "2024": {
+       "nombre_mutations": 0,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      },
+      "2025": {
+       "nombre_mutations": 0,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      }
+     }
+    }
+   }
+  },
+  "Saint-Pons-de-Thomières": {
+   "code_insee": "34284",
+   "types": {
+    "Maison": {
+     "nombre_mutations": 74,
+     "publie": true,
+     "prix_median": 59894,
+     "prix_q1": 38250,
+     "prix_q3": 92841,
+     "surface_mediane": 69,
+     "terrain_median": 66,
+     "prix_m2_median": 793,
+     "prix_m2_q1": 500,
+     "prix_m2_q3": 1357,
+     "par_annee": {
+      "2023": {
+       "nombre_mutations": 23,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      },
+      "2024": {
+       "nombre_mutations": 22,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      },
+      "2025": {
+       "nombre_mutations": 29,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      }
+     }
+    },
+    "Appartement": {
+     "nombre_mutations": 14,
+     "publie": false,
+     "motif": "Volume de transactions insuffisant pour publier une statistique robuste.",
+     "par_annee": {
+      "2023": {
+       "nombre_mutations": 0,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      },
+      "2024": {
+       "nombre_mutations": 0,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      },
+      "2025": {
+       "nombre_mutations": 0,
+       "publie": false,
+       "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
+      }
+     }
+    }
+   }
+  }
+ }
+}
