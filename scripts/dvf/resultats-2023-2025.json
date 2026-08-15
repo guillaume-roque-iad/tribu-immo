@@ -1,4 +1,5 @@
 {
+ "genere_par": "scripts/dvf/extraire_dvf.py",
  "source": {
   "jeu_de_donnees": "Demandes de valeurs foncières (DVF)",
   "producteur": "Direction générale des finances publiques",
@@ -16,15 +17,17 @@
    "2024",
    "2025"
   ],
-  "regroupement": "par id_mutation (la valeur foncière est répétée sur chaque ligne d'une même mutation)",
+  "regroupement": "par id_mutation",
   "nature_mutation_retenue": "Vente",
   "logements_par_mutation": 1,
-  "dependances": "tolérées (garage, cave, remise) car vendues avec le logement",
+  "dependances": "tolérées, vendues avec le logement",
   "seuil_de_publication": 30,
+  "regle_de_publication": "une série atteignant le seuil porte tous ses indicateurs ; une série sous le seuil n'en porte aucun",
   "indicateur": "médiane",
   "prix_m2": "médiane des rapports prix/surface calculés mutation par mutation",
-  "avertissement_maisons": "surface_reelle_bati ne comprend pas le terrain : pour une maison, le prix au m² bâti intègre implicitement la valeur du terrain, d'où la publication de la surface de terrain médiane.",
-  "limite_connue": "une mutation portant sur des parcelles situées dans plusieurs communes n'apparaît que partiellement dans un fichier communal ; ces cas sont rares et non détectables à partir d'un fichier communal isolé."
+  "arrondi": "décimal conventionnel ROUND_HALF_UP, à l'entier, appliqué à la statistique finale",
+  "avertissement_maisons": "surface_reelle_bati ne comprend pas le terrain : pour une maison, le prix au m² bâti intègre implicitement la valeur du terrain, d'où la publication de la surface de terrain médiane",
+  "limite_connue": "une mutation portant sur des parcelles situées dans plusieurs communes n'apparaît que partiellement dans un fichier communal"
  },
  "exclusions": {
   "lignes_lues": 20273,
@@ -42,74 +45,92 @@
  "empreintes_sources": {
   "2023/11/11069.csv": {
    "sha256": "a643de129c09c12a7875104d67b08ef47813e7702e2a92082731df30b28bb72c",
+   "conforme": true,
    "octets": 462410
   },
   "2024/11/11069.csv": {
    "sha256": "714e4d1bea18eeb1fe2722f9142ed3ec02eb26adae2188f8049e7d4fd6fbbca6",
+   "conforme": true,
    "octets": 397648
   },
   "2025/11/11069.csv": {
    "sha256": "6b8226616c2fae406824d9acc35c957b20a82cbca9520455e12b404e43029bd9",
+   "conforme": true,
    "octets": 396144
   },
   "2023/11/11203.csv": {
    "sha256": "5f7bb44d5b74c40e085e7899b7b2fcaedc64676330c9a7a25515adace8a0f997",
+   "conforme": true,
    "octets": 97395
   },
   "2024/11/11203.csv": {
    "sha256": "8f2503940c8abc424a324f02df1f53958e2c61f9e75c4fc71331e37560ecacf5",
+   "conforme": true,
    "octets": 83293
   },
   "2025/11/11203.csv": {
    "sha256": "8c20c9952e0a561ce725ba1fb0826b058b4100b55201026e384f3916a14b4514",
+   "conforme": true,
    "octets": 93889
   },
   "2023/11/11262.csv": {
    "sha256": "5e2b4ca37fd9322c462968cccc2e80788ea4f1206271bf9b98a9f8d4cfdd8087",
+   "conforme": true,
    "octets": 580433
   },
   "2024/11/11262.csv": {
    "sha256": "6ecdd0bcccbfe0a558efc9ec6fc53fe164fb667c8295503e3ddd90c898377d56",
+   "conforme": true,
    "octets": 576880
   },
   "2025/11/11262.csv": {
    "sha256": "31f31d65217c9bca486d4ef5de54ad927046bda1d36dcac84c427a602287fde0",
+   "conforme": true,
    "octets": 576426
   },
   "2023/34/34226.csv": {
    "sha256": "2d85a9fcf90d6af177aaeb4f44e7d3b70dc1fada6f372b6352d0ac6be9527acc",
+   "conforme": true,
    "octets": 34648
   },
   "2024/34/34226.csv": {
    "sha256": "9c8ad0baa890a81e85ce7f94934bb80f560c8cd75e3d718c694e24820a4ddf1a",
+   "conforme": true,
    "octets": 30834
   },
   "2025/34/34226.csv": {
    "sha256": "a5ef6087f92e876431d2a9e19bd2c0b670a5b594eb258e8ef90baa680f2632fb",
+   "conforme": true,
    "octets": 26060
   },
   "2023/34/34245.csv": {
    "sha256": "35a988f8773fc0b342867595c9f4466fe871f54332ee5b282c30a3a0bdda010a",
+   "conforme": true,
    "octets": 27282
   },
   "2024/34/34245.csv": {
    "sha256": "92655978bf602f8733cbaacbd53ee32ba4d3172ccf9d84c47b7da6e4784cdd9c",
+   "conforme": true,
    "octets": 18035
   },
   "2025/34/34245.csv": {
    "sha256": "89f45a427e7ce096cb2a8ab2527ec7c2ac51f4acdaf053a7d273503b99627d60",
+   "conforme": true,
    "octets": 23745
   },
   "2023/34/34284.csv": {
    "sha256": "67efb7408b028597be620dd982cc351035d63b35ad60d3cad416840cc661eece",
+   "conforme": true,
    "octets": 52416
   },
   "2024/34/34284.csv": {
    "sha256": "62e3aadc637297d823b341e00d0f479c134293d0645fd47f6614f4b9fe3659a3",
+   "conforme": true,
    "octets": 24183
   },
   "2025/34/34284.csv": {
    "sha256": "8cf89b12558123ece374bf4d2aec40091820509a21ea027210d512b204fe8f11",
+   "conforme": true,
    "octets": 27067
   }
  },
@@ -133,22 +154,37 @@
        "nombre_mutations": 347,
        "publie": true,
        "prix_median": 230000,
+       "prix_q1": 176850,
+       "prix_q3": 309100,
+       "surface_mediane": 89,
+       "terrain_median": 249,
        "prix_m2_median": 2771,
-       "surface_mediane": 89
+       "prix_m2_q1": 2208,
+       "prix_m2_q3": 3590
       },
       "2024": {
        "nombre_mutations": 359,
        "publie": true,
        "prix_median": 224700,
+       "prix_q1": 167000,
+       "prix_q3": 298445,
+       "surface_mediane": 88,
+       "terrain_median": 255,
        "prix_m2_median": 2761,
-       "surface_mediane": 88
+       "prix_m2_q1": 2083,
+       "prix_m2_q3": 3391
       },
       "2025": {
        "nombre_mutations": 391,
        "publie": true,
        "prix_median": 230900,
+       "prix_q1": 175000,
+       "prix_q3": 291075,
+       "surface_mediane": 89,
+       "terrain_median": 260,
        "prix_m2_median": 2637,
-       "surface_mediane": 89
+       "prix_m2_q1": 2082,
+       "prix_m2_q3": 3234
       }
      }
     },
@@ -168,22 +204,37 @@
        "nombre_mutations": 710,
        "publie": true,
        "prix_median": 100500,
+       "prix_q1": 75000,
+       "prix_q3": 138800,
+       "surface_mediane": 47,
+       "terrain_median": 0,
        "prix_m2_median": 2201,
-       "surface_mediane": 47
+       "prix_m2_q1": 1652,
+       "prix_m2_q3": 2758
       },
       "2024": {
        "nombre_mutations": 597,
        "publie": true,
        "prix_median": 95000,
+       "prix_q1": 70000,
+       "prix_q3": 136000,
+       "surface_mediane": 45,
+       "terrain_median": 0,
        "prix_m2_median": 2126,
-       "surface_mediane": 45
+       "prix_m2_q1": 1658,
+       "prix_m2_q3": 2748
       },
       "2025": {
        "nombre_mutations": 725,
        "publie": true,
        "prix_median": 103820,
+       "prix_q1": 73150,
+       "prix_q3": 149550,
+       "surface_mediane": 47,
+       "terrain_median": 0,
        "prix_m2_median": 2300,
-       "surface_mediane": 47
+       "prix_m2_q1": 1780,
+       "prix_m2_q3": 2906
       }
      }
     }
@@ -208,22 +259,37 @@
        "nombre_mutations": 441,
        "publie": true,
        "prix_median": 152000,
+       "prix_q1": 109900,
+       "prix_q3": 196830,
+       "surface_mediane": 90,
+       "terrain_median": 317,
        "prix_m2_median": 1667,
-       "surface_mediane": 90
+       "prix_m2_q1": 1279,
+       "prix_m2_q3": 2041
       },
       "2024": {
        "nombre_mutations": 364,
        "publie": true,
        "prix_median": 140870,
+       "prix_q1": 110000,
+       "prix_q3": 203850,
+       "surface_mediane": 90,
+       "terrain_median": 279,
        "prix_m2_median": 1597,
-       "surface_mediane": 90
+       "prix_m2_q1": 1224,
+       "prix_m2_q3": 2028
       },
       "2025": {
        "nombre_mutations": 364,
        "publie": true,
        "prix_median": 149150,
+       "prix_q1": 120000,
+       "prix_q3": 190000,
+       "surface_mediane": 93,
+       "terrain_median": 320,
        "prix_m2_median": 1618,
-       "surface_mediane": 93
+       "prix_m2_q1": 1331,
+       "prix_m2_q3": 2013
       }
      }
     },
@@ -243,22 +309,37 @@
        "nombre_mutations": 387,
        "publie": true,
        "prix_median": 66000,
+       "prix_q1": 52500,
+       "prix_q3": 87000,
+       "surface_mediane": 56,
+       "terrain_median": 0,
        "prix_m2_median": 1216,
-       "surface_mediane": 56
+       "prix_m2_q1": 1041,
+       "prix_m2_q3": 1457
       },
       "2024": {
        "nombre_mutations": 352,
        "publie": true,
        "prix_median": 68900,
+       "prix_q1": 53300,
+       "prix_q3": 90295,
+       "surface_mediane": 56,
+       "terrain_median": 0,
        "prix_m2_median": 1262,
-       "surface_mediane": 56
+       "prix_m2_q1": 1099,
+       "prix_m2_q3": 1500
       },
       "2025": {
        "nombre_mutations": 386,
        "publie": true,
        "prix_median": 68250,
+       "prix_q1": 54483,
+       "prix_q3": 91850,
+       "surface_mediane": 55,
+       "terrain_median": 0,
        "prix_m2_median": 1287,
-       "surface_mediane": 55
+       "prix_m2_q1": 1083,
+       "prix_m2_q3": 1542
       }
      }
     }
@@ -283,22 +364,37 @@
        "nombre_mutations": 106,
        "publie": true,
        "prix_median": 165625,
+       "prix_q1": 128100,
+       "prix_q3": 208860,
+       "surface_mediane": 90,
+       "terrain_median": 311,
        "prix_m2_median": 1838,
-       "surface_mediane": 90
+       "prix_m2_q1": 1391,
+       "prix_m2_q3": 2127
       },
       "2024": {
        "nombre_mutations": 121,
        "publie": true,
        "prix_median": 140000,
+       "prix_q1": 93970,
+       "prix_q3": 187080,
+       "surface_mediane": 85,
+       "terrain_median": 250,
        "prix_m2_median": 1695,
-       "surface_mediane": 85
+       "prix_m2_q1": 1235,
+       "prix_m2_q3": 2073
       },
       "2025": {
        "nombre_mutations": 127,
        "publie": true,
        "prix_median": 147400,
+       "prix_q1": 108388,
+       "prix_q3": 199114,
+       "surface_mediane": 88,
+       "terrain_median": 223,
        "prix_m2_median": 1767,
-       "surface_mediane": 88
+       "prix_m2_q1": 1234,
+       "prix_m2_q3": 2207
       }
      }
     },
@@ -318,8 +414,13 @@
        "nombre_mutations": 43,
        "publie": true,
        "prix_median": 71500,
+       "prix_q1": 62040,
+       "prix_q3": 85000,
+       "surface_mediane": 55,
+       "terrain_median": 0,
        "prix_m2_median": 1356,
-       "surface_mediane": 55
+       "prix_m2_q1": 1129,
+       "prix_m2_q3": 1689
       },
       "2024": {
        "nombre_mutations": 26,
@@ -330,8 +431,13 @@
        "nombre_mutations": 37,
        "publie": true,
        "prix_median": 86000,
+       "prix_q1": 65000,
+       "prix_q3": 98000,
+       "surface_mediane": 59,
+       "terrain_median": 0,
        "prix_m2_median": 1467,
-       "surface_mediane": 59
+       "prix_m2_q1": 1058,
+       "prix_m2_q3": 1650
       }
      }
     }
@@ -356,8 +462,13 @@
        "nombre_mutations": 32,
        "publie": true,
        "prix_median": 124750,
+       "prix_q1": 79000,
+       "prix_q3": 212118,
+       "surface_mediane": 87,
+       "terrain_median": 130,
        "prix_m2_median": 1554,
-       "surface_mediane": 87
+       "prix_m2_q1": 1109,
+       "prix_m2_q3": 1942
       },
       "2024": {
        "nombre_mutations": 29,
@@ -419,15 +530,25 @@
        "nombre_mutations": 32,
        "publie": true,
        "prix_median": 145750,
-       "prix_m2_median": null,
-       "surface_mediane": null
+       "prix_q1": 85581,
+       "prix_q3": 191415,
+       "surface_mediane": 79,
+       "terrain_median": 115,
+       "prix_m2_median": 1640,
+       "prix_m2_q1": 1224,
+       "prix_m2_q3": 2146
       },
       "2025": {
        "nombre_mutations": 32,
        "publie": true,
        "prix_median": 134500,
-       "prix_m2_median": null,
-       "surface_mediane": null
+       "prix_q1": 54450,
+       "prix_q3": 205475,
+       "surface_mediane": 95,
+       "terrain_median": 125,
+       "prix_m2_median": 1471,
+       "prix_m2_q1": 845,
+       "prix_m2_q3": 1998
       }
      }
     },
@@ -437,12 +558,12 @@
      "motif": "Volume de transactions insuffisant pour publier une statistique robuste.",
      "par_annee": {
       "2023": {
-       "nombre_mutations": 0,
+       "nombre_mutations": 1,
        "publie": false,
        "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
       },
       "2024": {
-       "nombre_mutations": 0,
+       "nombre_mutations": 1,
        "publie": false,
        "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
       },
@@ -493,17 +614,17 @@
      "motif": "Volume de transactions insuffisant pour publier une statistique robuste.",
      "par_annee": {
       "2023": {
-       "nombre_mutations": 0,
+       "nombre_mutations": 2,
        "publie": false,
        "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
       },
       "2024": {
-       "nombre_mutations": 0,
+       "nombre_mutations": 3,
        "publie": false,
        "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
       },
       "2025": {
-       "nombre_mutations": 0,
+       "nombre_mutations": 9,
        "publie": false,
        "motif": "Volume de transactions insuffisant pour publier une statistique robuste."
       }
