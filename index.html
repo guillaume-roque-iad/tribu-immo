@@ -788,39 +788,14 @@ padding:12px 18px;font-size:14px;font-weight:700;text-decoration:none;border-rad
   </div>
 </section>
 
-<!-- ESTIMATION -->
+<!-- ESTIMATION : passerelle vers immobiliernarbonne.com (pas de formulaire vendeur dupliqué sur Tribu Immo) -->
 <section class="estim" id="estimation">
   <div class="eyebrow" style="color:rgba(255,255,255,.88)">Vendeurs</div>
-  <h2 class="stitle">Vous souhaitez vendre ? <br/><em style="font-style:normal;color:#fff">Recevez une estimation argumentée.</em></h2>
-  <p class="ssub">Une estimation gratuite et sans engagement, réalisée sur place par Guillaume Roque et appuyée
-  sur des ventes réellement comparables de votre secteur — pas sur un prix moyen au mètre carré.</p>
-
-  <form id="fm-estim" class="form-estim" onsubmit="envoyerEstimation(event); return false;">
-    <div class="fe2">
-      <div class="fg"><label for="e-type">Type de bien *</label><select id="e-type" name="type_de_bien" required><option value="">Sélectionnez…</option><option>Maison</option><option>Appartement</option><option>Terrain</option><option>Autre</option></select></div>
-      <div class="fg"><label for="e-commune">Commune *</label><input id="e-commune" type="text" name="commune" required placeholder="Narbonne"/></div>
-    </div>
-    <div class="fe2">
-      <div class="fg"><label for="e-tel">Téléphone *</label><input id="e-tel" type="tel" name="telephone" required placeholder="+33 6 00 00 00 00"/></div>
-      <div class="fg"><label for="e-email">Email *</label><input id="e-email" type="email" name="email" required placeholder="Votre adresse e-mail"/></div>
-    </div>
-    <div class="fg"><label for="e-message">Une précision ? (facultatif)</label><textarea id="e-message" name="message" rows="2" placeholder="Surface, nombre de pièces, calendrier envisagé…"></textarea></div>
-    <div class="hp" aria-hidden="true"><label for="e-societe">Société</label><input id="e-societe" type="text" name="societe" tabindex="-1" autocomplete="off"/></div>
-    <div class="fconsent">
-      <input id="e-consent" type="checkbox" name="consentement" value="oui" required/>
-      <label for="e-consent">J'accepte d'être recontacté(e) par Guillaume Roque au sujet de mon projet de vente. *</label>
-    </div>
-    <button type="submit" class="btn-estim" data-evt="envoi-formulaire-estimation">Recevoir une estimation argumentée →</button>
-    <div id="e-erreur" class="ferr" role="alert">L'envoi automatique n'a pas abouti. <a href="mailto:guillaume.roque@iadfrance.fr" data-evt="clic-email">Envoyer votre demande par e-mail</a> ou appeler le <a href="tel:+33662108396" data-evt="clic-telephone">06 62 10 83 96</a>.</div>
-    <div id="e-succes" class="e-succes">Demande reçue. Guillaume Roque vous rappelle sous 24 à 48 heures ouvrées pour convenir d'un rendez-vous sur place.</div>
-    <p class="frgpd">Données traitées par Guillaume Roque dans le seul but de répondre à votre demande d'estimation.
-    Conservation : 3 ans à compter du dernier contact. <a href="/mentions-legales">Mentions légales et politique de confidentialité</a>.</p>
-  </form>
-
-  <p class="estim-alt">Vous préférez passer par le formulaire officiel iad&nbsp;? Ce lien ouvre le
-  <strong>site iadfrance.fr dans un nouvel onglet</strong> ; votre demande y est traitée par le réseau, et le
-  suivi n'est pas assuré depuis ce site.<br/>
-  <a href="https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque/estimation?utm_source=tribu-immo&utm_medium=site&utm_campaign=estimation-narbonne" target="_blank" rel="noopener" data-evt="clic-sortant-iad-estimation">Utiliser le formulaire officiel iad →</a></p>
+  <h2 class="stitle">Vous souhaitez vendre un bien <br/><em style="font-style:normal;color:#fff">à Narbonne ?</em></h2>
+  <p class="ssub">Guillaume Roque accompagne également les propriétaires vendeurs à Narbonne et dans le Grand
+  Narbonne, sur son site dédié à l'estimation et à la vente.</p>
+  <a href="https://immobiliernarbonne.com/estimation-immobiliere-narbonne" target="_blank" rel="noopener"
+     class="btn-estim" data-evt="clic-sortant-immobiliernarbonne-estimation">Faire estimer mon bien →</a>
 </section>
 
 <!-- SITEMAP -->
@@ -1061,42 +1036,6 @@ s.setItem('tribu_utm',u.join(' | ')||'(aucun)');}}catch(e){}})();
 </script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4bf99401a6d845f5b8042887b18e8608"}'></script><!-- Fin Cloudflare Web Analytics -->
 
-<script>
-/* Estimation : même règle que la candidature — le succès n'est affiché
-   qu'après une réponse serveur explicite {"ok":true}. */
-function envoyerEstimation(e) {
-  e.preventDefault();
-  var f = document.getElementById('fm-estim');
-  var btn = f.querySelector('button[type=submit]');
-  var err = document.getElementById('e-erreur');
-  var suc = document.getElementById('e-succes');
-  if (err) { err.style.display = 'none'; }
-  var donnees = new FormData(f);
-  if (donnees.get('societe')) { if (suc) { suc.style.display = 'block'; f.style.display = 'none'; } return; }
-  donnees.set('nom', 'Demande d\'estimation \u2014 ' + (donnees.get('commune') || ''));
-  donnees.set('sujet', 'Estimation');
-  donnees.set('message',
-    'Type de bien : ' + (donnees.get('type_de_bien') || '') + '\n' +
-    'Commune : ' + (donnees.get('commune') || '') + '\n\n' +
-    (donnees.get('message') || '') + tribuOrigine());
-  btn.disabled = true; btn.textContent = 'Envoi en cours\u2026';
-  fetch(TRIBU_EXEC, { method: 'POST', body: donnees })
-    .then(function (r) { if (!r.ok) { throw new Error('HTTP ' + r.status); } return r.text(); })
-    .then(function (t) {
-      if (!t || t.indexOf('"ok":true') === -1) { throw new Error('reponse non confirmee'); }
-      f.querySelectorAll('.fe2, .fg, .fconsent, button, .frgpd').forEach(function (n) { n.style.display = 'none'; });
-      if (suc) { suc.style.display = 'block'; }
-      try { if (window.history && history.pushState) { history.pushState({}, '', '/estimation-demandee');
-        if (window.tribuEvt) { window.tribuEvt('estimation_demandee', { origine: 'formulaire' }); } } } catch (x) {}
-    })
-    .catch(function () {
-      btn.disabled = false; btn.textContent = 'Recevoir une estimation argumentée \u2192';
-      if (err) { err.style.display = 'block'; }
-      if (window.tribuEvt) { window.tribuEvt('formulaire_erreur', { formulaire: 'estimation' }); }
-    });
-}
-</script>
-
 <!-- Mesure d'audience Google Analytics 4 — chargée uniquement après consentement -->
 <div id="bandeau-cookies" class="bandeau-cookies" role="dialog" aria-live="polite"
      aria-label="Consentement à la mesure d'audience">
@@ -1183,23 +1122,24 @@ function envoyerEstimation(e) {
     var m = { 'clic-telephone': 'clic_telephone', 'clic-email': 'clic_email',
               'clic-profil-iad': 'clic_profil_iad',
               'clic-sortant-iad-estimation': 'clic_sortant_iad_estimation',
+              'clic-sortant-immobiliernarbonne-estimation': 'clic_sortant_immobiliernarbonne_estimation',
               'clic-estimation': 'clic_estimation' };
     var nom = m[el.getAttribute('data-evt')];
     if (nom) { window.tribuEvt(nom, { page: location.pathname }); }
   }, true);
 
-  /* Ouverture d'un formulaire : premier champ activé. */
-  ['fm', 'fm-estim'].forEach(function (id) {
-    var f = document.getElementById(id);
+  /* Ouverture du formulaire de candidature (recrutement) : premier champ activé.
+     Le formulaire d'estimation vendeur a été retiré de ce site — il vit sur immobiliernarbonne.com. */
+  (function () {
+    var f = document.getElementById('fm');
     if (!f) { return; }
     var vu = false;
     f.addEventListener('focusin', function () {
       if (vu) { return; }
       vu = true;
-      window.tribuEvt(id === 'fm' ? 'formulaire_recrutement_ouvert' : 'formulaire_estimation_ouvert',
-                      { page: location.pathname });
+      window.tribuEvt('formulaire_recrutement_ouvert', { page: location.pathname });
     });
-  });
+  })();
 
   /* Téléchargement d'un guide : bouton d'impression PDF. */
   var imp = document.querySelector('.btn-print button');
