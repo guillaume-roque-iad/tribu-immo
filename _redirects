@@ -5,3 +5,8 @@
 /guide-1-mandataire-iad-5 /guide-1-mandataire-iad 301
 /guide-2-vendre-2 /guide-2-vendre 301
 /guide-3-acheter-2 /guide-3-acheter 301
+
+# Cannibalisation : pages vendeurs Narbonne déplacées vers immobiliernarbonne.com (round SEO/GEO correction finale)
+/vendre-maison-narbonne https://immobiliernarbonne.com/vendre-bien-narbonne 301
+/article-vendre-appartement-narbonne https://immobiliernarbonne.com/vendre-bien-narbonne 301
+/article-estimation-narbonne https://immobiliernarbonne.com/estimation-immobiliere-narbonne 301
