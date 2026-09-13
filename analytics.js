@@ -61,7 +61,7 @@
 
   /* ---- Événements de conversion ----
      tribuEvt empile dans dataLayer : si la mesure est refusée, rien n'est transmis. */
-  window.tribuEvt = function (nom, params) { gtag('event', nom, params || {}); };
+  window.tribuEvt = function (nom, params) { if (lire() !== 'accepte') { return; } gtag('event', nom, params || {}); };
 
   document.addEventListener('click', function (e) {
     var el = e.target.closest ? e.target.closest('[data-evt]') : null;
@@ -93,7 +93,5 @@
   if (imp) { imp.addEventListener('click', function () {
     window.tribuEvt('guide_telecharge', { page: location.pathname }); }); }
 
-  /* Pages de confirmation atteintes directement (rechargement, partage de lien). */
-  if (location.pathname.indexOf('/candidature-envoyee') === 0) { window.tribuEvt('candidature_envoyee', { origine: 'page' }); }
-  if (location.pathname.indexOf('/estimation-demandee') === 0) { window.tribuEvt('estimation_demandee', { origine: 'page' }); }
 })();
+
