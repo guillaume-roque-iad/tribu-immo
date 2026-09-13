@@ -13,3 +13,32 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 @media(max-width:420px){.hero-new h1{font-size:2.55rem}.hero-visual{padding:8px 15px}.portrait-frame{height:390px}.portrait-label span{font-size:.7rem}.brand{gap:4px}.brand-name{max-width:155px;font-size:.9rem}.brand-name small{font-size:.6rem}.nav{gap:8px}.nav.wrap{padding-left:10px;padding-right:16px}.brand img,.editorial .brand img{width:76px;height:60px}}
 /* Blue.900 garantit le contraste du texte sur les fonds Blue.50. */
 .remuneration>.section>.section-head .eyebrow,.support-layout>div:first-child .eyebrow,.path-card:first-child .num,.path-card:first-child .textlink,.editorial .article-hero .article-label,.resume a,.article-highlight a,.encadre a,.articles-lies a{color:#006B9A}
+
+/* Identité de l’équipe : logo fourni par Guillaume, conservé à l’identique. */
+.brand img.team-logo,.editorial .brand img.team-logo{width:110px;height:110px;object-fit:contain;flex:none}
+.nav,.editorial .nav{height:116px}
+.brand{gap:20px}
+.footer-team-logo,.editorial .footer-team-logo{display:block;width:190px;height:190px;object-fit:contain;max-width:100%}
+@media(max-width:800px){.nav,.editorial .nav{height:96px}.brand img.team-logo,.editorial .brand img.team-logo{width:90px;height:90px}.nav-links{top:96px}.brand{gap:12px}.footer-team-logo,.editorial .footer-team-logo{width:160px;height:160px}}
+
+.bandeau-cookies{position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;background:#fff;
+ border:1px solid #DCE7EE;border-radius:14px;box-shadow:0 10px 40px rgba(0,0,0,.18);
+ padding:18px 22px;display:flex;gap:20px;align-items:center;justify-content:space-between;
+ max-width:900px;margin:0 auto;font-size:13.5px;line-height:1.6;color:#333}
+.bandeau-cookies strong{display:block;font-size:14px;color:#00567A;margin-bottom:4px}
+.bandeau-cookies p{margin:0}
+.bandeau-cookies a{color:#00567A;text-decoration:underline}
+.bc-btn{display:flex;gap:10px;flex-shrink:0}
+.bc-btn button{font-family:inherit;font-size:13px;font-weight:700;padding:11px 22px;
+ border-radius:100px;cursor:pointer;border:2px solid #00567A;white-space:nowrap}
+.bc-refuser{background:#fff;color:#00567A}
+.bc-accepter{background:#00567A;color:#fff}
+.bc-refuser:hover{background:#F4F9FC}
+.bc-accepter:hover{background:#00415C}
+.lien-consentement{background:none;border:none;padding:0;font:inherit;color:#fff;opacity:.85;
+ text-decoration:underline;cursor:pointer}
+.lien-consentement:hover{opacity:1}
+@media(max-width:760px){.bandeau-cookies{flex-direction:column;align-items:stretch;gap:14px;
+ left:10px;right:10px;bottom:10px;padding:16px 18px}.bc-btn button{flex:1}}
+@media print{.bandeau-cookies{display:none!important}}
+.site-footer .lien-consentement{color:#006390;opacity:1;display:block;margin:18px auto;padding:8px 16px;font-size:14px}.bandeau-cookies{font-size:14px}.bc-btn button{font-size:14px}
