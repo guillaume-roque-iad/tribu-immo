@@ -16,7 +16,7 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
 
     function tribuErreur(btn, donnees) {
       btn.disabled = false;
-      btn.textContent = 'Être recontacté par Guillaume ↗';
+      btn.textContent = (window.TribuUI||{}).submit||'Être recontacté par Guillaume ↗';
       var err = document.getElementById('f-erreur');
       if (!err) { return; }
       var corps = encodeURIComponent(
@@ -43,7 +43,7 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
       return '\n\n--- Origine de la demande ---'
         + '\nDate : ' + deuxChiffres(d.getDate()) + '/' + deuxChiffres(d.getMonth() + 1)
           + '/' + d.getFullYear() + ' ' + deuxChiffres(d.getHours()) + ':' + deuxChiffres(d.getMinutes())
-        + '\nPage du formulaire : ' + location.pathname
+        + '\nLangue : ' + document.documentElement.lang + '\nPage du formulaire : ' + location.pathname
         + '\nPage d\'entree : ' + ((s && s.getItem('tribu_entree')) || location.pathname)
         + '\nReferent : ' + ((s && s.getItem('tribu_referent')) || '(inconnu)')
         + '\nUTM : ' + ((s && s.getItem('tribu_utm')) || '(aucun)');
@@ -62,9 +62,9 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
       donnees.set('message', (donnees.get('message') || '') + tribuOrigine());
 
       btn.disabled = true;
-      btn.textContent = 'Envoi en cours\u2026';
+      btn.textContent = (window.TribuUI||{}).sending||'Envoi en cours\u2026';
       var patience = setTimeout(function () {
-        btn.textContent = 'Envoi en cours\u2026 encore quelques secondes';
+        btn.textContent = (window.TribuUI||{}).patience||'Envoi en cours\u2026 encore quelques secondes';
       }, 3500);
 
       /* Envoi POST : les coordonnees ne transitent jamais dans l'URL.
@@ -87,4 +87,4 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
         });
     }
     
-document.querySelectorAll('.menu-toggle').forEach(b=>b.addEventListener('click',()=>{const m=document.getElementById('main-menu');const open=m.classList.toggle('open');b.setAttribute('aria-expanded',String(open));b.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');}));document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('main-menu').classList.remove('open');document.querySelector('.menu-toggle').setAttribute('aria-expanded','false');}));document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('main-menu')?.classList.remove('open');document.querySelector('.menu-toggle')?.setAttribute('aria-expanded','false');}});
+document.querySelectorAll('.menu-toggle').forEach(b=>b.addEventListener('click',()=>{const m=document.getElementById('main-menu');const open=m.classList.toggle('open');b.setAttribute('aria-expanded',String(open));b.setAttribute('aria-label',open?((window.TribuUI||{}).menuClose||'Fermer le menu'):((window.TribuUI||{}).menuOpen||'Ouvrir le menu'));}));document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('main-menu').classList.remove('open');document.querySelector('.menu-toggle').setAttribute('aria-expanded','false');}));document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('main-menu')?.classList.remove('open');document.querySelector('.menu-toggle')?.setAttribute('aria-expanded','false');}});
