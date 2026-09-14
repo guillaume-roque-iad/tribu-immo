@@ -88,3 +88,7 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
     }
     
 document.querySelectorAll('.menu-toggle').forEach(b=>b.addEventListener('click',()=>{const m=document.getElementById('main-menu');const open=m.classList.toggle('open');b.setAttribute('aria-expanded',String(open));b.setAttribute('aria-label',open?((window.TribuUI||{}).menuClose||'Fermer le menu'):((window.TribuUI||{}).menuOpen||'Ouvrir le menu'));}));document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('main-menu').classList.remove('open');document.querySelector('.menu-toggle').setAttribute('aria-expanded','false');}));document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('main-menu')?.classList.remove('open');document.querySelector('.menu-toggle')?.setAttribute('aria-expanded','false');}});
+
+
+// Accès au simulateur depuis toutes les pages du site.
+(()=>{const menu=document.getElementById('main-menu');if(!menu||menu.querySelector('a[href="/simulateur"]'))return;const a=document.createElement('a');a.href='/simulateur';const lang=document.documentElement.lang.slice(0,2);a.textContent=({fr:'Simulateur',en:'Simulator (FR)',es:'Simulador (FR)',it:'Simulatore (FR)',de:'Simulator (FR)',pt:'Simulador (FR)'})[lang]||'Simulateur';menu.insertBefore(a,menu.querySelector('.btn'));})();
