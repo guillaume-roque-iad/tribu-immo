@@ -1,6 +1,6 @@
 # Multilingual site
 
-French is the editable source at the root. The same 38 pages are available under /en/, /es/, /it/, /de/ and /pt/. Visitors select a language using links to the equivalent page. Translation is static: no external translation service runs in visitors' browsers.
+French is the editable source at the root. The same 39 pages are available under /en/, /es/, /it/, /de/ and /pt/. Visitors select a language using links to the equivalent page. Translation is static: no external translation service runs in visitors' browsers.
 
 To update:
 1. Read the latest main branch and edit the French source. Add a new page's French URL to sitemap.xml.
