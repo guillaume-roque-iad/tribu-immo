@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tribu Immo//Presentations//FR
+BEGIN:VEVENT
+UID:2027-01-11@tribu-immo.com
+DTSTAMP:20260914T000000Z
+DTSTART:20270111T173000Z
+DTEND:20270111T183000Z
+SUMMARY:Apresentação de oportunidades de negócio · Narbonne
+LOCATION:2 Espace Soleil\, 11100 Narbonne\, France
+DESCRIPTION:O teu pedido será enviado a Guillaume. Ele confirmará a tua participação e enviará os dados de acesso.
+URL:https://tribu-immo.com/pt/presentation-opportunites-affaires
+END:VEVENT
+END:VCALENDAR

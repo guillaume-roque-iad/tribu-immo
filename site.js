@@ -9,7 +9,7 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
         if (window.history && history.pushState &&
             location.pathname.indexOf('/candidature-envoyee') === -1) {
           document.getElementById('fs').focus();
-        if (window.tribuEvt) { window.tribuEvt('candidature_envoyee', { origine: 'formulaire' }); }
+        if (window.tribuEvt) { window.tribuEvt(fm.dataset.presentation ? 'presentation_demande_envoyee' : 'candidature_envoyee', { origine: 'formulaire', ...(fm.dataset.presentation ? { session: fm.elements.session.value } : {}) }); }
         }
       } catch (e) {}
     }
@@ -92,3 +92,5 @@ document.querySelectorAll('.menu-toggle').forEach(b=>b.addEventListener('click',
 
 // Accès au simulateur depuis toutes les pages du site.
 (()=>{const menu=document.getElementById('main-menu');if(!menu||menu.querySelector('a[href="/simulateur"]'))return;const a=document.createElement('a');a.href='/simulateur';const lang=document.documentElement.lang.slice(0,2);a.textContent=({fr:'Simulateur',en:'Simulator (FR)',es:'Simulador (FR)',it:'Simulatore (FR)',de:'Simulator (FR)',pt:'Simulador (FR)'})[lang]||'Simulateur';menu.insertBefore(a,menu.querySelector('.btn'));})();
+
+(()=>{const h=document.querySelector(".header");if(h&&window.ResizeObserver)new ResizeObserver(()=>document.documentElement.style.setProperty("--header-height",h.getBoundingClientRect().height+"px")).observe(h);})();

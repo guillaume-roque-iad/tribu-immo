@@ -2,8 +2,8 @@ import json,re,pathlib,lxml.html as H
 from datetime import date
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 from lxml import etree
-urls=[e.text for e in etree.parse(str(ROOT/'sitemap.xml')).xpath('//*[local-name()="loc"]')]
-pagefiles=[('index.html' if x=='https://tribu-immo.com/' else x.removeprefix('https://tribu-immo.com/').removesuffix('.html')+'.html') for x in urls if x.startswith('https://tribu-immo.com/') and not re.match(r'https://tribu-immo.com/(es|en|it|de|pt)/',x)]
+pagefiles=json.loads((ROOT/'i18n/pages.json').read_text())
+pagefiles=[p for p in pagefiles if p != 'simulateur.html']
 src={f:(ROOT/f).read_text() for f in pagefiles};out=ROOT
 LANGS={'fr':'Français','es':'Español','en':'English','it':'Italiano','de':'Deutsch','pt':'Português'}
 LABELS={'fr':'Langue','es':'Idioma','en':'Language','it':'Lingua','de':'Sprache','pt':'Idioma'}
@@ -19,8 +19,9 @@ def rewrite_link(href,lang):
  p=part.lstrip('/');p=('index.html' if not p else p if p.endswith('.html') else p+'.html')
  if p in paths:return url(p,lang)+(q+query if q else '')+(sep+frag if sep else '')
  return '/'+href.lstrip('/')
+pending={}
 def write(path,content):
- f=out/path;f.parent.mkdir(exist_ok=True,parents=True);f.write_text(content)
+ pending[path]=content
 missing={}
 for lang in LANGS:
  mapping={} if lang=='fr' else json.load(open(ROOT/'i18n'/(lang+'.json')))
@@ -82,11 +83,10 @@ for lang in LANGS:
    e.set('data-localize-date','')
   write(path if lang=='fr' else lang+'/'+path,H.tostring(doc,encoding='unicode',doctype='<!DOCTYPE html>'))
 if missing:raise RuntimeError(str(missing))
+for path,content in pending.items():
+ f=out/path;f.parent.mkdir(exist_ok=True,parents=True);f.write_text(content)
 for p,c in src.items():
  if not p.endswith('.html') and p!='sitemap.xml':write(p,c)
-entries=[]
-for p in paths:
- for lang in LANGS:entries.append('<url><loc>https://tribu-immo.com'+url(p,lang)+'</loc><lastmod>'+date.today().isoformat()+'</lastmod></url>')
-write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(entries)+'</urlset>')
-for p in ['languages.js','languages.css']:write(p,(ROOT/p).read_text())
+import runpy
+runpy.run_path(str(ROOT/'scripts/finalize_site.py'),run_name='__main__')
 print('built',len(paths)*len(LANGS),'pages')

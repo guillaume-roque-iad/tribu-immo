@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tribu Immo//Presentations//FR
+BEGIN:VEVENT
+UID:2026-10-13@tribu-immo.com
+DTSTAMP:20260914T000000Z
+DTSTART:20261013T163000Z
+DTEND:20261013T171500Z
+SUMMARY:Business opportunity presentation · Online
+LOCATION:Online on Google Meet
+DESCRIPTION:Your request will be sent to Guillaume. He will confirm your participation and send you the access details.
+URL:https://tribu-immo.com/en/presentation-opportunites-affaires
+END:VEVENT
+END:VCALENDAR

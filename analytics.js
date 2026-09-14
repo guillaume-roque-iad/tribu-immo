@@ -66,7 +66,7 @@
   document.addEventListener('click', function (e) {
     var el = e.target.closest ? e.target.closest('[data-evt]') : null;
     if (!el) { return; }
-    var m = { 'clic-telephone': 'clic_telephone', 'clic-email': 'clic_email',
+    var m = { 'presentation-date': 'presentation_date_selectionnee', 'clic-telephone': 'clic_telephone', 'clic-email': 'clic_email',
               'clic-profil-iad': 'clic_profil_iad',
               'clic-sortant-iad-estimation': 'clic_sortant_iad_estimation',
               'clic-sortant-immobiliernarbonne-estimation': 'clic_sortant_immobiliernarbonne_estimation',
