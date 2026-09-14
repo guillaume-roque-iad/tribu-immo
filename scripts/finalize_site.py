@@ -86,6 +86,7 @@ for l in LANGS:
  intro.clear();h=E.SubElement(intro,'h2');h.text=trans('Choisissez votre présentation',l)
  p=E.SubElement(intro,'p');p.text=trans('Votre demande sera transmise à Guillaume. Il vous confirmera votre participation et vous communiquera les informations d’accès.',l)
  form=contact.xpath('.//form')[0];form.set('data-presentation','true')
+ form.set('onsubmit','return preparerInscriptionPresentation(event);')
  field=H.Element('div',{'class':'fg'});label=E.SubElement(field,'label',{'for':'presentation-session'});label.text=trans('Session souhaitée *',l)
  select=E.SubElement(field,'select',id='presentation-session',name='session',required='required');op=E.SubElement(select,'option',value='');op.text=trans('Choisissez votre présentation',l)
  graph=[]
@@ -111,6 +112,9 @@ for l in LANGS:
   form.set('hidden','hidden')
   section.xpath('.//*[@id="poa-empty"]')[0].attrib.pop('hidden',None)
  button=form.xpath('.//button[@type="submit"]')[0];button.text=trans('Je m’inscris gratuitement ↗',l)
+ mail_note=E.Element('p',{'class':'notice form-mail-note'})
+ mail_note.text=trans('Votre messagerie s’ouvrira avec une demande préremplie. Envoyez-la pour transmettre votre demande à Guillaume ; votre participation ne sera confirmée qu’après sa réponse.',l)
+ button.addnext(mail_note)
  success=doc.xpath('//*[@id="fs"]/p')[0];success.text=desc
  for script in doc.xpath('//script[@type="application/ld+json"]'):script.getparent().remove(script)
  sc=E.SubElement(doc.find('head'),'script',type='application/ld+json');sc.text=json.dumps({'@context':'https://schema.org','@graph':graph},ensure_ascii=False)
