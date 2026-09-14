@@ -53,3 +53,23 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 
 /* SEO: readable question summaries, navigation and comparison tables. */
 .seo-breadcrumb{padding-top:24px;font-size:.875rem;line-height:1.7;color:#405461;overflow-wrap:anywhere}.seo-breadcrumb a{text-decoration:underline}.seo-faq{margin-top:28px;max-width:900px}.seo-faq details{border-bottom:1px solid #cbd5dc;padding:20px 0}.seo-faq summary{font-size:1.125rem;font-weight:600;cursor:pointer}.seo-faq p{line-height:1.7;margin-top:12px}.seo-paths{margin:28px 0 48px}.seo-paths h2{font-size:1.4rem;line-height:1.3}.seo-table{overflow-x:auto;margin:24px 0}.seo-table table{width:100%;border-collapse:collapse;font-size:1rem}.seo-table th,.seo-table td{text-align:left;vertical-align:top;padding:14px;border:1px solid #cbd5dc;min-width:150px}.seo-table thead{background:#eef8fc;color:#263746}
+
+/* Illustrations iad — tracés des pages 18–19 de la charte 2025. */
+#votre-projet .path-card::before,.resource-card::before,#poa .path-card::before{
+ content:"";display:block;width:56px;height:56px;margin-bottom:20px;
+ background-position:center;background-repeat:no-repeat;background-size:contain;
+}
+#votre-projet .path-card:nth-child(1)::before{background-image:url("/assets/iad-icons/home.svg")}
+#votre-projet .path-card:nth-child(2)::before{background-image:url("/assets/iad-icons/key.svg")}
+#votre-projet .path-card:nth-child(3)::before{background-image:url("/assets/iad-icons/growth.svg")}
+.resource-card::before{background-image:url("/assets/iad-icons/document.svg");width:40px;height:40px}
+#poa .path-card::before{background-image:url("/assets/iad-icons/location.svg");width:40px;height:40px}
+#poa .path-card:has(a[href^="https://meet.google.com/"])::before{background-image:url("/assets/iad-icons/globe.svg")}
+.support-row h3::before{
+ content:"";display:block;width:44px;height:44px;margin-bottom:12px;
+ background:center/contain no-repeat url("/assets/iad-icons/team.svg");
+}
+.support-row:nth-child(2) h3::before{background-image:url("/assets/iad-icons/document.svg")}
+.support-row:nth-child(3) h3::before{background-image:url("/assets/iad-icons/team.svg")}
+.support-row:nth-child(4) h3::before{background-image:url("/assets/iad-icons/growth.svg")}
+@media(max-width:800px){#votre-projet .path-card::before{width:48px;height:48px}}
