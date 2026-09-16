@@ -102,7 +102,7 @@
     document.head.appendChild(s);
 
     var m = document.createElement('script');
-    m.src = '/propertips-media.js?v=20260916b';
+    m.src = '/propertips-media.js?v=20260916g';
     m.defer = true;
     document.head.appendChild(m);
   })();
