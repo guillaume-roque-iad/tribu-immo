@@ -94,12 +94,17 @@
   if (imp) { imp.addEventListener('click', function () {
     window.tribuEvt('guide_telecharge', { page: location.pathname }); }); }
 
-  /* Module Propertips : chargé séparément pour ne pas alourdir le HTML principal. */
+  /* Modules Propertips : contenu puis enrichissement logo + vidéo. */
   (function () {
     var s = document.createElement('script');
     s.src = '/propertips.js?v=20260916';
     s.defer = true;
     document.head.appendChild(s);
+
+    var m = document.createElement('script');
+    m.src = '/propertips-media.js?v=20260916b';
+    m.defer = true;
+    document.head.appendChild(m);
   })();
 
 })();
