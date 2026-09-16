@@ -5,7 +5,6 @@
   function gtag() { dataLayer.push(arguments); }
   window.gtag = gtag;
 
-  /* Refus par défaut, y compris pour les usages publicitaires (Consent Mode v2). */
   gtag('consent', 'default', {
     ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
     analytics_storage: 'denied', functionality_storage: 'granted',
@@ -96,7 +95,7 @@
     document.head.appendChild(s);
 
     var m = document.createElement('script');
-    m.src = '/propertips-media.js?v=20260916h';
+    m.src = '/propertips-media.js?v=20260916j';
     m.defer = true;
     document.head.appendChild(m);
   })();
