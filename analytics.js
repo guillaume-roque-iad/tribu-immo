@@ -70,7 +70,8 @@
               'clic-profil-iad': 'clic_profil_iad',
               'clic-sortant-iad-estimation': 'clic_sortant_iad_estimation',
               'clic-sortant-immobiliernarbonne-estimation': 'clic_sortant_immobiliernarbonne_estimation',
-              'clic-estimation': 'clic_estimation' };
+              'clic-estimation': 'clic_estimation',
+              'clic-propertips': 'clic_propertips' };
     var nom = m[el.getAttribute('data-evt')];
     if (nom) { window.tribuEvt(nom, { page: location.pathname }); }
   }, true);
@@ -92,6 +93,14 @@
   var imp = document.querySelector('.btn-print button');
   if (imp) { imp.addEventListener('click', function () {
     window.tribuEvt('guide_telecharge', { page: location.pathname }); }); }
+
+  /* Module Propertips : chargé séparément pour ne pas alourdir le HTML principal. */
+  (function () {
+    var s = document.createElement('script');
+    s.src = '/propertips.js?v=20260916';
+    s.defer = true;
+    document.head.appendChild(s);
+  })();
 
 })();
 
