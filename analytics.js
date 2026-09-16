@@ -97,7 +97,7 @@
   /* Modules Propertips : contenu puis enrichissement logo + vidéo. */
   (function () {
     var s = document.createElement('script');
-    s.src = '/propertips.js?v=20260916';
+    s.src = '/propertips.js?v=20260916h';
     s.defer = true;
     document.head.appendChild(s);
 
@@ -108,4 +108,3 @@
   })();
 
 })();
-
