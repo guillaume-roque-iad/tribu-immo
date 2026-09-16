@@ -59,8 +59,6 @@
   if (a) { a.addEventListener('click', accepter); }
   if (r) { r.addEventListener('click', refuser); }
 
-  /* ---- Événements de conversion ----
-     tribuEvt empile dans dataLayer : si la mesure est refusée, rien n'est transmis. */
   window.tribuEvt = function (nom, params) { if (lire() !== 'accepte') { return; } gtag('event', nom, params || {}); };
 
   document.addEventListener('click', function (e) {
@@ -76,8 +74,6 @@
     if (nom) { window.tribuEvt(nom, { page: location.pathname }); }
   }, true);
 
-  /* Ouverture du formulaire de candidature (recrutement) : premier champ activé.
-     Le formulaire d'estimation vendeur a été retiré de ce site — il vit sur immobiliernarbonne.com. */
   (function () {
     var f = document.getElementById('fm');
     if (!f) { return; }
@@ -89,20 +85,18 @@
     });
   })();
 
-  /* Téléchargement d'un guide : bouton d'impression PDF. */
   var imp = document.querySelector('.btn-print button');
   if (imp) { imp.addEventListener('click', function () {
     window.tribuEvt('guide_telecharge', { page: location.pathname }); }); }
 
-  /* Modules Propertips : contenu puis enrichissement logo + vidéo. */
   (function () {
     var s = document.createElement('script');
-    s.src = '/propertips.js?v=20260916h';
+    s.src = '/propertips.js?v=20260916i';
     s.defer = true;
     document.head.appendChild(s);
 
     var m = document.createElement('script');
-    m.src = '/propertips-media.js?v=20260916g';
+    m.src = '/propertips-media.js?v=20260916h';
     m.defer = true;
     document.head.appendChild(m);
   })();
