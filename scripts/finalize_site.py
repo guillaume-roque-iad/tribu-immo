@@ -91,20 +91,23 @@ for l in LANGS:
  select=E.SubElement(field,'select',id='presentation-session',name='session',required='required');op=E.SubElement(select,'option',value='');op.text=trans('Choisissez votre présentation',l)
  graph=[]
  desc=trans('Votre demande sera transmise à Guillaume. Il vous confirmera votre participation et vous communiquera les informations d’accès.',l)
+ icsdir=R/'agenda'/l;icsdir.mkdir(parents=True,exist_ok=True)
+ wanted_days={card.get('data-poa-start')[:10] for card in section.xpath('.//*[@data-poa-start]')}
+ for old in icsdir.glob('*.ics'):
+  if old.stem not in wanted_days:old.unlink()
  for card in section.xpath('.//*[@data-poa-start]'):
   start=card.get('data-poa-start');day=start[:10];online='Google Meet' in card.text_content()
   end=start.replace('18:30:00','19:15:00' if online else '19:30:00')
   title=card.xpath('.//span')[0].text_content();date=card.xpath('.//time')[0].text_content();time=card.xpath('.//strong')[0].text_content()
   op=E.SubElement(select,'option',value=day);op.text=f'{date} · {time} · {title}';op.set('data-label',op.text)
   a=card.xpath('.//a')[0];a.set('href','#inscription');a.set('data-session',day);a.set('data-evt','presentation-date');a.text=trans('Je m’inscris gratuitement ↗',l)
-  icsdir=R/'agenda'/l;icsdir.mkdir(parents=True,exist_ok=True)
   def utc(t):return datetime.datetime.fromisoformat(t).astimezone(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
   location=trans('En ligne sur Google Meet',l) if online else '2 Espace Soleil, 11100 Narbonne, France'
   # Saving a calendar reminder is not a confirmed registration; no access URL is embedded.
   desc=trans('Votre demande sera transmise à Guillaume. Il vous confirmera votre participation et vous communiquera les informations d’accès.',l)
   def esc(t):return t.replace('\\','\\\\').replace(';','\\;').replace(',','\\,').replace('\n','\\n')
   lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Tribu Immo//Presentations//FR','BEGIN:VEVENT','UID:'+day+'@tribu-immo.com','DTSTAMP:20260914T000000Z','DTSTART:'+utc(start),'DTEND:'+utc(end),'SUMMARY:'+esc(title),'LOCATION:'+esc(location),'DESCRIPTION:'+esc(desc),'URL:'+BASE+route(l,'presentation-opportunites-affaires'),'END:VEVENT','END:VCALENDAR']
-  (icsdir/(day+'.ics')).write_bytes(('\r\n'.join(lines)+'\r\n').encode())
+  (icsdir/(day+'.ics')).write_bytes(('\n'.join(lines)+'\n').encode())
   cal=E.SubElement(card,'a',href='/agenda/'+l+'/'+day+'.ics',download='',**{'class':'textlink'});cal.text=trans('Ajouter à mon agenda ↗',l)
   graph.append({'@type':'Event','@id':BASE+'/presentation-opportunites-affaires#'+day,'name':title,'description':desc,'startDate':start,'endDate':end,'eventStatus':'https://schema.org/EventScheduled','eventAttendanceMode':'https://schema.org/OnlineEventAttendanceMode' if online else 'https://schema.org/OfflineEventAttendanceMode','location':{'@type':'VirtualLocation','url':BASE+route(l,'presentation-opportunites-affaires')} if online else {'@type':'Place','name':'Espace Soleil, bâtiment C, 1er étage','address':{'@type':'PostalAddress','streetAddress':'2 Espace Soleil','postalCode':'11100','addressLocality':'Narbonne','addressCountry':'FR'}},'organizer':{'@type':'Person','name':'Guillaume Roque','url':BASE+'/guillaume-roque'},'isAccessibleForFree':True,'url':BASE+route(l,'presentation-opportunites-affaires')+'?session='+day})
  form.insert(0,field)

@@ -2,10 +2,10 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Tribu Immo//Presentations//FR
 BEGIN:VEVENT
-UID:2026-09-15@tribu-immo.com
+UID:2026-11-10@tribu-immo.com
 DTSTAMP:20260914T000000Z
-DTSTART:20260915T163000Z
-DTEND:20260915T171500Z
+DTSTART:20261110T173000Z
+DTEND:20261110T181500Z
 SUMMARY:Präsentation der Geschäftsmöglichkeiten · Online
 LOCATION:Online über Google Meet
 DESCRIPTION:Deine Anfrage wird an Guillaume gesendet. Er bestätigt deine Teilnahme und sendet dir die Zugangsinformationen.
