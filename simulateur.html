@@ -3,6 +3,27 @@
 .simulator-page{background:#fff}.simulator-heading{padding-top:32px;padding-bottom:8px}.simulator-heading h1{font-size:clamp(1.6rem,3vw,2.4rem);margin:16px 0 8px}.simulator-heading p{max-width:780px}.simulator-heading>a,.simulator-heading>span{font-size:14px}.nav-links{flex-wrap:wrap}
 .sim-lead{display:none;max-width:940px;margin:24px auto 8px;padding:0 36px}.sim-lead.open{display:block}.sim-lead-card{background:#E9FCFF;border:1px solid #B9EAF6;border-radius:18px;padding:28px}.sim-lead-card h2{font-size:clamp(1.45rem,3vw,2rem);margin:0 0 8px}.sim-lead-card>p{margin:0 0 22px;max-width:760px}.sim-lead-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.sim-lead-field{margin-bottom:14px}.sim-lead-field label{display:block;font-size:.86rem;font-weight:700;margin-bottom:6px}.sim-lead-field input,.sim-lead-field select{width:100%;padding:13px 14px;border:1px solid #AABBC5;border-radius:9px;background:#fff;color:#000}.sim-lead-consent{display:flex;align-items:flex-start;gap:10px;margin:8px 0 18px;font-size:.78rem;line-height:1.5}.sim-lead-consent input{margin-top:4px}.sim-lead-card .fsub{width:100%;padding:14px 20px}.sim-lead-card .ferr{display:none;margin-top:14px;padding:12px;border:1px solid #EA584A;border-radius:8px;background:#fff}.sim-lead-card .privacy{font-size:.72rem;line-height:1.55;margin-top:14px}.sim-lead-success{display:none}.sim-lead-success .btn{margin-top:12px}.sim-lead-hp{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;overflow:hidden!important}
 @media(max-width:800px){.simulator-heading{padding-top:20px}.sim-lead{padding:0 20px}.sim-lead-card{padding:22px}.sim-lead-grid{grid-template-columns:1fr}}
+/* SIMULATEUR-TABLET-NAV-FIX */
+@media(max-width:1500px){
+  .nav{height:96px!important;position:relative}
+  .menu-toggle{display:block!important;margin-left:auto}
+  .nav-links{
+    display:none!important;
+    position:absolute!important;
+    top:96px!important;
+    left:0!important;
+    right:0!important;
+    background:#fff!important;
+    padding:24px 28px!important;
+    box-shadow:0 8px 18px rgba(0,0,0,.12)!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+    gap:14px!important;
+    z-index:100!important
+  }
+  .nav-links.open{display:flex!important}
+  .nav-links .btn.small{width:100%!important;justify-content:center!important;margin:0!important}
+}
 </style><meta property="og:title" content="Simulateur de rémunération iad et TIP | Tribu Immo"><meta property="og:description" content="Simulez vos revenus de conseiller immobilier avec les dispositifs iad, les récurrences managériales et le TIP. Exemples et curseurs simples à ajuster."><meta property="og:image" content="https://tribu-immo.com/tribu-immo-logo.png"><meta property="og:url" content="https://tribu-immo.com/simulateur"></head><body><a class="skip" href="#contenu-principal">Aller au contenu</a><div class="topbar"><div class="wrap"><span>UN PROJET INDÉPENDANT. UNE ÉQUIPE À VOS CÔTÉS.</span><a href="tel:+33662108396" data-evt="clic-telephone">Parlons de votre projet · 06 62 10 83 96</a></div></div><header class="header"><nav class="nav wrap" aria-label="Navigation principale"><a href="/" class="brand"><img src="/assets/optimized/iad-logo-188-v1.webp" alt="iad Immobilier" width="94" height="74" srcset="/assets/optimized/iad-logo-108-v1.webp 108w, /assets/optimized/iad-logo-188-v1.webp 188w" sizes="(max-width: 420px) 54px, (max-width: 800px) 78px, (max-width: 1050px) 86px, 94px" decoding="async"><img class="team-logo" src="/assets/optimized/tribu-logo-220-v1.webp" alt="Tribu Immo — équipe de Guillaume Roque" width="220" height="220" srcset="/assets/optimized/tribu-logo-160-v1.webp 160w, /assets/optimized/tribu-logo-220-v1.webp 220w, /assets/optimized/tribu-logo-380-v1.webp 380w" sizes="(max-width: 420px) 66px, (max-width: 800px) 90px, 110px" decoding="async"><span class="team-signature">by <strong>Guillaume ROQUE</strong></span></a><button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-menu">Menu</button><div class="nav-links" id="main-menu"><a href="/#accompagnement">L’accompagnement</a><a href="/#guillaume">Votre manager</a><a href="/#remuneration">La rémunération</a><a href="/simulateur">Simulateur</a><a href="/#poa">Présentation des opportunités d’affaires</a><a class="btn small" href="/#rejoindre">Échanger avec Guillaume <span aria-hidden="true">↗</span></a></div></nav></header><main id="contenu-principal" class="simulator-page"><div class="wrap simulator-heading"><a href="/">Accueil</a><span aria-hidden="true"> / </span><span>Simulateur</span><h1>Simulez votre rémunération.</h1><p>Choisissez votre profil et ajustez les chiffres. Votre estimation principale s’affiche immédiatement ; le détail complet est accessible après avoir indiqué vos coordonnées.</p></div>
 <section class="sim-lead" id="sim-lead-panel" aria-labelledby="sim-lead-title">
   <div class="sim-lead-card">
