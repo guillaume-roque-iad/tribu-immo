@@ -83,8 +83,8 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 }
 
 
-/* Navigation tablette : bascule plus tôt en menu compact pour éviter les chevauchements. */
-@media(max-width:1180px){
+/* Navigation tablette : bascule plus tôt en menu compact pour éviter les chevauchements, y compris iPad Pro paysage. */
+@media(max-width:1400px){
   .nav,.editorial .nav{height:96px}
   .nav-links{
     display:none;
