@@ -30,26 +30,25 @@
     const found = sessions.find(s => s.id === value || s.date === value);
     if (found) session.value = found.id;
   }
-  async function loadSessions() {
-    session.disabled = button.disabled = true;
-    status.textContent = ui[0];
-    try {
-      const response = await fetch(TRIBU_EXEC + '?action=presentation_sessions', {signal:AbortSignal.timeout(45000)});
-      const result = await response.json();
-      if (!result.ok || !Array.isArray(result.sessions)) throw new Error('dates');
-      sessions = result.sessions.filter(s => new Date(s.start).getTime() > Date.now());
-      if (!sessions.length) throw new Error('empty');
-      session.replaceChildren(new Option(ui[1], ''));
-      sessions.forEach(s => session.add(new Option(dateLabel(s), s.id)));
-      choose(requested);
-      document.querySelectorAll('[data-poa-start]').forEach(card => {
-        const date = card.querySelector('[data-session]')?.dataset.session;
-        if (date && !sessions.some(s => s.date === date)) card.hidden = true;
-      });
-      ready = true;
-      status.textContent = ui[2];
-      session.disabled = button.disabled = false;
-    } catch (_) { status.textContent = ui[3]; }
+  function loadSessions() {
+    // Use dates already displayed on the site, without a Calendar request on load.
+    // The server checks the chosen date against Calendar when registering.
+    const available = new Set();
+    document.querySelectorAll('[data-poa-start]').forEach(card => {
+      const date = card.querySelector('[data-session]')?.dataset.session;
+      const future = new Date(card.dataset.poaStart).getTime() > Date.now();
+      card.hidden = !future;
+      if (date && future) available.add(date);
+    });
+    [...session.options].forEach(option => {
+      if (option.value && !available.has(option.value)) option.remove();
+    });
+    sessions = [...session.options].filter(option => option.value)
+      .map(option => ({id:option.value, date:option.value}));
+    choose(requested);
+    ready = sessions.length > 0;
+    status.textContent = ready ? ui[2] : ui[3];
+    session.disabled = button.disabled = !ready;
   }
   window.preparerInscriptionPresentation = function (event) {
     event.preventDefault();
