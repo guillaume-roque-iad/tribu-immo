@@ -165,3 +165,5 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
  .header{position:relative}
  .header .nav-links{max-height:70dvh}
 }
+/* Keep presentation instructions readable against the dark contact section. */
+.contact-section .contact-layout>div:first-child>p{color:#fff}
