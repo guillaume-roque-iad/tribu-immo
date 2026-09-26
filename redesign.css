@@ -133,3 +133,10 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
   .nav-links.open{display:flex!important}
   .nav-links .btn.small{width:100%!important;justify-content:center!important;margin:0!important}
 }
+
+/* Keep editorial link colours from overriding filled button labels. */
+.article-body .btn,.editorial .content .btn,.article-body .article-cta-btn,.editorial .content .article-cta-btn{color:#fff;background:var(--blue950);text-decoration:none}
+.article-body .btn:hover,.article-body .btn:focus-visible,.editorial .content .btn:hover,.editorial .content .btn:focus-visible,.article-body .article-cta-btn:hover,.editorial .content .article-cta-btn:hover{color:#fff;background:var(--blue950);text-decoration:underline}
+.article-body .btn:active,.editorial .content .btn:active,.article-body .article-cta-btn:active,.editorial .content .article-cta-btn:active{color:#000;background:var(--blue)}
+.article-body .btn.outline,.editorial .content .btn.outline{color:#000;background:#fff}
+.article-body .btn.outline:active,.editorial .content .btn.outline:active{color:#000;background:#95EBFF}
