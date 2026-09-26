@@ -1,0 +1,17 @@
+const vm=require('vm'),fs=require('fs'),assert=require('assert/strict'),crypto=require('crypto');
+const rows=[Array(16).fill('header')],events={},sent=[];let inserted=0,quota=0,legacy=0;
+const sh={getDataRange:()=>({getValues:()=>rows.map(r=>[...r])}),appendRow:r=>rows.push(r),getLastRow:()=>rows.length,getRange:(n,c,h=1,w=1)=>({getValues:()=>[rows[n-1].slice(c-1,c-1+w)],setValue:v=>{rows[n-1][c-1]=v},setValues:vs=>{vs.forEach((r,i)=>r.forEach((v,j)=>rows[n-1+i][c-1+j]=v))}})};
+const source={id:'7gg3st9cngbjq9mrchhbbhkfcj_test',status:'confirmed',start:{dateTime:new Date(Date.now()+86400000*3).toISOString()},end:{dateTime:new Date(Date.now()+86400000*3+2700000).toISOString()}};events[source.id]=source;
+const c={console,Date,ContentService:{MimeType:{JSON:'json'},createTextOutput:s=>({getContent:()=>s,setMimeType(){return this}})},traiterFormulaireSite_:()=>{legacy++;return c.ContentService.createTextOutput('{"status":"ok"}')},Calendar:{Events:{list:()=>({items:[source,{id:'private',start:source.start}]}),get:(cal,id)=>{if(!events[id])throw Error('404 not found');return events[id]},insert:e=>{inserted++;return events[e.id]=e},patch:(u,cal,id)=>Object.assign(events[id],u),remove:(cal,id)=>{events[id].status='cancelled'}}},SpreadsheetApp:{openById:()=>({getActiveSheet:()=>({name:'legacy'}),getSheetByName:()=>sh}),flush:()=>{}},Utilities:{formatDate:d=>d.toISOString().slice(0,10),DigestAlgorithm:{SHA_256:'sha256'},computeDigest:(_,s)=>[...crypto.createHash('sha256').update(s).digest()]},LockService:{getScriptLock:()=>({waitLock(){},tryLock:()=>true,releaseLock(){}})},MailApp:{getRemainingDailyQuota:()=>quota,sendEmail:m=>{sent.push(m);quota--}},nettoyer_:s=>s?.trim(),emailValide_:s=>s.includes('@'),echapperHtmlTribu_:s=>s,MEET_TRIBU_IMMO:'https://meet.google.com/example'};
+vm.createContext(c);vm.runInContext(fs.readFileSync('integrations/apps-script/Code.gs','utf8'),c);
+c.doGet({parameter:{}});c.doPost({parameter:{email:'legacy@example.test'}});assert.equal(legacy,2);
+assert.equal(c.poaSessions_().length,1);
+const p={nom:'Test',email:'test@example.test',telephone:'0600000000',ville:'Narbonne',consentement:'oui',session:source.id};
+assert.equal(c.poaInscrire_({...p,session:'private'}).ok,false);
+let result=c.poaInscrire_(p);assert.equal(result.ok,true);assert.equal(result.emailPending,true);assert.equal(inserted,1);assert.equal(sent.length,0);
+result=c.poaInscrire_(p);assert.equal(inserted,1);assert.equal(rows.length,2);
+quota=10;c.relancerPresentationsTribu();assert.equal(sent.length,1);assert.equal(rows[1][11],'confirmée');c.relancerPresentationsTribu();assert.equal(sent.length,1);
+rows[1][8]=new Date(Date.now()-3600000);source.start.dateTime=new Date(Date.now()+23*3600000).toISOString();c.relancerPresentationsTribu();c.relancerPresentationsTribu();assert.equal(sent.length,2);
+source.start.dateTime=new Date(Date.now()+3600000).toISOString();c.relancerPresentationsTribu();c.relancerPresentationsTribu();assert.equal(sent.length,3);
+events[rows[1][7]].attendees[0].responseStatus='declined';c.relancerPresentationsTribu();assert.equal(rows[1][11],'annulée');assert.equal(c.poaInscrire_(p).ok,false);assert.equal(legacy,2);
+console.log('PASS: legacy routing, authorized dates, registration, duplicate retry, queued confirmation, reminders once, decline');
