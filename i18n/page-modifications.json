@@ -116,16 +116,16 @@
     "lastmod": "2026-09-14"
   },
   "changer-reseau-immobilier.html": {
-    "sha256": "b4f6a408c11fd936b43ca5f29c24d7d7f33df2b2ca49486b46c844957c75b991",
-    "lastmod": "2026-09-14"
+    "sha256": "76ade6fec07928234fd1d08f9e35818347abd7b315272d74d557a9260589e05c",
+    "lastmod": "2026-09-28"
   },
   "devenir-conseiller-immobilier-iad.html": {
-    "sha256": "827df4c0c103b60d3a2c4a1fc5c3d307622c0732c4109d82810a29a0b8f644f7",
+    "sha256": "d73776f868b2297e2249a0483692b373fd0c613a610bc283ac51e35550b00bb3",
     "lastmod": "2026-09-14"
   },
   "dispositifs.html": {
-    "sha256": "d5725a55a049f5c2a9903646555b1de14da4769dea58910872ffc4590f5e93e8",
-    "lastmod": "2026-09-14"
+    "sha256": "38a5319c7b3700f61989afef3cdbe9e26cf870be15901fbed94a0c0d5abfae7f",
+    "lastmod": "2026-09-28"
   },
   "guide-1-mandataire-iad.html": {
     "sha256": "3b96e909fa6fd32e95270e87a39ca92395c55f54652d3c11eef33c793acf32fb",
@@ -144,23 +144,23 @@
     "lastmod": "2026-09-14"
   },
   "index.html": {
-    "sha256": "09765cd85cb076ba42a0f08b81c19707f672df6faf39f825963021173d652b3a",
-    "lastmod": "2026-09-21"
+    "sha256": "37f662623da56b89a5f147bd8ce275bbc1efba637088b79dde6bf86c4ec97cb8",
+    "lastmod": "2026-09-28"
   },
   "mentions-legales.html": {
     "sha256": "3854f01481174b497b438965ae99821f02e0e8b5cd8b081534055bdf7cda0681",
     "lastmod": "2026-09-14"
   },
   "presentation-opportunites-affaires.html": {
-    "sha256": "7f86d169d3355d87506a6893a426d66a05d3518846c673d631876e8f4b0f5aed",
-    "lastmod": "2026-09-21"
+    "sha256": "9e42fcec030be8ca00c52eae43a8a5c3d5f6f389edc78c47a90624ca4f53dd05",
+    "lastmod": "2026-09-28"
   },
   "ressources.html": {
-    "sha256": "334fba6adbd2a63188f17b7929ee7a5409dc6f6868397c5e8d8c0fb9c780c836",
-    "lastmod": "2026-09-21"
+    "sha256": "924324759c8fc4eca73c06c2ad69148b8302aef2e0388be5f9aa75478b894732",
+    "lastmod": "2026-09-28"
   },
   "simulateur.html": {
-    "sha256": "385dfcd4be406f666e35bd5e00825bf95d1695c2ce5440287f55318a8735187d"
+    "sha256": "3835f46b5318d29ed4d60e3d5bbb3b69f84010e7aa59cda510d999a5db109c5c"
   },
   "article-conseiller-immobilier-sans-diplome.html": {
     "sha256": "24011281b397db2145d876e4b39fbb5d45db2c70ecdfed620a8075ba02a4c3ff",
@@ -185,5 +185,32 @@
   "pt/article-conseiller-immobilier-sans-diplome.html": {
     "sha256": "1cdfb3e06d436b14161d396186b3389e1a8a9cf8ff8ec12335e2c2e20047198b",
     "lastmod": "2026-09-21"
+  },
+  "article-changer-reseau-mandats-commissions.html": {
+    "sha256": "f93e85527e82b39d96f51f0338dfcbf4c54af297e29b5384d7f9f6ac6d2fadee",
+    "lastmod": "2026-09-28"
+  },
+  "decouvrir-iad.html": {
+    "sha256": "54c32dd3201c783231a185eee95ab992d175bd0eae082fa680411516c6a62ce8"
+  },
+  "en/article-changer-reseau-mandats-commissions.html": {
+    "sha256": "61ccc7015f44b0855e4beadd140f57d5a3cde0b3b10f1b7097f8918dfc50ee0b",
+    "lastmod": "2026-09-28"
+  },
+  "es/article-changer-reseau-mandats-commissions.html": {
+    "sha256": "4e8937af5a98a2e142488f880b12fd6bc9ff13626cabf0670ad0251e4818514d",
+    "lastmod": "2026-09-28"
+  },
+  "it/article-changer-reseau-mandats-commissions.html": {
+    "sha256": "f8c6aec0546324caa710b7ae6c9bff349af7aea14e0a0b8a367954095396a6b0",
+    "lastmod": "2026-09-28"
+  },
+  "de/article-changer-reseau-mandats-commissions.html": {
+    "sha256": "056ae17e426747d7ae0853c3c75198d7ed830468c203a5144025017992667f5a",
+    "lastmod": "2026-09-28"
+  },
+  "pt/article-changer-reseau-mandats-commissions.html": {
+    "sha256": "bead150583b15cdfd5a590efb3e91173cdbad28cb6b499c12f1d28999cc9feee",
+    "lastmod": "2026-09-28"
   }
 }
