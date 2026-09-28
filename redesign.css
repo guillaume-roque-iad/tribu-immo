@@ -173,8 +173,16 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 .newsletter-copy h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.12;margin:12px 0 18px;color:#142536}
 .newsletter-copy p{font-size:1.05rem;line-height:1.7;color:#304456;max-width:56ch}
 .newsletter-copy .newsletter-note{font-size:.95rem;margin-top:20px}
-.newsletter-form{min-width:0;background:#fff;border:1px solid #c7e8f3;border-radius:18px;padding:clamp(16px,2.5vw,28px);box-shadow:0 16px 40px rgba(18,60,78,.08)}
-.newsletter-form iframe{display:block;width:100%;height:330px;border:0;overflow:auto}
+.newsletter-form{min-width:0;background:#fff;border:1px solid #c7e8f3;border-radius:18px;padding:clamp(20px,3vw,34px);box-shadow:0 16px 40px rgba(18,60,78,.08)}
+.newsletter-signup label{display:block;color:#142536;font-size:1rem;font-weight:700;margin-bottom:12px}
+.newsletter-fields{display:flex;gap:10px;align-items:stretch}
+.newsletter-fields input{flex:1;min-width:0;min-height:52px;padding:13px 16px;border:1px solid #91b6c5;border-radius:12px;background:#fff;color:#142536;font:inherit;font-size:1rem}
+.newsletter-fields input:focus-visible{outline:3px solid #95ebff;outline-offset:2px;border-color:#007daf}
+.newsletter-fields button{min-height:52px;padding:13px 20px;border:0;border-radius:999px;background:#006b9a;color:#fff;font:700 1rem Montserrat,Helvetica,Arial,sans-serif;cursor:pointer;white-space:nowrap}
+.newsletter-fields button:hover,.newsletter-fields button:focus-visible{background:#005578}
+.newsletter-fields button:focus-visible{outline:3px solid #95ebff;outline-offset:3px}
+.newsletter-honeypot{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 .newsletter-privacy{font-size:.875rem;line-height:1.55;color:#42586a;margin:14px 0 0}
 .newsletter-privacy a{color:#075e83;text-decoration:underline;text-underline-offset:2px}
-@media(max-width:800px){.newsletter-layout{grid-template-columns:minmax(0,1fr)}.newsletter-form iframe{height:350px}}
+@media(max-width:800px){.newsletter-layout{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:520px){.newsletter-fields{flex-direction:column}.newsletter-fields button{width:100%}}
