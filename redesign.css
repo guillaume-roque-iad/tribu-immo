@@ -64,7 +64,7 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 #votre-projet .path-card:nth-child(3)::before{background-image:url("/assets/iad-icons/growth.svg")}
 .resource-card::before{background-image:url("/assets/iad-icons/document.svg");width:40px;height:40px}
 #poa .path-card::before{background-image:url("/assets/iad-icons/location.svg");width:40px;height:40px}
-#poa .path-card:has(a[href^="https://meet.google.com/"])::before{background-image:url("/assets/iad-icons/globe.svg")}
+#poa .path-card[data-poa-format="online"]::before{background-image:url("/assets/iad-icons/globe.svg")}
 .support-row h3::before{
  content:"";display:block;width:44px;height:44px;margin-bottom:12px;
  background:center/contain no-repeat url("/assets/iad-icons/team.svg");

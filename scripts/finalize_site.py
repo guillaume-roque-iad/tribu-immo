@@ -72,9 +72,12 @@ for l in LANGS:
 for l in LANGS:
  source=R/('index.html' if l=='fr' else l+'/index.html');d=H.fromstring(source.read_text())
  cards=d.xpath('//*[@data-poa-start]')
- for a in d.xpath('//*[@data-poa-start]//a[contains(@href,"meet.google.com")]'):
-  a.set('href',route(l,'presentation-opportunites-affaires')+'?session='+a.getparent().get('data-poa-start')[:10]+'#inscription');a.attrib.pop('target',None);a.attrib.pop('rel',None);a.text=trans('Je m’inscris gratuitement ↗',l)
-  a.set('data-evt','presentation-date')
+ for card in cards:
+  if 'Google Meet' in card.text_content():
+   card.set('data-poa-format','online')
+   a=card.xpath('.//a')[0]
+   a.set('href',route(l,'presentation-opportunites-affaires')+'?session='+card.get('data-poa-start')[:10]+'#inscription');a.attrib.pop('target',None);a.attrib.pop('rel',None);a.text=trans('Je m’inscris gratuitement ↗',l)
+   a.set('data-evt','presentation-date')
  save(source,d)
  doc=copy.deepcopy(d);main=doc.find('body').find('main')
  section=copy.deepcopy(doc.xpath('//*[@id="poa"]')[0]);contact=copy.deepcopy(doc.xpath('//*[@id="rejoindre"]')[0])
@@ -84,13 +87,14 @@ for l in LANGS:
  contact.set('id','inscription')
  intro=contact.xpath('.//*[contains(concat(" ",@class," ")," contact-layout ")]')[0][0]
  intro.clear();h=E.SubElement(intro,'h2');h.text=trans('Choisissez votre présentation',l)
- p=E.SubElement(intro,'p');p.text=trans('Votre demande sera transmise à Guillaume. Il vous confirmera votre participation et vous communiquera les informations d’accès.',l)
+ registration_desc='Choisissez votre date et complétez le formulaire. Votre inscription sera enregistrée, puis une invitation Google Agenda vous sera envoyée pour cette présentation.'
+ p=E.SubElement(intro,'p');p.text=trans(registration_desc,l)
  form=contact.xpath('.//form')[0];form.set('data-presentation','true')
  form.set('onsubmit','return preparerInscriptionPresentation(event);')
  field=H.Element('div',{'class':'fg'});label=E.SubElement(field,'label',{'for':'presentation-session'});label.text=trans('Session souhaitée *',l)
  select=E.SubElement(field,'select',id='presentation-session',name='session',required='required');op=E.SubElement(select,'option',value='');op.text=trans('Choisissez votre présentation',l)
  graph=[]
- desc=trans('Votre demande sera transmise à Guillaume. Il vous confirmera votre participation et vous communiquera les informations d’accès.',l)
+ desc=trans(registration_desc,l)
  icsdir=R/'agenda'/l;icsdir.mkdir(parents=True,exist_ok=True)
  wanted_days={card.get('data-poa-start')[:10] for card in section.xpath('.//*[@data-poa-start]')}
  for old in icsdir.glob('*.ics'):
@@ -104,7 +108,7 @@ for l in LANGS:
   def utc(t):return datetime.datetime.fromisoformat(t).astimezone(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
   location=trans('En ligne sur Google Meet',l) if online else '2 Espace Soleil, 11100 Narbonne, France'
   # Saving a calendar reminder is not a confirmed registration; no access URL is embedded.
-  desc=trans('Votre demande sera transmise à Guillaume. Il vous confirmera votre participation et vous communiquera les informations d’accès.',l)
+  desc=trans(registration_desc,l)
   def esc(t):return t.replace('\\','\\\\').replace(';','\\;').replace(',','\\,').replace('\n','\\n')
   lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Tribu Immo//Presentations//FR','BEGIN:VEVENT','UID:'+day+'@tribu-immo.com','DTSTAMP:20260914T000000Z','DTSTART:'+utc(start),'DTEND:'+utc(end),'SUMMARY:'+esc(title),'LOCATION:'+esc(location),'DESCRIPTION:'+esc(desc),'URL:'+BASE+route(l,'presentation-opportunites-affaires'),'END:VEVENT','END:VCALENDAR']
   (icsdir/(day+'.ics')).write_bytes(('\n'.join(lines)+'\n').encode())
@@ -115,8 +119,10 @@ for l in LANGS:
   form.set('hidden','hidden')
   section.xpath('.//*[@id="poa-empty"]')[0].attrib.pop('hidden',None)
  button=form.xpath('.//button[@type="submit"]')[0];button.text=trans('Je m’inscris gratuitement ↗',l)
+ consent=form.xpath('.//label[@for="f-consent"]')[0]
+ consent.text=trans('J’accepte de recevoir l’invitation, la confirmation et les rappels de cette présentation, et d’être recontacté(e) par Guillaume Roque. *',l)
  mail_note=E.Element('p',{'class':'notice form-mail-note'})
- mail_note.text=trans('Votre messagerie s’ouvrira avec une demande préremplie. Envoyez-la pour transmettre votre demande à Guillaume ; votre participation ne sera confirmée qu’après sa réponse.',l)
+ mail_note.text=trans('Inscription directe : vous recevrez une invitation Google Agenda, un email de confirmation et des rappels avant la présentation. Acceptez l’invitation pour l’ajouter à votre agenda.',l)
  button.addnext(mail_note)
  success=doc.xpath('//*[@id="fs"]/p')[0];success.text=desc
  for script in doc.xpath('//script[@type="application/ld+json"]'):script.getparent().remove(script)
@@ -130,6 +136,9 @@ for l in LANGS:
  for e in doc.xpath('//link[@hreflang]'):e.set('href',BASE+route('fr' if e.get('hreflang')=='x-default' else e.get('hreflang'),'presentation-opportunites-affaires'))
  for e in doc.xpath('//nav[@class="language-bar"]//a'):e.set('href',route(e.get('hreflang'),'presentation-opportunites-affaires'))
  for e in doc.xpath('//header//a[starts-with(@href,"#")]'):e.set('href',route(l)+e.get('href'))
+ noscript=E.SubElement(doc.find('body'),'noscript')
+ np=E.SubElement(noscript,'p');np.text=trans(registration_desc,l)+' · JavaScript requis / required. '
+ phone=E.SubElement(np,'a',href='tel:+33662108396');phone.text='06 62 10 83 96'
  sc=E.SubElement(doc.find('body'),'script',src='/presentations.js',defer='defer')
  save(R/((l+'/' if l!='fr' else '')+'presentation-opportunites-affaires.html'),doc)
 # Generate independent sitemaps. Unknown historic lastmod is omitted rather than invented.
