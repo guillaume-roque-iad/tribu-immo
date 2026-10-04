@@ -87,6 +87,31 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
         });
     }
     
+// Shared navigation for team videos and member testimonials.
+(() => {
+  const menu = document.getElementById('main-menu');
+  if (!menu) return;
+  const labels = {
+    fr: ['Team building', 'Séminaires nationaux', 'Témoignages'],
+    en: ['Team building', 'National seminars', 'Testimonials'],
+    es: ['Team building', 'Seminarios nacionales', 'Testimonios'],
+    it: ['Team building', 'Seminari nazionali', 'Testimonianze'],
+    de: ['Teambuilding', 'Nationale Seminare', 'Erfahrungsberichte'],
+    pt: ['Team building', 'Seminários nacionais', 'Testemunhos']
+  };
+  const lang = document.documentElement.lang.slice(0, 2);
+  const locale = labels[lang] ? lang : 'fr';
+  const base = locale === 'fr' ? '/' : '/' + locale + '/';
+  const before = menu.querySelector('a[href$="#guillaume"]') || menu.querySelector('.btn');
+  ['vie-equipe', 'seminaires-nationaux', 'temoignages'].forEach((id, i) => {
+    if (menu.querySelector('a[href$="#' + id + '"]')) return;
+    const link = document.createElement('a');
+    link.href = base + '#' + id;
+    link.textContent = labels[locale][i];
+    menu.insertBefore(link, before);
+  });
+})();
+
 document.querySelectorAll('.menu-toggle').forEach(b=>b.addEventListener('click',()=>{const m=document.getElementById('main-menu');const open=m.classList.toggle('open');b.setAttribute('aria-expanded',String(open));b.setAttribute('aria-label',open?((window.TribuUI||{}).menuClose||'Fermer le menu'):((window.TribuUI||{}).menuOpen||'Ouvrir le menu'));}));document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('main-menu').classList.remove('open');document.querySelector('.menu-toggle').setAttribute('aria-expanded','false');}));document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('main-menu')?.classList.remove('open');document.querySelector('.menu-toggle')?.setAttribute('aria-expanded','false');}});
 
 
