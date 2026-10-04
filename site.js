@@ -106,8 +106,8 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
   ['vie-equipe', 'seminaires-nationaux', 'temoignages'].forEach((id, i) => {
     if (menu.querySelector('a[href$="#' + id + '"]')) return;
     const link = document.createElement('a');
-    link.href = base + '#' + id;
-    link.textContent = labels[locale][i];
+    link.href = (id === 'seminaires-nationaux' ? '/' : base) + '#' + id;
+    link.textContent = labels[locale][i] + (id === 'seminaires-nationaux' && locale !== 'fr' ? ' (FR)' : '');
     menu.insertBefore(link, before);
   });
 })();
