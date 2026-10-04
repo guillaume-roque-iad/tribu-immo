@@ -112,13 +112,14 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 .footer-links>*,.footer-top>*{min-width:0}
 .footer-links a,.frgpd a,.direct a{overflow-wrap:anywhere}
 @media(min-width:1440px){.header .nav.wrap{max-width:1440px}}
-@media(max-width:1199px){
- .header .nav{min-height:88px;gap:16px}
  .header .menu-toggle{display:block;margin-left:auto}
  .header .nav-links{display:none;position:absolute;inset:100% 0 auto;flex:none;flex-flow:column nowrap;align-items:stretch;justify-content:flex-start;padding:16px 20px max(20px,env(safe-area-inset-bottom));gap:4px;max-height:calc(100dvh - var(--header-height,160px) - 16px);overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;box-shadow:0 8px 18px #00000020;z-index:30}
  .header .nav-links.open{display:flex}
  .header .nav-links a{flex:0 0 auto;min-width:0;width:100%;min-height:44px;padding:10px 12px;font-size:1rem;white-space:normal;overflow-wrap:anywhere}
  .header .nav-links .btn.small{width:100%;margin:4px 0}
+@media(min-width:1200px){.header .nav-links{left:auto;right:24px;width:420px;max-width:calc(100vw - 48px);border:1px solid var(--line);border-radius:0 0 16px 16px}}
+@media(max-width:1199px){
+ .header .nav{min-height:88px;gap:16px}
  .header .brand img,.editorial .header .brand img{width:76px;height:62px}
  .header .brand img.team-logo,.editorial .header .brand img.team-logo{width:80px;height:80px}
  .hero-inner,.support-layout,.manager-layout,.contact-layout{gap:32px}
