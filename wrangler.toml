@@ -5,4 +5,4 @@ compatibility_date = "2025-06-01"
 directory = "."
 
 [build]
-command = "node scripts/inline-home-styles.mjs"
+command = "node scripts/inline-home-styles.mjs && node scripts/update-indexing.mjs"

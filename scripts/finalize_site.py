@@ -15,9 +15,8 @@ def trans(k,l):
  if l=='fr':return k
  m=json.loads((R/f'i18n/{l}.json').read_text());m.update(json.loads((R/f'i18n/{l}-overrides.json').read_text()));return m.get(k,k)
 def route(l,slug=''):return ('/' if l=='fr' else '/'+l+'/')+slug
-# Review policy is explicit: legacy machine translations remain available but not indexed.
+# Translation review tracking is editorial; public indexing is managed by update-indexing.mjs.
 titles=json.loads((R/'i18n/title-overrides.json').read_text())
-review=json.loads((R/'i18n/reviewed-pages.json').read_text())
 for l in LANGS:
  for p in (R if l=='fr' else R/l).glob('*.html'):
   d=H.fromstring(p.read_text());head=d.find('head')
@@ -32,8 +31,6 @@ for l in LANGS:
      if t and e.tag not in ('script','style') and t.strip() in replacements:setattr(e,field,t.replace(t.strip(),replacements[t.strip()]))
     for a in ('content','alt','title','placeholder','aria-label'):
      if e.get(a) in replacements:e.set(a,replacements[e.get(a)])
-   if p.name not in review.get(l,[]):meta(d,'robots','noindex, follow')
-   else:meta(d,'robots','index, follow')
   for e in d.xpath('//*[@data-poa-start]'):
    if datetime.datetime.fromisoformat(e.get('data-poa-start'))<=NOW:e.getparent().remove(e)
   title=d.find('.//title')
@@ -131,7 +128,7 @@ for l in LANGS:
  doc.find('.//title').text=trans('Présentation des opportunités d’affaires | Tribu Immo',l)
  meta(doc,'description',trans('Consultez les prochaines présentations du réseau iad avec Guillaume Roque, à Narbonne ou en visio, et demandez à participer gratuitement.',l))
  meta(doc,'og:title',doc.find('.//title').text,'property');meta(doc,'og:description',doc.xpath('//meta[@name="description"]/@content')[0],'property');meta(doc,'og:url',url,'property')
- # Pages inherit unreviewed headers/footer: keep translations noindex until reviewed in full.
+ # Indexing policy is applied after all generated pages are written.
  for e in doc.xpath('//link[@rel="canonical"]'):e.set('href',url)
  for e in doc.xpath('//link[@hreflang]'):e.set('href',BASE+route('fr' if e.get('hreflang')=='x-default' else e.get('hreflang'),'presentation-opportunites-affaires'))
  for e in doc.xpath('//nav[@class="language-bar"]//a'):e.set('href',route(e.get('hreflang'),'presentation-opportunites-affaires'))
@@ -141,27 +138,7 @@ for l in LANGS:
  phone=E.SubElement(np,'a',href='tel:+33662108396');phone.text='06 62 10 83 96'
  sc=E.SubElement(doc.find('body'),'script',src='/presentations.js',defer='defer')
  save(R/((l+'/' if l!='fr' else '')+'presentation-opportunites-affaires.html'),doc)
-# Generate independent sitemaps. Unknown historic lastmod is omitted rather than invented.
-ns='http://www.sitemaps.org/schemas/sitemap/0.9'
-statepath=R/'i18n/page-modifications.json';state=json.loads(statepath.read_text()) if statepath.exists() else {}
-redirects={line.split()[0] for line in (R/'_redirects').read_text().splitlines() if line and not line.startswith('#')}
-for l in LANGS:
- root=E.Element('urlset',nsmap={None:ns})
- for p in sorted((R if l=='fr' else R/l).glob('*.html')):
-  doc=H.fromstring(p.read_text());canonical=doc.xpath('//link[@rel="canonical"]/@href')
-  if not canonical or 'noindex' in ','.join(doc.xpath('//meta[@name="robots"]/@content')):continue
-  u=canonical[0]
-  if u.removeprefix(BASE) in redirects:continue
-  path=str(p.relative_to(R));digest=hashlib.sha256(p.read_bytes()).hexdigest();entry=state.get(path)
-  if entry and entry['sha256']!=digest:entry={'sha256':digest,'lastmod':NOW.date().isoformat()}
-  elif not entry:entry={'sha256':digest} # no trustworthy full history in shallow clones
-  state[path]=entry
-  el=E.SubElement(root,'url');E.SubElement(el,'loc').text=u
-  if entry.get('lastmod'):E.SubElement(el,'lastmod').text=entry['lastmod']
- (R/f'sitemap-{l}.xml').write_bytes(E.tostring(root,xml_declaration=True,encoding='UTF-8'))
-index=E.Element('sitemapindex',nsmap={None:ns})
-for l in LANGS:
- if len(E.parse(str(R/f'sitemap-{l}.xml')).getroot()):E.SubElement(E.SubElement(index,'sitemap'),'loc').text=BASE+f'/sitemap-{l}.xml'
-(R/'sitemap.xml').write_bytes(E.tostring(index,xml_declaration=True,encoding='UTF-8'))
-statepath.write_text(json.dumps(state,indent=2)+'\n')
+# Share the production indexing policy, including sitemaps and language alternatives.
+import subprocess
+subprocess.run(['node', str(R/'scripts/update-indexing.mjs')], check=True)
 print('Finalized event pages, metadata, expiry filtering and sitemaps')
