@@ -204,3 +204,5 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 
 /* Blue.900 keeps small headings readable on pale blue section backgrounds. */
 .team-film .eyebrow,.newsletter-section .eyebrow{color:#006B9A}
+/* Consent controls must stay stable while the brand font loads. */
+.bandeau-cookies{font-family:Arial,Helvetica,sans-serif}
