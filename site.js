@@ -119,3 +119,17 @@ document.querySelectorAll('.menu-toggle').forEach(b=>b.addEventListener('click',
 (()=>{const menu=document.getElementById('main-menu');if(!menu||menu.querySelector('a[href="/simulateur"]'))return;const a=document.createElement('a');a.href='/simulateur';const lang=document.documentElement.lang.slice(0,2);a.textContent=({fr:'Simulateur',en:'Simulator (FR)',es:'Simulador (FR)',it:'Simulatore (FR)',de:'Simulator (FR)',pt:'Simulador (FR)'})[lang]||'Simulateur';menu.insertBefore(a,menu.querySelector('.btn'));})();
 
 (()=>{const h=document.querySelector(".header");if(h&&window.ResizeObserver)new ResizeObserver(()=>document.documentElement.style.setProperty("--header-height",h.getBoundingClientRect().height+"px")).observe(h);})();
+
+// Fetch below-the-fold video posters only as the visitor approaches them.
+// Native video controls and preload="none" remain available without JavaScript.
+(() => {
+  const videos = document.querySelectorAll('video[data-poster]');
+  const reveal = video => { video.poster = video.dataset.poster; video.removeAttribute('data-poster'); };
+  if (!('IntersectionObserver' in window)) { videos.forEach(reveal); return; }
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) { reveal(entry.target); observer.unobserve(entry.target); }
+    });
+  }, {rootMargin: '400px 0px'});
+  videos.forEach(video => observer.observe(video));
+})();
