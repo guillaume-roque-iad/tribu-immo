@@ -95,9 +95,9 @@
         style.textContent=[
           '.tribu-lead-locked #tg-content>.tg-lines,.tribu-lead-locked #tg-content>details,.tribu-lead-locked #tg-content>.tg-separate{display:none!important}',
           '.tribu-lead-locked .result .line,.tribu-lead-locked .result details,.tribu-lead-locked .result .divider,.tribu-lead-locked #tl-report tbody,.tribu-lead-locked .tip-notes{filter:blur(7px);user-select:none;pointer-events:none;opacity:.55}',
-          '#tribu-lead-cta{position:static;left:auto;bottom:auto;transform:none;z-index:auto;width:100%;background:#3C4A5F;color:#fff;border-radius:14px;padding:14px 16px;box-shadow:none;display:flex;align-items:center;justify-content:space-between;gap:14px;font-family:Montserrat,Arial,sans-serif;margin-top:20px}',
-          '#tribu-lead-cta strong{display:block;font-size:15px}#tribu-lead-cta span{display:block;font-size:12px;opacity:.9;margin-top:2px}',
-          '#tribu-lead-cta button{flex:none;background:#006390!important;color:#fff!important;border:0!important;padding:11px 16px!important;font-weight:700!important}',
+          '#tribu-lead-cta{position:static;left:auto;bottom:auto;transform:none;z-index:auto;width:100%;box-sizing:border-box;background:#3C4A5F;color:#fff;border-radius:14px;padding:14px 16px;box-shadow:none;display:flex;align-items:center;justify-content:space-between;gap:14px;font-family:Montserrat,Arial,sans-serif;margin-top:20px}',
+          '#tribu-guide #tribu-lead-cta strong{display:block;font-size:15px;color:#fff!important}#tribu-guide #tribu-lead-cta span{display:block;font-size:13px;color:#fff!important;opacity:1;margin-top:4px}',
+          '#tribu-guide #tribu-lead-cta button{flex:none;cursor:pointer;border-radius:8px;min-height:44px;background:#fff!important;color:#174658!important;border:0!important;padding:11px 16px!important;font-weight:700!important}',
           '@media(max-width:650px){#tribu-lead-cta{align-items:stretch;flex-direction:column}#tribu-lead-cta button{width:100%}}'
         ].join('');
         doc.head.appendChild(style);
@@ -107,7 +107,7 @@
         cta=doc.createElement('div');
         cta.id='tribu-lead-cta';
         cta.innerHTML='<div><strong>Votre estimation est prête.</strong><span>Débloquez le détail complet de la simulation.</span></div><button type="button">Voir mon résultat complet ↗</button>';
-        cta.querySelector('button').addEventListener('click',function(){window.parent.postMessage({type:'tribu-open-simulator-lead'},location.origin);});
+        cta.querySelector('button').addEventListener('click',ouvrirCapture);
         var resultAnchor=doc.querySelector('.tg-result')||doc.querySelector('.main-result')||doc.querySelector('.result');if(resultAnchor){resultAnchor.appendChild(cta);}else{doc.body.appendChild(cta);}
       }
       if(unlocked&&cta)cta.remove();
