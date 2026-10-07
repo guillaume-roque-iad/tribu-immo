@@ -116,7 +116,7 @@ document.querySelectorAll('.menu-toggle').forEach(b=>b.addEventListener('click',
 
 
 // Accès au simulateur depuis toutes les pages du site.
-(()=>{const menu=document.getElementById('main-menu');if(!menu||menu.querySelector('a[href="/simulateur"]'))return;const a=document.createElement('a');a.href='/simulateur';const lang=document.documentElement.lang.slice(0,2);a.textContent=({fr:'Simulateur',en:'Simulator (FR)',es:'Simulador (FR)',it:'Simulatore (FR)',de:'Simulator (FR)',pt:'Simulador (FR)'})[lang]||'Simulateur';menu.insertBefore(a,menu.querySelector('.btn'));})();
+(()=>{const menu=document.getElementById('main-menu');if(!menu)return;const existing=menu.querySelector('a[href="/simulateur"]');const a=existing||document.createElement('a');a.href='/simulateur';const lang=document.documentElement.lang.slice(0,2);a.textContent=({fr:'Simulateur de revenus',en:'Income simulator (FR)',es:'Simulador de ingresos (FR)',it:'Simulatore di reddito (FR)',de:'Einkommenssimulator (FR)',pt:'Simulador de rendimentos (FR)'})[lang]||'Simulateur de revenus';if(!existing)menu.insertBefore(a,menu.querySelector('.btn'));})();
 
 (()=>{const h=document.querySelector(".header");if(h&&window.ResizeObserver)new ResizeObserver(()=>document.documentElement.style.setProperty("--header-height",h.getBoundingClientRect().height+"px")).observe(h);})();
 
