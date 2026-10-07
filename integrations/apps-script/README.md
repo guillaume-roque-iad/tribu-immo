@@ -4,8 +4,8 @@
 
 - Sans action dédiée, GET/POST conservent le traitement historique (prochain événement).
 - `presentation_sessions` expose uniquement les séances autorisées à venir.
-- `presentation_register` écrit dans l’onglet `Inscriptions presentations`, puis crée une invitation individuelle à la date choisie. L’événement source et les invitations historiques restent inchangés.
-- Un identifiant déterministe empêche les doubles invitations lors des nouvelles tentatives.
+- `presentation_register` écrit dans l’onglet `Inscriptions presentations`, puis ajoute le participant aux invités de l’occurrence existante à la date choisie. Aucun événement supplémentaire n’est créé ; le lien Meet, les horaires et les invités existants sont conservés. Les anciennes invitations individuelles restent suivies par les rappels.
+- Une clé par séance et adresse email, un verrou et une vérification des invités empêchent les doubles ajouts lors des nouvelles tentatives.
 - Les emails en attente et les rappels sont traités par `relancerPresentationsTribu`, déclencheur horaire toutes les 15 minutes. Les rappels partent dans les fenêtres des 24 h et 2 h précédant la séance, sous réserve du quota Google. Aucun mail n’est envoyé après le début de la séance.
 - Les confirmations sont mises en attente si le quota est épuisé. Les refus d’invitation interrompent les rappels.
 - Les fonctions utilisent le service avancé Calendar existant et les autorisations déjà en place.

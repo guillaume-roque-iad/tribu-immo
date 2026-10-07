@@ -22,13 +22,14 @@ function doPost(e) {
 var POA_CALENDAR = 'guillaume.roque@iadfrance.fr';
 var POA_SHEET = 'Inscriptions presentations';
 var POA_SOURCES = ['7r18brunjqk6n025ca3is78kcg','1o35mtk63c31kt1v488ucchvcl','6akjaqq3bmf6ed02e41a9ok6bb','0o8tpmfj9kfn30i51ml7mm7bi8'];
+var POA_SERIES = ['7gg3st9cngbjq9mrchhbbhkfcj','e6i784tr84krskv8spdbqvf75c'];
 
 function poaJson_(data) {
   return ContentService.createTextOutput(JSON.stringify(data)).setMimeType(ContentService.MimeType.JSON);
 }
 function poaSourceAutorisee_(ev) {
   return ev && ev.status !== 'cancelled' && ev.start && ev.start.dateTime &&
-    (POA_SOURCES.indexOf(ev.id) >= 0 || /^7gg3st9cngbjq9mrchhbbhkfcj_/.test(ev.id));
+    (POA_SOURCES.indexOf(ev.id) >= 0 || POA_SERIES.some(function(id){return ev.recurringEventId===id || ev.id.indexOf(id+'_')===0;}));
 }
 function poaSessions_() {
   var items = [], token;
@@ -74,6 +75,16 @@ function poaInvitation_(ev,email,nom,id) {
     extendedProperties:{private:{tribuSource:ev.id}},
     reminders:{useDefault:false,overrides:[{method:'popup',minutes:120}]}};
 }
+// Add only to the selected occurrence. Never create a new Calendar event or change its Meet link.
+function poaAjouterInvite_(id,email,nom) {
+  var ev=Calendar.Events.get(POA_CALENDAR,id);
+  if(!poaSourceAutorisee_(ev) || new Date(ev.start.dateTime).getTime()<=Date.now())throw new Error('Présentation indisponible');
+  if(ev.attendeesOmitted)throw new Error('Liste des invités incomplète');
+  var attendees=ev.attendees || [];
+  if(attendees.some(function(a){return String(a.email||'').toLowerCase()===email;}))return ev;
+  attendees=attendees.concat([{email:email,displayName:nom}]);
+  return Calendar.Events.patch({attendees:attendees},POA_CALENDAR,id,{sendUpdates:'all'});
+}
 function poaMail_(email,nom,ev,rappel) {
   if(MailApp.getRemainingDailyQuota()<1)return false;
   var info=poaInfos_(ev), titre=rappel?'Rappel — votre présentation iad':'Votre inscription à la présentation iad est confirmée';
@@ -106,12 +117,9 @@ function poaInscrire_(p) {
     }
     var row=sh.getRange(n,1,1,13).getValues()[0];
     if(row[11]==='annulée')return {ok:false,message:'Cette inscription a été annulée. Contactez Guillaume pour la réactiver.'};
-    var invitationId='ti'+key,invitation;
     if(!row[7]){
-      try{invitation=Calendar.Events.get(POA_CALENDAR,invitationId);}catch(err){if(!/404|not found/i.test(String(err)))throw err;}
-      if(!invitation)invitation=Calendar.Events.insert(poaInvitation_(ev,email,nom,invitationId),POA_CALENDAR,{sendUpdates:'all'});
-      if(invitation.status==='cancelled')return {ok:false,message:'Cette invitation a été annulée. Contactez Guillaume.'};
-      sh.getRange(n,8).setValue(invitationId);SpreadsheetApp.flush();
+      ev=poaAjouterInvite_(ev.id,email,nom);
+      sh.getRange(n,8).setValue(ev.id);SpreadsheetApp.flush();
     }
     var sent=!!row[8],mailError='';
     if(!sent){
@@ -133,13 +141,13 @@ function relancerPresentationsTribu() {
         var ev=sources[r[6]]||(sources[r[6]]=Calendar.Events.get(POA_CALENDAR,r[6]));
         var inv=Calendar.Events.get(POA_CALENDAR,r[7]);
         if(ev.status==='cancelled' || inv.status==='cancelled' || (inv.attendees||[]).some(function(a){return a.email.toLowerCase()===r[3]&&a.responseStatus==='declined';})){
-          if(ev.status==='cancelled'&&inv.status!=='cancelled')Calendar.Events.remove(POA_CALENDAR,r[7],{sendUpdates:'all'});
+          if(r[7]!==r[6]&&ev.status==='cancelled'&&inv.status!=='cancelled')Calendar.Events.remove(POA_CALENDAR,r[7],{sendUpdates:'all'});
           sh.getRange(i+1,12).setValue('annulée');continue;
         }
         var hours=(new Date(ev.start.dateTime).getTime()-now)/3600000;
         if(hours<=0){sh.getRange(i+1,12).setValue('terminée');continue;}
         var info=poaInfos_(ev);
-        if(new Date(inv.start.dateTime).getTime()!==new Date(ev.start.dateTime).getTime() || new Date(inv.end.dateTime).getTime()!==new Date(ev.end.dateTime).getTime() || inv.location!==info.lieu){
+        if(r[7]!==r[6] && (new Date(inv.start.dateTime).getTime()!==new Date(ev.start.dateTime).getTime() || new Date(inv.end.dateTime).getTime()!==new Date(ev.end.dateTime).getTime() || inv.location!==info.lieu)){
           var upd=poaInvitation_(ev,r[3],r[2],r[7]);
           Calendar.Events.patch({start:upd.start,end:upd.end,location:upd.location,description:upd.description},POA_CALENDAR,r[7],{sendUpdates:'all'});
         }
