@@ -605,6 +605,9 @@ function wireLeadGate(){
 }
 const startProfile=new URLSearchParams(location.search).get('profil');
 if(startProfile==='equipe'){a.profile='team';a.team='yes';a.withTeam='yes';}
+else if(startProfile==='reconversion'){a.profile='neo';}
+else if(startProfile==='mandataire'){a.profile='solo';}
+else if(startProfile==='agence'){a.profile='agency';}
 result=render;
 render();
 
