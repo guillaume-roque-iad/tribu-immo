@@ -276,23 +276,23 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 .journey-bottom .btn{background:#00b4ec;color:#072735}
 .journey-more{margin-top:34px;font-size:.9rem}
 .journey-more a{color:#006390;font-weight:700}
-@media(min-width:1280px){
+@media(min-width:1500px){
  .header .nav{gap:12px}
  .header .menu-toggle{display:none}
  .header .nav-links[data-simplified-nav]{display:flex;position:static;inset:auto;flex:1;flex-flow:row nowrap;width:auto;max-width:none;border:0;border-radius:0;box-shadow:none;overflow:visible;max-height:none;padding:0;background:#fff;justify-content:flex-end;align-items:center}
  .header .nav-links[data-simplified-nav]>a{width:auto;min-height:auto;padding:7px 0}
  .header .nav-links[data-simplified-nav]>.btn{padding:12px}
 }
-@media(max-width:1279px){
+@media(max-width:1499px){
  .header .menu-toggle{display:block;margin-left:auto}
- .header .nav-links[data-simplified-nav]{display:none;position:absolute;inset:100% 0 auto;flex:none;flex-flow:column nowrap;align-items:stretch;justify-content:flex-start;padding:18px;gap:5px;max-height:calc(100dvh - 150px);overflow-y:auto;overflow-x:hidden;background:#fff;box-shadow:0 12px 24px #102f4329;border:1px solid #d8e7ec;z-index:30}
+ .header .nav-links[data-simplified-nav]{display:none;position:absolute;inset:100% 0 auto;flex:none;flex-flow:column nowrap;align-items:stretch;justify-content:flex-start;padding:18px;gap:5px;left:auto;right:0;width:min(420px,100%);max-height:calc(100dvh - var(--header-height,150px) - 12px);overflow-y:auto;overflow-x:hidden;background:#fff;box-shadow:0 12px 24px #102f4329;border:1px solid #d8e7ec;z-index:30}
  .header .nav-links[data-simplified-nav].open{display:flex}
- .header .nav-links[data-simplified-nav]>a:not(.btn){font-size:1rem;min-height:44px;padding:10px}
- .header .nav-links[data-simplified-nav]>.btn{width:100%;font-size:.9rem}
+ .header .nav-links[data-simplified-nav]>a:not(.btn){font-size:1rem;min-height:44px;padding:10px;white-space:normal;overflow-wrap:anywhere}
+ .header .nav-links[data-simplified-nav]>.btn{width:100%;font-size:.9rem;white-space:normal;overflow-wrap:anywhere}
  .nav-project summary{padding:10px;min-height:44px;font-size:1rem}
  .nav-project-menu{position:static;min-width:0;box-shadow:none;border:0;border-left:3px solid #00b4ec;margin:3px 0 9px;padding:3px 6px;border-radius:0}
  .header .nav-project-menu a{font-size:.9rem;padding:11px}
 }
 @media(max-width:1050px){.parcours-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:800px){.benefit-grid,.journey-columns,.journey-roadmap ol{grid-template-columns:1fr}.simulator-promo{grid-template-columns:1fr}.new-benefits,.new-simulator,.journey-hero{padding-block:48px}.journey-main{padding-block:48px}}
-@media(max-width:540px){.parcours-grid{grid-template-columns:1fr}.parcours-card{min-height:230px;padding:25px}.journey-roadmap{padding:24px}.header .nav-links[data-simplified-nav]{left:0;right:0}}
+@media(max-width:540px){.parcours-grid{grid-template-columns:1fr}.parcours-card{min-height:230px;padding:25px}.journey-roadmap{padding:24px} .header .nav-links[data-simplified-nav]{left:0;right:0;width:100%}}
