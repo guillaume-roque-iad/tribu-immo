@@ -203,34 +203,39 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
     menu.classList.toggle('open',open);
     toggle.setAttribute('aria-expanded',String(open));
     toggle.setAttribute('aria-label',open?labels[1]:labels[0]);
-    glyph.textContent=open?'✕':'☰';
+    glyph.classList.toggle('is-open',open);
     caption.textContent=open?labels[1]:labels[0];
     if(!open) menu.querySelectorAll('.nav-project[open]').forEach(d=>{d.open=false});
   }
-  function mark(element, emoji){
-    if(!element || element.querySelector('.nav-emoji'))return;
-    const icon=document.createElement('span');
-    icon.className='nav-emoji';
-    icon.setAttribute('aria-hidden','true');
-    icon.textContent=emoji;
-    element.prepend(icon);
+  // Pictogrammes vectoriels officiels iad, déjà présents dans /assets/iad-icons/.
+  function mark(element, filename){
+    if(!element || element.querySelector('.nav-iad-icon'))return;
+    const img=document.createElement('img');
+    img.className='nav-iad-icon';
+    img.src='/assets/iad-icons/'+filename+'.svg';
+    img.alt='';
+    img.setAttribute('aria-hidden','true');
+    img.width=24;
+    img.height=24;
+    img.decoding='async';
+    element.prepend(img);
   }
   const icons=[
-    [/decouvrir-iad/, '🏠'],
-    [/parcours-reconversion/, '🎯'],
-    [/parcours-mandataire/, '💼'],
-    [/parcours-equipe/, '🤝'],
-    [/parcours-international/, '🌍'],
-    [/simulateur/, '🧮'],
-    [/presentation-opportunites-affaires|#poa/, '📅'],
-    [/#temoignages|#vie-equipe/, '👥'],
-    [/#seminaires-nationaux/, '🎤'],
-    [/#guillaume/, '👤'],
-    [/#accompagnement/, '🤝'],
-    [/#remuneration/, '💶'],
-    [/preparer-mon-projet/, '🧭'],
-    [/#newsletter/, '📰'],
-    [/#rejoindre/, '✉️']
+    [/decouvrir-iad/, 'home'],
+    [/parcours-reconversion/, 'growth'],
+    [/parcours-mandataire/, 'key'],
+    [/parcours-equipe/, 'team'],
+    [/parcours-international/, 'globe'],
+    [/simulateur/, 'growth'],
+    [/presentation-opportunites-affaires|#poa/, 'document'],
+    [/#temoignages|#vie-equipe/, 'team'],
+    [/#seminaires-nationaux/, 'check'],
+    [/#guillaume/, 'team'],
+    [/#accompagnement/, 'check'],
+    [/#remuneration/, 'growth'],
+    [/preparer-mon-projet/, 'document'],
+    [/#newsletter/, 'mail'],
+    [/#rejoindre/, 'mail']
   ];
   menu.querySelectorAll('a').forEach(link=>{
     const href=link.getAttribute('href')||'';
@@ -238,7 +243,7 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
     if(pair)mark(link,pair[1]);
   });
   const project=menu.querySelector('.nav-project summary');
-  if(project)mark(project,'🧭');
+  if(project)mark(project,'document');
   setOpen(false);
   toggle.addEventListener('click',()=>setOpen(!menu.classList.contains('open')));
   menu.addEventListener('click',e=>{if(e.target.closest('a'))setOpen(false)});

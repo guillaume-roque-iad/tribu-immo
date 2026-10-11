@@ -478,3 +478,49 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
   .header .nav-links,.header .nav-links[data-simplified-nav]{width:100%!important;left:0!important;right:0!important}
   .header .menu-toggle{padding:10px 14px!important;min-height:44px!important}
 }
+
+/* === iad 2025 : pictogrammes officiels et gelules du site de recrutement === */
+:root{--iad-brand:#00B4EC;--iad-coral:#EA584A;--iad-beige:#F1ECE5;--iad-charcoal:#3C4A5F}
+/* Icones SVG de la charte iad (pages 18-19), jamais d'emojis systeme decoratifs. */
+.header .nav-iad-icon{display:block;flex:0 0 24px;width:24px;height:24px;object-fit:contain}
+.header .nav-emoji{display:none!important}
+.header .nav-project summary .nav-iad-icon{width:24px;height:24px;flex-basis:24px}
+.header .nav-links a .nav-iad-icon{margin-right:2px}
+/* Gélule primaire : Montserrat gras italique, bleu iad et typographie noire lisible. */
+.btn,.btn.small,.project-button,.insight-button,.fsub,.article-cta-btn,.menu-toggle{border-radius:999px;font-family:Montserrat,Helvetica,Arial,sans-serif;font-style:italic;font-weight:700;line-height:1.35}
+.btn:not(.outline):not(.dark),.btn.small:not(.outline):not(.dark),.project-button:not(.secondary),.insight-button,.fsub,.article-cta-btn{
+ background:var(--iad-brand)!important;color:#000!important;border-color:transparent!important
+}
+.btn:not(.outline):not(.dark):hover,.project-button:not(.secondary):hover,.insight-button:hover,.fsub:hover,.article-cta-btn:hover{
+ background:#95EBFF!important;color:#000!important
+}
+.btn.outline,.project-button.secondary{background:#fff!important;color:#006390!important;border:2px solid #006390!important}
+.btn.outline:hover,.project-button.secondary:hover{background:#E9FCFF!important;color:#004b6b!important}
+.header .nav-links>a.btn,.header .nav-links[data-simplified-nav]>a.btn{
+ background:var(--iad-brand)!important;color:#000!important;border:0!important;font-style:italic!important
+}
+.header .nav-links>a.btn:hover,.header .nav-links[data-simplified-nav]>a.btn:hover{background:#95EBFF!important;color:#000!important}
+/* Bouton Menu : gélule web couleur charcoal autorisée et symbole dessiné en CSS. */
+.header .menu-toggle{background:var(--iad-charcoal)!important;border-color:var(--iad-charcoal)!important;color:#fff!important;font-style:italic}
+.header .menu-toggle:hover{background:#273545!important;border-color:#273545!important}
+.header .menu-toggle .menu-hamburger{position:relative;display:inline-block;flex:0 0 19px;width:19px;height:19px;font-size:0!important;line-height:0!important}
+.header .menu-toggle .menu-hamburger::before,.header .menu-toggle .menu-hamburger::after{content:"";position:absolute;left:0;width:19px;height:2px;background:currentColor;border-radius:99px;transition:top .2s,transform .2s,box-shadow .2s}
+.header .menu-toggle .menu-hamburger::before{top:4px;box-shadow:0 6px 0 currentColor}
+.header .menu-toggle .menu-hamburger::after{top:16px}
+.header .menu-toggle .menu-hamburger.is-open::before{top:10px;box-shadow:none;transform:rotate(45deg)}
+.header .menu-toggle .menu-hamburger.is-open::after{top:10px;transform:rotate(-45deg)}
+/* La gélule est aussi un élément graphique : fond beige et icône bleu/corail iad. */
+.parcours-card .parcours-ico{display:flex;align-items:center;justify-content:center;width:84px;height:48px;flex:none;margin:19px 0 18px;padding:8px 19px;background:var(--iad-beige);border-radius:999px;transform:rotate(5deg);font-size:0}
+.parcours-card .parcours-ico img{display:block;width:100%;height:100%;max-width:100%;object-fit:contain;transform:rotate(-5deg)}
+.parcours-card:nth-child(2) .parcours-ico{background:#CDF7FF}
+.parcours-card:nth-child(3) .parcours-ico{background:#F1ECE5}
+.parcours-card:nth-child(4) .parcours-ico{background:#E9FCFF}
+/* CTA de premier niveau légèrement incliné comme les gélules de la charte. */
+.hero-new .actions>.btn:first-child,.new-simulator .actions>.btn:first-child,.journey-bottom .btn{transform:rotate(5deg);transform-origin:center center}
+.hero-new .actions>.btn:first-child:hover,.new-simulator .actions>.btn:first-child:hover,.journey-bottom .btn:hover{transform:rotate(5deg) translateY(-2px)}
+/* Titrages de petits tags : gélules sobres, sans utiliser le corail comme fond massif. */
+.tags span,.journey-crumb{border-radius:999px}
+@media(max-width:600px){
+ .hero-new .actions>.btn:first-child,.new-simulator .actions>.btn:first-child,.journey-bottom .btn{transform:rotate(2deg)}
+ .hero-new .actions>.btn:first-child:hover,.new-simulator .actions>.btn:first-child:hover,.journey-bottom .btn:hover{transform:rotate(2deg)}
+}
