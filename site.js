@@ -250,3 +250,42 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
   document.addEventListener('click',e=>{if(!toggle.contains(e.target)&&!menu.contains(e.target))setOpen(false)});
   document.addEventListener('keydown',e=>{if(e.key==='Escape')setOpen(false)});
 })();
+
+
+/* Lien propertips avec son logo dans le menu commun des pages du site. */
+(() => {
+  const nav=document.getElementById('main-menu');
+  if(!nav || nav.querySelector('.nav-propertips-link'))return;
+  const link=document.createElement('a');
+  link.className='nav-propertips-link';
+  link.href='/#propertips';
+  link.setAttribute('aria-label','Découvrir propertips by iad');
+  const img=document.createElement('img');
+  img.src='/propertips-logo.svg';
+  img.alt='propertips by iad';
+  img.width=132;
+  img.height=45;
+  img.decoding='async';
+  const caption=document.createElement('span');
+  const lang=(document.documentElement.lang||'fr').slice(0,2);
+  caption.textContent=({
+    fr:'Recommander un proche',
+    en:'Refer someone',
+    es:'Recomendar a alguien',
+    it:'Segnala una persona',
+    de:'Jemanden empfehlen',
+    pt:'Recomendar alguém'
+  })[lang]||'Recommander un proche';
+  link.append(img,caption);
+  nav.insertBefore(link,nav.querySelector('a.btn')||null);
+  link.addEventListener('click',()=>{
+    nav.classList.remove('open');
+    const toggle=document.querySelector('.menu-toggle');
+    if(toggle){
+      toggle.setAttribute('aria-expanded','false');
+      toggle.setAttribute('aria-label','Ouvrir le menu');
+      toggle.querySelector('.menu-hamburger')?.classList.remove('is-open');
+      if(toggle.querySelector('.menu-caption'))toggle.querySelector('.menu-caption').textContent='Menu';
+    }
+  });
+})();
