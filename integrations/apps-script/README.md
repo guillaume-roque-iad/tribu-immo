@@ -15,4 +15,12 @@ Tests sans envoi réel, depuis la racine du dépôt : `node integrations/apps-sc
 
 ## Contacts et simulateurs
 
-`Leads.gs` et la route POST `lead_capture` enregistrent les coordonnées et les simulations des deux sites dans le tableau commun « Leads Simulateur de revenus - Tribu Immo & Team Lucky », onglet `Simulations`. La marque et le responsable sont déterminés côté serveur. Un identifiant de soumission empêche les doublons. Cette route ne crée ni inscription à une présentation, ni invitation, ni email automatique. Les routes de présentation existantes restent séparées. Les résultats complets et les réponses sont conservés en Notes.
+`Leads.gs` et la route POST `lead_capture` enregistrent les coordonnées et les simulations des deux sites dans le tableau existant « Rejoindre l’équipe IAD France – Candidature Mandataire Immobilier (réponses) », onglet `Réponses au formulaire 1`. La source est limitée à Tribu Immo ou Team Lucky ; le responsable est déterminé côté serveur. Les réponses et résultats déclaratifs sont conservés dans la colonne H.
+
+Un identifiant de soumission et un verrou empêchent les doublons à la nouvelle tentative. Le résultat n’est débloqué dans le navigateur qu’après une réponse confirmant `ok: true` et `saved: true`. Aucun contact n’est enregistré dans le navigateur après validation.
+
+Chaque nouvelle demande déclenche une alerte HTML à Guillaume Roque, avec les logos intégrés en CID, les coordonnées cliquables et un lien vers la ligne du contact. Les colonnes AB à AF suivent l’identifiant, l’origine, le responsable et l’état de l’alerte. Une alerte déjà envoyée n’est pas renvoyée lors d’une nouvelle tentative. En cas d’échec, l’erreur est enregistrée et la fonction `reprendreAlertesSimulateur` permet une reprise manuelle ; aucun nouveau déclencheur horaire n’a été installé.
+
+Le formulaire transmet explicitement le choix newsletter (case facultative non précochée) dans la colonne X. La synchronisation Brevo déjà installée dans « Script Google Sheet » contrôle les nouvelles lignes toutes les cinq minutes et conserve les refus et désabonnements. Cette route ne crée pas d’inscription à une présentation ; les routes de choix de séance restent séparées.
+
+Version Apps Script 8 déployée le 11 octobre 2026 : alerte HTML vérifiée par réception d’un email de démonstration, sans créer de candidat.
