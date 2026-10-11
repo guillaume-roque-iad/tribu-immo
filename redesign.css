@@ -567,3 +567,44 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 .propertips-feature-video-frame iframe{display:block;width:100%;height:100%;border:0}
 .propertips-feature-video>a{display:block;text-align:center;font-size:.83rem;color:#006390;font-weight:650;margin-top:10px;text-underline-offset:4px}
 @media(max-width:800px){.propertips-feature .propertips-feature-cta{width:100%;white-space:normal}.propertips-feature-brand{max-width:580px;width:100%;justify-self:center}}
+
+
+/* International – expérience Team Lucky adaptée à la charte iad et à la Tribu Immo */
+.intl-spotlight,.intl-detail{padding:clamp(54px,6vw,92px) 0;background:#fff}
+.intl-spotlight{border-top:1px solid #d3eaf1;border-bottom:1px solid #d3eaf1}
+.intl-detail{background:linear-gradient(180deg,#f5fcff 0%,#fff 100%);border-bottom:1px solid #d3eaf1}
+.intl-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
+.intl-heading>div:first-child{min-width:0;max-width:820px}
+.intl-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:800;letter-spacing:.08em;color:#006390;margin:0 0 17px}
+.intl-eyebrow img{width:28px;height:28px;object-fit:contain}
+.intl-heading h2{font-size:clamp(2rem,4vw,3.35rem);max-width:780px;letter-spacing:-.035em;margin:0 0 16px;line-height:1.16}
+.intl-intro{color:#394f5c;font-size:1.02rem;line-height:1.75;max-width:800px}
+.intl-heading-actions{display:flex;flex-direction:column;align-items:flex-start;gap:14px;flex:0 0 auto}
+.intl-heading-actions .btn{white-space:normal;max-width:100%;text-align:center;min-height:50px}
+.intl-text-link{color:#006390;font-size:.86rem;font-weight:750;text-underline-offset:3px}
+.intl-three-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.intl-path{background:#fff;border:1px solid #d1e4ec;border-radius:22px;padding:26px;min-width:0;display:flex;flex-direction:column;align-items:flex-start}
+.intl-path:nth-child(2){background:#e9fcff}
+.intl-path-icon{display:flex;align-items:center;justify-content:center;width:80px;height:50px;border-radius:999px;background:#f1ece5;transform:rotate(5deg);margin-bottom:18px;padding:9px 18px}
+.intl-path:nth-child(2) .intl-path-icon{background:#fff}
+.intl-path-icon img{height:100%;width:100%;object-fit:contain;transform:rotate(-5deg)}
+.intl-path-kicker{color:#006390;font-size:.76rem;letter-spacing:.09em;font-weight:800;display:block;margin-bottom:10px}
+.intl-path h3{font-size:clamp(1.15rem,2vw,1.44rem);letter-spacing:-.02em;line-height:1.28;margin-bottom:13px}
+.intl-path p{font-size:.9rem;line-height:1.74;color:#405363}
+.intl-countries{margin-top:34px;padding:26px 28px;border-radius:24px;background:#f3fafc;border:1px solid #d7eaf1}
+.intl-countries h3{font-size:1.18rem;line-height:1.4;margin-bottom:17px}
+.intl-country-grid{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:0;margin:0}
+.intl-country{display:flex;align-items:center;gap:10px;min-width:0;min-height:60px;padding:11px 14px;background:#fff;border-radius:999px;border:1px solid #d5e5ed}
+.intl-country-flag{font-size:1.5rem;line-height:1;flex:0 0 27px;text-align:center}
+.intl-country-name{font-size:.87rem;font-weight:700;color:#162f40;line-height:1.3;min-width:0;overflow-wrap:break-word}
+.intl-country-name small{display:block;font-size:.71rem;font-weight:600;color:#405363;margin-top:2px}
+.intl-source{font-size:.77rem;line-height:1.65;color:#526575;margin-top:17px}
+.intl-source a{color:#006390;text-decoration:underline;text-underline-offset:3px}
+.intl-countries-detail{margin:0 0 30px}
+.intl-heading-detail{margin-bottom:28px}
+.intl-detail-actions{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:26px;padding:24px 28px;border-radius:20px;background:#e9fcff}
+.intl-detail-actions p{font-size:.88rem;line-height:1.7;color:#234253;max-width:650px}
+.intl-detail-actions .btn{flex:0 0 auto;max-width:100%;text-align:center;white-space:normal}
+@media(max-width:1000px){.intl-heading{flex-direction:column;align-items:flex-start}.intl-country-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.intl-detail-actions{flex-direction:column;align-items:flex-start}.intl-three-paths{gap:12px}.intl-path{padding:22px}}
+@media(max-width:760px){.intl-three-paths{grid-template-columns:1fr}.intl-spotlight,.intl-detail{padding-block:50px}.intl-heading-actions{width:100%}.intl-heading-actions .btn{width:100%}.intl-country{border-radius:18px}.intl-detail-actions .btn{width:100%}}
+@media(max-width:420px){.intl-country-grid{grid-template-columns:1fr}.intl-countries{padding:20px 17px}.intl-path{padding:22px}.intl-country{min-height:54px;border-radius:999px}.intl-heading h2{font-size:2.1rem}}
