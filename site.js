@@ -152,7 +152,6 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
   });
 })();
 
-document.querySelectorAll('.menu-toggle').forEach(b=>b.addEventListener('click',()=>{const m=document.getElementById('main-menu');const open=m.classList.toggle('open');b.setAttribute('aria-expanded',String(open));b.setAttribute('aria-label',open?((window.TribuUI||{}).menuClose||'Fermer le menu'):((window.TribuUI||{}).menuOpen||'Ouvrir le menu'));}));document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('main-menu').classList.remove('open');document.querySelector('.menu-toggle').setAttribute('aria-expanded','false');}));document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('main-menu')?.classList.remove('open');document.querySelector('.menu-toggle')?.setAttribute('aria-expanded','false');}});
 
 
 // Accès au simulateur depuis toutes les pages du site.
@@ -176,3 +175,73 @@ document.querySelectorAll('.menu-toggle').forEach(b=>b.addEventListener('click',
 
 // Recruitment planning entry point; the detailed page is currently in French.
 (()=>{const menu=document.querySelector('.nav-links');if(!menu||menu.hasAttribute('data-simplified-nav')||menu.querySelector('a[href="/preparer-mon-projet"]'))return;const a=document.createElement('a');a.href='/preparer-mon-projet';a.textContent=document.documentElement.lang.startsWith('fr')?'Préparer mon projet':'Projet & budget (FR)';menu.insertBefore(a,menu.querySelector('.btn'));a.addEventListener('click',()=>{menu.classList.remove('open');document.querySelector('.menu-toggle')?.setAttribute('aria-expanded','false');});})();
+
+ 
+// Navigation unifiée : menu hamburger toujours visible, pictogrammes et fermeture accessible.
+(() => {
+  const menu=document.getElementById('main-menu');
+  const toggle=document.querySelector('.menu-toggle');
+  if(!menu || !toggle) return;
+  const locale=document.documentElement.lang.slice(0,2);
+  const textByLang={
+    fr:['Menu','Fermer le menu'],
+    en:['Menu','Close menu'],
+    es:['Menú','Cerrar menú'],
+    it:['Menu','Chiudi menu'],
+    de:['Menü','Menü schließen'],
+    pt:['Menu','Fechar menu']
+  };
+  const labels=textByLang[locale] || textByLang.fr;
+  const glyph=document.createElement('span');
+  glyph.className='menu-hamburger';
+  glyph.setAttribute('aria-hidden','true');
+  const caption=document.createElement('span');
+  caption.className='menu-caption';
+  caption.textContent=labels[0];
+  toggle.replaceChildren(glyph,caption);
+  function setOpen(open){
+    menu.classList.toggle('open',open);
+    toggle.setAttribute('aria-expanded',String(open));
+    toggle.setAttribute('aria-label',open?labels[1]:labels[0]);
+    glyph.textContent=open?'✕':'☰';
+    caption.textContent=open?labels[1]:labels[0];
+    if(!open) menu.querySelectorAll('.nav-project[open]').forEach(d=>{d.open=false});
+  }
+  function mark(element, emoji){
+    if(!element || element.querySelector('.nav-emoji'))return;
+    const icon=document.createElement('span');
+    icon.className='nav-emoji';
+    icon.setAttribute('aria-hidden','true');
+    icon.textContent=emoji;
+    element.prepend(icon);
+  }
+  const icons=[
+    [/decouvrir-iad/, '🏠'],
+    [/parcours-reconversion/, '🎯'],
+    [/parcours-mandataire/, '💼'],
+    [/parcours-equipe/, '🤝'],
+    [/parcours-international/, '🌍'],
+    [/simulateur/, '🧮'],
+    [/presentation-opportunites-affaires|#poa/, '📅'],
+    [/#temoignages|#vie-equipe/, '👥'],
+    [/#seminaires-nationaux/, '🎤'],
+    [/#guillaume/, '👤'],
+    [/#accompagnement/, '🤝'],
+    [/#remuneration/, '💶'],
+    [/preparer-mon-projet/, '🧭'],
+    [/#newsletter/, '📰'],
+    [/#rejoindre/, '✉️']
+  ];
+  menu.querySelectorAll('a').forEach(link=>{
+    const href=link.getAttribute('href')||'';
+    const pair=icons.find(([regex])=>regex.test(href));
+    if(pair)mark(link,pair[1]);
+  });
+  const project=menu.querySelector('.nav-project summary');
+  if(project)mark(project,'🧭');
+  setOpen(false);
+  toggle.addEventListener('click',()=>setOpen(!menu.classList.contains('open')));
+  menu.addEventListener('click',e=>{if(e.target.closest('a'))setOpen(false)});
+  document.addEventListener('click',e=>{if(!toggle.contains(e.target)&&!menu.contains(e.target))setOpen(false)});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')setOpen(false)});
+})();
