@@ -9,6 +9,7 @@ function doGet(e) {
 }
 function doPost(e) {
   try {
+    if(e && e.parameter && e.parameter.action === 'lead_capture') return poaJson_(enregistrerLead_(e.parameter));
     if(e && e.parameter && e.parameter.action === 'presentation_register') return poaJson_(poaInscrire_(e.parameter));
     var sortie = traiterFormulaireSite_(e), texte = sortie.getContent();
     var debut = texte.indexOf('('), fin = texte.lastIndexOf(')');

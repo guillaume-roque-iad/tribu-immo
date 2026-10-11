@@ -12,3 +12,7 @@
 
 Tests sans envoi réel, depuis la racine du dépôt : `node integrations/apps-script/test.cjs`.
 `verifierPresentationsTribu` contrôle les séances, l’onglet et le quota sans envoyer d’email ni créer d’événement.
+
+## Contacts et simulateurs
+
+`Leads.gs` et la route POST `lead_capture` enregistrent les coordonnées et les simulations des deux sites dans le tableau commun « Leads Simulateur de revenus - Tribu Immo & Team Lucky », onglet `Simulations`. La marque et le responsable sont déterminés côté serveur. Un identifiant de soumission empêche les doublons. Cette route ne crée ni inscription à une présentation, ni invitation, ni email automatique. Les routes de présentation existantes restent séparées. Les résultats complets et les réponses sont conservés en Notes.

@@ -71,6 +71,15 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
       if (donnees.get('societe')) { tribuAfficherSucces(); return; }
       donnees.set('message', (donnees.get('message') || '') + tribuOrigine());
 
+      if(!donnees.get('action')){
+        donnees.set('action','lead_capture');
+        donnees.set('source_site','Tribu Immo');
+        donnees.set('page',location.href.split('#')[0]);
+        donnees.set('referent',document.referrer);
+        donnees.set('submission_id',f.dataset.submissionId||(f.dataset.submissionId=crypto.randomUUID()));
+        var simFrame=document.getElementById('simulator-frame');
+        if(simFrame&&simFrame.contentWindow.tribuSimulation)donnees.set('simulation',JSON.stringify(simFrame.contentWindow.tribuSimulation));
+      }
       btn.disabled = true;
       btn.textContent = (window.TribuUI||{}).sending||'Envoi en cours\u2026';
       var patience = setTimeout(function () {
