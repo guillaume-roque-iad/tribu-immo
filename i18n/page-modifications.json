@@ -144,24 +144,24 @@
     "lastmod": "2026-10-05"
   },
   "index.html": {
-    "sha256": "287f9fdcff3b38a5ae365904022f2ffc2aa79e7dced41fa4edca9288f6c18c52",
-    "lastmod": "2026-10-05"
+    "sha256": "5dbf89bc610c23e73e608b789ff1e91ae12e92c752693159f399fffdaa97a5fa",
+    "lastmod": "2026-10-11"
   },
   "mentions-legales.html": {
     "sha256": "2c596653a3d672ab76a8aa2e9a8f1a3e9878ab94a6a1fbe033f586e2b99e6ee7",
     "lastmod": "2026-10-05"
   },
   "presentation-opportunites-affaires.html": {
-    "sha256": "29117ecad4f4a0837ecd2b4bf64b24ea7b090ea9aa5738d1466eb0da0fa78201",
-    "lastmod": "2026-10-05"
+    "sha256": "f4458c57fe459ab9009f9b665749c90cedb23ad444cba34fd164e2270bd5fcc9",
+    "lastmod": "2026-10-11"
   },
   "ressources.html": {
     "sha256": "1f3c1008537a3b39e4e4863b7f5c00cda6d000088be7b82eb98fff27e420d858",
     "lastmod": "2026-10-05"
   },
   "simulateur.html": {
-    "sha256": "a64c42d1a21db64ecb02e99750858cc5e47725dbe2d723a0ee26a4f28cafcdb4",
-    "lastmod": "2026-10-05"
+    "sha256": "078d516343c0e4b8e72066b425006c9f67b686fc177dea5ebf6f7a7ff81fb3f6",
+    "lastmod": "2026-10-11"
   },
   "article-conseiller-immobilier-sans-diplome.html": {
     "sha256": "01ab2a5ac60f59654fd2155af807ecd640ed927755349cdb30a9a39507f53588",
@@ -267,13 +267,15 @@
     "sha256": "8be3dbaa63a4733bbec10e88ae0c601b703890d862cd9071ef7fe6dcff8703f4"
   },
   "en/index.html": {
-    "sha256": "1c9eeca7203672d9f6bd2955ae4fff7080030a37bc2a172ba7303120acc6d387"
+    "sha256": "b9d53bf99d58ee85ebfb182bd784eb363ea9121152332c58f44fc03668bca5cb",
+    "lastmod": "2026-10-11"
   },
   "en/mentions-legales.html": {
     "sha256": "f3e77d6fdf0ee2a13ad11852eddf4f3f421b96ac983234378fe2b80a7dc4f70a"
   },
   "en/presentation-opportunites-affaires.html": {
-    "sha256": "8c18a27369fbc9c5b757ef5f2ceb1c3d189ea3830abef097e440d9af9912591b"
+    "sha256": "c8fc63b4b326a8b69add742988dd4cb166f6e3827c0814ce1ca65a3e7b9d7d67",
+    "lastmod": "2026-10-11"
   },
   "en/ressources.html": {
     "sha256": "8721779664be5d5a6acd90de39a0e419911fdf1ce08dc51b05fc42cc11d92ac1"
@@ -330,13 +332,15 @@
     "sha256": "7cbb273e76836f735e8215389b2517c5d4ebfc634bf16895a2e1bbf41035b56c"
   },
   "es/index.html": {
-    "sha256": "b60547d619e262e82f6fedd19e238a30601c0f4e382aa2d19524394304349d99"
+    "sha256": "3318219348b9b2e07f5496c99ca7b65dc21084b2ad957f8675095ceeac49a99a",
+    "lastmod": "2026-10-11"
   },
   "es/mentions-legales.html": {
     "sha256": "ea80405c47cbbd53133b483c2498281847033acbaa44d0060a2dd96aea246f7f"
   },
   "es/presentation-opportunites-affaires.html": {
-    "sha256": "92c161dae0d7203f8838b5c877198b3da4060f9c26a8dc2194f6cb2914a2dba2"
+    "sha256": "aae4f01fd906cb1813a22b60975e46504414cec5fa3bdc1abca473e3396bcff1",
+    "lastmod": "2026-10-11"
   },
   "es/ressources.html": {
     "sha256": "b910f7b8be99de3035f10fa6cbcfdfbdc75912afff74cdff06720df8a375c3a3"
@@ -393,13 +397,15 @@
     "sha256": "60cf0309bb2e8f52998817fc5fa3d31e037d1ab789a2b93a1d94db02444bf2fb"
   },
   "it/index.html": {
-    "sha256": "8f67859560be5dce9a402c3d27a672634a71181b5be8b7af9aeafd67f31349af"
+    "sha256": "f755ae3e005c4ff0f550fbf1989658b2b5e43d8771dd2fdb009c2d5df2d20996",
+    "lastmod": "2026-10-11"
   },
   "it/mentions-legales.html": {
     "sha256": "e5ade451ba7a07edcfd240d0db1cb4c43c2162a8f0482c4e400dae27c16e9259"
   },
   "it/presentation-opportunites-affaires.html": {
-    "sha256": "8df81ffa42be6b80e81547f727549f27c9f1b59a9a37bd1d4dc2bb3ff8fadf86"
+    "sha256": "9f6e606642a1bf9957d022b7fa9254edab5b0fa194552cf95086d4e4bdeeea34",
+    "lastmod": "2026-10-11"
   },
   "it/ressources.html": {
     "sha256": "33a17f6b1a17ce6c4ba049b9ddfa7d0b03ab659706e2a0ea65a897e2a1eb7146"
@@ -456,13 +462,15 @@
     "sha256": "2a0206bc9c95eb43c49c2dfbcc536bb1d53f1dadb15915a60d1af54256486556"
   },
   "de/index.html": {
-    "sha256": "cd71514a7157940c144b5e0e53761f6bba084dfdfa45eb5831b65ed255eb3a1e"
+    "sha256": "1e59463cd833235e749b92b991e64efb4883bb7f65e7bee7452d73f7dc584217",
+    "lastmod": "2026-10-11"
   },
   "de/mentions-legales.html": {
     "sha256": "734ee52b9487e8d74bb43727b1c37cd4f611fc1f7d94555389d6f09d4b1d9550"
   },
   "de/presentation-opportunites-affaires.html": {
-    "sha256": "0936c08eb39f469ab5fa7a63f4cda1796f4a8e98b482959b39779794d3f35c41"
+    "sha256": "5105177115376d629fa9978c7d5099c7c1da10cf533c959109749431fda0c25f",
+    "lastmod": "2026-10-11"
   },
   "de/ressources.html": {
     "sha256": "318de1ed5cb892121c96abf0a58927ae65255b4c0dbdc863dfab15f6fd526572"
@@ -519,15 +527,21 @@
     "sha256": "626cada01ab05dbaf910bbcaa91733a38ec1aaf23fe1ecc6bf5734b7472cf32f"
   },
   "pt/index.html": {
-    "sha256": "9295f037c400f3ad5e6a1c2ba5296f955658d89d226042f9696b2f3891a31501"
+    "sha256": "39d2a345c1edce60012c980561e31381f600ff30f595c1602e469fd9dd94c50f",
+    "lastmod": "2026-10-11"
   },
   "pt/mentions-legales.html": {
     "sha256": "c95a7852d1ef1d7fc59fcc7a9994b3d0e3d97696459975fd361cb90054b54bac"
   },
   "pt/presentation-opportunites-affaires.html": {
-    "sha256": "e2027c492f694ac41468653d9f7b2657db9acdc982fe670e13c199ba1f4301d8"
+    "sha256": "d6b263c398eedc98ba417148ce6de001bf0692f0b931af819d65d2099512015e",
+    "lastmod": "2026-10-11"
   },
   "pt/ressources.html": {
     "sha256": "10ac485240115d745e1da7e6fee782064d1d364bd24c1aed332f18d4bb01b6cc"
+  },
+  "preparer-mon-projet.html": {
+    "sha256": "ecaa5b9e66f758b2a560db9a09759a2dfde18865253b298bc206e08e187cad3b",
+    "lastmod": "2026-10-11"
   }
 }
