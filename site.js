@@ -289,3 +289,33 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
     }
   });
 })();
+
+
+// Accueil : sélectionner une présentation ou un entretien, à partir des dates visibles dans l'agenda.
+// Aucune inscription à un événement n'est réalisée ici : le choix est transmis avec la demande.
+(()=>{
+ const select=document.querySelector('select[data-home-meeting-select]');
+ if(!select)return;
+ const groups={
+  visio:select.querySelector('optgroup[data-meeting-format="visio"]'),
+  presentiel:select.querySelector('optgroup[data-meeting-format="presentiel"]')
+ };
+ const cards=[...document.querySelectorAll('article[data-poa-start]')]
+  .filter(card=>Number.isFinite(Date.parse(card.dataset.poaStart))&&Date.parse(card.dataset.poaStart)>Date.now())
+  .sort((a,b)=>Date.parse(a.dataset.poaStart)-Date.parse(b.dataset.poaStart));
+ for(const card of cards){
+  const badge=card.querySelector('.num, .eyebrow')?.textContent||'';
+  const type=card.dataset.poaFormat==='online'||/visio/i.test(badge)?'visio':'presentiel';
+  const group=groups[type];
+  const date=card.querySelector('time')?.textContent.trim();
+  const hours=card.querySelector('p strong')?.textContent.trim();
+  if(!group||!date||!hours)continue;
+  const format=type==='visio'?'Présentation en visio (Google Meet)':'Présentation en présentiel (Narbonne)';
+  const option=document.createElement('option');
+  option.value=format+' — '+date+' · '+hours+' (heure de Paris)';
+  option.textContent=date+' · '+hours;
+  option.dataset.poaOption=card.dataset.poaStart;
+  group.append(option);
+ }
+ for(const group of Object.values(groups)){if(group&&!group.children.length)group.remove();}
+})();
