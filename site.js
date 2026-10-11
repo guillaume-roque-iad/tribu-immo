@@ -106,10 +106,31 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
         });
     }
     
+// Un menu commun à toutes les pages françaises, sans dupliquer les liens ajoutés par le passé.
+(() => {
+ const menu=document.getElementById('main-menu');
+ if(!menu || document.documentElement.lang.slice(0,2)!=='fr')return;
+ if(!menu.hasAttribute('data-simplified-nav')){
+  menu.innerHTML=`<a href="/decouvrir-iad">Découvrir iad</a>
+  <details class="nav-project"><summary>Mon projet <span aria-hidden="true">⌄</span></summary><div class="nav-project-menu">
+  <a href="/parcours-reconversion.html">Me reconvertir</a><a href="/parcours-mandataire.html">Changer de réseau</a>
+  <a href="/parcours-equipe.html">Mon agence ou équipe</a><a href="/parcours-international.html">L’international</a>
+  </div></details><a href="/#temoignages">La Tribu</a><a href="/simulateur">Simulateur</a>
+  <a href="/parcours-international.html">International</a><a href="/presentation-opportunites-affaires">Présentations</a>
+  <a class="btn small" href="/#rejoindre">Échanger avec Guillaume <span aria-hidden="true">↗</span></a>`;
+  menu.setAttribute('data-simplified-nav','');
+ }
+ document.addEventListener('click',e=>{
+  menu.querySelectorAll('.nav-project[open]').forEach(d=>{if(!d.contains(e.target))d.open=false;});
+ });
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')menu.querySelectorAll('.nav-project[open]').forEach(d=>d.open=false);});
+ menu.querySelectorAll('.nav-project-menu a').forEach(link=>link.addEventListener('click',()=>{const d=link.closest('details');if(d)d.open=false;}));
+})();
+
 // Shared navigation for team videos and member testimonials.
 (() => {
   const menu = document.getElementById('main-menu');
-  if (!menu) return;
+  if (!menu || menu.hasAttribute('data-simplified-nav')) return;
   const labels = {
     fr: ['Team building', 'Séminaires nationaux', 'Témoignages'],
     en: ['Team building', 'National seminars', 'Testimonials'],
@@ -135,7 +156,7 @@ document.querySelectorAll('.menu-toggle').forEach(b=>b.addEventListener('click',
 
 
 // Accès au simulateur depuis toutes les pages du site.
-(()=>{const menu=document.getElementById('main-menu');if(!menu)return;const existing=menu.querySelector('a[href="/simulateur"]');const a=existing||document.createElement('a');a.href='/simulateur';const lang=document.documentElement.lang.slice(0,2);a.textContent=({fr:'Simulateur de revenus',en:'Income simulator (FR)',es:'Simulador de ingresos (FR)',it:'Simulatore di reddito (FR)',de:'Einkommenssimulator (FR)',pt:'Simulador de rendimentos (FR)'})[lang]||'Simulateur de revenus';if(!existing)menu.insertBefore(a,menu.querySelector('.btn'));})();
+(()=>{const menu=document.getElementById('main-menu');if(!menu||menu.hasAttribute('data-simplified-nav'))return;const existing=menu.querySelector('a[href="/simulateur"]');const a=existing||document.createElement('a');a.href='/simulateur';const lang=document.documentElement.lang.slice(0,2);a.textContent=({fr:'Simulateur de revenus',en:'Income simulator (FR)',es:'Simulador de ingresos (FR)',it:'Simulatore di reddito (FR)',de:'Einkommenssimulator (FR)',pt:'Simulador de rendimentos (FR)'})[lang]||'Simulateur de revenus';if(!existing)menu.insertBefore(a,menu.querySelector('.btn'));})();
 
 (()=>{const h=document.querySelector(".header");if(h&&window.ResizeObserver)new ResizeObserver(()=>document.documentElement.style.setProperty("--header-height",h.getBoundingClientRect().height+"px")).observe(h);})();
 
