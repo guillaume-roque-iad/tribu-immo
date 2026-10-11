@@ -239,6 +239,46 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
  .header .nav-project-menu a{font-size:.9rem;padding:11px}
 }
 
+
+/* Menu lisible : navigation sur une ligne dédiée, repli fluide et accès tactile. */
+@media (min-width:1100px){
+  .header .nav.wrap{display:grid;grid-template-columns:minmax(0,1fr);align-items:center;gap:2px;min-height:0;padding-block:8px 12px}
+  .header .brand{justify-self:start;min-width:0}
+  .header .menu-toggle{display:none}
+  .header .nav-links[data-simplified-nav]{
+    display:flex;position:static;inset:auto;flex:none;width:100%;max-width:100%;
+    flex-flow:row wrap;justify-content:center;align-items:center;gap:6px 22px;
+    padding:6px 0 0;margin:0;background:transparent;border:0;border-radius:0;
+    box-shadow:none;max-height:none;overflow:visible
+  }
+  .header .nav-links[data-simplified-nav]>a:not(.btn){font-size:.92rem;line-height:1.45;white-space:normal;min-height:44px;display:inline-flex;align-items:center;padding:7px 0}
+  .header .nav-links[data-simplified-nav]>.btn{font-size:.86rem;white-space:normal;padding:11px 18px;min-height:44px}
+  .header .nav-project{font-size:.92rem;min-width:0}
+  .header .nav-project summary{font-size:.92rem;min-height:44px;white-space:normal;padding:7px 0}
+  .header .nav-project-menu{position:absolute;top:calc(100% + 4px);left:0;min-width:235px;max-width:min(330px,90vw);border:1px solid #cbdce4;border-radius:12px;box-shadow:0 15px 35px #102f4321;padding:10px}
+}
+@media (max-width:1099px){
+  .header .nav.wrap{display:flex;align-items:center;min-height:76px;gap:12px}
+  .header .menu-toggle{display:block;margin-left:auto;min-width:65px;min-height:44px}
+  .header .nav-links[data-simplified-nav]{
+    display:none;position:absolute;top:100%;left:auto;right:0;inset-inline-start:auto;
+    flex:none;width:min(420px,100%);max-width:100%;flex-flow:column nowrap;
+    align-items:stretch;justify-content:flex-start;gap:4px;padding:14px;
+    background:#fff;border:1px solid #d8e7ec;border-radius:0 0 12px 12px;
+    box-shadow:0 12px 24px #102f4329;max-height:calc(100dvh - var(--header-height,150px) - 12px);
+    overflow-y:auto;overflow-x:hidden;z-index:30
+  }
+  .header .nav-links[data-simplified-nav].open{display:flex}
+  .header .nav-links[data-simplified-nav]>a:not(.btn){display:block;width:100%;font-size:1rem;white-space:normal;min-height:44px;padding:10px 12px;overflow-wrap:anywhere}
+  .header .nav-links[data-simplified-nav]>.btn{width:100%;font-size:.92rem;white-space:normal;overflow-wrap:anywhere;margin:4px 0}
+  .header .nav-project{width:100%}
+  .header .nav-project summary{font-size:1rem;min-height:44px;padding:10px 12px;white-space:normal}
+  .header .nav-project-menu{position:static;width:100%;min-width:0;max-width:100%;box-shadow:none;border:0;border-left:3px solid #00b4ec;border-radius:0;padding:4px 8px;margin:3px 0 8px}
+}
+@media(max-width:600px){
+  .header .nav-links[data-simplified-nav]{left:0;right:0;width:100%}
+}
+
 </style><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://tribu-immo.com/#guillaume-roque", "name": "Guillaume Roque", "url": "https://tribu-immo.com/guillaume-roque", "jobTitle": "Conseiller immobilier indépendant, manager et formateur iad", "sameAs": ["https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque", "https://www.linkedin.com/in/guillaume-roque-07a3bb8a/"]}, {"@type": "Organization", "@id": "https://tribu-immo.com/#organisation", "name": "La Tribu Immo", "url": "https://tribu-immo.com/", "logo": "https://tribu-immo.com/tribu-immo-logo.png", "telephone": "+33662108396", "email": "guillaume.roque@iadfrance.fr", "founder": {"@id": "https://tribu-immo.com/#guillaume-roque"}, "areaServed": [{"@type": "Country", "name": "France"}, "Pays où iad est implanté"]}, {"@type": "WebSite", "@id": "https://tribu-immo.com/#site", "url": "https://tribu-immo.com/", "name": "La Tribu Immo", "inLanguage": "fr-FR", "publisher": {"@id": "https://tribu-immo.com/#organisation"}}, {"@type": "WebPage", "@id": "https://tribu-immo.com/#page", "url": "https://tribu-immo.com/", "name": "Devenir conseiller immobilier iad avec La Tribu Immo", "inLanguage": "fr-FR", "isPartOf": {"@id": "https://tribu-immo.com/#site"}, "about": {"@id": "https://tribu-immo.com/#organisation"}}]}</script><meta property="og:title" content="Devenir conseiller immobilier iad | Tribu Immo"><meta property="og:description" content="Reconversion ou changement de réseau immobilier : rejoignez La Tribu Immo avec Guillaume Roque, parrain iad dans toute la France et les pays où iad est implanté."><meta property="og:image" content="https://tribu-immo.com/tribu-immo-logo.png"><meta property="og:url" content="https://tribu-immo.com/"><style data-inline-css="languages">.language-bar{background:#eafbff;border-bottom:1px solid #d6e3e8;font-size:13px;line-height:1.5}
 .language-inner{display:flex;justify-content:flex-end;align-items:center;gap:6px 16px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
 .language-bar a{color:#005c7e;text-decoration:none;padding:4px 0;white-space:nowrap}
