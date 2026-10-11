@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var INVITATION_URL = 'https://www.nosrezo.com/signup.php?code_invitation=KXECW41680';
+  var INVITATION_URL = 'https://propertips.com/signup.php?lang=fr_FR&id_parrain=1680&name_parrain=ROQUE';
   var SOURCE_URL = 'https://www.propertips.com/';
 
   var translations = {

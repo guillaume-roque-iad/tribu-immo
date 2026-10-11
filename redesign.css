@@ -549,3 +549,21 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 .propertips-feature-brand p{text-align:center;color:#3c4a5f;font-size:.9rem}
 @media(max-width:800px){.propertips-feature-grid{grid-template-columns:minmax(0,1fr)}.propertips-feature-brand{padding:26px 20px}.header .nav-propertips-link img{width:125px!important}}
 @media(max-width:420px){.header .nav-links>a.nav-propertips-link{gap:9px!important;padding:10px!important}.header .nav-propertips-link span{font-size:.76rem}}
+
+
+/* Propertips : bloc commission 6 %, inscription personnelle et présentation vidéo */
+.propertips-feature-copy strong{font-weight:800;color:#006390}
+.propertips-feature .propertips-feature-cta{display:inline-flex!important;align-items:center;justify-content:center;gap:12px;max-width:100%;text-align:center;text-decoration:none!important;padding:14px 24px;background:#00B4EC!important;color:#000!important;border-radius:999px;font-weight:750;font-style:italic}
+.propertips-feature .propertips-feature-cta:hover{background:#95EBFF!important;color:#000!important}
+.propertips-feature-brand{gap:20px}
+.propertips-feature-brand .propertips-feature-logo{width:min(230px,100%);height:auto;max-height:100px;object-fit:contain}
+.propertips-feature-remuneration{width:100%;text-align:center;padding:14px 18px 18px;border-radius:20px;background:#e9fcff}
+.propertips-feature-remuneration strong{display:block;font-size:clamp(3.8rem,6vw,5rem);font-weight:850;line-height:1.08;letter-spacing:-.04em;color:#006390}
+.propertips-feature-remuneration p{font-size:clamp(1.02rem,2vw,1.23rem);font-weight:700;line-height:1.4;color:#173346;margin:0}
+.propertips-feature-remuneration p span{display:block;font-weight:800}
+.propertips-feature-video{width:100%;min-width:0}
+.propertips-feature-video-label{font-weight:750;font-size:.94rem!important;line-height:1.5!important;color:#173346!important;text-align:center;margin:0 0 12px}
+.propertips-feature-video-frame{position:relative;width:100%;aspect-ratio:16 / 9;overflow:hidden;border-radius:14px;background:#172f40}
+.propertips-feature-video-frame iframe{display:block;width:100%;height:100%;border:0}
+.propertips-feature-video>a{display:block;text-align:center;font-size:.83rem;color:#006390;font-weight:650;margin-top:10px;text-underline-offset:4px}
+@media(max-width:800px){.propertips-feature .propertips-feature-cta{width:100%;white-space:normal}.propertips-feature-brand{max-width:580px;width:100%;justify-self:center}}
