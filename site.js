@@ -112,12 +112,22 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
  if(!menu || document.documentElement.lang.slice(0,2)!=='fr')return;
  if(!menu.hasAttribute('data-simplified-nav')){
   menu.innerHTML=`<a href="/decouvrir-iad">Découvrir iad</a>
-  <details class="nav-project"><summary>Mon projet <span aria-hidden="true">⌄</span></summary><div class="nav-project-menu">
-  <a href="/parcours-reconversion.html">Me reconvertir</a><a href="/parcours-mandataire.html">Changer de réseau</a>
-  <a href="/parcours-equipe.html">Mon agence ou équipe</a><a href="/parcours-international.html">L’international</a>
-  </div></details><a href="/#temoignages">La Tribu</a><a href="/simulateur">Simulateur</a>
-  <a href="/parcours-international.html">International</a><a href="/presentation-opportunites-affaires">Présentations</a>
-  <a class="btn small" href="/#rejoindre">Échanger avec Guillaume <span aria-hidden="true">↗</span></a>`;
+<details class="nav-project"><summary>Mon projet <span aria-hidden="true">⌄</span></summary><div class="nav-project-menu">
+  <a href="/parcours-reconversion.html">Me reconvertir</a>
+  <a href="/parcours-mandataire.html">Changer de réseau</a>
+  <a href="/parcours-equipe.html">Développer mon équipe</a>
+  <a href="/parcours-international.html">Travailler à l’international</a>
+</div></details>
+<details class="nav-project"><summary>La Tribu Immo <span aria-hidden="true">⌄</span></summary><div class="nav-project-menu">
+  <a href="/guillaume-roque">Guillaume et l’accompagnement</a>
+  <a href="/#temoignages">Témoignages des conseillers</a>
+  <a href="/#vie-equipe">Vie d’équipe</a>
+  <a href="/#seminaires-nationaux">Séminaires</a>
+</div></details>
+<a href="/simulateur">Simulateur de revenus</a>
+<a class="nav-propertips-link" href="/#propertips" aria-label="Découvrir propertips by iad"><img src="/propertips-logo.svg" alt="propertips by iad" width="132" height="45" decoding="async"><span>Recommander un proche</span></a>
+<a href="/presentation-opportunites-affaires">Présentations iad</a>
+<a class="btn small" href="/#rejoindre">Échanger avec Guillaume <span aria-hidden="true">↗</span></a>`;
   menu.setAttribute('data-simplified-nav','');
  }
  document.addEventListener('click',e=>{
@@ -230,7 +240,7 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
     [/presentation-opportunites-affaires|#poa/, 'document'],
     [/#temoignages|#vie-equipe/, 'team'],
     [/#seminaires-nationaux/, 'check'],
-    [/#guillaume/, 'team'],
+    [/\/guillaume-roque|#guillaume/, 'team'],
     [/#accompagnement/, 'check'],
     [/#remuneration/, 'growth'],
     [/preparer-mon-projet/, 'document'],
@@ -242,8 +252,7 @@ var TRIBU_EXEC = 'https://script.google.com/macros/s/AKfycbz6ZtOtnaGlVn0vLQr-kBl
     const pair=icons.find(([regex])=>regex.test(href));
     if(pair)mark(link,pair[1]);
   });
-  const project=menu.querySelector('.nav-project summary');
-  if(project)mark(project,'document');
+  menu.querySelectorAll('.nav-project summary').forEach((summary,i)=>mark(summary,i===0?'document':'team'));
   setOpen(false);
   toggle.addEventListener('click',()=>setOpen(!menu.classList.contains('open')));
   menu.addEventListener('click',e=>{if(e.target.closest('a'))setOpen(false)});
