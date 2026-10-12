@@ -2,13 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Tribu Immo//Presentations//FR
 BEGIN:VEVENT
-UID:2027-01-11@tribu-immo.com
-DTSTAMP:20261006T115315Z
-SEQUENCE:1
-DTSTART:20270112T173000Z
-DTEND:20270112T183000Z
-SUMMARY:Presentazione delle opportunità di business · Narbonne
-LOCATION:2 Espace Soleil\, 11100 Narbonne\, France
+UID:2026-11-24@tribu-immo.com
+DTSTAMP:20260914T000000Z
+DTSTART:20261124T173000Z
+DTEND:20261124T181500Z
+SUMMARY:Presentazione delle opportunità di business · Online
+LOCATION:Online su Google Meet
 DESCRIPTION:Scegli una data e compila il modulo. La tua iscrizione sarà registrata e riceverai un invito Google Calendar per quella presentazione.
 URL:https://tribu-immo.com/it/presentation-opportunites-affaires
 END:VEVENT
