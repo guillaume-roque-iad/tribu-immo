@@ -593,6 +593,12 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 .intl-path p{font-size:.9rem;line-height:1.74;color:#405363}
 .intl-countries{margin-top:34px;padding:26px 28px;border-radius:24px;background:#f3fafc;border:1px solid #d7eaf1}
 .intl-countries h3{font-size:1.18rem;line-height:1.4;margin-bottom:17px}
+.intl-map{margin:0}
+.intl-map>a{display:block;background:#fff;border-radius:16px;overflow:hidden}
+.intl-map img{display:block;width:100%;max-width:100%;height:auto}
+.intl-map figcaption{margin-top:10px;font-size:.85rem}
+.intl-map a:focus-visible{outline:3px solid #006390;outline-offset:4px}
+.intl-map figcaption a{color:#006390;text-decoration:underline;text-underline-offset:3px}
 .intl-country-grid{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:0;margin:0}
 .intl-country{display:flex;align-items:center;gap:10px;min-width:0;min-height:60px;padding:11px 14px;background:#fff;border-radius:999px;border:1px solid #d5e5ed}
 .intl-country-flag{font-size:1.5rem;line-height:1;flex:0 0 27px;text-align:center}

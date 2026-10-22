@@ -207,8 +207,9 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 .team-film .eyebrow,.newsletter-section .eyebrow{color:#006B9A}
 
 .bandeau-cookies{font-family:Arial,Helvetica,sans-serif}
-/* Navigation responsive, synchronisée avec redesign.css */
-/* Refonte navigation & parcours – octobre 2026 */
+
+
+
 .header .nav-links[data-simplified-nav]{gap:9px 15px}
 .header .nav-links[data-simplified-nav]>a:not(.btn){font-weight:650;text-decoration:none;white-space:nowrap;font-size:.81rem}
 .header .nav-links[data-simplified-nav]>.btn{font-size:.77rem;padding:10px 13px;white-space:nowrap}
@@ -220,7 +221,62 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 .nav-project-menu{position:absolute;z-index:35;top:calc(100% + 4px);left:-10px;min-width:235px;border:1px solid #cbdce4;background:#fff;border-radius:12px;padding:10px;box-shadow:0 15px 35px #102f4321;display:grid;gap:2px}
 .header .nav-project-menu a{display:block;text-decoration:none;padding:11px 12px;border-radius:7px;color:#122d42;font-size:.82rem}
 .header .nav-project-menu a:hover,.header .nav-project-menu a:focus-visible{background:#e9fcff}
+.parcours-section .section-head{margin-bottom:35px}
+.parcours-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.parcours-card{color:#172b3b;text-decoration:none;display:flex;flex-direction:column;align-items:flex-start;min-height:325px;padding:27px;border:1px solid #d6e5ec;border-radius:15px;background:#fff;transition:transform .2s,border-color .2s,box-shadow .2s}
+.parcours-card:hover{transform:translateY(-4px);border-color:#00b4ec;box-shadow:0 16px 36px #16354916;color:#102a41}
+.parcours-card:first-child{background:#e9fcff}
+.parcours-num{font-size:.66rem;letter-spacing:.09em;font-weight:750;color:#006390}
+.parcours-ico{width:35px;height:35px;display:grid;place-items:center;border-radius:50%;background:#00b4ec;margin:22px 0 15px;font-size:20px}
+.parcours-card h3{font-size:clamp(1.08rem,1.55vw,1.55rem);line-height:1.25;letter-spacing:-.025em;margin-bottom:14px}
+.parcours-card p{font-size:.86rem;line-height:1.65;color:#425466;margin-bottom:22px}
+.parcours-link{margin-top:auto;color:#006390;font-size:.78rem;font-weight:750}
+.new-benefits{padding:74px 0;background:#f4f9fb;border-top:1px solid #dbe9ef}
+.new-benefits h2{max-width:800px;margin-bottom:30px}
+.benefit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.benefit-grid article{background:white;padding:29px;border:1px solid #d9e6eb;border-radius:12px;display:flex;flex-direction:column;min-height:270px}
+.benefit-grid article>span{color:#007daf;font-size:.8rem;font-weight:800;margin-bottom:16px}
+.benefit-grid h3{margin-bottom:12px;font-size:1.16rem}
+.benefit-grid p{font-size:.89rem;line-height:1.7;margin-bottom:18px;color:#3c4c58}
+.benefit-grid a{color:#006390;margin-top:auto;font-weight:750;text-decoration:none;border-bottom:2px solid #00b4ec;align-self:flex-start;font-size:.82rem}
+.new-simulator{padding:76px 0;background:#102f43;color:white}
+.new-simulator .eyebrow{color:#6fdef8}
+.new-simulator p{color:#e0edf3}
+.simulator-promo{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.8fr);gap:clamp(26px,5vw,75px);align-items:center}
+.simulator-promo h2{font-size:clamp(2rem,4vw,3.3rem);margin-bottom:20px}
+.simulator-promo>div:first-child>p{max-width:650px;margin-bottom:28px}
+.simulator-promo .btn.dark{background:#00b4ec;color:#092a3c}
+.simulator-promo .textlink{color:#fff}
+.simulator-promo-choices{padding:24px;background:#fff;color:#102f43;border-radius:16px}
+.simulator-promo-choices .simulator-promo-label{color:#102f43;font-size:.8rem;text-transform:uppercase;font-weight:800;letter-spacing:.06em;margin-bottom:15px}
+.simulator-promo-choices a{display:flex;align-items:center;justify-content:space-between;padding:16px 3px;border-bottom:1px solid #d9e6eb;text-decoration:none;font-size:.92rem;font-weight:650;color:#112f42;gap:14px}
+.simulator-promo-choices a:last-child{border-bottom:0}
+.simulator-promo-choices a span{color:#006390;font-size:20px}
+.simulator-promo-choices a:hover{color:#007daf}
 
+.journey-hero{background:linear-gradient(125deg,#e9fcff,#fff 65%);border-bottom:1px solid #d8e7ed;padding:70px 0}
+.journey-hero .eyebrow{margin-bottom:18px}.journey-hero h1{max-width:920px;font-size:clamp(2.25rem,5vw,4.15rem);letter-spacing:-.04em}
+.journey-hero .lead{max-width:780px;font-size:1.08rem;margin:24px 0 28px;line-height:1.75;color:#344f61}
+.journey-crumb{color:#456278;font-size:.8rem;margin-bottom:24px}
+.journey-crumb a{color:#006390}
+.journey-main{padding-block:65px}
+.journey-intro{max-width:760px;margin-bottom:34px;font-size:1.06rem;line-height:1.75}
+.journey-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.journey-panel{border:1px solid #d1e3ea;border-radius:15px;padding:28px;background:#fff}
+.journey-panel span{font-size:.75rem;font-weight:800;color:#007daf}
+.journey-panel h2{font-size:1.35rem;margin:16px 0 12px;letter-spacing:-.03em}
+.journey-panel p{color:#405363;font-size:.9rem;line-height:1.75}
+.journey-roadmap{margin-top:50px;padding:35px;background:#f3fafc;border-radius:15px}
+.journey-roadmap h2{font-size:clamp(1.6rem,3vw,2.25rem);margin-bottom:24px}
+.journey-roadmap ol{padding-left:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px 35px}
+.journey-roadmap li{line-height:1.7;padding-right:18px}
+.journey-roadmap li strong{display:block;font-size:.98rem}
+.journey-roadmap li p{font-size:.88rem;color:#42586a}
+.journey-bottom{background:#102f43;color:#fff;padding:64px 0}
+.journey-bottom h2{max-width:820px;margin-bottom:18px}.journey-bottom p{color:#e2eff5;max-width:660px;margin-bottom:25px}
+.journey-bottom .btn{background:#00b4ec;color:#072735}
+.journey-more{margin-top:34px;font-size:.9rem}
+.journey-more a{color:#006390;font-weight:700}
 @media(min-width:1500px){
  .header .nav{gap:12px}
  .header .menu-toggle{display:none}
@@ -238,9 +294,12 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
  .nav-project-menu{position:static;min-width:0;box-shadow:none;border:0;border-left:3px solid #00b4ec;margin:3px 0 9px;padding:3px 6px;border-radius:0}
  .header .nav-project-menu a{font-size:.9rem;padding:11px}
 }
+@media(max-width:1050px){.parcours-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){.benefit-grid,.journey-columns,.journey-roadmap ol{grid-template-columns:1fr}.simulator-promo{grid-template-columns:1fr}.new-benefits,.new-simulator,.journey-hero{padding-block:48px}.journey-main{padding-block:48px}}
+@media(max-width:540px){.parcours-grid{grid-template-columns:1fr}.parcours-card{min-height:230px;padding:25px}.journey-roadmap{padding:24px} .header .nav-links[data-simplified-nav]{left:0;right:0;width:100%}}
 
 
-/* Menu lisible : navigation sur une ligne dédiée, repli fluide et accès tactile. */
+
 @media (min-width:1100px){
   .header .nav.wrap{display:grid;grid-template-columns:minmax(0,1fr);align-items:center;gap:2px;min-height:0;padding-block:8px 12px}
   .header .brand{justify-self:start;min-width:0}
@@ -280,7 +339,7 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 }
 
 
-/* Navigation compacte permanente : bouton accessible sur tous les écrans. */
+
 .header .nav.wrap{
   display:flex!important;
   position:relative!important;
@@ -422,14 +481,13 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 }
 
 
-/* === iad 2025 : pictogrammes officiels et gelules du site de recrutement === */
 :root{--iad-brand:#00B4EC;--iad-coral:#EA584A;--iad-beige:#F1ECE5;--iad-charcoal:#3C4A5F}
-/* Icones SVG de la charte iad (pages 18-19), jamais d'emojis systeme decoratifs. */
+
 .header .nav-iad-icon{display:block;flex:0 0 24px;width:24px;height:24px;object-fit:contain}
 .header .nav-emoji{display:none!important}
 .header .nav-project summary .nav-iad-icon{width:24px;height:24px;flex-basis:24px}
 .header .nav-links a .nav-iad-icon{margin-right:2px}
-/* Gélule primaire : Montserrat gras italique, bleu iad et typographie noire lisible. */
+
 .btn,.btn.small,.project-button,.insight-button,.fsub,.article-cta-btn,.menu-toggle{border-radius:999px;font-family:Montserrat,Helvetica,Arial,sans-serif;font-style:italic;font-weight:700;line-height:1.35}
 .btn:not(.outline):not(.dark),.btn.small:not(.outline):not(.dark),.project-button:not(.secondary),.insight-button,.fsub,.article-cta-btn{
  background:var(--iad-brand)!important;color:#000!important;border-color:transparent!important
@@ -443,7 +501,7 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
  background:var(--iad-brand)!important;color:#000!important;border:0!important;font-style:italic!important
 }
 .header .nav-links>a.btn:hover,.header .nav-links[data-simplified-nav]>a.btn:hover{background:#95EBFF!important;color:#000!important}
-/* Bouton Menu : gélule web couleur charcoal autorisée et symbole dessiné en CSS. */
+
 .header .menu-toggle{background:var(--iad-charcoal)!important;border-color:var(--iad-charcoal)!important;color:#fff!important;font-style:italic}
 .header .menu-toggle:hover{background:#273545!important;border-color:#273545!important}
 .header .menu-toggle .menu-hamburger{position:relative;display:inline-block;flex:0 0 19px;width:19px;height:19px;font-size:0!important;line-height:0!important}
@@ -452,16 +510,16 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 .header .menu-toggle .menu-hamburger::after{top:16px}
 .header .menu-toggle .menu-hamburger.is-open::before{top:10px;box-shadow:none;transform:rotate(45deg)}
 .header .menu-toggle .menu-hamburger.is-open::after{top:10px;transform:rotate(-45deg)}
-/* La gélule est aussi un élément graphique : fond beige et icône bleu/corail iad. */
+
 .parcours-card .parcours-ico{display:flex;align-items:center;justify-content:center;width:84px;height:48px;flex:none;margin:19px 0 18px;padding:8px 19px;background:var(--iad-beige);border-radius:999px;transform:rotate(5deg);font-size:0}
 .parcours-card .parcours-ico img{display:block;width:100%;height:100%;max-width:100%;object-fit:contain;transform:rotate(-5deg)}
 .parcours-card:nth-child(2) .parcours-ico{background:#CDF7FF}
 .parcours-card:nth-child(3) .parcours-ico{background:#F1ECE5}
 .parcours-card:nth-child(4) .parcours-ico{background:#E9FCFF}
-/* CTA de premier niveau légèrement incliné comme les gélules de la charte. */
+
 .hero-new .actions>.btn:first-child,.new-simulator .actions>.btn:first-child,.journey-bottom .btn{transform:rotate(5deg);transform-origin:center center}
 .hero-new .actions>.btn:first-child:hover,.new-simulator .actions>.btn:first-child:hover,.journey-bottom .btn:hover{transform:rotate(5deg) translateY(-2px)}
-/* Titrages de petits tags : gélules sobres, sans utiliser le corail comme fond massif. */
+
 .tags span,.journey-crumb{border-radius:999px}
 @media(max-width:600px){
  .hero-new .actions>.btn:first-child,.new-simulator .actions>.btn:first-child,.journey-bottom .btn{transform:rotate(2deg)}
@@ -469,7 +527,7 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 }
 
 
-/* Propertips by iad : logo officiel préexistant, non modifié. */
+
 .header .nav-links>a.nav-propertips-link,
 .header .nav-links[data-simplified-nav]>a.nav-propertips-link{
   display:flex!important;align-items:center!important;justify-content:flex-start!important;
@@ -495,7 +553,6 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 
 
 
-/* Propertips : bloc commission 6 %, inscription personnelle et présentation vidéo */
 .propertips-feature-copy strong{font-weight:800;color:#006390}
 .propertips-feature .propertips-feature-cta{display:inline-flex!important;align-items:center;justify-content:center;gap:12px;max-width:100%;text-align:center;text-decoration:none!important;padding:14px 24px;background:#00B4EC!important;color:#000!important;border-radius:999px;font-weight:750;font-style:italic}
 .propertips-feature .propertips-feature-cta:hover{background:#95EBFF!important;color:#000!important}
@@ -514,7 +571,6 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 
 
 
-/* International – expérience Team Lucky adaptée à la charte iad et à la Tribu Immo */
 .intl-spotlight,.intl-detail{padding:clamp(54px,6vw,92px) 0;background:#fff}
 .intl-spotlight{border-top:1px solid #d3eaf1;border-bottom:1px solid #d3eaf1}
 .intl-detail{background:linear-gradient(180deg,#f5fcff 0%,#fff 100%);border-bottom:1px solid #d3eaf1}
@@ -538,6 +594,12 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 .intl-path p{font-size:.9rem;line-height:1.74;color:#405363}
 .intl-countries{margin-top:34px;padding:26px 28px;border-radius:24px;background:#f3fafc;border:1px solid #d7eaf1}
 .intl-countries h3{font-size:1.18rem;line-height:1.4;margin-bottom:17px}
+.intl-map{margin:0}
+.intl-map>a{display:block;background:#fff;border-radius:16px;overflow:hidden}
+.intl-map img{display:block;width:100%;max-width:100%;height:auto}
+.intl-map figcaption{margin-top:10px;font-size:.85rem}
+.intl-map a:focus-visible{outline:3px solid #006390;outline-offset:4px}
+.intl-map figcaption a{color:#006390;text-decoration:underline;text-underline-offset:3px}
 .intl-country-grid{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:0;margin:0}
 .intl-country{display:flex;align-items:center;gap:10px;min-width:0;min-height:60px;padding:11px 14px;background:#fff;border-radius:999px;border:1px solid #d5e5ed}
 .intl-country-flag{font-size:1.5rem;line-height:1;flex:0 0 27px;text-align:center}
@@ -552,9 +614,7 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 .intl-detail-actions .btn{flex:0 0 auto;max-width:100%;text-align:center;white-space:normal}
 @media(max-width:1000px){.intl-heading{flex-direction:column;align-items:flex-start}.intl-country-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.intl-detail-actions{flex-direction:column;align-items:flex-start}.intl-three-paths{gap:12px}.intl-path{padding:22px}}
 @media(max-width:760px){.intl-three-paths{grid-template-columns:1fr}.intl-spotlight,.intl-detail{padding-block:50px}.intl-heading-actions{width:100%}.intl-heading-actions .btn{width:100%}.intl-country{border-radius:18px}.intl-detail-actions .btn{width:100%}}
-@media(max-width:420px){.intl-country-grid{grid-template-columns:1fr}.intl-countries{padding:20px 17px}.intl-path{padding:22px}.intl-country{min-height:54px;border-radius:999px}.intl-heading h2{font-size:2.1rem}}
-
-</style><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://tribu-immo.com/#guillaume-roque", "name": "Guillaume Roque", "url": "https://tribu-immo.com/guillaume-roque", "jobTitle": "Conseiller immobilier indépendant, manager et formateur iad", "sameAs": ["https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque", "https://www.linkedin.com/in/guillaume-roque-07a3bb8a/"]}, {"@type": "Organization", "@id": "https://tribu-immo.com/#organisation", "name": "La Tribu Immo", "url": "https://tribu-immo.com/", "logo": "https://tribu-immo.com/tribu-immo-logo.png", "telephone": "+33662108396", "email": "guillaume.roque@iadfrance.fr", "founder": {"@id": "https://tribu-immo.com/#guillaume-roque"}, "areaServed": [{"@type": "Country", "name": "France"}, "Pays où iad est implanté"]}, {"@type": "WebSite", "@id": "https://tribu-immo.com/#site", "url": "https://tribu-immo.com/", "name": "La Tribu Immo", "inLanguage": "fr-FR", "publisher": {"@id": "https://tribu-immo.com/#organisation"}}, {"@type": "WebPage", "@id": "https://tribu-immo.com/#page", "url": "https://tribu-immo.com/", "name": "Devenir conseiller immobilier iad avec La Tribu Immo", "inLanguage": "fr-FR", "isPartOf": {"@id": "https://tribu-immo.com/#site"}, "about": {"@id": "https://tribu-immo.com/#organisation"}}]}</script><meta property="og:title" content="Devenir conseiller immobilier iad | Tribu Immo"><meta property="og:description" content="Reconversion ou changement de réseau immobilier : rejoignez La Tribu Immo avec Guillaume Roque, parrain iad dans toute la France et les pays où iad est implanté."><meta property="og:image" content="https://tribu-immo.com/tribu-immo-logo.png"><meta property="og:url" content="https://tribu-immo.com/"><style data-inline-css="languages">.language-bar{background:#eafbff;border-bottom:1px solid #d6e3e8;font-size:13px;line-height:1.5}
+@media(max-width:420px){.intl-country-grid{grid-template-columns:1fr}.intl-countries{padding:20px 17px}.intl-path{padding:22px}.intl-country{min-height:54px;border-radius:999px}.intl-heading h2{font-size:2.1rem}}</style><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://tribu-immo.com/#guillaume-roque", "name": "Guillaume Roque", "url": "https://tribu-immo.com/guillaume-roque", "jobTitle": "Conseiller immobilier indépendant, manager et formateur iad", "sameAs": ["https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque", "https://www.linkedin.com/in/guillaume-roque-07a3bb8a/"]}, {"@type": "Organization", "@id": "https://tribu-immo.com/#organisation", "name": "La Tribu Immo", "url": "https://tribu-immo.com/", "logo": "https://tribu-immo.com/tribu-immo-logo.png", "telephone": "+33662108396", "email": "guillaume.roque@iadfrance.fr", "founder": {"@id": "https://tribu-immo.com/#guillaume-roque"}, "areaServed": [{"@type": "Country", "name": "France"}, "Pays où iad est implanté"]}, {"@type": "WebSite", "@id": "https://tribu-immo.com/#site", "url": "https://tribu-immo.com/", "name": "La Tribu Immo", "inLanguage": "fr-FR", "publisher": {"@id": "https://tribu-immo.com/#organisation"}}, {"@type": "WebPage", "@id": "https://tribu-immo.com/#page", "url": "https://tribu-immo.com/", "name": "Devenir conseiller immobilier iad avec La Tribu Immo", "inLanguage": "fr-FR", "isPartOf": {"@id": "https://tribu-immo.com/#site"}, "about": {"@id": "https://tribu-immo.com/#organisation"}}]}</script><meta property="og:title" content="Devenir conseiller immobilier iad | Tribu Immo"><meta property="og:description" content="Reconversion ou changement de réseau immobilier : rejoignez La Tribu Immo avec Guillaume Roque, parrain iad dans toute la France et les pays où iad est implanté."><meta property="og:image" content="https://tribu-immo.com/tribu-immo-logo.png"><meta property="og:url" content="https://tribu-immo.com/"><style data-inline-css="languages">.language-bar{background:#eafbff;border-bottom:1px solid #d6e3e8;font-size:13px;line-height:1.5}
 .language-inner{display:flex;justify-content:flex-end;align-items:center;gap:6px 16px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
 .language-bar a{color:#005c7e;text-decoration:none;padding:4px 0;white-space:nowrap}
 .language-bar a:hover,.language-bar a:focus-visible,.language-bar a[aria-current]{text-decoration:underline;text-underline-offset:4px}
@@ -620,8 +680,13 @@ h1,h2,h3{hyphens:none;word-break:normal;overflow-wrap:normal}
  </div>
   <div class="intl-countries">
    <h3>Les pays où iad est implanté</h3>
-   <ul class="intl-country-grid" aria-label="Implantations iad"><li class="intl-country"><span class="intl-country-flag" aria-hidden="true">🇫🇷</span><span class="intl-country-name">France<small>Occitanie, Pyrénées-Orientales et toute la France</small></span></li><li class="intl-country"><span class="intl-country-flag" aria-hidden="true">🇪🇸</span><span class="intl-country-name">Espagne<small>Catalogne, Roussillon, Costa Blanca</small></span></li><li class="intl-country"><span class="intl-country-flag" aria-hidden="true">🇵🇹</span><span class="intl-country-name">Portugal<small>Lisbonne, Porto et les régions côtières</small></span></li><li class="intl-country"><span class="intl-country-flag" aria-hidden="true">🇮🇹</span><span class="intl-country-name">Italie<small>Toscane, Milan et régions des lacs</small></span></li><li class="intl-country"><span class="intl-country-flag" aria-hidden="true">🇩🇪</span><span class="intl-country-name">Allemagne<small>Berlin, Munich et Hambourg</small></span></li><li class="intl-country"><span class="intl-country-flag" aria-hidden="true">🇬🇧</span><span class="intl-country-name">Royaume-Uni<small>Londres et sud de l'Angleterre</small></span></li><li class="intl-country"><span class="intl-country-flag" aria-hidden="true">🇲🇽</span><span class="intl-country-name">Mexique<small>Riviera Maya et Mexico</small></span></li><li class="intl-country"><span class="intl-country-flag" aria-hidden="true">🇺🇸</span><span class="intl-country-name">États-Unis<small>Floride : Miami, Orlando, Tampa · Texas : Dallas, Houston, Austin</small></span></li></ul>
-   <p class="intl-source">Implantations présentées selon le <a href="https://www.iadgroup.com/wp-content/uploads/2026/02/Press_Kit_iad_2026.pdf" target="_blank" rel="noopener noreferrer">dossier de presse iad 2026</a>. Les conditions d’exercice, contrats, formations et dispositifs varient selon le territoire.</p>
+   <figure class="intl-map">
+    <a href="/assets/iad-implantations-monde-2026-10.png" target="_blank" rel="noopener" aria-label="Agrandir la carte des implantations iad (nouvel onglet)">
+     <img src="/assets/iad-implantations-monde-2026-10.png" width="2048" height="791" loading="lazy" decoding="async" alt="Carte des filiales iad dans le monde et des destinations partenaires iad Overseas : Europe, Mexique, Texas, Floride, Chypre, Dubaï et Maurice." aria-describedby="intl-map-note">
+    </a>
+    <figcaption><a href="/assets/iad-implantations-monde-2026-10.png" target="_blank" rel="noopener">Agrandir la carte <span aria-hidden="true">↗</span></a></figcaption>
+   </figure>
+   <p class="intl-source" id="intl-map-note">Les destinations iad Overseas correspondent à des partenariats avec des agences locales sélectionnées : iad n’y a pas de conseillers sous sa marque. Les conditions d’exercice, contrats, formations et dispositifs varient selon le territoire.</p>
   </div>
  </div>
 </section><section class="recruit-insight insight-tone" id="projet-durable"><div class="wrap"><div class="insight-kicker">Penser aussi à la suite</div><h2>Les trois questions qu’on remet toujours à plus tard.</h2><div class="insight-grid"><article class="insight-card"><div class="insight-kicker">01 · Continuité</div><h3>Et si je devais faire une pause ?</h3><p>Quelle part de votre activité dépend uniquement de votre présence ?</p></article><article class="insight-card"><div class="insight-kicker">02 · Transmission</div><h3>Que pourrais-je transmettre ?</h3><p>Une éventuelle cession d’organisation se prépare selon les conditions contractuelles.</p></article><article class="insight-card"><div class="insight-kicker">03 · Trajectoire</div><h3>Quel rôle voudrais-je dans dix ans ?</h3><p>Transaction, accompagnement, formation : définissez votre place et vos priorités.</p></article></div><a class="insight-button" href="/#rejoindre">En parler avec Guillaume ↗</a></div></section><section class="section wrap" id="questions"><div class="eyebrow">VOS QUESTIONS AVANT DE VOUS LANCER</div><h2>Reconversion ou changement de réseau :<br>les premiers repères.</h2><div class="seo-faq"><details><summary>Par où commencer une reconversion dans l’immobilier ?</summary><p>Commencez par examiner votre budget, votre disponibilité et votre connaissance du secteur. Échangez ensuite sur le métier et sur l’accompagnement proposé avant de choisir votre formation et votre organisation. <a href="/article-reconversion-2026">Préparer sa reconversion →</a></p></details><details><summary>Comment comparer deux réseaux immobiliers ?</summary><p>Comparez les frais, la rémunération, les outils réellement inclus et la disponibilité de l’accompagnement. Demandez les documents à jour et une démonstration des services, puis confrontez ces éléments à vos besoins. <a href="/changer-reseau-immobilier">Comparer les réseaux →</a></p></details><details><summary>Comment se déroule un premier échange avec Guillaume ?</summary><p>Le premier échange permet de parler de votre situation, de vos objectifs, des frais et de l’activité au quotidien. Une présentation de 45 minutes en visioconférence peut ensuite être organisée, sans engagement. <a href="/#rejoindre">Échanger avec Guillaume →</a></p></details></div></section><section class="section wrap"><div class="section-head"><div><div class="eyebrow">POUR AVANCER DANS VOTRE RÉFLEXION</div><h2>Les bonnes questions.<br>Des repères concrets.</h2></div><a class="textlink" href="/ressources">Tous les articles &amp; guides ↗</a></div><div class="grid3"><article class="resource-card"><div class="eyebrow">CHANGER DE RÉSEAU</div><h3>Que deviennent vos mandats et commissions en cours ?</h3><a href="/article-changer-reseau-mandats-commissions" class="textlink">Préparer ma transition ↗</a></article><article class="resource-card"><div class="eyebrow">RECONVERSION</div><h3>Peut-on devenir conseiller immobilier sans diplôme ?</h3><a href="/article-conseiller-immobilier-sans-diplome" class="textlink">Lire les repères ↗</a></article><article class="resource-card"><div class="eyebrow">Développer son activité</div><h3>Comment organiser son suivi vendeur, même sans visite ?</h3><a href="/article-suivi-vendeur-sans-visite" class="textlink">Lire la méthode ↗</a></article><article class="resource-card"><div class="eyebrow">DÉMARRAGE</div><h3>Les 90 premiers jours : poser les bonnes bases.</h3><a class="textlink" href="/guide-1-mandataire-iad">Préparer mes débuts ↗</a></article><article class="resource-card"><div class="eyebrow">GUIDE GRATUIT</div><h3>Changer de réseau ou d’agence : les critères à comparer.</h3><a class="textlink" href="/changer-reseau-immobilier">Préparer ma transition ↗</a></article></div></section><!-- POA-AGENDA:START --><section class="section wrap" id="poa" aria-labelledby="poa-title"><div class="section-head"><div><div class="eyebrow">RENCONTRONS-NOUS</div><h2 id="poa-title">Présentation des opportunités d’affaires<br>en présentiel et en visio.</h2></div><p>Rencontrez Guillaume à Narbonne ou participez à une présentation du réseau iad en visioconférence.</p></div><div class="grid3" id="poa-dates"><article class="path-card" data-poa-start="2026-10-13T18:30:00+02:00" data-poa-format="online"><span class="num">Présentation des opportunités d’affaires · En visio</span><h3><time datetime="2026-10-13T18:30:00+02:00" data-localize-date="">13 octobre 2026</time></h3><p><strong>18 h 30 – 19 h 15</strong><br>Heure de Paris</p><p>Présentation du réseau iad<br>En ligne sur Google Meet</p><a class="textlink" href="/presentation-opportunites-affaires?session=2026-10-13#inscription" data-evt="presentation-date">Je m’inscris gratuitement ↗</a></article><article class="path-card" data-poa-start="2026-10-27T18:30:00+01:00" data-poa-format="online"><span class="num">Présentation des opportunités d’affaires · En visio</span><h3><time datetime="2026-10-27T18:30:00+01:00" data-localize-date="">27 octobre 2026</time></h3><p><strong>18 h 30 – 19 h 15</strong><br>Heure de Paris</p><p>Présentation du réseau iad<br>En ligne sur Google Meet</p><a class="textlink" href="/presentation-opportunites-affaires?session=2026-10-27#inscription" data-evt="presentation-date">Je m’inscris gratuitement ↗</a></article><article class="path-card" data-poa-start="2026-11-10T18:30:00+01:00" data-poa-format="online"><span class="num">Présentation des opportunités d’affaires · En visio</span><h3><time datetime="2026-11-10T18:30:00+01:00" data-localize-date="">10 novembre 2026</time></h3><p><strong>18 h 30 – 19 h 15</strong><br>Heure de Paris</p><p>Présentation du réseau iad<br>En ligne sur Google Meet</p><a class="textlink" href="/presentation-opportunites-affaires?session=2026-11-10#inscription" data-evt="presentation-date">Je m’inscris gratuitement ↗</a></article><article class="path-card" data-poa-start="2026-11-24T18:30:00+01:00" data-poa-format="online"><span class="num">Présentation des opportunités d’affaires · En visio</span><h3><time datetime="2026-11-24T18:30:00+01:00" data-localize-date="">24 novembre 2026</time></h3><p><strong>18 h 30 – 19 h 15</strong><br>Heure de Paris</p><p>Présentation du réseau iad<br>En ligne sur Google Meet</p><a class="textlink" href="/presentation-opportunites-affaires?session=2026-11-24#inscription" data-evt="presentation-date">Je m’inscris gratuitement ↗</a></article><article class="path-card" data-poa-start="2027-01-12T18:30:00+01:00"><span class="num">Présentation des opportunités d’affaires · Narbonne</span><h3><time datetime="2027-01-12T18:30:00+01:00" data-localize-date="">12 janvier 2027</time></h3><p><strong>18 h 30 – 19 h 30</strong><br>Heure de Paris</p><p>2 Espace Soleil, 11100 Narbonne<br>Bâtiment C · 1er étage</p><a class="textlink" href="https://www.billetweb.fr/decouvrez-le-metier-de-conseiller-immobilier-iad-presentation-a-narbonne1" target="_blank" rel="noopener" data-evt="presentation-billetweb">Je m’inscris sur Billetweb ↗</a></article><article class="path-card" data-poa-start="2027-04-20T18:30:00+02:00"><span class="num">Présentation des opportunités d’affaires · Narbonne</span><h3><time datetime="2027-04-20T18:30:00+02:00" data-localize-date="">20 avril 2027</time></h3><p><strong>18 h 30 – 19 h 30</strong><br>Heure de Paris</p><p>2 Espace Soleil, 11100 Narbonne<br>Bâtiment C · 1er étage</p><a class="textlink" href="https://www.billetweb.fr/decouvrez-le-metier-de-conseiller-immobilier-iad-presentation-a-narbonne2" target="_blank" rel="noopener" data-evt="presentation-billetweb">Je m’inscris sur Billetweb ↗</a></article><article class="path-card" data-poa-start="2027-06-29T18:30:00+02:00"><span class="num">Présentation des opportunités d’affaires · Narbonne</span><h3><time datetime="2027-06-29T18:30:00+02:00" data-localize-date="">29 juin 2027</time></h3><p><strong>18 h 30 – 19 h 30</strong><br>Heure de Paris</p><p>2 Espace Soleil, 11100 Narbonne<br>Bâtiment C · 1er étage</p><a class="textlink" href="https://www.billetweb.fr/decouvrez-le-metier-de-conseiller-immobilier-iad-presentation-a-narbonne3" target="_blank" rel="noopener" data-evt="presentation-billetweb">Je m’inscris sur Billetweb ↗</a></article></div><details class="project-archive" data-presentation-archive><summary>Présentations passées</summary><ul><li>29 septembre 2026</li><li>5 octobre 2026</li></ul></details><p id="poa-empty" hidden>Aucune prochaine date annoncée. <a href="mailto:guillaume.roque@iadfrance.fr">Contactez Guillaume pour en savoir plus.</a></p><p class="notice">Dates vérifiées le <time datetime="2026-10-12" data-localize-date="">12 octobre 2026</time>.</p></section><script>// Archive expired presentations as text, without keeping registration links.
