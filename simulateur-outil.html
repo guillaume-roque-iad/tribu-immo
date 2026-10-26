@@ -706,8 +706,8 @@ function comparisonImpactMarkup(delta){
  return `<div class="sim-impact sim-impact--${tone}" aria-label="Comparaison des revenus avec iad">
  <span class="sim-impact-kicker">RÉSULTAT DE VOTRE COMPARAISON</span>
  <h3 class="sim-impact-title">${title}</h3>
- <div class="sim-impact-main"><strong class="sim-impact-amount">${signedComparisonAmount(delta/horizon)}</strong><span class="sim-impact-frequency">/ mois en moyenne</span></div>
- <p class="sim-impact-period">Soit <strong>${signedComparisonAmount(delta)}</strong> sur ${horizon} mois</p>
+ <p class="sim-impact-period">Votre simulation sur ${horizon} mois indique une rémunération ${rounded>0?'plus élevée':rounded<0?'moins élevée':'équivalente'} avec iad.</p>
+ <p class="sim-impact-period"><strong>Pour découvrir les montants exacts, renseignez le formulaire ci-dessous.</strong></p>
  <p class="sim-impact-disclaimer">Écart estimé selon vos données, après frais saisis, avant cotisations sociales et impôts. Hors bonus TIP et Croissance+.</p>
  </div>`;
 }
