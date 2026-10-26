@@ -2,10 +2,10 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Tribu Immo//Presentations//FR
 BEGIN:VEVENT
-UID:2026-10-13@tribu-immo.com
+UID:2026-12-08@tribu-immo.com
 DTSTAMP:20260914T000000Z
-DTSTART:20261013T163000Z
-DTEND:20261013T171500Z
+DTSTART:20261208T173000Z
+DTEND:20261208T181500Z
 SUMMARY:Presentazione delle opportunità di business · Online
 LOCATION:Online su Google Meet
 DESCRIPTION:Scegli una data e compila il modulo. La tua iscrizione sarà registrata e riceverai un invito Google Calendar per quella presentazione.

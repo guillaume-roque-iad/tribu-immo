@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Tribu Immo//Presentations//FR
+BEGIN:VEVENT
+UID:2026-12-08@tribu-immo.com
+DTSTAMP:20260914T000000Z
+DTSTART:20261208T173000Z
+DTEND:20261208T181500Z
+SUMMARY:Apresentação de oportunidades de negócio · Online
+LOCATION:Online no Google Meet
+DESCRIPTION:Escolhe uma data e preenche o formulário. A tua inscrição será registada e receberás um convite Google Calendar para essa apresentação.
+URL:https://tribu-immo.com/pt/presentation-opportunites-affaires
+END:VEVENT
+END:VCALENDAR
