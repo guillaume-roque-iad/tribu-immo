@@ -160,13 +160,13 @@
         {
           "location": "/html/body/header/nav[2]/div/details/div/a[2]/@text",
           "source_fr": "Changer de réseau",
-          "proposal": "Changer de réseau",
+          "proposal": "Change networks",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/header/nav[2]/div/details/div/a[3]/@text",
           "source_fr": "Mon agence ou équipe",
-          "proposal": "Mon agence ou équipe",
+          "proposal": "My agency or team",
           "status": "human_review_required"
         },
         {
@@ -202,7 +202,7 @@
         {
           "location": "/html/body/header/nav[2]/div/a[6]/@aria-label",
           "source_fr": "Découvrir propertips by iad",
-          "proposal": "Découvrir propertips by iad",
+          "proposal": "Discover propertips by iad",
           "status": "human_review_required"
         },
         {
@@ -214,7 +214,7 @@
         {
           "location": "/html/body/header/nav[2]/div/a[6]/span/@text",
           "source_fr": "Recommander un proche",
-          "proposal": "Recommander un proche",
+          "proposal": "Refer someone you know",
           "status": "human_review_required"
         },
         {
@@ -232,7 +232,7 @@
         {
           "location": "/html/body/main/section[1]/div/div[1]/h1/@text",
           "source_fr": "Entreprenez dans",
-          "proposal": "Entreprenez dans",
+          "proposal": "Build your business in",
           "status": "human_review_required"
         },
         {
@@ -244,19 +244,19 @@
         {
           "location": "/html/body/main/section[1]/div/div[1]/h1/span/@text",
           "source_fr": "Ne réussissez pas seul.",
-          "proposal": "Ne réussissez pas seul.",
+          "proposal": "You don’t have to succeed alone.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[1]/div/div[1]/p/@text",
           "source_fr": "Que vous découvriez le métier, souhaitiez changer de réseau ou développer une équipe, avancez avec un parcours adapté et l’accompagnement de La Tribu Immo. Plus de 130 conseillers, une dynamique en France et à l’international.",
-          "proposal": "Que vous découvriez le métier, souhaitiez changer de réseau ou développer une équipe, avancez avec un parcours adapté et l’accompagnement de La Tribu Immo. Plus de 130 conseillers, une dynamique en France et à l’international.",
+          "proposal": "Whether you are discovering the profession, changing networks or developing a team, find a path suited to you with support from La Tribu Immo. More than 130 advisors, with a shared momentum in France and abroad.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[1]/div/div[1]/div[2]/a[1]/@text",
           "source_fr": "Choisir mon parcours",
-          "proposal": "Choisir mon parcours",
+          "proposal": "Choose my path",
           "status": "human_review_required"
         },
         {
@@ -346,7 +346,7 @@
         {
           "location": "/html/body/main/section[3]/div[1]/div/h2/@text",
           "source_fr": "Quel est votre projet",
-          "proposal": "Quel est votre projet",
+          "proposal": "What is your project",
           "status": "human_review_required"
         },
         {
@@ -358,7 +358,7 @@
         {
           "location": "/html/body/main/section[3]/div[1]/p/@text",
           "source_fr": "Pas de parcours imposé : choisissez votre situation pour trouver rapidement les réponses qui vous concernent.",
-          "proposal": "Pas de parcours imposé : choisissez votre situation pour trouver rapidement les réponses qui vous concernent.",
+          "proposal": "There is no fixed path: choose your situation to find the answers relevant to you.",
           "status": "human_review_required"
         },
         {
@@ -370,19 +370,19 @@
         {
           "location": "/html/body/main/section[3]/div[2]/a[1]/h3/@text",
           "source_fr": "Me reconvertir dans l’immobilier",
-          "proposal": "Me reconvertir dans l’immobilier",
+          "proposal": "Change career and enter real estate",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[1]/p/@text",
           "source_fr": "Comprendre le métier, le budget de démarrage et les premières étapes.",
-          "proposal": "Comprendre le métier, le budget de démarrage et les premières étapes.",
+          "proposal": "Understand the profession, start-up budget and first steps.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[1]/span[3]/@text",
           "source_fr": "Découvrir mon parcours →",
-          "proposal": "Découvrir mon parcours →",
+          "proposal": "Explore my path →",
           "status": "human_review_required"
         },
         {
@@ -400,13 +400,13 @@
         {
           "location": "/html/body/main/section[3]/div[2]/a[2]/p/@text",
           "source_fr": "Comparer mes outils, mes frais et mes perspectives de rémunération.",
-          "proposal": "Comparer mes outils, mes frais et mes perspectives de rémunération.",
+          "proposal": "Compare my tools, costs and earning prospects.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[2]/span[3]/@text",
           "source_fr": "Comparer mes options →",
-          "proposal": "Comparer mes options →",
+          "proposal": "Compare my options →",
           "status": "human_review_required"
         },
         {
@@ -418,19 +418,19 @@
         {
           "location": "/html/body/main/section[3]/div[2]/a[3]/h3/@text",
           "source_fr": "Développer mon agence ou mon équipe",
-          "proposal": "Développer mon agence ou mon équipe",
+          "proposal": "Develop my agency or team",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[3]/p/@text",
           "source_fr": "Étudier une évolution collective et préparer une transition chiffrée.",
-          "proposal": "Étudier une évolution collective et préparer une transition chiffrée.",
+          "proposal": "Explore a collective move and prepare a costed transition.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[3]/span[3]/@text",
           "source_fr": "Étudier mon projet →",
-          "proposal": "Étudier mon projet →",
+          "proposal": "Explore my project →",
           "status": "human_review_required"
         },
         {
@@ -442,19 +442,19 @@
         {
           "location": "/html/body/main/section[3]/div[2]/a[4]/h3/@text",
           "source_fr": "Travailler à l’international",
-          "proposal": "Travailler à l’international",
+          "proposal": "Work internationally",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[4]/p/@text",
           "source_fr": "Comprendre les possibilités de développement dans les pays iad.",
-          "proposal": "Comprendre les possibilités de développement dans les pays iad.",
+          "proposal": "Understand the development opportunities in countries where iad operates.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[4]/span[3]/@text",
           "source_fr": "Explorer l’international →",
-          "proposal": "Explorer l’international →",
+          "proposal": "Explore international opportunities →",
           "status": "human_review_required"
         },
         {
@@ -466,67 +466,67 @@
         {
           "location": "/html/body/main/section[4]/div/h2/@text",
           "source_fr": "Indépendant dans votre activité.",
-          "proposal": "Indépendant dans votre activité.",
+          "proposal": "Independent in your business.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/h2/br/@tail",
           "source_fr": "Accompagné dans votre progression.",
-          "proposal": "Accompagné dans votre progression.",
+          "proposal": "Supported as you progress.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[1]/h3/@text",
           "source_fr": "Votre liberté d’entreprendre",
-          "proposal": "Votre liberté d’entreprendre",
+          "proposal": "Your freedom to build a business",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[1]/p/@text",
           "source_fr": "Construisez votre organisation et vos priorités avec un modèle adapté à une activité indépendante.",
-          "proposal": "Construisez votre organisation et vos priorités avec un modèle adapté à une activité indépendante.",
+          "proposal": "Set your organisation and priorities within a model suited to independent work.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[1]/a/@text",
           "source_fr": "Comprendre iad →",
-          "proposal": "Comprendre iad →",
+          "proposal": "Understand iad →",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[2]/h3/@text",
           "source_fr": "Des repères pour progresser",
-          "proposal": "Des repères pour progresser",
+          "proposal": "Practical guidance for progress",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[2]/p/@text",
           "source_fr": "Formation, échanges d’équipe et accompagnement humain à chaque étape de votre parcours.",
-          "proposal": "Formation, échanges d’équipe et accompagnement humain à chaque étape de votre parcours.",
+          "proposal": "Training, team discussions and personal support at every stage of your journey.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[2]/a/@text",
           "source_fr": "Voir l’accompagnement →",
-          "proposal": "Voir l’accompagnement →",
+          "proposal": "Explore our support →",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[3]/h3/@text",
           "source_fr": "Une perspective de développement",
-          "proposal": "Une perspective de développement",
+          "proposal": "A path for development",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[3]/p/@text",
           "source_fr": "Transaction, recommandations et développement d’équipe : explorez les différentes possibilités, selon les conditions applicables.",
-          "proposal": "Transaction, recommandations et développement d’équipe : explorez les différentes possibilités, selon les conditions applicables.",
+          "proposal": "Transactions, referrals and team development: explore the different possibilities, subject to the applicable conditions.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[3]/a/@text",
           "source_fr": "Comprendre les leviers →",
-          "proposal": "Comprendre les leviers →",
+          "proposal": "Understand the different opportunities →",
           "status": "human_review_required"
         },
         {
@@ -712,13 +712,13 @@
         {
           "location": "/html/body/main/section[8]/h2/@text",
           "source_fr": "Ils font partie de la Tribu Immo",
-          "proposal": "Ils font partie de la Tribu Immo",
+          "proposal": "They are part of La Tribu Immo",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[8]/p/@text",
           "source_fr": "Pourquoi ont-ils rejoint iad et l’équipe de Guillaume Roque ? Découvrez leurs parcours et les raisons de leur choix, racontés avec leurs propres mots.",
-          "proposal": "Pourquoi ont-ils rejoint iad et l’équipe de Guillaume Roque ? Découvrez leurs parcours et les raisons de leur choix, racontés avec leurs propres mots.",
+          "proposal": "Why did they join iad and Guillaume Roque’s team? Discover their backgrounds and their reasons, in their own words.",
           "status": "human_review_required"
         },
         {
@@ -880,49 +880,49 @@
         {
           "location": "/html/body/main/section[10]/div/div/h2/@text",
           "source_fr": "Nos séminaires nationaux",
-          "proposal": "Nos séminaires nationaux",
+          "proposal": "Our national seminars",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[10]/div/div/h2/span/@text",
           "source_fr": "organisés par la Tribu Immo.",
-          "proposal": "organisés par la Tribu Immo.",
+          "proposal": "organised by La Tribu Immo.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[10]/p/@text",
           "source_fr": "Des séminaires organisés par Guillaume et Élodie pour se retrouver, apprendre et partager nos expériences. Revivez en images les interventions, les rencontres et l’énergie de ces journées.",
-          "proposal": "Des séminaires organisés par Guillaume et Élodie pour se retrouver, apprendre et partager nos expériences. Revivez en images les interventions, les rencontres et l’énergie de ces journées.",
+          "proposal": "Seminars organised by Guillaume and Élodie to meet, learn and share our experiences. Relive the talks, encounters and energy of these days through the images.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[10]/figure/video/@aria-label",
           "source_fr": "Nos séminaires nationaux organisés par la Tribu Immo, avec Guillaume et Élodie",
-          "proposal": "Nos séminaires nationaux organisés par la Tribu Immo, avec Guillaume et Élodie",
+          "proposal": "Our national seminars organised by La Tribu Immo, with Guillaume and Élodie",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[10]/figure/video/source/a/@text",
           "source_fr": "Télécharger la vidéo des séminaires",
-          "proposal": "Télécharger la vidéo des séminaires",
+          "proposal": "Download the seminar video",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[10]/figure/figcaption/@text",
           "source_fr": "Guillaume & Élodie · Séminaires Tribu Immo · Activez le son pour profiter de la musique.",
-          "proposal": "Guillaume & Élodie · Séminaires Tribu Immo · Activez le son pour profiter de la musique.",
+          "proposal": "Guillaume & Élodie · La Tribu Immo seminars · Turn on the sound to enjoy the music.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/div[1]/@text",
           "source_fr": "Comprendre les leviers de rémunération",
-          "proposal": "Comprendre les leviers de rémunération",
+          "proposal": "Understand the sources of remuneration",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/h2/@text",
           "source_fr": "Un taux de commission, c’est une source sur six.",
-          "proposal": "Un taux de commission, c’est une source sur six.",
+          "proposal": "Your commission rate is one of six sources.",
           "status": "human_review_required"
         },
         {
@@ -940,13 +940,13 @@
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[1]/p/@text",
           "source_fr": "Une rémunération liée aux transactions et aux paliers de CA.",
-          "proposal": "Une rémunération liée aux transactions et aux paliers de CA.",
+          "proposal": "Remuneration linked to transactions and turnover thresholds.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[2]/div/@text",
           "source_fr": "Votre organisation",
-          "proposal": "Votre organisation",
+          "proposal": "Your organisation",
           "status": "human_review_required"
         },
         {
@@ -958,13 +958,13 @@
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[2]/p/@text",
           "source_fr": "Des commissions liées à l’activité de l’équipe accompagnée.",
-          "proposal": "Des commissions liées à l’activité de l’équipe accompagnée.",
+          "proposal": "Commissions linked to the activity of the team you support.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[3]/div/@text",
           "source_fr": "Nouveaux filleuls",
-          "proposal": "Nouveaux filleuls",
+          "proposal": "New sponsored advisors",
           "status": "human_review_required"
         },
         {
@@ -976,13 +976,13 @@
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[3]/p/@text",
           "source_fr": "Une majoration temporaire, selon les conditions du dispositif.",
-          "proposal": "Une majoration temporaire, selon les conditions du dispositif.",
+          "proposal": "A temporary increase, subject to the scheme’s conditions.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[4]/div/@text",
           "source_fr": "Progression managériale",
-          "proposal": "Progression managériale",
+          "proposal": "Management development",
           "status": "human_review_required"
         },
         {
@@ -994,7 +994,7 @@
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[4]/p/@text",
           "source_fr": "Un bonus conditionné au niveau atteint et à la progression.",
-          "proposal": "Un bonus conditionné au niveau atteint et à la progression.",
+          "proposal": "A bonus subject to the level reached and progress made.",
           "status": "human_review_required"
         },
         {
@@ -1006,19 +1006,19 @@
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[5]/h3/@text",
           "source_fr": "Apport d’affaires",
-          "proposal": "Apport d’affaires",
+          "proposal": "Business referrals",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[5]/p/@text",
           "source_fr": "Une rémunération possible lors d’un dossier transmis et abouti.",
-          "proposal": "Une rémunération possible lors d’un dossier transmis et abouti.",
+          "proposal": "Possible remuneration when a referred transaction is completed.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[6]/div/@text",
           "source_fr": "Équipes de professionnels",
-          "proposal": "Équipes de professionnels",
+          "proposal": "Teams of professionals",
           "status": "human_review_required"
         },
         {
@@ -1030,19 +1030,19 @@
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[6]/p/@text",
           "source_fr": "Une intégration encadrée, avec un dossier à valider.",
-          "proposal": "Une intégration encadrée, avec un dossier à valider.",
+          "proposal": "A structured integration process, with an application to be approved.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/p/@text",
           "source_fr": "Propertips contribue aussi à développer vos recommandations. Ces leviers ne sont ni automatiques ni systématiquement cumulables. Les conditions contractuelles s’appliquent ; aucun revenu n’est garanti.",
-          "proposal": "Propertips contribue aussi à développer vos recommandations. Ces leviers ne sont ni automatiques ni systématiquement cumulables. Les conditions contractuelles s’appliquent ; aucun revenu n’est garanti.",
+          "proposal": "Propertips can also help you develop referrals. These opportunities are not automatic and cannot always be combined. Contractual conditions apply; no income is guaranteed.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/a/@text",
           "source_fr": "Simuler ma rémunération ↗",
-          "proposal": "Simuler ma rémunération ↗",
+          "proposal": "Simulate my earnings ↗",
           "status": "human_review_required"
         },
         {
@@ -1054,73 +1054,73 @@
         {
           "location": "/html/body/main/section[12]/div/div[1]/h2/@text",
           "source_fr": "Et si vous commenciez",
-          "proposal": "Et si vous commenciez",
+          "proposal": "What if you started",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[1]/h2/br/@tail",
           "source_fr": "par une simulation ?",
-          "proposal": "par une simulation ?",
+          "proposal": "with a simulation?",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[1]/p/@text",
           "source_fr": "Renseignez votre situation et vos hypothèses : notre simulateur vous aide à comparer les scénarios sur 12 ou 24 mois. Il ne constitue pas une promesse de revenu.",
-          "proposal": "Renseignez votre situation et vos hypothèses : notre simulateur vous aide à comparer les scénarios sur 12 ou 24 mois. Il ne constitue pas une promesse de revenu.",
+          "proposal": "Enter your situation and assumptions: our simulator helps you compare scenarios over 12 or 24 months. It is not a promise of income.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[1]/div[2]/a[1]/@text",
           "source_fr": "Lancer ma simulation",
-          "proposal": "Lancer ma simulation",
+          "proposal": "Start my simulation",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[1]/div[2]/a[2]/@text",
           "source_fr": "Comprendre les six leviers →",
-          "proposal": "Comprendre les six leviers →",
+          "proposal": "Understand the six sources →",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[2]/p/@text",
           "source_fr": "Je souhaite simuler…",
-          "proposal": "Je souhaite simuler…",
+          "proposal": "I would like to simulate…",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[2]/a[1]/@text",
           "source_fr": "Une reconversion",
-          "proposal": "Une reconversion",
+          "proposal": "A career change",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[2]/a[2]/@text",
           "source_fr": "Mon activité actuelle",
-          "proposal": "Mon activité actuelle",
+          "proposal": "My current business",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[2]/a[3]/@text",
           "source_fr": "Le projet de mon équipe",
-          "proposal": "Le projet de mon équipe",
+          "proposal": "My team’s project",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[2]/a[4]/@text",
           "source_fr": "Un projet international",
-          "proposal": "Un projet international",
+          "proposal": "An international project",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[1]/@text",
           "source_fr": "Du premier échange aux premières actions",
-          "proposal": "Du premier échange aux premières actions",
+          "proposal": "From the first conversation to the first actions",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/h2/@text",
           "source_fr": "Ce qui se passe dans les premières semaines.",
-          "proposal": "Ce qui se passe dans les premières semaines.",
+          "proposal": "What happens in the first few weeks.",
           "status": "human_review_required"
         },
         {
@@ -1132,55 +1132,55 @@
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/h3/@text",
           "source_fr": "Construire de bonnes bases.",
-          "proposal": "Construire de bonnes bases.",
+          "proposal": "Build solid foundations.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[1]/strong/@text",
           "source_fr": "Définir votre point de départ",
-          "proposal": "Définir votre point de départ",
+          "proposal": "Define your starting point",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[1]/p/@text",
           "source_fr": "Disponibilités, budget personnel, pack et frais professionnels : préparez le temps nécessaire avant les premiers encaissements.",
-          "proposal": "Disponibilités, budget personnel, pack et frais professionnels : préparez le temps nécessaire avant les premiers encaissements.",
+          "proposal": "Availability, personal budget, subscription and professional expenses: plan the time needed before your first payments arrive.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[2]/strong/@text",
           "source_fr": "Organiser votre installation",
-          "proposal": "Organiser votre installation",
+          "proposal": "Organise your set-up",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[2]/p/@text",
           "source_fr": "Identifiez les formalités, l’assurance et les outils à prévoir pour exercer votre nouvelle activité.",
-          "proposal": "Identifiez les formalités, l’assurance et les outils à prévoir pour exercer votre nouvelle activité.",
+          "proposal": "Identify the formalities, insurance and tools required for your new business.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[3]/strong/@text",
           "source_fr": "Apprendre et mettre en pratique",
-          "proposal": "Apprendre et mettre en pratique",
+          "proposal": "Learn and put it into practice",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[3]/p/@text",
           "source_fr": "Formation iad Academy, prospection, estimation et suivi des clients : avancez avec une méthode progressive.",
-          "proposal": "Formation iad Academy, prospection, estimation et suivi des clients : avancez avec une méthode progressive.",
+          "proposal": "Training with iad Academy, prospecting, valuation and customer follow-up: move forward with a gradual approach.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[4]/strong/@text",
           "source_fr": "Faire le point à 30, 60 et 90 jours",
-          "proposal": "Faire le point à 30, 60 et 90 jours",
+          "proposal": "Review progress at 30, 60 and 90 days",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[4]/p/@text",
           "source_fr": "Avec Guillaume, adaptez vos actions, votre organisation et vos priorités aux premiers retours du terrain.",
-          "proposal": "Avec Guillaume, adaptez vos actions, votre organisation et vos priorités aux premiers retours du terrain.",
+          "proposal": "With Guillaume, adapt your actions, organisation and priorities to the first feedback from the field.",
           "status": "human_review_required"
         },
         {
@@ -1192,55 +1192,55 @@
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/h3/@text",
           "source_fr": "Préparer votre changement de réseau.",
-          "proposal": "Préparer votre changement de réseau.",
+          "proposal": "Prepare your network change.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[1]/strong/@text",
           "source_fr": "Clarifier vos engagements actuels",
-          "proposal": "Clarifier vos engagements actuels",
+          "proposal": "Clarify your current commitments",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[1]/p/@text",
           "source_fr": "Contrat, préavis, mandats et commissions en cours : identifiez les points à vérifier avant votre départ.",
-          "proposal": "Contrat, préavis, mandats et commissions en cours : identifiez les points à vérifier avant votre départ.",
+          "proposal": "Contract, notice period, current instructions and commissions: identify what to check before leaving.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[2]/strong/@text",
           "source_fr": "Fixer un calendrier réaliste",
-          "proposal": "Fixer un calendrier réaliste",
+          "proposal": "Set a realistic timeline",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[2]/p/@text",
           "source_fr": "Coordonnez votre transition et le suivi de vos dossiers, selon vos obligations et votre situation.",
-          "proposal": "Coordonnez votre transition et le suivi de vos dossiers, selon vos obligations et votre situation.",
+          "proposal": "Coordinate your transition and ongoing cases according to your obligations and situation.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[3]/strong/@text",
           "source_fr": "Prendre en main les nouveaux outils",
-          "proposal": "Prendre en main les nouveaux outils",
+          "proposal": "Get to grips with the new tools",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[3]/p/@text",
           "source_fr": "Préparez votre organisation commerciale : suivi des contacts, diffusion, documents et signature électronique.",
-          "proposal": "Préparez votre organisation commerciale : suivi des contacts, diffusion, documents et signature électronique.",
+          "proposal": "Prepare your business processes: contact follow-up, advertising, documents and electronic signatures.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[4]/strong/@text",
           "source_fr": "Choisir votre trajectoire",
-          "proposal": "Choisir votre trajectoire",
+          "proposal": "Choose your path",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[4]/p/@text",
           "source_fr": "Développez votre transaction et, si cela vous intéresse, découvrez le parrainage et l’accompagnement d’une équipe.",
-          "proposal": "Développez votre transaction et, si cela vous intéresse, découvrez le parrainage et l’accompagnement d’une équipe.",
+          "proposal": "Develop your transaction business and, if it interests you, explore sponsorship and supporting a team.",
           "status": "human_review_required"
         },
         {
@@ -1252,61 +1252,61 @@
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/h3/@text",
           "source_fr": "Étudier une transition collective.",
-          "proposal": "Étudier une transition collective.",
+          "proposal": "Explore a collective transition.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[1]/strong/@text",
           "source_fr": "Chiffrer le modèle existant",
-          "proposal": "Chiffrer le modèle existant",
+          "proposal": "Put figures to your current model",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[1]/p/@text",
           "source_fr": "CA, rétrocessions et dépenses de structure : comparez votre situation avec les hypothèses du simulateur.",
-          "proposal": "CA, rétrocessions et dépenses de structure : comparez votre situation avec les hypothèses du simulateur.",
+          "proposal": "Turnover, commission payouts and overheads: compare your situation with the simulator’s assumptions.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[2]/strong/@text",
           "source_fr": "Échanger avec vos collaborateurs",
-          "proposal": "Échanger avec vos collaborateurs",
+          "proposal": "Talk with your colleagues",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[2]/p/@text",
           "source_fr": "Organisez une présentation avec Guillaume pour répondre aux questions de chaque membre de l’équipe.",
-          "proposal": "Organisez une présentation avec Guillaume pour répondre aux questions de chaque membre de l’équipe.",
+          "proposal": "Arrange a presentation with Guillaume to answer every team member’s questions.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[3]/strong/@text",
           "source_fr": "Vérifier les dispositifs accessibles",
-          "proposal": "Vérifier les dispositifs accessibles",
+          "proposal": "Check the schemes available to you",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[3]/p/@text",
           "source_fr": "Étudiez les conditions du TIP et les rôles de chacun. Une éligibilité reste soumise à la validation du dossier.",
-          "proposal": "Étudiez les conditions du TIP et les rôles de chacun. Une éligibilité reste soumise à la validation du dossier.",
+          "proposal": "Review the TIP conditions and everyone’s role. Eligibility remains subject to approval of the application.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[4]/strong/@text",
           "source_fr": "Échelonner les changements",
-          "proposal": "Échelonner les changements",
+          "proposal": "Phase the changes",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[4]/p/@text",
           "source_fr": "Bail, outils, abonnements et engagements de la structure : construisez un calendrier adapté, poste par poste.",
-          "proposal": "Bail, outils, abonnements et engagements de la structure : construisez un calendrier adapté, poste par poste.",
+          "proposal": "Lease, tools, subscriptions and organisational commitments: build a suitable timeline, item by item.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/a/@text",
           "source_fr": "Chiffrer mon projet ↗",
-          "proposal": "Chiffrer mon projet ↗",
+          "proposal": "Cost my project ↗",
           "status": "human_review_required"
         },
         {
@@ -1318,25 +1318,25 @@
         {
           "location": "/html/body/main/section[14]/div/div/h2/@text",
           "source_fr": "Avancer ensemble.",
-          "proposal": "Avancer ensemble.",
+          "proposal": "Move forward together.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[14]/div/div/h2/br/@tail",
           "source_fr": "Avec un projet chiffré.",
-          "proposal": "Avec un projet chiffré.",
+          "proposal": "With a costed project.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[14]/div/div/p[2]/@text",
           "source_fr": "Vous dirigez une agence ou souhaitez changer de réseau avec vos collègues ? Comparez vos charges, préparez votre transition et échangez avec Guillaume sur l’accompagnement de votre équipe.",
-          "proposal": "Vous dirigez une agence ou souhaitez changer de réseau avec vos collègues ? Comparez vos charges, préparez votre transition et échangez avec Guillaume sur l’accompagnement de votre équipe.",
+          "proposal": "Do you run an agency or want to change networks with your colleagues? Compare your costs, plan your transition and discuss support for your team with Guillaume.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[14]/div/a/@text",
           "source_fr": "Préparer le projet de mon équipe ↗",
-          "proposal": "Préparer le projet de mon équipe ↗",
+          "proposal": "Prepare my team’s project ↗",
           "status": "human_review_required"
         },
         {
@@ -1348,25 +1348,25 @@
         {
           "location": "/html/body/main/section[15]/div/div[1]/div[1]/h2/@text",
           "source_fr": "Une équipe qui ne s’arrête pas à la frontière.",
-          "proposal": "Une équipe qui ne s’arrête pas à la frontière.",
+          "proposal": "A team that reaches beyond borders.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[1]/div[1]/p[2]/@text",
           "source_fr": "Chez iad, votre activité et votre organisation peuvent se développer au-delà de votre région. Un ami à Valence, un ancien collègue à Miami, un contact à Milan : ces relations peuvent devenir le point de départ d’une collaboration ou d’une équipe locale. Chaque projet s’étudie selon les possibilités et les conditions propres au pays.",
-          "proposal": "Chez iad, votre activité et votre organisation peuvent se développer au-delà de votre région. Un ami à Valence, un ancien collègue à Miami, un contact à Milan : ces relations peuvent devenir le point de départ d’une collaboration ou d’une équipe locale. Chaque projet s’étudie selon les possibilités et les conditions propres au pays.",
+          "proposal": "At iad, your business and organisation can develop beyond your region. A friend in Valencia, a former colleague in Miami, a contact in Milan: these relationships may become the starting point for cooperation or a local team. Each project is assessed according to the opportunities and conditions in the country concerned.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[1]/div[2]/a[1]/@text",
           "source_fr": "Explorer l’international",
-          "proposal": "Explorer l’international",
+          "proposal": "Explore international opportunities",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[1]/div[2]/a[2]/@text",
           "source_fr": "Parlons de mon projet international →",
-          "proposal": "Parlons de mon projet international →",
+          "proposal": "Discuss my international project →",
           "status": "human_review_required"
         },
         {
@@ -1378,13 +1378,13 @@
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[1]/h3/@text",
           "source_fr": "Développez votre équipe au-delà des frontières",
-          "proposal": "Développez votre équipe au-delà des frontières",
+          "proposal": "Develop your team across borders",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[1]/p/@text",
           "source_fr": "Démarrez en France et développez des contacts à l’étranger. La Tribu Immo vous accompagne pour préciser vos objectifs et les possibilités de parrainage.",
-          "proposal": "Démarrez en France et développez des contacts à l’étranger. La Tribu Immo vous accompagne pour préciser vos objectifs et les possibilités de parrainage.",
+          "proposal": "Start in France and build contacts abroad. La Tribu Immo helps you clarify your goals and sponsorship opportunities.",
           "status": "human_review_required"
         },
         {
@@ -1396,31 +1396,31 @@
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[2]/h3/@text",
           "source_fr": "Vos contacts démarrent dans leur pays",
-          "proposal": "Vos contacts démarrent dans leur pays",
+          "proposal": "Your contacts get started in their own country",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[2]/p/@text",
           "source_fr": "Un proche expatrié peut découvrir iad auprès des interlocuteurs du pays où il vit. Avec",
-          "proposal": "Un proche expatrié peut découvrir iad auprès des interlocuteurs du pays où il vit. Avec",
+          "proposal": "Someone you know living abroad can discover iad through the contacts in their country of residence. With",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[2]/p/a[1]/@text",
           "source_fr": "Élodie Cimiotta, conseillère iad entre la France et la Costa Brava",
-          "proposal": "Élodie Cimiotta, conseillère iad entre la France et la Costa Brava",
+          "proposal": "Élodie Cimiotta, an iad advisor working between France and the Costa Brava",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[2]/p/a[1]/@tail",
           "source_fr": ", nous créons aussi des passerelles concrètes entre la France et l’Espagne. Découvrez également",
-          "proposal": ", nous créons aussi des passerelles concrètes entre la France et l’Espagne. Découvrez également",
+          "proposal": ", we also build practical connections between France and Spain. You can also discover",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[2]/p/a[2]/@text",
           "source_fr": "l’accompagnement de Team Lucky en France et à l’international",
-          "proposal": "l’accompagnement de Team Lucky en France et à l’international",
+          "proposal": "Team Lucky’s support in France and internationally",
           "status": "human_review_required"
         },
         {
@@ -1432,55 +1432,55 @@
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[3]/h3/@text",
           "source_fr": "Une équipe grandit sur place",
-          "proposal": "Une équipe grandit sur place",
+          "proposal": "A team grows locally",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[3]/p/@text",
           "source_fr": "Un contact devenu conseiller peut construire à son tour son activité et son équipe locale, dans le respect des règles et des contrats applicables sur place.",
-          "proposal": "Un contact devenu conseiller peut construire à son tour son activité et son équipe locale, dans le respect des règles et des contrats applicables sur place.",
+          "proposal": "A contact who becomes an advisor can in turn build their own business and local team, following the rules and contracts applicable locally.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[3]/h3/@text",
           "source_fr": "Les pays où iad est implanté",
-          "proposal": "Les pays où iad est implanté",
+          "proposal": "Countries where iad operates",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[3]/figure/a/@aria-label",
           "source_fr": "Agrandir la carte des implantations iad (nouvel onglet)",
-          "proposal": "Agrandir la carte des implantations iad (nouvel onglet)",
+          "proposal": "Enlarge the map of iad locations (new tab)",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[3]/figure/a/img/@alt",
           "source_fr": "Carte des filiales iad dans le monde et des destinations partenaires iad Overseas : Europe, Mexique, Texas, Floride, Chypre, Dubaï et Maurice.",
-          "proposal": "Carte des filiales iad dans le monde et des destinations partenaires iad Overseas : Europe, Mexique, Texas, Floride, Chypre, Dubaï et Maurice.",
+          "proposal": "Map of iad subsidiaries around the world and iad Overseas partner destinations: Europe, Mexico, Texas, Florida, Cyprus, Dubai and Mauritius.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[3]/figure/figcaption/a/@text",
           "source_fr": "Agrandir la carte",
-          "proposal": "Agrandir la carte",
+          "proposal": "Enlarge the map",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[3]/p/@text",
           "source_fr": "Les destinations iad Overseas correspondent à des partenariats avec des agences locales sélectionnées : iad n’y a pas de conseillers sous sa marque. Les conditions d’exercice, contrats, formations et dispositifs varient selon le territoire.",
-          "proposal": "Les destinations iad Overseas correspondent à des partenariats avec des agences locales sélectionnées : iad n’y a pas de conseillers sous sa marque. Les conditions d’exercice, contrats, formations et dispositifs varient selon le territoire.",
+          "proposal": "The iad Overseas destinations involve partnerships with selected local agencies: iad does not have advisors operating under its brand there. Working conditions, contracts, training and schemes vary by territory.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[1]/@text",
           "source_fr": "Penser aussi à la suite",
-          "proposal": "Penser aussi à la suite",
+          "proposal": "Think about what comes next",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/h2/@text",
           "source_fr": "Les trois questions qu’on remet toujours à plus tard.",
-          "proposal": "Les trois questions qu’on remet toujours à plus tard.",
+          "proposal": "Three questions we always put off.",
           "status": "human_review_required"
         },
         {
@@ -1492,55 +1492,55 @@
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[1]/h3/@text",
           "source_fr": "Et si je devais faire une pause ?",
-          "proposal": "Et si je devais faire une pause ?",
+          "proposal": "What if I needed to take a break?",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[1]/p/@text",
           "source_fr": "Quelle part de votre activité dépend uniquement de votre présence ?",
-          "proposal": "Quelle part de votre activité dépend uniquement de votre présence ?",
+          "proposal": "How much of your business depends solely on your own presence?",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[2]/div/@text",
           "source_fr": "02 · Transmission",
-          "proposal": "02 · Transmission",
+          "proposal": "02 · Succession",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[2]/h3/@text",
           "source_fr": "Que pourrais-je transmettre ?",
-          "proposal": "Que pourrais-je transmettre ?",
+          "proposal": "What could I pass on?",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[2]/p/@text",
           "source_fr": "Une éventuelle cession d’organisation se prépare selon les conditions contractuelles.",
-          "proposal": "Une éventuelle cession d’organisation se prépare selon les conditions contractuelles.",
+          "proposal": "Any transfer of an organisation must be prepared in line with contractual conditions.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[3]/div/@text",
           "source_fr": "03 · Trajectoire",
-          "proposal": "03 · Trajectoire",
+          "proposal": "03 · Your path",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[3]/h3/@text",
           "source_fr": "Quel rôle voudrais-je dans dix ans ?",
-          "proposal": "Quel rôle voudrais-je dans dix ans ?",
+          "proposal": "What role would I like in ten years?",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[3]/p/@text",
           "source_fr": "Transaction, accompagnement, formation : définissez votre place et vos priorités.",
-          "proposal": "Transaction, accompagnement, formation : définissez votre place et vos priorités.",
+          "proposal": "Transactions, support, training: define your role and priorities.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/a/@text",
           "source_fr": "En parler avec Guillaume ↗",
-          "proposal": "En parler avec Guillaume ↗",
+          "proposal": "Talk it through with Guillaume ↗",
           "status": "human_review_required"
         },
         {
@@ -1960,7 +1960,7 @@
         {
           "location": "/html/body/main/section[19]/div[2]/article[5]/a/@text",
           "source_fr": "Je m’inscris sur Billetweb ↗",
-          "proposal": "Je m’inscris sur Billetweb ↗",
+          "proposal": "Register on Billetweb ↗",
           "status": "human_review_required"
         },
         {
@@ -2002,7 +2002,7 @@
         {
           "location": "/html/body/main/section[19]/div[2]/article[6]/a/@text",
           "source_fr": "Je m’inscris sur Billetweb ↗",
-          "proposal": "Je m’inscris sur Billetweb ↗",
+          "proposal": "Register on Billetweb ↗",
           "status": "human_review_required"
         },
         {
@@ -2044,13 +2044,13 @@
         {
           "location": "/html/body/main/section[19]/div[2]/article[7]/a/@text",
           "source_fr": "Je m’inscris sur Billetweb ↗",
-          "proposal": "Je m’inscris sur Billetweb ↗",
+          "proposal": "Register on Billetweb ↗",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[19]/details/summary/@text",
           "source_fr": "Présentations passées",
-          "proposal": "Présentations passées",
+          "proposal": "Past presentations",
           "status": "human_review_required"
         },
         {
@@ -2170,13 +2170,13 @@
         {
           "location": "/html/body/main/section[20]/div/div[2]/h3/@text",
           "source_fr": "Un premier échange, simplement.",
-          "proposal": "Un premier échange, simplement.",
+          "proposal": "A simple first conversation.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/p/@text",
           "source_fr": "Choisissez votre format, puis indiquez vos coordonnées. Les champs * sont obligatoires.",
-          "proposal": "Choisissez votre format, puis indiquez vos coordonnées. Les champs * sont obligatoires.",
+          "proposal": "Choose your format, then enter your contact details. Fields marked * are required.",
           "status": "human_review_required"
         },
         {
@@ -2188,43 +2188,43 @@
         {
           "location": "/html/body/main/section[20]/div/div[2]/div/p/@text",
           "source_fr": "Guillaume prendra contact avec vous pour donner suite à votre demande.",
-          "proposal": "Guillaume prendra contact avec vous pour donner suite à votre demande.",
+          "proposal": "Guillaume will contact you to follow up on your request.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/div[1]/p/@text",
           "source_fr": "01 · Choisissez votre échange",
-          "proposal": "01 · Choisissez votre échange",
+          "proposal": "01 · Choose your conversation",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/div[1]/div/label/@text",
           "source_fr": "Comment souhaitez-vous échanger ?",
-          "proposal": "Comment souhaitez-vous échanger ?",
+          "proposal": "How would you like to talk?",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/div[1]/div/select/option[1]/@text",
           "source_fr": "Je souhaite d’abord des informations",
-          "proposal": "Je souhaite d’abord des informations",
+          "proposal": "I would like some information first",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/div[1]/div/select/option[2]/@text",
           "source_fr": "Demander un entretien individuel avec Guillaume",
-          "proposal": "Demander un entretien individuel avec Guillaume",
+          "proposal": "Request an individual meeting with Guillaume",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/div[1]/div/small/@text",
           "source_fr": "Une date choisie constitue une demande de participation, non une inscription confirmée. Nous vous recontacterons pour la suite.",
-          "proposal": "Une date choisie constitue une demande de participation, non une inscription confirmée. Nous vous recontacterons pour la suite.",
+          "proposal": "Choosing a date is a request to attend, not a confirmed registration. We will contact you about the next steps.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/div[2]/p/@text",
           "source_fr": "02 · Vos coordonnées et votre situation",
-          "proposal": "02 · Vos coordonnées et votre situation",
+          "proposal": "02 · Your details and situation",
           "status": "human_review_required"
         },
         {
@@ -2314,7 +2314,7 @@
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/details[1]/summary/@text",
           "source_fr": "Ajouter une précision sur mon projet (facultatif)",
-          "proposal": "Ajouter une précision sur mon projet (facultatif)",
+          "proposal": "Add a detail about my project (optional)",
           "status": "human_review_required"
         },
         {
@@ -2458,49 +2458,49 @@
         {
           "location": "/html/body/main/section[21]/div/div/h2/@text",
           "source_fr": "Vos recommandations peuvent être récompensées.",
-          "proposal": "Vos recommandations peuvent être récompensées.",
+          "proposal": "Your referrals may be rewarded.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/div/p[2]/@text",
           "source_fr": "Vous connaissez une personne qui souhaite vendre ou acheter un bien immobilier ? Présentez-la-moi grâce à propertips. Je prends ensuite le relais pour l’accompagner dans son projet.",
-          "proposal": "Vous connaissez une personne qui souhaite vendre ou acheter un bien immobilier ? Présentez-la-moi grâce à propertips. Je prends ensuite le relais pour l’accompagner dans son projet.",
+          "proposal": "Do you know someone who wants to sell or buy a property? Introduce them to me through propertips. I will then support them with their project.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/div/p[3]/@text",
           "source_fr": "Si votre recommandation aboutit à une vente réalisée par mon intermédiaire,",
-          "proposal": "Si votre recommandation aboutit à une vente réalisée par mon intermédiaire,",
+          "proposal": "If your referral leads to a sale completed through me,",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/div/p[3]/strong/@text",
           "source_fr": "je vous reverse 6 % de ma commission d’agence",
-          "proposal": "je vous reverse 6 % de ma commission d’agence",
+          "proposal": "I pay you 6% of my agency commission",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/div/p[3]/strong/@tail",
           "source_fr": ", selon les conditions applicables de propertips.",
-          "proposal": ", selon les conditions applicables de propertips.",
+          "proposal": ", subject to the applicable propertips conditions.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/div/a/@text",
           "source_fr": "S’inscrire gratuitement avec Guillaume",
-          "proposal": "S’inscrire gratuitement avec Guillaume",
+          "proposal": "Register for free with Guillaume",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/div/p[4]/@text",
           "source_fr": "Lien d’inscription personnel Guillaume ROQUE (parrain 1680). Versement uniquement après conclusion de la transaction et sous réserve des conditions applicables. Les rémunérations perçues peuvent être imposables.",
-          "proposal": "Lien d’inscription personnel Guillaume ROQUE (parrain 1680). Versement uniquement après conclusion de la transaction et sous réserve des conditions applicables. Les rémunérations perçues peuvent être imposables.",
+          "proposal": "Guillaume ROQUE’s personal registration link (sponsor 1680). Payment only after the transaction is completed and subject to the applicable conditions. Remuneration received may be taxable.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/aside/@aria-label",
           "source_fr": "Propertips : rémunération et vidéo",
-          "proposal": "Propertips : rémunération et vidéo",
+          "proposal": "Propertips: remuneration and video",
           "status": "human_review_required"
         },
         {
@@ -2512,7 +2512,7 @@
         {
           "location": "/html/body/main/section[21]/div/aside/div[1]/p/@text",
           "source_fr": "de ma commission d’agence",
-          "proposal": "de ma commission d’agence",
+          "proposal": "of my agency commission",
           "status": "human_review_required"
         },
         {
@@ -2524,19 +2524,19 @@
         {
           "location": "/html/body/main/section[21]/div/aside/div[2]/p/@text",
           "source_fr": "Découvrez propertips en vidéo",
-          "proposal": "Découvrez propertips en vidéo",
+          "proposal": "Discover propertips in a video",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/aside/div[2]/div/iframe/@title",
           "source_fr": "Vidéo de présentation Propertips by iad",
-          "proposal": "Vidéo de présentation Propertips by iad",
+          "proposal": "Propertips by iad presentation video",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/aside/div[2]/a/@text",
           "source_fr": "Ouvrir la vidéo sur YouTube ↗",
-          "proposal": "Ouvrir la vidéo sur YouTube ↗",
+          "proposal": "Open the video on YouTube ↗",
           "status": "human_review_required"
         },
         {
@@ -2548,25 +2548,25 @@
         {
           "location": "/html/body/main/section[22]/div/div[1]/h2/@text",
           "source_fr": "Gardons le contact.",
-          "proposal": "Gardons le contact.",
+          "proposal": "Let’s stay in touch.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[22]/div/div[1]/p[1]/@text",
           "source_fr": "Chaque mois, recevez des réponses concrètes sur le métier de conseiller immobilier et le réseau iad, ainsi que les dates de nos prochaines présentations.",
-          "proposal": "Chaque mois, recevez des réponses concrètes sur le métier de conseiller immobilier et le réseau iad, ainsi que les dates de nos prochaines présentations.",
+          "proposal": "Every month, receive practical answers about working as a real estate advisor and the iad network, together with the dates of our next presentations.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[22]/div/div[1]/p[2]/@text",
           "source_fr": "Inscription gratuite. Vous pouvez vous désinscrire à tout moment depuis chaque email.",
-          "proposal": "Inscription gratuite. Vous pouvez vous désinscrire à tout moment depuis chaque email.",
+          "proposal": "Free registration. You can unsubscribe at any time from any email.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[22]/div/div[2]/form/label/@text",
           "source_fr": "Votre adresse email",
-          "proposal": "Votre adresse email",
+          "proposal": "Your email address",
           "status": "human_review_required"
         },
         {
@@ -2584,19 +2584,19 @@
         {
           "location": "/html/body/main/section[22]/div/div[2]/form/div[2]/label/@text",
           "source_fr": "Ne pas remplir ce champ",
-          "proposal": "Ne pas remplir ce champ",
+          "proposal": "Leave this field empty",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[22]/div/div[2]/p/@text",
           "source_fr": "Votre adresse email est utilisée pour cette newsletter, gérée avec Brevo. L’inscription prend effet après confirmation dans l’email reçu.",
-          "proposal": "Votre adresse email est utilisée pour cette newsletter, gérée avec Brevo. L’inscription prend effet après confirmation dans l’email reçu.",
+          "proposal": "Your email address is used for this newsletter, managed with Brevo. Registration takes effect after you confirm it in the email you receive.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[22]/div/div[2]/p/a/@text",
           "source_fr": "Confidentialité et droits",
-          "proposal": "Confidentialité et droits",
+          "proposal": "Privacy and rights",
           "status": "human_review_required"
         },
         {
@@ -2650,13 +2650,13 @@
         {
           "location": "/html/body/footer/div/div[1]/div[2]/div[1]/a[4]/@text",
           "source_fr": "Ils font partie de la Tribu Immo",
-          "proposal": "Ils font partie de la Tribu Immo",
+          "proposal": "They are part of La Tribu Immo",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/footer/div/div[1]/div[2]/div[1]/a[5]/@text",
           "source_fr": "Nos séminaires nationaux",
-          "proposal": "Nos séminaires nationaux",
+          "proposal": "Our national seminars",
           "status": "human_review_required"
         },
         {
@@ -2674,7 +2674,7 @@
         {
           "location": "/html/body/footer/div/div[1]/div[2]/div[2]/a[1]/@text",
           "source_fr": "S’inscrire à la newsletter",
-          "proposal": "S’inscrire à la newsletter",
+          "proposal": "Subscribe to the newsletter",
           "status": "human_review_required"
         },
         {
@@ -2890,7 +2890,7 @@
         {
           "location": "JSON-LD/0/@graph/1/areaServed/1",
           "source_fr": "Pays où iad est implanté",
-          "proposal": "Pays où iad est implanté",
+          "proposal": "Countries where iad operates",
           "status": "human_review_required"
         },
         {
@@ -3131,13 +3131,13 @@
         {
           "location": "/html/body/header/nav[2]/div/details/div/a[2]/@text",
           "source_fr": "Changer de réseau",
-          "proposal": "Changer de réseau",
+          "proposal": "Cambiar de red",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/header/nav[2]/div/details/div/a[3]/@text",
           "source_fr": "Mon agence ou équipe",
-          "proposal": "Mon agence ou équipe",
+          "proposal": "Mi agencia o equipo",
           "status": "human_review_required"
         },
         {
@@ -3173,7 +3173,7 @@
         {
           "location": "/html/body/header/nav[2]/div/a[6]/@aria-label",
           "source_fr": "Découvrir propertips by iad",
-          "proposal": "Découvrir propertips by iad",
+          "proposal": "Descubrir propertips by iad",
           "status": "human_review_required"
         },
         {
@@ -3185,7 +3185,7 @@
         {
           "location": "/html/body/header/nav[2]/div/a[6]/span/@text",
           "source_fr": "Recommander un proche",
-          "proposal": "Recommander un proche",
+          "proposal": "Recomendar a una persona cercana",
           "status": "human_review_required"
         },
         {
@@ -3203,7 +3203,7 @@
         {
           "location": "/html/body/main/section[1]/div/div[1]/h1/@text",
           "source_fr": "Entreprenez dans",
-          "proposal": "Entreprenez dans",
+          "proposal": "Emprenda en",
           "status": "human_review_required"
         },
         {
@@ -3215,19 +3215,19 @@
         {
           "location": "/html/body/main/section[1]/div/div[1]/h1/span/@text",
           "source_fr": "Ne réussissez pas seul.",
-          "proposal": "Ne réussissez pas seul.",
+          "proposal": "No tiene que avanzar solo.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[1]/div/div[1]/p/@text",
           "source_fr": "Que vous découvriez le métier, souhaitiez changer de réseau ou développer une équipe, avancez avec un parcours adapté et l’accompagnement de La Tribu Immo. Plus de 130 conseillers, une dynamique en France et à l’international.",
-          "proposal": "Que vous découvriez le métier, souhaitiez changer de réseau ou développer une équipe, avancez avec un parcours adapté et l’accompagnement de La Tribu Immo. Plus de 130 conseillers, une dynamique en France et à l’international.",
+          "proposal": "Tanto si descubre la profesión como si desea cambiar de red o desarrollar un equipo, avance con un recorrido adaptado y el acompañamiento de La Tribu Immo. Más de 130 asesores y una dinámica compartida en Francia y a nivel internacional.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[1]/div/div[1]/div[2]/a[1]/@text",
           "source_fr": "Choisir mon parcours",
-          "proposal": "Choisir mon parcours",
+          "proposal": "Elegir mi recorrido",
           "status": "human_review_required"
         },
         {
@@ -3317,7 +3317,7 @@
         {
           "location": "/html/body/main/section[3]/div[1]/div/h2/@text",
           "source_fr": "Quel est votre projet",
-          "proposal": "Quel est votre projet",
+          "proposal": "¿Cuál es su proyecto",
           "status": "human_review_required"
         },
         {
@@ -3329,7 +3329,7 @@
         {
           "location": "/html/body/main/section[3]/div[1]/p/@text",
           "source_fr": "Pas de parcours imposé : choisissez votre situation pour trouver rapidement les réponses qui vous concernent.",
-          "proposal": "Pas de parcours imposé : choisissez votre situation pour trouver rapidement les réponses qui vous concernent.",
+          "proposal": "No hay un recorrido impuesto: elija su situación para encontrar las respuestas que le interesan.",
           "status": "human_review_required"
         },
         {
@@ -3341,19 +3341,19 @@
         {
           "location": "/html/body/main/section[3]/div[2]/a[1]/h3/@text",
           "source_fr": "Me reconvertir dans l’immobilier",
-          "proposal": "Me reconvertir dans l’immobilier",
+          "proposal": "Cambiar de profesión y entrar en el sector inmobiliario",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[1]/p/@text",
           "source_fr": "Comprendre le métier, le budget de démarrage et les premières étapes.",
-          "proposal": "Comprendre le métier, le budget de démarrage et les premières étapes.",
+          "proposal": "Comprender la profesión, el presupuesto inicial y los primeros pasos.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[1]/span[3]/@text",
           "source_fr": "Découvrir mon parcours →",
-          "proposal": "Découvrir mon parcours →",
+          "proposal": "Descubrir mi recorrido →",
           "status": "human_review_required"
         },
         {
@@ -3371,13 +3371,13 @@
         {
           "location": "/html/body/main/section[3]/div[2]/a[2]/p/@text",
           "source_fr": "Comparer mes outils, mes frais et mes perspectives de rémunération.",
-          "proposal": "Comparer mes outils, mes frais et mes perspectives de rémunération.",
+          "proposal": "Comparar mis herramientas, gastos y perspectivas de remuneración.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[2]/span[3]/@text",
           "source_fr": "Comparer mes options →",
-          "proposal": "Comparer mes options →",
+          "proposal": "Comparar mis opciones →",
           "status": "human_review_required"
         },
         {
@@ -3389,19 +3389,19 @@
         {
           "location": "/html/body/main/section[3]/div[2]/a[3]/h3/@text",
           "source_fr": "Développer mon agence ou mon équipe",
-          "proposal": "Développer mon agence ou mon équipe",
+          "proposal": "Desarrollar mi agencia o equipo",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[3]/p/@text",
           "source_fr": "Étudier une évolution collective et préparer une transition chiffrée.",
-          "proposal": "Étudier une évolution collective et préparer une transition chiffrée.",
+          "proposal": "Estudiar una evolución conjunta y preparar una transición con cifras.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[3]/span[3]/@text",
           "source_fr": "Étudier mon projet →",
-          "proposal": "Étudier mon projet →",
+          "proposal": "Estudiar mi proyecto →",
           "status": "human_review_required"
         },
         {
@@ -3413,19 +3413,19 @@
         {
           "location": "/html/body/main/section[3]/div[2]/a[4]/h3/@text",
           "source_fr": "Travailler à l’international",
-          "proposal": "Travailler à l’international",
+          "proposal": "Trabajar a nivel internacional",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[4]/p/@text",
           "source_fr": "Comprendre les possibilités de développement dans les pays iad.",
-          "proposal": "Comprendre les possibilités de développement dans les pays iad.",
+          "proposal": "Comprender las posibilidades de desarrollo en los países donde opera iad.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[3]/div[2]/a[4]/span[3]/@text",
           "source_fr": "Explorer l’international →",
-          "proposal": "Explorer l’international →",
+          "proposal": "Explorar las posibilidades internacionales →",
           "status": "human_review_required"
         },
         {
@@ -3437,67 +3437,67 @@
         {
           "location": "/html/body/main/section[4]/div/h2/@text",
           "source_fr": "Indépendant dans votre activité.",
-          "proposal": "Indépendant dans votre activité.",
+          "proposal": "Independiente en su actividad.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/h2/br/@tail",
           "source_fr": "Accompagné dans votre progression.",
-          "proposal": "Accompagné dans votre progression.",
+          "proposal": "Acompañado en su progreso.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[1]/h3/@text",
           "source_fr": "Votre liberté d’entreprendre",
-          "proposal": "Votre liberté d’entreprendre",
+          "proposal": "Su libertad para emprender",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[1]/p/@text",
           "source_fr": "Construisez votre organisation et vos priorités avec un modèle adapté à une activité indépendante.",
-          "proposal": "Construisez votre organisation et vos priorités avec un modèle adapté à une activité indépendante.",
+          "proposal": "Defina su organización y sus prioridades con un modelo adaptado al trabajo independiente.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[1]/a/@text",
           "source_fr": "Comprendre iad →",
-          "proposal": "Comprendre iad →",
+          "proposal": "Comprender iad →",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[2]/h3/@text",
           "source_fr": "Des repères pour progresser",
-          "proposal": "Des repères pour progresser",
+          "proposal": "Referencias concretas para avanzar",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[2]/p/@text",
           "source_fr": "Formation, échanges d’équipe et accompagnement humain à chaque étape de votre parcours.",
-          "proposal": "Formation, échanges d’équipe et accompagnement humain à chaque étape de votre parcours.",
+          "proposal": "Formación, intercambios de equipo y acompañamiento personal en cada etapa de su recorrido.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[2]/a/@text",
           "source_fr": "Voir l’accompagnement →",
-          "proposal": "Voir l’accompagnement →",
+          "proposal": "Ver el acompañamiento →",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[3]/h3/@text",
           "source_fr": "Une perspective de développement",
-          "proposal": "Une perspective de développement",
+          "proposal": "Una perspectiva de desarrollo",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[3]/p/@text",
           "source_fr": "Transaction, recommandations et développement d’équipe : explorez les différentes possibilités, selon les conditions applicables.",
-          "proposal": "Transaction, recommandations et développement d’équipe : explorez les différentes possibilités, selon les conditions applicables.",
+          "proposal": "Transacciones, recomendaciones y desarrollo de equipo: explore las distintas posibilidades, según las condiciones aplicables.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[4]/div/div[2]/article[3]/a/@text",
           "source_fr": "Comprendre les leviers →",
-          "proposal": "Comprendre les leviers →",
+          "proposal": "Comprender las distintas posibilidades →",
           "status": "human_review_required"
         },
         {
@@ -3683,13 +3683,13 @@
         {
           "location": "/html/body/main/section[8]/h2/@text",
           "source_fr": "Ils font partie de la Tribu Immo",
-          "proposal": "Ils font partie de la Tribu Immo",
+          "proposal": "Forman parte de La Tribu Immo",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[8]/p/@text",
           "source_fr": "Pourquoi ont-ils rejoint iad et l’équipe de Guillaume Roque ? Découvrez leurs parcours et les raisons de leur choix, racontés avec leurs propres mots.",
-          "proposal": "Pourquoi ont-ils rejoint iad et l’équipe de Guillaume Roque ? Découvrez leurs parcours et les raisons de leur choix, racontés avec leurs propres mots.",
+          "proposal": "¿Por qué se unieron a iad y al equipo de Guillaume Roque? Descubra sus trayectorias y los motivos de su elección, contados con sus propias palabras.",
           "status": "human_review_required"
         },
         {
@@ -3851,49 +3851,49 @@
         {
           "location": "/html/body/main/section[10]/div/div/h2/@text",
           "source_fr": "Nos séminaires nationaux",
-          "proposal": "Nos séminaires nationaux",
+          "proposal": "Nuestros seminarios nacionales",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[10]/div/div/h2/span/@text",
           "source_fr": "organisés par la Tribu Immo.",
-          "proposal": "organisés par la Tribu Immo.",
+          "proposal": "organizados por La Tribu Immo.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[10]/p/@text",
           "source_fr": "Des séminaires organisés par Guillaume et Élodie pour se retrouver, apprendre et partager nos expériences. Revivez en images les interventions, les rencontres et l’énergie de ces journées.",
-          "proposal": "Des séminaires organisés par Guillaume et Élodie pour se retrouver, apprendre et partager nos expériences. Revivez en images les interventions, les rencontres et l’énergie de ces journées.",
+          "proposal": "Seminarios organizados por Guillaume y Élodie para reunirnos, aprender y compartir experiencias. Reviva en imágenes las intervenciones, los encuentros y la energía de estas jornadas.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[10]/figure/video/@aria-label",
           "source_fr": "Nos séminaires nationaux organisés par la Tribu Immo, avec Guillaume et Élodie",
-          "proposal": "Nos séminaires nationaux organisés par la Tribu Immo, avec Guillaume et Élodie",
+          "proposal": "Nuestros seminarios nacionales organizados por La Tribu Immo, con Guillaume y Élodie",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[10]/figure/video/source/a/@text",
           "source_fr": "Télécharger la vidéo des séminaires",
-          "proposal": "Télécharger la vidéo des séminaires",
+          "proposal": "Descargar el vídeo de los seminarios",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[10]/figure/figcaption/@text",
           "source_fr": "Guillaume & Élodie · Séminaires Tribu Immo · Activez le son pour profiter de la musique.",
-          "proposal": "Guillaume & Élodie · Séminaires Tribu Immo · Activez le son pour profiter de la musique.",
+          "proposal": "Guillaume y Élodie · Seminarios de La Tribu Immo · Active el sonido para disfrutar de la música.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/div[1]/@text",
           "source_fr": "Comprendre les leviers de rémunération",
-          "proposal": "Comprendre les leviers de rémunération",
+          "proposal": "Comprender las fuentes de remuneración",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/h2/@text",
           "source_fr": "Un taux de commission, c’est une source sur six.",
-          "proposal": "Un taux de commission, c’est une source sur six.",
+          "proposal": "El porcentaje de comisión es una de seis fuentes.",
           "status": "human_review_required"
         },
         {
@@ -3911,13 +3911,13 @@
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[1]/p/@text",
           "source_fr": "Une rémunération liée aux transactions et aux paliers de CA.",
-          "proposal": "Une rémunération liée aux transactions et aux paliers de CA.",
+          "proposal": "Una remuneración vinculada a las transacciones y a los tramos de facturación.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[2]/div/@text",
           "source_fr": "Votre organisation",
-          "proposal": "Votre organisation",
+          "proposal": "Su organización",
           "status": "human_review_required"
         },
         {
@@ -3929,13 +3929,13 @@
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[2]/p/@text",
           "source_fr": "Des commissions liées à l’activité de l’équipe accompagnée.",
-          "proposal": "Des commissions liées à l’activité de l’équipe accompagnée.",
+          "proposal": "Comisiones vinculadas a la actividad del equipo acompañado.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[3]/div/@text",
           "source_fr": "Nouveaux filleuls",
-          "proposal": "Nouveaux filleuls",
+          "proposal": "Nuevos asesores apadrinados",
           "status": "human_review_required"
         },
         {
@@ -3947,13 +3947,13 @@
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[3]/p/@text",
           "source_fr": "Une majoration temporaire, selon les conditions du dispositif.",
-          "proposal": "Une majoration temporaire, selon les conditions du dispositif.",
+          "proposal": "Un incremento temporal, según las condiciones del programa.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[4]/div/@text",
           "source_fr": "Progression managériale",
-          "proposal": "Progression managériale",
+          "proposal": "Progresión en la gestión de equipo",
           "status": "human_review_required"
         },
         {
@@ -3965,7 +3965,7 @@
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[4]/p/@text",
           "source_fr": "Un bonus conditionné au niveau atteint et à la progression.",
-          "proposal": "Un bonus conditionné au niveau atteint et à la progression.",
+          "proposal": "Una bonificación condicionada al nivel alcanzado y a la progresión.",
           "status": "human_review_required"
         },
         {
@@ -3977,19 +3977,19 @@
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[5]/h3/@text",
           "source_fr": "Apport d’affaires",
-          "proposal": "Apport d’affaires",
+          "proposal": "Aportación de oportunidades de negocio",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[5]/p/@text",
           "source_fr": "Une rémunération possible lors d’un dossier transmis et abouti.",
-          "proposal": "Une rémunération possible lors d’un dossier transmis et abouti.",
+          "proposal": "Una posible remuneración cuando un expediente recomendado llega a buen término.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[6]/div/@text",
           "source_fr": "Équipes de professionnels",
-          "proposal": "Équipes de professionnels",
+          "proposal": "Equipos de profesionales",
           "status": "human_review_required"
         },
         {
@@ -4001,19 +4001,19 @@
         {
           "location": "/html/body/main/section[11]/div/div[2]/article[6]/p/@text",
           "source_fr": "Une intégration encadrée, avec un dossier à valider.",
-          "proposal": "Une intégration encadrée, avec un dossier à valider.",
+          "proposal": "Una integración regulada, con un expediente sujeto a validación.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/p/@text",
           "source_fr": "Propertips contribue aussi à développer vos recommandations. Ces leviers ne sont ni automatiques ni systématiquement cumulables. Les conditions contractuelles s’appliquent ; aucun revenu n’est garanti.",
-          "proposal": "Propertips contribue aussi à développer vos recommandations. Ces leviers ne sont ni automatiques ni systématiquement cumulables. Les conditions contractuelles s’appliquent ; aucun revenu n’est garanti.",
+          "proposal": "Propertips también contribuye a desarrollar sus recomendaciones. Estas posibilidades no son automáticas ni siempre acumulables. Se aplican las condiciones contractuales; no se garantiza ningún ingreso.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[11]/div/a/@text",
           "source_fr": "Simuler ma rémunération ↗",
-          "proposal": "Simuler ma rémunération ↗",
+          "proposal": "Simular mi remuneración ↗",
           "status": "human_review_required"
         },
         {
@@ -4025,73 +4025,73 @@
         {
           "location": "/html/body/main/section[12]/div/div[1]/h2/@text",
           "source_fr": "Et si vous commenciez",
-          "proposal": "Et si vous commenciez",
+          "proposal": "¿Y si empezara",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[1]/h2/br/@tail",
           "source_fr": "par une simulation ?",
-          "proposal": "par une simulation ?",
+          "proposal": "con una simulación?",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[1]/p/@text",
           "source_fr": "Renseignez votre situation et vos hypothèses : notre simulateur vous aide à comparer les scénarios sur 12 ou 24 mois. Il ne constitue pas une promesse de revenu.",
-          "proposal": "Renseignez votre situation et vos hypothèses : notre simulateur vous aide à comparer les scénarios sur 12 ou 24 mois. Il ne constitue pas une promesse de revenu.",
+          "proposal": "Indique su situación y sus hipótesis: nuestro simulador le ayuda a comparar escenarios de 12 o 24 meses. No constituye una promesa de ingresos.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[1]/div[2]/a[1]/@text",
           "source_fr": "Lancer ma simulation",
-          "proposal": "Lancer ma simulation",
+          "proposal": "Iniciar mi simulación",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[1]/div[2]/a[2]/@text",
           "source_fr": "Comprendre les six leviers →",
-          "proposal": "Comprendre les six leviers →",
+          "proposal": "Comprender las seis fuentes →",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[2]/p/@text",
           "source_fr": "Je souhaite simuler…",
-          "proposal": "Je souhaite simuler…",
+          "proposal": "Me gustaría simular…",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[2]/a[1]/@text",
           "source_fr": "Une reconversion",
-          "proposal": "Une reconversion",
+          "proposal": "Un cambio de profesión",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[2]/a[2]/@text",
           "source_fr": "Mon activité actuelle",
-          "proposal": "Mon activité actuelle",
+          "proposal": "Mi actividad actual",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[2]/a[3]/@text",
           "source_fr": "Le projet de mon équipe",
-          "proposal": "Le projet de mon équipe",
+          "proposal": "El proyecto de mi equipo",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[12]/div/div[2]/a[4]/@text",
           "source_fr": "Un projet international",
-          "proposal": "Un projet international",
+          "proposal": "Un proyecto internacional",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[1]/@text",
           "source_fr": "Du premier échange aux premières actions",
-          "proposal": "Du premier échange aux premières actions",
+          "proposal": "De la primera conversación a las primeras acciones",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/h2/@text",
           "source_fr": "Ce qui se passe dans les premières semaines.",
-          "proposal": "Ce qui se passe dans les premières semaines.",
+          "proposal": "Qué ocurre durante las primeras semanas.",
           "status": "human_review_required"
         },
         {
@@ -4103,55 +4103,55 @@
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/h3/@text",
           "source_fr": "Construire de bonnes bases.",
-          "proposal": "Construire de bonnes bases.",
+          "proposal": "Construir unas buenas bases.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[1]/strong/@text",
           "source_fr": "Définir votre point de départ",
-          "proposal": "Définir votre point de départ",
+          "proposal": "Definir su punto de partida",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[1]/p/@text",
           "source_fr": "Disponibilités, budget personnel, pack et frais professionnels : préparez le temps nécessaire avant les premiers encaissements.",
-          "proposal": "Disponibilités, budget personnel, pack et frais professionnels : préparez le temps nécessaire avant les premiers encaissements.",
+          "proposal": "Disponibilidad, presupuesto personal, cuota y gastos profesionales: prepare el tiempo necesario antes de los primeros cobros.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[2]/strong/@text",
           "source_fr": "Organiser votre installation",
-          "proposal": "Organiser votre installation",
+          "proposal": "Organizar su puesta en marcha",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[2]/p/@text",
           "source_fr": "Identifiez les formalités, l’assurance et les outils à prévoir pour exercer votre nouvelle activité.",
-          "proposal": "Identifiez les formalités, l’assurance et les outils à prévoir pour exercer votre nouvelle activité.",
+          "proposal": "Identifique los trámites, el seguro y las herramientas necesarios para su nueva actividad.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[3]/strong/@text",
           "source_fr": "Apprendre et mettre en pratique",
-          "proposal": "Apprendre et mettre en pratique",
+          "proposal": "Aprender y poner en práctica",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[3]/p/@text",
           "source_fr": "Formation iad Academy, prospection, estimation et suivi des clients : avancez avec une méthode progressive.",
-          "proposal": "Formation iad Academy, prospection, estimation et suivi des clients : avancez avec une méthode progressive.",
+          "proposal": "Formación iad Academy, prospección, valoración y seguimiento de clientes: avance con un método progresivo.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[4]/strong/@text",
           "source_fr": "Faire le point à 30, 60 et 90 jours",
-          "proposal": "Faire le point à 30, 60 et 90 jours",
+          "proposal": "Hacer balance a los 30, 60 y 90 días",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[1]/ol/li[4]/p/@text",
           "source_fr": "Avec Guillaume, adaptez vos actions, votre organisation et vos priorités aux premiers retours du terrain.",
-          "proposal": "Avec Guillaume, adaptez vos actions, votre organisation et vos priorités aux premiers retours du terrain.",
+          "proposal": "Con Guillaume, adapte sus acciones, su organización y sus prioridades a los primeros resultados del trabajo sobre el terreno.",
           "status": "human_review_required"
         },
         {
@@ -4163,55 +4163,55 @@
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/h3/@text",
           "source_fr": "Préparer votre changement de réseau.",
-          "proposal": "Préparer votre changement de réseau.",
+          "proposal": "Preparar su cambio de red.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[1]/strong/@text",
           "source_fr": "Clarifier vos engagements actuels",
-          "proposal": "Clarifier vos engagements actuels",
+          "proposal": "Aclarar sus compromisos actuales",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[1]/p/@text",
           "source_fr": "Contrat, préavis, mandats et commissions en cours : identifiez les points à vérifier avant votre départ.",
-          "proposal": "Contrat, préavis, mandats et commissions en cours : identifiez les points à vérifier avant votre départ.",
+          "proposal": "Contrato, preaviso, encargos y comisiones pendientes: identifique los puntos que debe comprobar antes de marcharse.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[2]/strong/@text",
           "source_fr": "Fixer un calendrier réaliste",
-          "proposal": "Fixer un calendrier réaliste",
+          "proposal": "Fijar un calendario realista",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[2]/p/@text",
           "source_fr": "Coordonnez votre transition et le suivi de vos dossiers, selon vos obligations et votre situation.",
-          "proposal": "Coordonnez votre transition et le suivi de vos dossiers, selon vos obligations et votre situation.",
+          "proposal": "Coordine su transición y el seguimiento de sus expedientes según sus obligaciones y su situación.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[3]/strong/@text",
           "source_fr": "Prendre en main les nouveaux outils",
-          "proposal": "Prendre en main les nouveaux outils",
+          "proposal": "Familiarizarse con las nuevas herramientas",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[3]/p/@text",
           "source_fr": "Préparez votre organisation commerciale : suivi des contacts, diffusion, documents et signature électronique.",
-          "proposal": "Préparez votre organisation commerciale : suivi des contacts, diffusion, documents et signature électronique.",
+          "proposal": "Prepare su organización comercial: seguimiento de contactos, publicación de anuncios, documentos y firma electrónica.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[4]/strong/@text",
           "source_fr": "Choisir votre trajectoire",
-          "proposal": "Choisir votre trajectoire",
+          "proposal": "Elegir su trayectoria",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[2]/ol/li[4]/p/@text",
           "source_fr": "Développez votre transaction et, si cela vous intéresse, découvrez le parrainage et l’accompagnement d’une équipe.",
-          "proposal": "Développez votre transaction et, si cela vous intéresse, découvrez le parrainage et l’accompagnement d’une équipe.",
+          "proposal": "Desarrolle su actividad de transacciones y, si le interesa, descubra el apadrinamiento y el acompañamiento de un equipo.",
           "status": "human_review_required"
         },
         {
@@ -4223,61 +4223,61 @@
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/h3/@text",
           "source_fr": "Étudier une transition collective.",
-          "proposal": "Étudier une transition collective.",
+          "proposal": "Estudiar una transición conjunta.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[1]/strong/@text",
           "source_fr": "Chiffrer le modèle existant",
-          "proposal": "Chiffrer le modèle existant",
+          "proposal": "Analizar las cifras del modelo actual",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[1]/p/@text",
           "source_fr": "CA, rétrocessions et dépenses de structure : comparez votre situation avec les hypothèses du simulateur.",
-          "proposal": "CA, rétrocessions et dépenses de structure : comparez votre situation avec les hypothèses du simulateur.",
+          "proposal": "Facturación, reparto de comisiones y gastos de estructura: compare su situación con las hipótesis del simulador.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[2]/strong/@text",
           "source_fr": "Échanger avec vos collaborateurs",
-          "proposal": "Échanger avec vos collaborateurs",
+          "proposal": "Hablar con sus colaboradores",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[2]/p/@text",
           "source_fr": "Organisez une présentation avec Guillaume pour répondre aux questions de chaque membre de l’équipe.",
-          "proposal": "Organisez une présentation avec Guillaume pour répondre aux questions de chaque membre de l’équipe.",
+          "proposal": "Organice una presentación con Guillaume para responder a las preguntas de cada miembro del equipo.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[3]/strong/@text",
           "source_fr": "Vérifier les dispositifs accessibles",
-          "proposal": "Vérifier les dispositifs accessibles",
+          "proposal": "Comprobar los programas disponibles",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[3]/p/@text",
           "source_fr": "Étudiez les conditions du TIP et les rôles de chacun. Une éligibilité reste soumise à la validation du dossier.",
-          "proposal": "Étudiez les conditions du TIP et les rôles de chacun. Une éligibilité reste soumise à la validation du dossier.",
+          "proposal": "Estudie las condiciones del TIP y el papel de cada persona. La elegibilidad sigue estando sujeta a la validación del expediente.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[4]/strong/@text",
           "source_fr": "Échelonner les changements",
-          "proposal": "Échelonner les changements",
+          "proposal": "Escalonar los cambios",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/div[2]/article[3]/ol/li[4]/p/@text",
           "source_fr": "Bail, outils, abonnements et engagements de la structure : construisez un calendrier adapté, poste par poste.",
-          "proposal": "Bail, outils, abonnements et engagements de la structure : construisez un calendrier adapté, poste par poste.",
+          "proposal": "Alquiler, herramientas, suscripciones y compromisos de la estructura: elabore un calendario adaptado, partida por partida.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[13]/div/a/@text",
           "source_fr": "Chiffrer mon projet ↗",
-          "proposal": "Chiffrer mon projet ↗",
+          "proposal": "Analizar las cifras de mi proyecto ↗",
           "status": "human_review_required"
         },
         {
@@ -4289,25 +4289,25 @@
         {
           "location": "/html/body/main/section[14]/div/div/h2/@text",
           "source_fr": "Avancer ensemble.",
-          "proposal": "Avancer ensemble.",
+          "proposal": "Avanzar juntos.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[14]/div/div/h2/br/@tail",
           "source_fr": "Avec un projet chiffré.",
-          "proposal": "Avec un projet chiffré.",
+          "proposal": "Con un proyecto respaldado por cifras.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[14]/div/div/p[2]/@text",
           "source_fr": "Vous dirigez une agence ou souhaitez changer de réseau avec vos collègues ? Comparez vos charges, préparez votre transition et échangez avec Guillaume sur l’accompagnement de votre équipe.",
-          "proposal": "Vous dirigez une agence ou souhaitez changer de réseau avec vos collègues ? Comparez vos charges, préparez votre transition et échangez avec Guillaume sur l’accompagnement de votre équipe.",
+          "proposal": "¿Dirige una agencia o quiere cambiar de red con sus compañeros? Compare sus gastos, prepare su transición y hable con Guillaume sobre el acompañamiento de su equipo.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[14]/div/a/@text",
           "source_fr": "Préparer le projet de mon équipe ↗",
-          "proposal": "Préparer le projet de mon équipe ↗",
+          "proposal": "Preparar el proyecto de mi equipo ↗",
           "status": "human_review_required"
         },
         {
@@ -4319,25 +4319,25 @@
         {
           "location": "/html/body/main/section[15]/div/div[1]/div[1]/h2/@text",
           "source_fr": "Une équipe qui ne s’arrête pas à la frontière.",
-          "proposal": "Une équipe qui ne s’arrête pas à la frontière.",
+          "proposal": "Un equipo que va más allá de las fronteras.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[1]/div[1]/p[2]/@text",
           "source_fr": "Chez iad, votre activité et votre organisation peuvent se développer au-delà de votre région. Un ami à Valence, un ancien collègue à Miami, un contact à Milan : ces relations peuvent devenir le point de départ d’une collaboration ou d’une équipe locale. Chaque projet s’étudie selon les possibilités et les conditions propres au pays.",
-          "proposal": "Chez iad, votre activité et votre organisation peuvent se développer au-delà de votre région. Un ami à Valence, un ancien collègue à Miami, un contact à Milan : ces relations peuvent devenir le point de départ d’une collaboration ou d’une équipe locale. Chaque projet s’étudie selon les possibilités et les conditions propres au pays.",
+          "proposal": "En iad, su actividad y su organización pueden desarrollarse más allá de su región. Un amigo en Valencia, un antiguo compañero en Miami, un contacto en Milán: estas relaciones pueden ser el punto de partida de una colaboración o de un equipo local. Cada proyecto se estudia según las posibilidades y las condiciones del país correspondiente.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[1]/div[2]/a[1]/@text",
           "source_fr": "Explorer l’international",
-          "proposal": "Explorer l’international",
+          "proposal": "Explorar las posibilidades internacionales",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[1]/div[2]/a[2]/@text",
           "source_fr": "Parlons de mon projet international →",
-          "proposal": "Parlons de mon projet international →",
+          "proposal": "Hablar de mi proyecto internacional →",
           "status": "human_review_required"
         },
         {
@@ -4349,13 +4349,13 @@
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[1]/h3/@text",
           "source_fr": "Développez votre équipe au-delà des frontières",
-          "proposal": "Développez votre équipe au-delà des frontières",
+          "proposal": "Desarrolle su equipo más allá de las fronteras",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[1]/p/@text",
           "source_fr": "Démarrez en France et développez des contacts à l’étranger. La Tribu Immo vous accompagne pour préciser vos objectifs et les possibilités de parrainage.",
-          "proposal": "Démarrez en France et développez des contacts à l’étranger. La Tribu Immo vous accompagne pour préciser vos objectifs et les possibilités de parrainage.",
+          "proposal": "Empiece en Francia y desarrolle contactos en el extranjero. La Tribu Immo le acompaña para concretar sus objetivos y las posibilidades de apadrinamiento.",
           "status": "human_review_required"
         },
         {
@@ -4367,31 +4367,31 @@
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[2]/h3/@text",
           "source_fr": "Vos contacts démarrent dans leur pays",
-          "proposal": "Vos contacts démarrent dans leur pays",
+          "proposal": "Sus contactos empiezan en su país",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[2]/p/@text",
           "source_fr": "Un proche expatrié peut découvrir iad auprès des interlocuteurs du pays où il vit. Avec",
-          "proposal": "Un proche expatrié peut découvrir iad auprès des interlocuteurs du pays où il vit. Avec",
+          "proposal": "Una persona cercana que viva en el extranjero puede descubrir iad con los interlocutores del país donde reside. Con",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[2]/p/a[1]/@text",
           "source_fr": "Élodie Cimiotta, conseillère iad entre la France et la Costa Brava",
-          "proposal": "Élodie Cimiotta, conseillère iad entre la France et la Costa Brava",
+          "proposal": "Élodie Cimiotta, asesora iad entre Francia y la Costa Brava",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[2]/p/a[1]/@tail",
           "source_fr": ", nous créons aussi des passerelles concrètes entre la France et l’Espagne. Découvrez également",
-          "proposal": ", nous créons aussi des passerelles concrètes entre la France et l’Espagne. Découvrez également",
+          "proposal": ", también creamos vínculos concretos entre Francia y España. Descubra asimismo",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[2]/p/a[2]/@text",
           "source_fr": "l’accompagnement de Team Lucky en France et à l’international",
-          "proposal": "l’accompagnement de Team Lucky en France et à l’international",
+          "proposal": "el acompañamiento de Team Lucky en Francia y a nivel internacional",
           "status": "human_review_required"
         },
         {
@@ -4403,55 +4403,55 @@
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[3]/h3/@text",
           "source_fr": "Une équipe grandit sur place",
-          "proposal": "Une équipe grandit sur place",
+          "proposal": "Un equipo crece sobre el terreno",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[2]/article[3]/p/@text",
           "source_fr": "Un contact devenu conseiller peut construire à son tour son activité et son équipe locale, dans le respect des règles et des contrats applicables sur place.",
-          "proposal": "Un contact devenu conseiller peut construire à son tour son activité et son équipe locale, dans le respect des règles et des contrats applicables sur place.",
+          "proposal": "Un contacto que se convierta en asesor puede desarrollar a su vez su actividad y su equipo local, respetando las normas y los contratos aplicables en ese territorio.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[3]/h3/@text",
           "source_fr": "Les pays où iad est implanté",
-          "proposal": "Les pays où iad est implanté",
+          "proposal": "Los países donde opera iad",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[3]/figure/a/@aria-label",
           "source_fr": "Agrandir la carte des implantations iad (nouvel onglet)",
-          "proposal": "Agrandir la carte des implantations iad (nouvel onglet)",
+          "proposal": "Ampliar el mapa de implantaciones de iad (nueva pestaña)",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[3]/figure/a/img/@alt",
           "source_fr": "Carte des filiales iad dans le monde et des destinations partenaires iad Overseas : Europe, Mexique, Texas, Floride, Chypre, Dubaï et Maurice.",
-          "proposal": "Carte des filiales iad dans le monde et des destinations partenaires iad Overseas : Europe, Mexique, Texas, Floride, Chypre, Dubaï et Maurice.",
+          "proposal": "Mapa de las filiales de iad en el mundo y de los destinos asociados iad Overseas: Europa, México, Texas, Florida, Chipre, Dubái y Mauricio.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[3]/figure/figcaption/a/@text",
           "source_fr": "Agrandir la carte",
-          "proposal": "Agrandir la carte",
+          "proposal": "Ampliar el mapa",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[15]/div/div[3]/p/@text",
           "source_fr": "Les destinations iad Overseas correspondent à des partenariats avec des agences locales sélectionnées : iad n’y a pas de conseillers sous sa marque. Les conditions d’exercice, contrats, formations et dispositifs varient selon le territoire.",
-          "proposal": "Les destinations iad Overseas correspondent à des partenariats avec des agences locales sélectionnées : iad n’y a pas de conseillers sous sa marque. Les conditions d’exercice, contrats, formations et dispositifs varient selon le territoire.",
+          "proposal": "Los destinos iad Overseas corresponden a acuerdos con agencias locales seleccionadas: iad no dispone allí de asesores bajo su marca. Las condiciones de ejercicio, los contratos, las formaciones y los programas varían según el territorio.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[1]/@text",
           "source_fr": "Penser aussi à la suite",
-          "proposal": "Penser aussi à la suite",
+          "proposal": "Pensar también en el futuro",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/h2/@text",
           "source_fr": "Les trois questions qu’on remet toujours à plus tard.",
-          "proposal": "Les trois questions qu’on remet toujours à plus tard.",
+          "proposal": "Las tres preguntas que siempre dejamos para después.",
           "status": "human_review_required"
         },
         {
@@ -4463,55 +4463,55 @@
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[1]/h3/@text",
           "source_fr": "Et si je devais faire une pause ?",
-          "proposal": "Et si je devais faire une pause ?",
+          "proposal": "¿Y si tuviera que hacer una pausa?",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[1]/p/@text",
           "source_fr": "Quelle part de votre activité dépend uniquement de votre présence ?",
-          "proposal": "Quelle part de votre activité dépend uniquement de votre présence ?",
+          "proposal": "¿Qué parte de su actividad depende únicamente de su presencia?",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[2]/div/@text",
           "source_fr": "02 · Transmission",
-          "proposal": "02 · Transmission",
+          "proposal": "02 · Transmisión",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[2]/h3/@text",
           "source_fr": "Que pourrais-je transmettre ?",
-          "proposal": "Que pourrais-je transmettre ?",
+          "proposal": "¿Qué podría transmitir?",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[2]/p/@text",
           "source_fr": "Une éventuelle cession d’organisation se prépare selon les conditions contractuelles.",
-          "proposal": "Une éventuelle cession d’organisation se prépare selon les conditions contractuelles.",
+          "proposal": "Una posible cesión de organización debe prepararse según las condiciones contractuales.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[3]/div/@text",
           "source_fr": "03 · Trajectoire",
-          "proposal": "03 · Trajectoire",
+          "proposal": "03 · Trayectoria",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[3]/h3/@text",
           "source_fr": "Quel rôle voudrais-je dans dix ans ?",
-          "proposal": "Quel rôle voudrais-je dans dix ans ?",
+          "proposal": "¿Qué papel me gustaría desempeñar dentro de diez años?",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/div[2]/article[3]/p/@text",
           "source_fr": "Transaction, accompagnement, formation : définissez votre place et vos priorités.",
-          "proposal": "Transaction, accompagnement, formation : définissez votre place et vos priorités.",
+          "proposal": "Transacciones, acompañamiento, formación: defina su lugar y sus prioridades.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[16]/div/a/@text",
           "source_fr": "En parler avec Guillaume ↗",
-          "proposal": "En parler avec Guillaume ↗",
+          "proposal": "Hablarlo con Guillaume ↗",
           "status": "human_review_required"
         },
         {
@@ -4931,7 +4931,7 @@
         {
           "location": "/html/body/main/section[19]/div[2]/article[5]/a/@text",
           "source_fr": "Je m’inscris sur Billetweb ↗",
-          "proposal": "Je m’inscris sur Billetweb ↗",
+          "proposal": "Inscribirse en Billetweb ↗",
           "status": "human_review_required"
         },
         {
@@ -4973,7 +4973,7 @@
         {
           "location": "/html/body/main/section[19]/div[2]/article[6]/a/@text",
           "source_fr": "Je m’inscris sur Billetweb ↗",
-          "proposal": "Je m’inscris sur Billetweb ↗",
+          "proposal": "Inscribirse en Billetweb ↗",
           "status": "human_review_required"
         },
         {
@@ -5015,13 +5015,13 @@
         {
           "location": "/html/body/main/section[19]/div[2]/article[7]/a/@text",
           "source_fr": "Je m’inscris sur Billetweb ↗",
-          "proposal": "Je m’inscris sur Billetweb ↗",
+          "proposal": "Inscribirse en Billetweb ↗",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[19]/details/summary/@text",
           "source_fr": "Présentations passées",
-          "proposal": "Présentations passées",
+          "proposal": "Presentaciones anteriores",
           "status": "human_review_required"
         },
         {
@@ -5141,13 +5141,13 @@
         {
           "location": "/html/body/main/section[20]/div/div[2]/h3/@text",
           "source_fr": "Un premier échange, simplement.",
-          "proposal": "Un premier échange, simplement.",
+          "proposal": "Una primera conversación, sin complicaciones.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/p/@text",
           "source_fr": "Choisissez votre format, puis indiquez vos coordonnées. Les champs * sont obligatoires.",
-          "proposal": "Choisissez votre format, puis indiquez vos coordonnées. Les champs * sont obligatoires.",
+          "proposal": "Elija su formato e indique sus datos de contacto. Los campos marcados con * son obligatorios.",
           "status": "human_review_required"
         },
         {
@@ -5159,43 +5159,43 @@
         {
           "location": "/html/body/main/section[20]/div/div[2]/div/p/@text",
           "source_fr": "Guillaume prendra contact avec vous pour donner suite à votre demande.",
-          "proposal": "Guillaume prendra contact avec vous pour donner suite à votre demande.",
+          "proposal": "Guillaume se pondrá en contacto con usted para atender su solicitud.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/div[1]/p/@text",
           "source_fr": "01 · Choisissez votre échange",
-          "proposal": "01 · Choisissez votre échange",
+          "proposal": "01 · Elija su encuentro",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/div[1]/div/label/@text",
           "source_fr": "Comment souhaitez-vous échanger ?",
-          "proposal": "Comment souhaitez-vous échanger ?",
+          "proposal": "¿Cómo desea conversar?",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/div[1]/div/select/option[1]/@text",
           "source_fr": "Je souhaite d’abord des informations",
-          "proposal": "Je souhaite d’abord des informations",
+          "proposal": "Primero deseo recibir información",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/div[1]/div/select/option[2]/@text",
           "source_fr": "Demander un entretien individuel avec Guillaume",
-          "proposal": "Demander un entretien individuel avec Guillaume",
+          "proposal": "Solicitar una entrevista individual con Guillaume",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/div[1]/div/small/@text",
           "source_fr": "Une date choisie constitue une demande de participation, non une inscription confirmée. Nous vous recontacterons pour la suite.",
-          "proposal": "Une date choisie constitue une demande de participation, non une inscription confirmée. Nous vous recontacterons pour la suite.",
+          "proposal": "Elegir una fecha constituye una solicitud de participación, no una inscripción confirmada. Nos pondremos en contacto con usted para los siguientes pasos.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/div[2]/p/@text",
           "source_fr": "02 · Vos coordonnées et votre situation",
-          "proposal": "02 · Vos coordonnées et votre situation",
+          "proposal": "02 · Sus datos y su situación",
           "status": "human_review_required"
         },
         {
@@ -5285,7 +5285,7 @@
         {
           "location": "/html/body/main/section[20]/div/div[2]/form/details[1]/summary/@text",
           "source_fr": "Ajouter une précision sur mon projet (facultatif)",
-          "proposal": "Ajouter une précision sur mon projet (facultatif)",
+          "proposal": "Añadir información sobre mi proyecto (opcional)",
           "status": "human_review_required"
         },
         {
@@ -5429,49 +5429,49 @@
         {
           "location": "/html/body/main/section[21]/div/div/h2/@text",
           "source_fr": "Vos recommandations peuvent être récompensées.",
-          "proposal": "Vos recommandations peuvent être récompensées.",
+          "proposal": "Sus recomendaciones pueden ser recompensadas.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/div/p[2]/@text",
           "source_fr": "Vous connaissez une personne qui souhaite vendre ou acheter un bien immobilier ? Présentez-la-moi grâce à propertips. Je prends ensuite le relais pour l’accompagner dans son projet.",
-          "proposal": "Vous connaissez une personne qui souhaite vendre ou acheter un bien immobilier ? Présentez-la-moi grâce à propertips. Je prends ensuite le relais pour l’accompagner dans son projet.",
+          "proposal": "¿Conoce a alguien que desea vender o comprar un inmueble? Preséntemelo mediante propertips. Yo me encargaré después de acompañarle en su proyecto.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/div/p[3]/@text",
           "source_fr": "Si votre recommandation aboutit à une vente réalisée par mon intermédiaire,",
-          "proposal": "Si votre recommandation aboutit à une vente réalisée par mon intermédiaire,",
+          "proposal": "Si su recomendación desemboca en una venta realizada a través de mí,",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/div/p[3]/strong/@text",
           "source_fr": "je vous reverse 6 % de ma commission d’agence",
-          "proposal": "je vous reverse 6 % de ma commission d’agence",
+          "proposal": "le abono el 6 % de mi comisión de agencia",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/div/p[3]/strong/@tail",
           "source_fr": ", selon les conditions applicables de propertips.",
-          "proposal": ", selon les conditions applicables de propertips.",
+          "proposal": ", según las condiciones aplicables de propertips.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/div/a/@text",
           "source_fr": "S’inscrire gratuitement avec Guillaume",
-          "proposal": "S’inscrire gratuitement avec Guillaume",
+          "proposal": "Registrarse gratis con Guillaume",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/div/p[4]/@text",
           "source_fr": "Lien d’inscription personnel Guillaume ROQUE (parrain 1680). Versement uniquement après conclusion de la transaction et sous réserve des conditions applicables. Les rémunérations perçues peuvent être imposables.",
-          "proposal": "Lien d’inscription personnel Guillaume ROQUE (parrain 1680). Versement uniquement après conclusion de la transaction et sous réserve des conditions applicables. Les rémunérations perçues peuvent être imposables.",
+          "proposal": "Enlace personal de inscripción de Guillaume ROQUE (padrino 1680). El pago se realiza únicamente después de concluir la transacción y está sujeto a las condiciones aplicables. Las remuneraciones percibidas pueden estar sujetas a impuestos.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/aside/@aria-label",
           "source_fr": "Propertips : rémunération et vidéo",
-          "proposal": "Propertips : rémunération et vidéo",
+          "proposal": "Propertips: remuneración y vídeo",
           "status": "human_review_required"
         },
         {
@@ -5483,7 +5483,7 @@
         {
           "location": "/html/body/main/section[21]/div/aside/div[1]/p/@text",
           "source_fr": "de ma commission d’agence",
-          "proposal": "de ma commission d’agence",
+          "proposal": "de mi comisión de agencia",
           "status": "human_review_required"
         },
         {
@@ -5495,19 +5495,19 @@
         {
           "location": "/html/body/main/section[21]/div/aside/div[2]/p/@text",
           "source_fr": "Découvrez propertips en vidéo",
-          "proposal": "Découvrez propertips en vidéo",
+          "proposal": "Descubra propertips en vídeo",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/aside/div[2]/div/iframe/@title",
           "source_fr": "Vidéo de présentation Propertips by iad",
-          "proposal": "Vidéo de présentation Propertips by iad",
+          "proposal": "Vídeo de presentación de propertips by iad",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[21]/div/aside/div[2]/a/@text",
           "source_fr": "Ouvrir la vidéo sur YouTube ↗",
-          "proposal": "Ouvrir la vidéo sur YouTube ↗",
+          "proposal": "Abrir el vídeo en YouTube ↗",
           "status": "human_review_required"
         },
         {
@@ -5519,25 +5519,25 @@
         {
           "location": "/html/body/main/section[22]/div/div[1]/h2/@text",
           "source_fr": "Gardons le contact.",
-          "proposal": "Gardons le contact.",
+          "proposal": "Sigamos en contacto.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[22]/div/div[1]/p[1]/@text",
           "source_fr": "Chaque mois, recevez des réponses concrètes sur le métier de conseiller immobilier et le réseau iad, ainsi que les dates de nos prochaines présentations.",
-          "proposal": "Chaque mois, recevez des réponses concrètes sur le métier de conseiller immobilier et le réseau iad, ainsi que les dates de nos prochaines présentations.",
+          "proposal": "Cada mes, reciba respuestas concretas sobre la profesión de asesor inmobiliario y la red iad, además de las fechas de nuestras próximas presentaciones.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[22]/div/div[1]/p[2]/@text",
           "source_fr": "Inscription gratuite. Vous pouvez vous désinscrire à tout moment depuis chaque email.",
-          "proposal": "Inscription gratuite. Vous pouvez vous désinscrire à tout moment depuis chaque email.",
+          "proposal": "Inscripción gratuita. Puede darse de baja en cualquier momento desde cada correo.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[22]/div/div[2]/form/label/@text",
           "source_fr": "Votre adresse email",
-          "proposal": "Votre adresse email",
+          "proposal": "Su dirección de correo electrónico",
           "status": "human_review_required"
         },
         {
@@ -5555,19 +5555,19 @@
         {
           "location": "/html/body/main/section[22]/div/div[2]/form/div[2]/label/@text",
           "source_fr": "Ne pas remplir ce champ",
-          "proposal": "Ne pas remplir ce champ",
+          "proposal": "Deje este campo vacío",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[22]/div/div[2]/p/@text",
           "source_fr": "Votre adresse email est utilisée pour cette newsletter, gérée avec Brevo. L’inscription prend effet après confirmation dans l’email reçu.",
-          "proposal": "Votre adresse email est utilisée pour cette newsletter, gérée avec Brevo. L’inscription prend effet après confirmation dans l’email reçu.",
+          "proposal": "Su dirección de correo se utiliza para esta newsletter, gestionada con Brevo. La inscripción se activa después de confirmarla en el correo recibido.",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/main/section[22]/div/div[2]/p/a/@text",
           "source_fr": "Confidentialité et droits",
-          "proposal": "Confidentialité et droits",
+          "proposal": "Privacidad y derechos",
           "status": "human_review_required"
         },
         {
@@ -5621,13 +5621,13 @@
         {
           "location": "/html/body/footer/div/div[1]/div[2]/div[1]/a[4]/@text",
           "source_fr": "Ils font partie de la Tribu Immo",
-          "proposal": "Ils font partie de la Tribu Immo",
+          "proposal": "Forman parte de La Tribu Immo",
           "status": "human_review_required"
         },
         {
           "location": "/html/body/footer/div/div[1]/div[2]/div[1]/a[5]/@text",
           "source_fr": "Nos séminaires nationaux",
-          "proposal": "Nos séminaires nationaux",
+          "proposal": "Nuestros seminarios nacionales",
           "status": "human_review_required"
         },
         {
@@ -5645,7 +5645,7 @@
         {
           "location": "/html/body/footer/div/div[1]/div[2]/div[2]/a[1]/@text",
           "source_fr": "S’inscrire à la newsletter",
-          "proposal": "S’inscrire à la newsletter",
+          "proposal": "Suscribirse a la newsletter",
           "status": "human_review_required"
         },
         {
@@ -5861,7 +5861,7 @@
         {
           "location": "JSON-LD/0/@graph/1/areaServed/1",
           "source_fr": "Pays où iad est implanté",
-          "proposal": "Pays où iad est implanté",
+          "proposal": "Países donde opera iad",
           "status": "human_review_required"
         },
         {
@@ -7332,7 +7332,7 @@
         {
           "location": "JSON-LD/0/@graph/0/publisher/areaServed/1",
           "source_fr": "Pays où iad est implanté",
-          "proposal": "Pays où iad est implanté",
+          "proposal": "Countries where iad operates",
           "status": "human_review_required"
         },
         {
@@ -7470,7 +7470,7 @@
         {
           "location": "JSON-LD/0/@graph/2/areaServed/1",
           "source_fr": "Pays où iad est implanté",
-          "proposal": "Pays où iad est implanté",
+          "proposal": "Countries where iad operates",
           "status": "human_review_required"
         },
         {
@@ -7500,7 +7500,7 @@
         {
           "location": "JSON-LD/0/@graph/3/serviceType",
           "source_fr": "Accompagnement à l'intégration et au démarrage d'une activité de conseiller immobilier indépendant",
-          "proposal": "Accompagnement à l'intégration et au démarrage d'une activité de conseiller immobilier indépendant",
+          "proposal": "Support with joining and starting an independent real estate advisory business",
           "status": "human_review_required"
         },
         {
@@ -7524,7 +7524,7 @@
         {
           "location": "JSON-LD/0/@graph/3/areaServed/1",
           "source_fr": "Pays où iad est implanté",
-          "proposal": "Pays où iad est implanté",
+          "proposal": "Countries where iad operates",
           "status": "human_review_required"
         },
         {
@@ -7536,7 +7536,7 @@
         {
           "location": "JSON-LD/0/@graph/3/audience/audienceType",
           "source_fr": "Candidats à une activité de conseiller immobilier indépendant",
-          "proposal": "Candidats à une activité de conseiller immobilier indépendant",
+          "proposal": "People considering independent real estate advisory work",
           "status": "human_review_required"
         },
         {
@@ -9121,7 +9121,7 @@
         {
           "location": "JSON-LD/0/@graph/0/publisher/areaServed/1",
           "source_fr": "Pays où iad est implanté",
-          "proposal": "Pays où iad est implanté",
+          "proposal": "Países donde opera iad",
           "status": "human_review_required"
         },
         {
@@ -9259,7 +9259,7 @@
         {
           "location": "JSON-LD/0/@graph/2/areaServed/1",
           "source_fr": "Pays où iad est implanté",
-          "proposal": "Pays où iad est implanté",
+          "proposal": "Países donde opera iad",
           "status": "human_review_required"
         },
         {
@@ -9289,7 +9289,7 @@
         {
           "location": "JSON-LD/0/@graph/3/serviceType",
           "source_fr": "Accompagnement à l'intégration et au démarrage d'une activité de conseiller immobilier indépendant",
-          "proposal": "Accompagnement à l'intégration et au démarrage d'une activité de conseiller immobilier indépendant",
+          "proposal": "Acompañamiento para incorporarse e iniciar una actividad de asesor inmobiliario independiente",
           "status": "human_review_required"
         },
         {
@@ -9313,7 +9313,7 @@
         {
           "location": "JSON-LD/0/@graph/3/areaServed/1",
           "source_fr": "Pays où iad est implanté",
-          "proposal": "Pays où iad est implanté",
+          "proposal": "Países donde opera iad",
           "status": "human_review_required"
         },
         {
@@ -9325,7 +9325,7 @@
         {
           "location": "JSON-LD/0/@graph/3/audience/audienceType",
           "source_fr": "Candidats à une activité de conseiller immobilier indépendant",
-          "proposal": "Candidats à une activité de conseiller immobilier indépendant",
+          "proposal": "Personas interesadas en ejercer como asesores inmobiliarios independientes",
           "status": "human_review_required"
         },
         {
@@ -11458,7 +11458,7 @@
         {
           "location": "/html/body/main/article/table[1]/tbody/tr[3]/td/@text",
           "source_fr": "RSAC de Narbonne, n°",
-          "proposal": "RSAC de Narbonne, n°",
+          "proposal": "Narbonne RSAC, no.",
           "status": "human_review_required"
         },
         {
@@ -12220,31 +12220,31 @@
         {
           "location": "JSON-LD/0/@graph/1/knowsAbout/1",
           "source_fr": "Estimation immobilière",
-          "proposal": "Estimation immobilière",
+          "proposal": "Property valuation",
           "status": "human_review_required"
         },
         {
           "location": "JSON-LD/0/@graph/1/knowsAbout/2",
           "source_fr": "Statut d'agent commercial immobilier",
-          "proposal": "Statut d'agent commercial immobilier",
+          "proposal": "Real estate commercial agent status",
           "status": "human_review_required"
         },
         {
           "location": "JSON-LD/0/@graph/1/knowsAbout/3",
           "source_fr": "Réseau de mandataires immobiliers",
-          "proposal": "Réseau de mandataires immobiliers",
+          "proposal": "Network of independent real estate agents",
           "status": "human_review_required"
         },
         {
           "location": "JSON-LD/0/@graph/1/knowsAbout/4",
           "source_fr": "Reconversion professionnelle dans l'immobilier",
-          "proposal": "Reconversion professionnelle dans l'immobilier",
+          "proposal": "Career change into real estate",
           "status": "human_review_required"
         },
         {
           "location": "JSON-LD/0/@graph/1/knowsAbout/5",
           "source_fr": "Marché immobilier de Narbonne",
-          "proposal": "Marché immobilier de Narbonne",
+          "proposal": "The Narbonne property market",
           "status": "human_review_required"
         },
         {
@@ -12713,7 +12713,7 @@
         {
           "location": "/html/body/main/article/table[1]/tbody/tr[3]/td/@text",
           "source_fr": "RSAC de Narbonne, n°",
-          "proposal": "RSAC de Narbonne, n°",
+          "proposal": "RSAC de Narbonne, n.º",
           "status": "human_review_required"
         },
         {
@@ -13475,31 +13475,31 @@
         {
           "location": "JSON-LD/0/@graph/1/knowsAbout/1",
           "source_fr": "Estimation immobilière",
-          "proposal": "Estimation immobilière",
+          "proposal": "Valoración inmobiliaria",
           "status": "human_review_required"
         },
         {
           "location": "JSON-LD/0/@graph/1/knowsAbout/2",
           "source_fr": "Statut d'agent commercial immobilier",
-          "proposal": "Statut d'agent commercial immobilier",
+          "proposal": "Estatuto de agente comercial inmobiliario",
           "status": "human_review_required"
         },
         {
           "location": "JSON-LD/0/@graph/1/knowsAbout/3",
           "source_fr": "Réseau de mandataires immobiliers",
-          "proposal": "Réseau de mandataires immobiliers",
+          "proposal": "Red de agentes inmobiliarios independientes",
           "status": "human_review_required"
         },
         {
           "location": "JSON-LD/0/@graph/1/knowsAbout/4",
           "source_fr": "Reconversion professionnelle dans l'immobilier",
-          "proposal": "Reconversion professionnelle dans l'immobilier",
+          "proposal": "Cambio profesional al sector inmobiliario",
           "status": "human_review_required"
         },
         {
           "location": "JSON-LD/0/@graph/1/knowsAbout/5",
           "source_fr": "Marché immobilier de Narbonne",
-          "proposal": "Marché immobilier de Narbonne",
+          "proposal": "El mercado inmobiliario de Narbonne",
           "status": "human_review_required"
         },
         {
