@@ -1,6 +1,6 @@
 # Multilingual site
 
-French is the editable source at the root. The same 39 pages are available under /en/, /es/, /it/, /de/ and /pt/. Visitors select a language using links to the equivalent page. Translation is static: no external translation service runs in visitors' browsers.
+French is the editable source at the root. Existing translations remain accessible under /en/, /es/, /it/, /de/ and /pt/. They are currently noindex, follow (option A), including the eight EN/ES option-B candidates. Visitors select a language using links to the equivalent page. Translation is static: no external translation service runs in visitors' browsers.
 
 To update:
 1. Read the latest main branch and edit the French source. Add the new French filename to i18n/pages.json (the source inventory; sitemap.xml is an index).
@@ -20,8 +20,10 @@ Form field names and option values remain compatible with the existing Google Ap
 
 `build_languages.py` checks all translation keys before writing and then runs `finalize_site.py`. The finalizer removes expired agenda cards at generation time, generates six `/presentation-opportunites-affaires` pages and calendar reminder files, applies metadata corrections and creates a sitemap index with one sitemap per language. Run it after every agenda-only change too.
 
-Legacy translations remain accessible with `noindex, follow`. Only add a filename to `i18n/reviewed-pages.json` after reviewing its entire visible content, headings and metadata in that language; correcting a title alone is insufficient. Unknown historical lastmod dates are omitted. `page-modifications.json` tracks content hashes and subsequent real changes. Do not reset all dates on every build.
+Legacy translations remain accessible with `noindex, follow`. Only approve a translation after reviewing its entire visible content, headings and metadata. `reviewed-pages.json` records editorial work; indexing is controlled solely by the exact-route whitelist in `scripts/update-indexing.mjs`, currently empty. The eight EN/ES candidate pages and their French source fields are in `option-b-review.json` for human review; this file does not approve indexing. Unknown historical lastmod dates are omitted. `lastmod` is extracted from dateModified or an explicit editorial update date. HTML hashes and build dates are never used. The historical `page-modifications.json` is retained but no longer read or written by the indexing generator.
 
 Until the Apps Script project has been authenticated, corrected and verified, the presentation form must open a pre-filled email request to Guillaume and must not POST to the existing endpoint. This temporary safeguard prevents the legacy automation from assigning the next video session when a visitor selected another date. Automatic confirmation requires an authenticated update to the existing Apps Script project. Do not expose Meet links in static assets or claim that delivery is active before verification. Calendar downloads are reminders, not confirmed registrations. Never send fake test registrations.
 
 Local seller/buyer content listed in `migrated-pages.json` belongs on immobiliernarbonne.com. Keep destination redirects and do not recreate local-market articles here. Keep professional advice on reconversion, practice, training, compensation and team development.
+
+Protected names and identifiers are declared in `protected-terms.json` and used by `scripts/translation_terms.py`. Missing dictionary keys still stop a full translation rebuild before any incomplete translated pages are written. Do not bypass this guard with French fallback text. The production static build runs the CSS inliner and indexing generator; it does not regenerate untranslated content.
