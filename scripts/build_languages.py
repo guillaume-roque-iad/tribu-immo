@@ -2,6 +2,7 @@ import json,re,pathlib,lxml.html as H
 from datetime import date
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 from lxml import etree
+from translation_terms import protect_translation
 pagefiles=json.loads((ROOT/'i18n/pages.json').read_text())
 pagefiles=[p for p in pagefiles if p != 'simulateur.html']
 src={f:(ROOT/f).read_text() for f in pagefiles};out=ROOT
@@ -29,7 +30,7 @@ for lang in LANGS:
  if over.exists():mapping.update(json.load(open(over)))
  def trans(t):
   if not t or not t.strip():return t
-  s=t.strip();v=mapping.get(s,s)
+  s=t.strip();v=protect_translation(s,mapping.get(s,s))
   if lang!='fr' and s not in mapping and re.search('[A-Za-zÀ-ÿ]',s):missing.setdefault(lang,set()).add(s)
   return t[:len(t)-len(t.lstrip())]+v+t[len(t.rstrip()):]
  for path in paths:

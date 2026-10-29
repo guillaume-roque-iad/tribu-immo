@@ -1,0 +1,148 @@
+{
+  "terms": [
+    "iad",
+    "iad France",
+    "RSAC",
+    "EI",
+    "La Tribu Immo",
+    "Guillaume Roque",
+    "tribu-immo.com",
+    "immobiliernarbonne.com",
+    "avenir-conso.com",
+    "cloudflare.com",
+    "Cloudflare, Inc.",
+    "tribu_consentement_mesure",
+    "Quarante",
+    "Saint-Chinian",
+    "Saint-Pons-de-Thomières",
+    "Sète",
+    "Pézenas",
+    "Lézignan-Corbières",
+    "Béziers",
+    "Hérault",
+    "Minervois",
+    "Minerve",
+    "Carcassonne",
+    "Aude",
+    "Lieusaint",
+    "service-public.gouv.fr",
+    "_ga",
+    "_ga_*",
+    "AVENIR CONSO",
+    "TIP",
+    "SAS I@D France",
+    "www.avenir-conso.com"
+  ],
+  "aliases": {
+    "iad": [
+      "DAI",
+      "SAI",
+      "ADAI",
+      "AID",
+      "ID"
+    ],
+    "iad France": [
+      "iad Francia",
+      "iad França",
+      "iad Frankreich",
+      "SAI França",
+      "DAI França"
+    ],
+    "Guillaume Roque": [
+      "Wilhelm Roque",
+      "Guillermo Roque",
+      "Guglielmo Roque",
+      "Guilherme Roque"
+    ],
+    "tribu-immo.com": [
+      "tribe-immo.com",
+      "trib-immo.com",
+      "tribo-immo.com",
+      "tribun-immo.com"
+    ],
+    "immobiliernarbonne.com": [
+      "real estatenarbonne.com",
+      "inmueblesnarbona.com",
+      "inmueblesnarbonne.com",
+      "immobiliarenarbonne.com",
+      "immobiliennarbonne.com",
+      "biens imobiliáriosnarbonne.com"
+    ],
+    "avenir-conso.com": [
+      "www. future-conso.com",
+      "future-conso.com",
+      "futuro-conso.com",
+      "futur-conso.com",
+      "zukunft-conso.com"
+    ],
+    "service-public.gouv.fr": [
+      "servicio público.gouv.fr",
+      "servizio-pubblic.gouv.fr",
+      "service-public.gouvernement.fr",
+      "serviço-public.gouv.fr"
+    ],
+    "RSAC": [
+      "SFCR",
+      "SCR",
+      "SRAC"
+    ],
+    "EI": [
+      "IE"
+    ],
+    "La Tribu Immo": [
+      "Immo Tribu",
+      "Tribu Immo de la"
+    ],
+    "Lieusaint": [
+      "Lugarsaint",
+      "Lessaint"
+    ],
+    "Quarante": [
+      "Quarentena",
+      "Quarente-Ano",
+      "Quarente",
+      "Vierzig",
+      "Cuarta",
+      "Quaranta"
+    ],
+    "Saint-Chinian": [
+      "San Chiniano",
+      "San Chinio",
+      "San Chinian",
+      "São-Chino",
+      "Saint-Chiniano",
+      "Saint Chinian"
+    ],
+    "Saint-Pons-de-Thomières": [
+      "San Pons-de-Thomieres",
+      "St. Pons de Thomières",
+      "San Tomés"
+    ],
+    "Sète": [
+      "Seta",
+      "Sete"
+    ],
+    "Pézenas": [
+      "Pezenas"
+    ],
+    "Lézignan-Corbières": [
+      "Lezignan-Corbières",
+      "Lézighan-Corbières"
+    ],
+    "Béziers": [
+      "Beziers"
+    ],
+    "Hérault": [
+      "Herault"
+    ],
+    "Minervois": [
+      "Minervese"
+    ],
+    "Minerve": [
+      "Minerva"
+    ],
+    "Carcassonne": [
+      "Carcasson"
+    ]
+  }
+}

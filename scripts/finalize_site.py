@@ -2,6 +2,7 @@
 from pathlib import Path
 import json, re, copy, hashlib, datetime
 from urllib.parse import quote
+from translation_terms import protect_translation
 from lxml import html as H, etree as E
 R=Path(__file__).resolve().parents[1]
 LANGS=['fr','en','es','it','de','pt'];BASE='https://tribu-immo.com'
@@ -13,7 +14,7 @@ def meta(d,key,value,attr='name'):
  if not es:d.find('head').append(e)
 def trans(k,l):
  if l=='fr':return k
- m=json.loads((R/f'i18n/{l}.json').read_text());m.update(json.loads((R/f'i18n/{l}-overrides.json').read_text()));return m.get(k,k)
+ m=json.loads((R/f'i18n/{l}.json').read_text());m.update(json.loads((R/f'i18n/{l}-overrides.json').read_text()));return protect_translation(k,m.get(k,k))
 def route(l,slug=''):return ('/' if l=='fr' else '/'+l+'/')+slug
 # Translation review tracking is editorial; public indexing is managed by update-indexing.mjs.
 titles=json.loads((R/'i18n/title-overrides.json').read_text())
@@ -131,14 +132,15 @@ for l in LANGS:
  # Indexing policy is applied after all generated pages are written.
  for e in doc.xpath('//link[@rel="canonical"]'):e.set('href',url)
  for e in doc.xpath('//link[@hreflang]'):e.set('href',BASE+route('fr' if e.get('hreflang')=='x-default' else e.get('hreflang'),'presentation-opportunites-affaires'))
- for e in doc.xpath('//nav[@class="language-bar"]//a'):e.set('href',route(e.get('hreflang'),'presentation-opportunites-affaires'))
+ # Navigation keeps its lang label even when indexing removes hreflang.
+ for e in doc.xpath('//nav[@class="language-bar"]//a'):e.set('href',route(e.get('lang') or e.get('hreflang'),'presentation-opportunites-affaires'))
  for e in doc.xpath('//header//a[starts-with(@href,"#")]'):e.set('href',route(l)+e.get('href'))
  noscript=E.SubElement(doc.find('body'),'noscript')
  np=E.SubElement(noscript,'p');np.text=trans(registration_desc,l)+' · JavaScript requis / required. '
  phone=E.SubElement(np,'a',href='tel:+33662108396');phone.text='06 62 10 83 96'
  sc=E.SubElement(doc.find('body'),'script',src='/presentations.js',defer='defer')
  save(R/((l+'/' if l!='fr' else '')+'presentation-opportunites-affaires.html'),doc)
-# Share the production indexing policy, including sitemaps and language alternatives.
+# Apply the shared policy last, so finalization cannot re-enable translations.
 import subprocess
 subprocess.run(['node', str(R/'scripts/update-indexing.mjs')], check=True)
 print('Finalized event pages, metadata, expiry filtering and sitemaps')

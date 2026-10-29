@@ -206,7 +206,415 @@ body.editorial{background:white}.editorial .navbar{display:none}.editorial .qnav
 
 .team-film .eyebrow,.newsletter-section .eyebrow{color:#006B9A}
 
-.bandeau-cookies{font-family:Arial,Helvetica,sans-serif}</style><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://tribu-immo.com/#guillaume-roque", "name": "Guillaume Roque", "url": "https://tribu-immo.com/it/guillaume-roque", "jobTitle": "Consigliere immobiliare indipendente, gestore iad e formatore", "sameAs": ["https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque", "https://www.linkedin.com/in/guillaume-roque-07a3bb8a/"]}, {"@type": "Organization", "@id": "https://tribu-immo.com/#organisation", "name": "La Tribu Immo", "url": "https://tribu-immo.com/it/", "logo": "https://tribu-immo.com/tribu-immo-logo.png", "telephone": "+33662108396", "email": "guillaume.roque@iadfrance.fr", "founder": {"@id": "https://tribu-immo.com/#guillaume-roque"}, "areaServed": [{"@type": "Country", "name": "Francia"}, "Pays où iad est implanté"]}, {"@type": "WebSite", "@id": "https://tribu-immo.com/#site", "url": "https://tribu-immo.com/it/", "name": "La Tribu Immo", "inLanguage": "it-IT", "publisher": {"@id": "https://tribu-immo.com/#organisation"}}, {"@type": "WebPage", "@id": "https://tribu-immo.com/it/#page", "url": "https://tribu-immo.com/it/", "name": "Diventa consulente immobiliare presso La Tribu Immo", "inLanguage": "it-IT", "isPartOf": {"@id": "https://tribu-immo.com/#site"}, "about": {"@id": "https://tribu-immo.com/#organisation"}}]}</script><meta property="og:title" content="Diventa consulente immobiliare iad | Tribu Immo"><meta property="og:description" content="Riconversione o cambiamento di rete immobiliare: unisciti a La Tribu Immo con Guillaume Roque, sponsor iad in tutta Francia e nei paesi in cui si trova iad."><meta property="og:image" content="https://tribu-immo.com/tribu-immo-logo.png"><meta property="og:url" content="https://tribu-immo.com/it/"><style data-inline-css="languages">.language-bar{background:#eafbff;border-bottom:1px solid #d6e3e8;font-size:13px;line-height:1.5}
+.bandeau-cookies{font-family:Arial,Helvetica,sans-serif}
+
+
+
+.header .nav-links[data-simplified-nav]{gap:9px 15px}
+.header .nav-links[data-simplified-nav]>a:not(.btn){font-weight:650;text-decoration:none;white-space:nowrap;font-size:.81rem}
+.header .nav-links[data-simplified-nav]>.btn{font-size:.77rem;padding:10px 13px;white-space:nowrap}
+.nav-project{position:relative;font-size:.81rem;font-weight:650}
+.nav-project summary{cursor:pointer;list-style:none;min-height:44px;display:flex;align-items:center;gap:7px;padding:7px 2px;white-space:nowrap}
+.nav-project summary::-webkit-details-marker{display:none}
+.nav-project summary>span{font-size:18px;color:#006390;transform:translateY(-3px)}
+.nav-project[open] summary>span{transform:rotate(180deg)}
+.nav-project-menu{position:absolute;z-index:35;top:calc(100% + 4px);left:-10px;min-width:235px;border:1px solid #cbdce4;background:#fff;border-radius:12px;padding:10px;box-shadow:0 15px 35px #102f4321;display:grid;gap:2px}
+.header .nav-project-menu a{display:block;text-decoration:none;padding:11px 12px;border-radius:7px;color:#122d42;font-size:.82rem}
+.header .nav-project-menu a:hover,.header .nav-project-menu a:focus-visible{background:#e9fcff}
+.parcours-section .section-head{margin-bottom:35px}
+.parcours-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.parcours-card{color:#172b3b;text-decoration:none;display:flex;flex-direction:column;align-items:flex-start;min-height:325px;padding:27px;border:1px solid #d6e5ec;border-radius:15px;background:#fff;transition:transform .2s,border-color .2s,box-shadow .2s}
+.parcours-card:hover{transform:translateY(-4px);border-color:#00b4ec;box-shadow:0 16px 36px #16354916;color:#102a41}
+.parcours-card:first-child{background:#e9fcff}
+.parcours-num{font-size:.66rem;letter-spacing:.09em;font-weight:750;color:#006390}
+.parcours-ico{width:35px;height:35px;display:grid;place-items:center;border-radius:50%;background:#00b4ec;margin:22px 0 15px;font-size:20px}
+.parcours-card h3{font-size:clamp(1.08rem,1.55vw,1.55rem);line-height:1.25;letter-spacing:-.025em;margin-bottom:14px}
+.parcours-card p{font-size:.86rem;line-height:1.65;color:#425466;margin-bottom:22px}
+.parcours-link{margin-top:auto;color:#006390;font-size:.78rem;font-weight:750}
+.new-benefits{padding:74px 0;background:#f4f9fb;border-top:1px solid #dbe9ef}
+.new-benefits h2{max-width:800px;margin-bottom:30px}
+.benefit-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.benefit-grid article{background:white;padding:29px;border:1px solid #d9e6eb;border-radius:12px;display:flex;flex-direction:column;min-height:270px}
+.benefit-grid article>span{color:#007daf;font-size:.8rem;font-weight:800;margin-bottom:16px}
+.benefit-grid h3{margin-bottom:12px;font-size:1.16rem}
+.benefit-grid p{font-size:.89rem;line-height:1.7;margin-bottom:18px;color:#3c4c58}
+.benefit-grid a{color:#006390;margin-top:auto;font-weight:750;text-decoration:none;border-bottom:2px solid #00b4ec;align-self:flex-start;font-size:.82rem}
+.new-simulator{padding:76px 0;background:#102f43;color:white}
+.new-simulator .eyebrow{color:#6fdef8}
+.new-simulator p{color:#e0edf3}
+.simulator-promo{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.8fr);gap:clamp(26px,5vw,75px);align-items:center}
+.simulator-promo h2{font-size:clamp(2rem,4vw,3.3rem);margin-bottom:20px}
+.simulator-promo>div:first-child>p{max-width:650px;margin-bottom:28px}
+.simulator-promo .btn.dark{background:#00b4ec;color:#092a3c}
+.simulator-promo .textlink{color:#fff}
+.simulator-promo-choices{padding:24px;background:#fff;color:#102f43;border-radius:16px}
+.simulator-promo-choices .simulator-promo-label{color:#102f43;font-size:.8rem;text-transform:uppercase;font-weight:800;letter-spacing:.06em;margin-bottom:15px}
+.simulator-promo-choices a{display:flex;align-items:center;justify-content:space-between;padding:16px 3px;border-bottom:1px solid #d9e6eb;text-decoration:none;font-size:.92rem;font-weight:650;color:#112f42;gap:14px}
+.simulator-promo-choices a:last-child{border-bottom:0}
+.simulator-promo-choices a span{color:#006390;font-size:20px}
+.simulator-promo-choices a:hover{color:#007daf}
+
+.journey-hero{background:linear-gradient(125deg,#e9fcff,#fff 65%);border-bottom:1px solid #d8e7ed;padding:70px 0}
+.journey-hero .eyebrow{margin-bottom:18px}.journey-hero h1{max-width:920px;font-size:clamp(2.25rem,5vw,4.15rem);letter-spacing:-.04em}
+.journey-hero .lead{max-width:780px;font-size:1.08rem;margin:24px 0 28px;line-height:1.75;color:#344f61}
+.journey-crumb{color:#456278;font-size:.8rem;margin-bottom:24px}
+.journey-crumb a{color:#006390}
+.journey-main{padding-block:65px}
+.journey-intro{max-width:760px;margin-bottom:34px;font-size:1.06rem;line-height:1.75}
+.journey-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.journey-panel{border:1px solid #d1e3ea;border-radius:15px;padding:28px;background:#fff}
+.journey-panel span{font-size:.75rem;font-weight:800;color:#007daf}
+.journey-panel h2{font-size:1.35rem;margin:16px 0 12px;letter-spacing:-.03em}
+.journey-panel p{color:#405363;font-size:.9rem;line-height:1.75}
+.journey-roadmap{margin-top:50px;padding:35px;background:#f3fafc;border-radius:15px}
+.journey-roadmap h2{font-size:clamp(1.6rem,3vw,2.25rem);margin-bottom:24px}
+.journey-roadmap ol{padding-left:24px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px 35px}
+.journey-roadmap li{line-height:1.7;padding-right:18px}
+.journey-roadmap li strong{display:block;font-size:.98rem}
+.journey-roadmap li p{font-size:.88rem;color:#42586a}
+.journey-bottom{background:#102f43;color:#fff;padding:64px 0}
+.journey-bottom h2{max-width:820px;margin-bottom:18px}.journey-bottom p{color:#e2eff5;max-width:660px;margin-bottom:25px}
+.journey-bottom .btn{background:#00b4ec;color:#072735}
+.journey-more{margin-top:34px;font-size:.9rem}
+.journey-more a{color:#006390;font-weight:700}
+@media(min-width:1500px){
+ .header .nav{gap:12px}
+ .header .menu-toggle{display:none}
+ .header .nav-links[data-simplified-nav]{display:flex;position:static;inset:auto;flex:1;flex-flow:row nowrap;width:auto;max-width:none;border:0;border-radius:0;box-shadow:none;overflow:visible;max-height:none;padding:0;background:#fff;justify-content:flex-end;align-items:center}
+ .header .nav-links[data-simplified-nav]>a{width:auto;min-height:auto;padding:7px 0}
+ .header .nav-links[data-simplified-nav]>.btn{padding:12px}
+}
+@media(max-width:1499px){
+ .header .menu-toggle{display:block;margin-left:auto}
+ .header .nav-links[data-simplified-nav]{display:none;position:absolute;inset:100% 0 auto;flex:none;flex-flow:column nowrap;align-items:stretch;justify-content:flex-start;padding:18px;gap:5px;left:auto;right:0;width:min(420px,100%);max-height:calc(100dvh - var(--header-height,150px) - 12px);overflow-y:auto;overflow-x:hidden;background:#fff;box-shadow:0 12px 24px #102f4329;border:1px solid #d8e7ec;z-index:30}
+ .header .nav-links[data-simplified-nav].open{display:flex}
+ .header .nav-links[data-simplified-nav]>a:not(.btn){font-size:1rem;min-height:44px;padding:10px;white-space:normal;overflow-wrap:anywhere}
+ .header .nav-links[data-simplified-nav]>.btn{width:100%;font-size:.9rem;white-space:normal;overflow-wrap:anywhere}
+ .nav-project summary{padding:10px;min-height:44px;font-size:1rem}
+ .nav-project-menu{position:static;min-width:0;box-shadow:none;border:0;border-left:3px solid #00b4ec;margin:3px 0 9px;padding:3px 6px;border-radius:0}
+ .header .nav-project-menu a{font-size:.9rem;padding:11px}
+}
+@media(max-width:1050px){.parcours-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){.benefit-grid,.journey-columns,.journey-roadmap ol{grid-template-columns:1fr}.simulator-promo{grid-template-columns:1fr}.new-benefits,.new-simulator,.journey-hero{padding-block:48px}.journey-main{padding-block:48px}}
+@media(max-width:540px){.parcours-grid{grid-template-columns:1fr}.parcours-card{min-height:230px;padding:25px}.journey-roadmap{padding:24px} .header .nav-links[data-simplified-nav]{left:0;right:0;width:100%}}
+
+
+
+@media (min-width:1100px){
+  .header .nav.wrap{display:grid;grid-template-columns:minmax(0,1fr);align-items:center;gap:2px;min-height:0;padding-block:8px 12px}
+  .header .brand{justify-self:start;min-width:0}
+  .header .menu-toggle{display:none}
+  .header .nav-links[data-simplified-nav]{
+    display:flex;position:static;inset:auto;flex:none;width:100%;max-width:100%;
+    flex-flow:row wrap;justify-content:center;align-items:center;gap:6px 22px;
+    padding:6px 0 0;margin:0;background:transparent;border:0;border-radius:0;
+    box-shadow:none;max-height:none;overflow:visible
+  }
+  .header .nav-links[data-simplified-nav]>a:not(.btn){font-size:.92rem;line-height:1.45;white-space:normal;min-height:44px;display:inline-flex;align-items:center;padding:7px 0}
+  .header .nav-links[data-simplified-nav]>.btn{font-size:.86rem;white-space:normal;padding:11px 18px;min-height:44px}
+  .header .nav-project{font-size:.92rem;min-width:0}
+  .header .nav-project summary{font-size:.92rem;min-height:44px;white-space:normal;padding:7px 0}
+  .header .nav-project-menu{position:absolute;top:calc(100% + 4px);left:0;min-width:235px;max-width:min(330px,90vw);border:1px solid #cbdce4;border-radius:12px;box-shadow:0 15px 35px #102f4321;padding:10px}
+}
+@media (max-width:1099px){
+  .header .nav.wrap{display:flex;align-items:center;min-height:76px;gap:12px}
+  .header .menu-toggle{display:block;margin-left:auto;min-width:65px;min-height:44px}
+  .header .nav-links[data-simplified-nav]{
+    display:none;position:absolute;top:100%;left:auto;right:0;inset-inline-start:auto;
+    flex:none;width:min(420px,100%);max-width:100%;flex-flow:column nowrap;
+    align-items:stretch;justify-content:flex-start;gap:4px;padding:14px;
+    background:#fff;border:1px solid #d8e7ec;border-radius:0 0 12px 12px;
+    box-shadow:0 12px 24px #102f4329;max-height:calc(100dvh - var(--header-height,150px) - 12px);
+    overflow-y:auto;overflow-x:hidden;z-index:30
+  }
+  .header .nav-links[data-simplified-nav].open{display:flex}
+  .header .nav-links[data-simplified-nav]>a:not(.btn){display:block;width:100%;font-size:1rem;white-space:normal;min-height:44px;padding:10px 12px;overflow-wrap:anywhere}
+  .header .nav-links[data-simplified-nav]>.btn{width:100%;font-size:.92rem;white-space:normal;overflow-wrap:anywhere;margin:4px 0}
+  .header .nav-project{width:100%}
+  .header .nav-project summary{font-size:1rem;min-height:44px;padding:10px 12px;white-space:normal}
+  .header .nav-project-menu{position:static;width:100%;min-width:0;max-width:100%;box-shadow:none;border:0;border-left:3px solid #00b4ec;border-radius:0;padding:4px 8px;margin:3px 0 8px}
+}
+@media(max-width:600px){
+  .header .nav-links[data-simplified-nav]{left:0;right:0;width:100%}
+}
+
+
+
+.header .nav.wrap{
+  display:flex!important;
+  position:relative!important;
+  flex-direction:row!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:clamp(10px,2vw,24px)!important;
+  height:auto!important;
+  min-height:92px!important;
+  padding-block:8px!important
+}
+.header .brand{min-width:0;flex-shrink:1;margin-right:auto}
+.header .menu-toggle{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:10px;
+  flex:0 0 auto;
+  margin-left:auto!important;
+  padding:11px 19px!important;
+  min-height:48px!important;
+  border:2px solid #006390!important;
+  border-radius:999px!important;
+  background:#006390!important;
+  color:white!important;
+  font-weight:750;
+  font-size:.95rem;
+  line-height:1.35;
+  white-space:nowrap;
+  cursor:pointer;
+  box-shadow:0 3px 12px #00639020
+}
+.header .menu-toggle:hover{background:#004b6b!important;border-color:#004b6b!important}
+.header .menu-toggle:focus-visible{outline:3px solid #00b4ec;outline-offset:3px}
+.header .menu-toggle .menu-hamburger{font-size:1.2rem;line-height:1;display:inline-block}
+.header .nav-links,
+.header .nav-links[data-simplified-nav]{
+  display:none!important;
+  position:absolute!important;
+  inset:auto 0 auto auto!important;
+  top:100%!important;
+  left:auto!important;
+  right:0!important;
+  width:min(440px,100%)!important;
+  max-width:100%!important;
+  max-height:min(75dvh,calc(100dvh - var(--header-height,140px) + 70px))!important;
+  flex:none!important;
+  flex-flow:column nowrap!important;
+  align-items:stretch!important;
+  justify-content:flex-start!important;
+  gap:3px!important;
+  padding:14px!important;
+  margin:0!important;
+  overflow-x:hidden!important;
+  overflow-y:auto!important;
+  background:#fff!important;
+  border:1px solid #cfdee5!important;
+  border-radius:0 0 14px 14px!important;
+  box-shadow:0 20px 40px #16354928!important;
+  z-index:120!important;
+}
+.header .nav-links.open,
+.header .nav-links[data-simplified-nav].open{display:flex!important}
+.header .nav-links> a,
+.header .nav-links[data-simplified-nav]>a{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  flex:0 0 auto!important;
+  gap:12px!important;
+  min-width:0!important;
+  width:100%!important;
+  min-height:46px!important;
+  margin:0!important;
+  padding:10px 12px!important;
+  font-size:.94rem!important;
+  font-weight:650;
+  line-height:1.5!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  text-decoration:none;
+  border-radius:8px
+}
+.header .nav-links> a:hover,.header .nav-links> a:focus-visible{background:#e9fcff}
+.header .nav-links> a.btn,
+.header .nav-links[data-simplified-nav]>a.btn{
+  display:flex!important;
+  justify-content:center!important;
+  text-align:center!important;
+  margin-top:8px!important;
+  background:#006390!important;
+  color:#fff!important;
+  font-weight:750!important;
+  border-radius:999px!important
+}
+.header .nav-links> a.btn:hover{background:#004b6b!important}
+.header .nav-emoji{display:inline-block;flex:0 0 1.5em;width:1.5em;text-align:center;font-size:1.1rem;line-height:1.25}
+.header .nav-project{width:100%;font-size:.95rem}
+.header .nav-project summary{
+  display:flex!important;
+  align-items:center!important;
+  gap:12px!important;
+  width:100%;
+  min-height:46px!important;
+  white-space:normal!important;
+  padding:10px 12px!important;
+  line-height:1.4;
+  font-size:.94rem!important;
+  border-radius:8px
+}
+.header .nav-project summary:hover{background:#e9fcff}
+.header .nav-project-menu{
+  position:static!important;
+  top:auto!important;
+  left:auto!important;
+  display:grid;
+  width:100%!important;
+  min-width:0!important;
+  max-width:none!important;
+  margin:4px 0 10px!important;
+  padding:4px 6px 4px 12px!important;
+  border:0!important;
+  border-left:3px solid #00b4ec!important;
+  border-radius:0!important;
+  box-shadow:none!important
+}
+.header .nav-project-menu a{
+  display:flex!important;
+  align-items:center;
+  gap:9px;
+  min-height:44px!important;
+  overflow-wrap:anywhere;
+  white-space:normal
+}
+@media(max-width:640px){
+  .header .nav.wrap{min-height:76px!important}
+  .header .nav-links,.header .nav-links[data-simplified-nav]{width:100%!important;left:0!important;right:0!important}
+  .header .menu-toggle{padding:10px 14px!important;min-height:44px!important}
+}
+
+
+:root{--iad-brand:#00B4EC;--iad-coral:#EA584A;--iad-beige:#F1ECE5;--iad-charcoal:#3C4A5F}
+
+.header .nav-iad-icon{display:block;flex:0 0 24px;width:24px;height:24px;object-fit:contain}
+.header .nav-emoji{display:none!important}
+.header .nav-project summary .nav-iad-icon{width:24px;height:24px;flex-basis:24px}
+.header .nav-links a .nav-iad-icon{margin-right:2px}
+
+.btn,.btn.small,.project-button,.insight-button,.fsub,.article-cta-btn,.menu-toggle{border-radius:999px;font-family:Montserrat,Helvetica,Arial,sans-serif;font-style:italic;font-weight:700;line-height:1.35}
+.btn:not(.outline):not(.dark),.btn.small:not(.outline):not(.dark),.project-button:not(.secondary),.insight-button,.fsub,.article-cta-btn{
+ background:var(--iad-brand)!important;color:#000!important;border-color:transparent!important
+}
+.btn:not(.outline):not(.dark):hover,.project-button:not(.secondary):hover,.insight-button:hover,.fsub:hover,.article-cta-btn:hover{
+ background:#95EBFF!important;color:#000!important
+}
+.btn.outline,.project-button.secondary{background:#fff!important;color:#006390!important;border:2px solid #006390!important}
+.btn.outline:hover,.project-button.secondary:hover{background:#E9FCFF!important;color:#004b6b!important}
+.header .nav-links>a.btn,.header .nav-links[data-simplified-nav]>a.btn{
+ background:var(--iad-brand)!important;color:#000!important;border:0!important;font-style:italic!important
+}
+.header .nav-links>a.btn:hover,.header .nav-links[data-simplified-nav]>a.btn:hover{background:#95EBFF!important;color:#000!important}
+
+.header .menu-toggle{background:var(--iad-charcoal)!important;border-color:var(--iad-charcoal)!important;color:#fff!important;font-style:italic}
+.header .menu-toggle:hover{background:#273545!important;border-color:#273545!important}
+.header .menu-toggle .menu-hamburger{position:relative;display:inline-block;flex:0 0 19px;width:19px;height:19px;font-size:0!important;line-height:0!important}
+.header .menu-toggle .menu-hamburger::before,.header .menu-toggle .menu-hamburger::after{content:"";position:absolute;left:0;width:19px;height:2px;background:currentColor;border-radius:99px;transition:top .2s,transform .2s,box-shadow .2s}
+.header .menu-toggle .menu-hamburger::before{top:4px;box-shadow:0 6px 0 currentColor}
+.header .menu-toggle .menu-hamburger::after{top:16px}
+.header .menu-toggle .menu-hamburger.is-open::before{top:10px;box-shadow:none;transform:rotate(45deg)}
+.header .menu-toggle .menu-hamburger.is-open::after{top:10px;transform:rotate(-45deg)}
+
+.parcours-card .parcours-ico{display:flex;align-items:center;justify-content:center;width:84px;height:48px;flex:none;margin:19px 0 18px;padding:8px 19px;background:var(--iad-beige);border-radius:999px;transform:rotate(5deg);font-size:0}
+.parcours-card .parcours-ico img{display:block;width:100%;height:100%;max-width:100%;object-fit:contain;transform:rotate(-5deg)}
+.parcours-card:nth-child(2) .parcours-ico{background:#CDF7FF}
+.parcours-card:nth-child(3) .parcours-ico{background:#F1ECE5}
+.parcours-card:nth-child(4) .parcours-ico{background:#E9FCFF}
+
+.hero-new .actions>.btn:first-child,.new-simulator .actions>.btn:first-child,.journey-bottom .btn{transform:rotate(5deg);transform-origin:center center}
+.hero-new .actions>.btn:first-child:hover,.new-simulator .actions>.btn:first-child:hover,.journey-bottom .btn:hover{transform:rotate(5deg) translateY(-2px)}
+
+.tags span,.journey-crumb{border-radius:999px}
+@media(max-width:600px){
+ .hero-new .actions>.btn:first-child,.new-simulator .actions>.btn:first-child,.journey-bottom .btn{transform:rotate(2deg)}
+ .hero-new .actions>.btn:first-child:hover,.new-simulator .actions>.btn:first-child:hover,.journey-bottom .btn:hover{transform:rotate(2deg)}
+}
+
+
+
+.header .nav-links>a.nav-propertips-link,
+.header .nav-links[data-simplified-nav]>a.nav-propertips-link{
+  display:flex!important;align-items:center!important;justify-content:flex-start!important;
+  gap:14px!important;max-width:100%!important;min-height:70px!important;
+  padding:10px 14px!important;border:1px solid #c8ebf5!important;
+  border-radius:16px!important;background:#f2fcff!important;color:#173346!important;
+  text-align:left!important;text-decoration:none!important;
+}
+.header .nav-links>a.nav-propertips-link:hover{background:#e9fcff!important;border-color:#00b4ec!important}
+.header .nav-propertips-link img{width:132px!important;height:auto!important;max-width:47%!important;object-fit:contain;flex:0 0 auto;display:block}
+.header .nav-propertips-link span{font-size:.81rem;line-height:1.4;font-weight:650;min-width:0;white-space:normal}
+.propertips-feature{scroll-margin-top:calc(var(--header-height,150px) + 16px);padding:clamp(52px,6vw,90px) 0;background:#f4fbfe;border-block:1px solid #ccecf5}
+.propertips-feature-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.8fr);align-items:center;gap:clamp(24px,5vw,76px)}
+.propertips-feature-copy h2{max-width:770px;font-size:clamp(1.9rem,3.2vw,3.1rem);line-height:1.16;margin-bottom:20px}
+.propertips-feature-copy>p:not(.eyebrow){max-width:650px;line-height:1.8;color:#334d60}
+.propertips-feature-cta{margin-top:24px;padding:13px 25px;min-height:48px}
+.propertips-feature-copy .propertips-feature-note{font-size:.77rem;line-height:1.55;margin-top:13px}
+.propertips-feature-brand{min-width:0;background:#fff;padding:38px 28px;border:1px solid #d9eaf0;border-radius:24px;display:flex;flex-direction:column;align-items:center;gap:16px}
+.propertips-feature-brand img{width:min(285px,100%);height:auto;display:block;object-fit:contain}
+.propertips-feature-brand p{text-align:center;color:#3c4a5f;font-size:.9rem}
+@media(max-width:800px){.propertips-feature-grid{grid-template-columns:minmax(0,1fr)}.propertips-feature-brand{padding:26px 20px}.header .nav-propertips-link img{width:125px!important}}
+@media(max-width:420px){.header .nav-links>a.nav-propertips-link{gap:9px!important;padding:10px!important}.header .nav-propertips-link span{font-size:.76rem}}
+
+
+
+.propertips-feature-copy strong{font-weight:800;color:#006390}
+.propertips-feature .propertips-feature-cta{display:inline-flex!important;align-items:center;justify-content:center;gap:12px;max-width:100%;text-align:center;text-decoration:none!important;padding:14px 24px;background:#00B4EC!important;color:#000!important;border-radius:999px;font-weight:750;font-style:italic}
+.propertips-feature .propertips-feature-cta:hover{background:#95EBFF!important;color:#000!important}
+.propertips-feature-brand{gap:20px}
+.propertips-feature-brand .propertips-feature-logo{width:min(230px,100%);height:auto;max-height:100px;object-fit:contain}
+.propertips-feature-remuneration{width:100%;text-align:center;padding:14px 18px 18px;border-radius:20px;background:#e9fcff}
+.propertips-feature-remuneration strong{display:block;font-size:clamp(3.8rem,6vw,5rem);font-weight:850;line-height:1.08;letter-spacing:-.04em;color:#006390}
+.propertips-feature-remuneration p{font-size:clamp(1.02rem,2vw,1.23rem);font-weight:700;line-height:1.4;color:#173346;margin:0}
+.propertips-feature-remuneration p span{display:block;font-weight:800}
+.propertips-feature-video{width:100%;min-width:0}
+.propertips-feature-video-label{font-weight:750;font-size:.94rem!important;line-height:1.5!important;color:#173346!important;text-align:center;margin:0 0 12px}
+.propertips-feature-video-frame{position:relative;width:100%;aspect-ratio:16 / 9;overflow:hidden;border-radius:14px;background:#172f40}
+.propertips-feature-video-frame iframe{display:block;width:100%;height:100%;border:0}
+.propertips-feature-video>a{display:block;text-align:center;font-size:.83rem;color:#006390;font-weight:650;margin-top:10px;text-underline-offset:4px}
+@media(max-width:800px){.propertips-feature .propertips-feature-cta{width:100%;white-space:normal}.propertips-feature-brand{max-width:580px;width:100%;justify-self:center}}
+
+
+
+.intl-spotlight,.intl-detail{padding:clamp(54px,6vw,92px) 0;background:#fff}
+.intl-spotlight{border-top:1px solid #d3eaf1;border-bottom:1px solid #d3eaf1}
+.intl-detail{background:linear-gradient(180deg,#f5fcff 0%,#fff 100%);border-bottom:1px solid #d3eaf1}
+.intl-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
+.intl-heading>div:first-child{min-width:0;max-width:820px}
+.intl-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:800;letter-spacing:.08em;color:#006390;margin:0 0 17px}
+.intl-eyebrow img{width:28px;height:28px;object-fit:contain}
+.intl-heading h2{font-size:clamp(2rem,4vw,3.35rem);max-width:780px;letter-spacing:-.035em;margin:0 0 16px;line-height:1.16}
+.intl-intro{color:#394f5c;font-size:1.02rem;line-height:1.75;max-width:800px}
+.intl-heading-actions{display:flex;flex-direction:column;align-items:flex-start;gap:14px;flex:0 0 auto}
+.intl-heading-actions .btn{white-space:normal;max-width:100%;text-align:center;min-height:50px}
+.intl-text-link{color:#006390;font-size:.86rem;font-weight:750;text-underline-offset:3px}
+.intl-three-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.intl-path{background:#fff;border:1px solid #d1e4ec;border-radius:22px;padding:26px;min-width:0;display:flex;flex-direction:column;align-items:flex-start}
+.intl-path:nth-child(2){background:#e9fcff}
+.intl-path-icon{display:flex;align-items:center;justify-content:center;width:80px;height:50px;border-radius:999px;background:#f1ece5;transform:rotate(5deg);margin-bottom:18px;padding:9px 18px}
+.intl-path:nth-child(2) .intl-path-icon{background:#fff}
+.intl-path-icon img{height:100%;width:100%;object-fit:contain;transform:rotate(-5deg)}
+.intl-path-kicker{color:#006390;font-size:.76rem;letter-spacing:.09em;font-weight:800;display:block;margin-bottom:10px}
+.intl-path h3{font-size:clamp(1.15rem,2vw,1.44rem);letter-spacing:-.02em;line-height:1.28;margin-bottom:13px}
+.intl-path p{font-size:.9rem;line-height:1.74;color:#405363}
+.intl-countries{margin-top:34px;padding:26px 28px;border-radius:24px;background:#f3fafc;border:1px solid #d7eaf1}
+.intl-countries h3{font-size:1.18rem;line-height:1.4;margin-bottom:17px}
+.intl-map{margin:0}
+.intl-map>a{display:block;background:#fff;border-radius:16px;overflow:hidden}
+.intl-map img{display:block;width:100%;max-width:100%;height:auto}
+.intl-map figcaption{margin-top:10px;font-size:.85rem}
+.intl-map a:focus-visible{outline:3px solid #006390;outline-offset:4px}
+.intl-map figcaption a{color:#006390;text-decoration:underline;text-underline-offset:3px}
+.intl-country-grid{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:0;margin:0}
+.intl-country{display:flex;align-items:center;gap:10px;min-width:0;min-height:60px;padding:11px 14px;background:#fff;border-radius:999px;border:1px solid #d5e5ed}
+.intl-country-flag{font-size:1.5rem;line-height:1;flex:0 0 27px;text-align:center}
+.intl-country-name{font-size:.87rem;font-weight:700;color:#162f40;line-height:1.3;min-width:0;overflow-wrap:break-word}
+.intl-country-name small{display:block;font-size:.71rem;font-weight:600;color:#405363;margin-top:2px}
+.intl-source{font-size:.77rem;line-height:1.65;color:#526575;margin-top:17px}
+.intl-source a{color:#006390;text-decoration:underline;text-underline-offset:3px}
+.intl-countries-detail{margin:0 0 30px}
+.intl-heading-detail{margin-bottom:28px}
+.intl-detail-actions{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:26px;padding:24px 28px;border-radius:20px;background:#e9fcff}
+.intl-detail-actions p{font-size:.88rem;line-height:1.7;color:#234253;max-width:650px}
+.intl-detail-actions .btn{flex:0 0 auto;max-width:100%;text-align:center;white-space:normal}
+@media(max-width:1000px){.intl-heading{flex-direction:column;align-items:flex-start}.intl-country-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.intl-detail-actions{flex-direction:column;align-items:flex-start}.intl-three-paths{gap:12px}.intl-path{padding:22px}}
+@media(max-width:760px){.intl-three-paths{grid-template-columns:1fr}.intl-spotlight,.intl-detail{padding-block:50px}.intl-heading-actions{width:100%}.intl-heading-actions .btn{width:100%}.intl-country{border-radius:18px}.intl-detail-actions .btn{width:100%}}
+@media(max-width:420px){.intl-country-grid{grid-template-columns:1fr}.intl-countries{padding:20px 17px}.intl-path{padding:22px}.intl-country{min-height:54px;border-radius:999px}.intl-heading h2{font-size:2.1rem}}</style><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "@id": "https://tribu-immo.com/#guillaume-roque", "name": "Guillaume Roque", "url": "https://tribu-immo.com/it/guillaume-roque", "jobTitle": "Consigliere immobiliare indipendente, gestore iad e formatore", "sameAs": ["https://www.iadfrance.fr/conseiller-immobilier/guillaume.roque", "https://www.linkedin.com/in/guillaume-roque-07a3bb8a/"]}, {"@type": "Organization", "@id": "https://tribu-immo.com/#organisation", "name": "La Tribu Immo", "url": "https://tribu-immo.com/it/", "logo": "https://tribu-immo.com/tribu-immo-logo.png", "telephone": "+33662108396", "email": "guillaume.roque@iadfrance.fr", "founder": {"@id": "https://tribu-immo.com/#guillaume-roque"}, "areaServed": [{"@type": "Country", "name": "Francia"}, "Pays où iad est implanté"]}, {"@type": "WebSite", "@id": "https://tribu-immo.com/#site", "url": "https://tribu-immo.com/it/", "name": "La Tribu Immo", "inLanguage": "it-IT", "publisher": {"@id": "https://tribu-immo.com/#organisation"}}, {"@type": "WebPage", "@id": "https://tribu-immo.com/it/#page", "url": "https://tribu-immo.com/it/", "name": "Diventa consulente immobiliare presso La Tribu Immo", "inLanguage": "it-IT", "isPartOf": {"@id": "https://tribu-immo.com/#site"}, "about": {"@id": "https://tribu-immo.com/#organisation"}}]}</script><meta property="og:title" content="Diventa consulente immobiliare iad | Tribu Immo"><meta property="og:description" content="Riconversione o cambiamento di rete immobiliare: unisciti a La Tribu Immo con Guillaume Roque, sponsor iad in tutta Francia e nei paesi in cui si trova iad."><meta property="og:image" content="https://tribu-immo.com/tribu-immo-logo.png"><meta property="og:url" content="https://tribu-immo.com/it/"><style data-inline-css="languages">.language-bar{background:#eafbff;border-bottom:1px solid #d6e3e8;font-size:13px;line-height:1.5}
 .language-inner{display:flex;justify-content:flex-end;align-items:center;gap:6px 16px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
 .language-bar a{color:#005c7e;text-decoration:none;padding:4px 0;white-space:nowrap}
 .language-bar a:hover,.language-bar a:focus-visible,.language-bar a[aria-current]{text-decoration:underline;text-underline-offset:4px}
@@ -222,7 +630,7 @@ h1,h2,h3{hyphens:none;word-break:normal;overflow-wrap:normal}
 @media(max-width:1050px){.nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;padding:24px;box-shadow:0 8px 12px #00000015;flex-direction:column;align-items:stretch;font-size:1rem;max-height:calc(100dvh - var(--header-height,150px));overflow:auto}.nav-links.open{display:flex}.menu-toggle{display:block}.section-head{display:block}.section-head>p{margin-top:20px}.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.grid3{grid-template-columns:1fr}}
 
-.section-head h1{font-size:clamp(2rem,4vw,3.35rem);font-weight:800}.path-card>a+a{margin-top:16px}</style><script src="/languages.js" defer></script><meta name="robots" content="index, follow, max-image-preview:large"><link rel="canonical" href="https://tribu-immo.com/it/"><link rel="alternate" hreflang="fr" href="https://tribu-immo.com/"><link rel="alternate" hreflang="en" href="https://tribu-immo.com/en/"><link rel="alternate" hreflang="es" href="https://tribu-immo.com/es/"><link rel="alternate" hreflang="it" href="https://tribu-immo.com/it/"><link rel="alternate" hreflang="de" href="https://tribu-immo.com/de/"><link rel="alternate" hreflang="pt" href="https://tribu-immo.com/pt/"><link rel="alternate" hreflang="x-default" href="https://tribu-immo.com/"></head><body><a class="skip" href="#contenu-principal">Vai al contenuto</a><div class="topbar"><div class="wrap"><span>IL TUO PROGETTO. UNA SQUADRA AL TUO FIANCO.</span><a href="tel:+33662108396" data-evt="clic-telephone">Parliamo del tuo progetto · 06 62 10 83 96</a></div></div><header class="header"><nav class="language-bar" aria-label="Lingua"><div class="wrap language-inner"><span>Lingua :</span><a href="/" hreflang="fr" lang="fr">Français</a><a href="/es/" hreflang="es" lang="es">Español</a><a href="/en/" hreflang="en" lang="en">English</a><a href="/it/" hreflang="it" lang="it" aria-current="page">Italiano</a><a href="/de/" hreflang="de" lang="de">Deutsch</a><a href="/pt/" hreflang="pt" lang="pt">Português</a></div></nav><nav class="nav wrap" aria-label="Navigazione principale"><a href="/it/" class="brand"><img src="/assets/optimized/iad-logo-188-v1.webp" alt="iad Immobiliare" width="94" height="74" srcset="/assets/optimized/iad-logo-108-v1.webp 108w, /assets/optimized/iad-logo-188-v1.webp 188w" sizes="(max-width: 420px) 54px, (max-width: 800px) 78px, (max-width: 1050px) 86px, 94px" decoding="async"><img class="team-logo" src="/assets/optimized/tribu-logo-220-v2.webp" alt="Tribu Immo — la squadra di Guillaume Roque" width="220" height="220" srcset="/assets/optimized/tribu-logo-160-v2.webp 160w, /assets/optimized/tribu-logo-220-v2.webp 220w, /assets/optimized/tribu-logo-380-v2.webp 380w" sizes="(max-width: 420px) 66px, (max-width: 800px) 90px, 110px" decoding="async"><span class="team-signature">con <strong>Guillaume ROQUE</strong></span></a><button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="main-menu">Menù</button><div class="nav-links" id="main-menu"><a href="/it/#accompagnement">Il supporto</a><a href="/it/#guillaume">Il tuo manager</a><a href="/it/#remuneration">La remunerazione</a><a href="/simulateur">Simulatore (FR)</a><a href="/it/#poa">Presentazione delle opportunità di business</a><a class="btn small" href="/it/#rejoindre">Parla con Guillaume <span aria-hidden="true">↗</span></a></div></nav></header><main id="contenu-principal"><section class="hero-new"><div class="hero-inner wrap"><div class="hero-copy"><div class="eyebrow">IL TUO NUOVO CAPITOLO INIZIA QUI</div><h1>Diventa consulente<br>immobiliare iad.<br><span class="accent">Con il giusto supporto.</span></h1><p>Che tu stia cambiando professione o lavori già nel settore immobiliare, sviluppa la tua attività con La Tribu Immo.<br>Guillaume Roque ti affianca come sponsor iad in tutta la Francia e a livello internazionale: Spagna, Italia, Portogallo, Germania, Gran Bretagna, Messico, oltre a Florida e Texas negli Stati Uniti.</p><div class="actions"><a class="btn dark" href="#rejoindre">Parliamo del tuo progetto <span aria-hidden="true">↗</span></a><a class="btn outline" href="#accompagnement">Scopri la squadra</a></div><div class="micro">Un primo colloquio con Guillaume · Senza impegno</div></div><div class="hero-visual"><div class="portrait-frame"><img src="/photo-guillaume-800.webp" width="800" height="1067" alt="Guillaume Roque, il tuo manager alla Tribu Immo" fetchpriority="high" srcset="/assets/optimized/guillaume-400-v2.webp 400w, /assets/optimized/guillaume-660-v2.webp 660w, /photo-guillaume-800.webp 800w" sizes="(max-width: 800px) 330px, 390px" decoding="async"></div><div class="portrait-label"><div><strong>Guillaume Roque</strong><span>Consulente immobiliare · Manager e formatore iad</span></div><b aria-hidden="true">↗</b></div><span class="vertical-note">INDIPENDENTI, INSIEME.</span></div></div></section><section class="proof" aria-label="Il Tribu in alcuni punti di riferimento"><div class="proof-inner wrap"><p class="proof-label">Un percorso umano.<br><strong>Un’esperienza da condividere.</strong></p><div class="proof-stat"><strong>130+</strong><span>consulenti nell’organizzazione</span></div><div class="proof-stat"><strong>2013</strong><span>l’inizio dell’avventura iad</span></div><div class="proof-stat proof-international"><strong>Francia e internazionale</strong><span>Sviluppo del team in Francia, Spagna, Italia, Portogallo, Germania, Gran Bretagna, Messico e Stati Uniti (Florida e Texas).</span></div></div></section><section class="section wrap" id="votre-projet"><div class="section-head"><div><div class="eyebrow">IL TUO PERCORSO, IL TUO POSTO</div><h2>E se il tuo futuro<br>rispecchiasse chi sei?</h2></div><p>Cambiare professione o dare una nuova dimensione alla tua attività: partiamo dalla tua situazione attuale.</p></div><div class="grid3"><article class="path-card"><span class="num">01 / CAMBIAMENTO DELLA PAC</span><h3>Stai considerando...<br>la conversione.</h3><p>Comprendere il lavoro, i costi e le fasi di iniziare a costruire un progetto che è personalizzato alla vostra situazione.</p><a class="textlink" href="/it/article-reconversion-2026">Preparazione per la mia conversione</a></article><article class="path-card"><span class="num">02 / IMPRESE</span><h3>Vuoi diventare<br>Sono indipendente.</h3><p>Organizza il tuo lavoro in autonomia e sviluppa la tua attività con gli strumenti iad e un supporto personale.</p><a class="textlink" href="/it/devenir-conseiller-immobilier-iad">Scoprire il commercio</a></article><article class="path-card"><span class="num">03 / VAI DI PIU' POSIZIONE</span><h3>Sei già...<br>nel settore immobiliare.</h3><p>Condividete la vostra esperienza, la vostra remunerazione e le vostre ambizioni di sviluppo all'interno di un team.</p><a class="textlink" href="/it/changer-reseau-immobilier">Preparazione per il cambio di rete</a></article></div></section><section class="blue-section" id="accompagnement"><div class="wrap support-layout"><div><div class="eyebrow">LA FORZA DEL TRIBU</div><h2>La tua attività.<br>La nostra energia<br>collettiva.</h2><p>Fare impresa richiede autonomia. Progredire diventa più concreto quando puoi fare domande, formarti e condividere esperienze.</p><a class="btn dark" style="margin-top:28px" href="/it/devenir-conseiller-immobilier-iad">Esplora l'accompagnamento</a></div><div><div class="support-row"><b>01</b><div><h3>Un manager con cui andare avanti</h3><p>Guillaume vi assisterà nella costruzione del vostro progetto e nello sviluppo della vostra attività.</p></div></div><div class="support-row"><b>02</b><div><h3>Costruire competenze</h3><p>iad Academy formazione, prospezione, stima, negoziazione: imparare i fondamentali e continuare a progredire.</p></div></div><div class="support-row"><b>03</b><div><h3>Una squadra che condivide</h3><p>Scambi, migliori pratiche e appuntamenti di squadra: beneficiare dell'esperienza di altri consulenti.</p></div></div><div class="support-row"><b>04</b><div><h3>Un sentiero che ti appartiene</h3><p>Sviluppa la tua attività di transazione e, se vuoi, scopri la sponsorizzazione e l'animazione di team.</p></div></div></div></div></section><section class="team-film section" id="vie-equipe" aria-labelledby="team-film-title"><div class="wrap team-film-layout"><div class="team-film-copy"><div class="eyebrow">LA VITA DELLA TRIBU</div><h2 id="team-film-title">Una squadra, legami,<br><span class="accent">energia da condividere.</span></h2><p>Rivivi il nostro team building: conoscerci meglio, condividere esperienze e crescere insieme. Scopri lo spirito Tribu Immo in immagini.</p><p><strong>E se partecipassi alla prossima avventura?</strong></p><a class="btn team-film-cta" href="#rejoindre">Unisciti alla Tribu</a></div><figure class="team-film-player"><video controls playsinline preload="none" width="720" height="1280" data-poster="/assets/optimized/team-building-tribu-immo-2026-poster-v1.webp" aria-label="Team building Tribu Immo con musica"><source src="/assets/videos/team-building-tribu-immo-2026.mp4" type="video/mp4"><a href="/assets/videos/team-building-tribu-immo-2026.mp4">Scarica il video</a></source></video><figcaption>Avvia il video e attiva l’audio per ascoltare la musica.</figcaption></figure></div></section><section class="section wrap tribu-testimonials" id="temoignages" aria-labelledby="tribu-testimonials-title"><div class="eyebrow">HANNO SCELTO LA TRIBU</div><h2 id="tribu-testimonials-title">Fanno parte di Tribu Immo</h2><p class="tribu-testimonials-intro">Perché hanno scelto iad e il team di Guillaume Roque? Scopri i loro percorsi e le ragioni della loro scelta, raccontati con le loro parole. Video in francese.</p><div class="tribu-testimonials-grid"><article class="tribu-testimonial"><video controls playsinline preload="none" width="480" height="848" data-poster="/assets/optimized/temoignage-1-poster-v1.webp" aria-label="Bruno Dambournet"><source src="/assets/videos/temoignages/temoignage-1.mp4" type="video/mp4"></source></video><div class="tribu-testimonial-caption"><img src="/assets/optimized/tribu-logo-160-v2.webp" alt="Tribu Immo" width="54" height="54" loading="lazy"><h3>Bruno Dambournet</h3><span>0:45</span></div></article><article class="tribu-testimonial"><video controls playsinline preload="none" width="480" height="848" data-poster="/assets/optimized/temoignage-2-poster-v1.webp" aria-label="Élodie Cimiotta"><source src="/assets/videos/temoignages/temoignage-2.mp4" type="video/mp4"></source></video><div class="tribu-testimonial-caption"><img src="/assets/optimized/tribu-logo-160-v2.webp" alt="Tribu Immo" width="54" height="54" loading="lazy"><h3>Élodie Cimiotta</h3><span>0:24</span></div></article><article class="tribu-testimonial"><video controls playsinline preload="none" width="480" height="848" data-poster="/assets/optimized/temoignage-3-poster-v1.webp" aria-label="Olivier Gioia"><source src="/assets/videos/temoignages/temoignage-3.mp4" type="video/mp4"></source></video><div class="tribu-testimonial-caption"><img src="/assets/optimized/tribu-logo-160-v2.webp" alt="Tribu Immo" width="54" height="54" loading="lazy"><h3>Olivier Gioia</h3><span>1:06</span></div></article><article class="tribu-testimonial"><video controls playsinline preload="none" width="480" height="848" data-poster="/assets/optimized/temoignage-4-poster-v1.webp" aria-label="Guillaume Roque"><source src="/assets/videos/temoignages/temoignage-4.mp4" type="video/mp4"></source></video><div class="tribu-testimonial-caption"><img src="/assets/optimized/tribu-logo-160-v2.webp" alt="Tribu Immo" width="54" height="54" loading="lazy"><h3>Guillaume Roque</h3><span>0:31</span></div></article><article class="tribu-testimonial"><video controls playsinline preload="none" width="480" height="848" data-poster="/assets/optimized/mathieu-parry-poster-v1.webp" aria-label="Mathieu Parry"><source src="/assets/videos/temoignages/mathieu-parry.mp4" type="video/mp4"></source></video><div class="tribu-testimonial-caption"><img src="/assets/optimized/tribu-logo-160-v2.webp" alt="Tribu Immo" width="54" height="54" loading="lazy"><h3>Mathieu Parry</h3><span>0:33</span></div></article></div><a class="btn" href="#rejoindre">Parliamo del tuo progetto</a></section><section class="section wrap" id="guillaume"><div class="manager-layout"><img class="manager-photo" src="/photo-guillaume-portrait-800.webp" width="800" height="1000" alt="Guillaume Roque, Consigliere Immobiliare e Formatore iad dal 2013" loading="lazy"><div class="manager-copy"><div class="eyebrow">CONOSCENZA</div><h2>Un progetto umano.<br>Un interlocutore<br><span class="accent">in carne e ossa.</span></h2><p>Sono Guillaume Roque, consulente immobiliare, manager e formatore della rete iad dal 2013.</p><p>Oggi La Tribu Immo riunisce un’organizzazione di oltre 130 consulenti. Il mio ruolo è aiutarti a comprendere la professione, strutturare il tuo percorso e progredire con indicazioni concrete.</p><div class="tags"><span>Il supporto</span><span>Formazione</span><span>Spiritualità della squadra</span></div><a class="btn outline" href="/it/guillaume-roque">Scopri il mio viaggio</a></div></div></section><section class="remuneration" id="remuneration"><div class="section wrap"><div class="section-head"><div><div class="eyebrow">Capire prima di partire</div><h2>Le tue ambizioni.<br>Un modello da scoprire.</h2></div><p>Compravendite, sviluppo della squadra e costi: prendiamoci il tempo di parlare di ciò che conta per il tuo progetto.</p></div><div class="money-grid"><article class="money-card"><div class="eyebrow">LA VOSTRA ATTIVITÀ DI TRANSACZIONE</div><h3>Una remunerazione connessa<br>le vendite effettuate.</h3><div class="big">69–85 <span>%*</span></div><p>Una quota delle provvigioni al netto dell’IVA, secondo le fasce di fatturato e le condizioni iad applicabili.</p><a class="textlink" href="/it/article-3">Comprensione delle compensazioni</a></article><article class="money-card"><div class="eyebrow">IL VOSTRO SVILUPPO</div><h3>Costruire una squadra,<br>che trasmettono la vostra esperienza.</h3><p>L’affiancamento permette di supportare altri consulenti e ricevere, a determinate condizioni, commissioni legate alla loro attività.</p><a class="textlink" href="/it/article-parrainage">Scopri lo sponsorizzazione</a><p style="margin-top:27px;margin-bottom:0"><a href="/it/dispositifs">Esplora dispositivi iad</a></p></article></div><p class="notice">* Scala prelevata dal sito Tribu Immo, indicata come verificata nell'agosto 2026. Tasse e condizioni contrattuali applicabili alla remunerazione dettagliata. L'attività è indipendente, con tasse professionali e una remunerazione completamente variabile. Nessun reddito o limite di tempo per la vendita è garantito.</p><div class="actions" style="margin-top:24px"><a class="btn dark" href="/simulateur">Simula i miei ricavi <span aria-hidden="true">↗</span></a></div></div></section><section class="section wrap"><div class="section-head"><div><div class="eyebrow">AVANZARE NELLA RIFLESSIONE</div><h2>Le domande giuste.<br>Punti di riferimento concreti.</h2></div><a class="textlink" href="/it/ressources">Tutti gli articoli e le guide</a></div><div class="grid3"><article class="resource-card"><div class="eyebrow">CAMBIARE RETE</div><h3>Che cosa succede ai mandati e alle provvigioni in corso?</h3><a href="/it/article-changer-reseau-mandats-commissions" class="textlink">Preparazione per la mia transizione</a></article><article class="resource-card"><div class="eyebrow">RICONVERSIONE</div><h3>È possibile diventare consulente immobiliare senza diploma?</h3><a href="/it/article-conseiller-immobilier-sans-diplome" class="textlink">Leggi le indicazioni ↗</a></article><article class="resource-card"><div class="eyebrow">Sviluppare la propria attività</div><h3>Come organizzare il rapporto con il venditore, anche senza visite?</h3><a href="/it/article-suivi-vendeur-sans-visite" class="textlink">Leggere il metodo ↗</a></article><article class="resource-card"><div class="eyebrow">Inizio</div><h3>I primi 90 giorni: mettere le giuste fondamenta.</h3><a class="textlink" href="/it/guide-1-mandataire-iad">Prepararmi per i miei inizi</a></article><article class="resource-card"><div class="eyebrow">GUIDA GRATUITA</div><h3>Cambiare rete o agenzia: i criteri da confrontare.</h3><a class="textlink" href="/it/changer-reseau-immobilier">Preparazione per la mia transizione</a></article></div></section><section class="section wrap" id="questions"><div class="eyebrow">LE VOTRE QUESTIONI ANCHE DALLA VIENE</div><h2>Conversione o modifica della rete:<br>i primi punti di riferimento.</h2><div class="seo-faq"><details><summary>Da dove iniziare una conversione immobiliare?</summary><p>Iniziate esaminando il vostro budget, disponibilità e conoscenza del settore. Quindi discutete il commercio e l'accompagnamento proposto prima di scegliere la vostra formazione e organizzazione. <a href="/it/article-reconversion-2026">Preparazione per la conversione →</a></p></details><details><summary>Come confrontare due reti immobiliari?</summary><p>Confronta le tariffe, la remunerazione, gli strumenti effettivamente inclusi e la disponibilità di accompagnamento. Chiedete documenti aggiornati e una dimostrazione di servizi, e poi confrontateli con le vostre esigenze. <a href="/it/changer-reseau-immobilier">Confronta le reti →</a></p></details><details><summary>Come si svolge un primo scambio con Guillaume?</summary><p>Il primo scambio ti permette di parlare della tua situazione, dei tuoi obiettivi, dei costi e dell'attività su base giornaliera. Una presentazione videoconferenza di 45 minuti può essere organizzata, senza impegno. <a href="/it/#rejoindre">Cambio con Guillaume →</a></p></details></div></section><!-- POA-AGENDA:START --><section class="section wrap" id="poa" aria-labelledby="poa-title"><div class="section-head"><div><div class="eyebrow">INCONTRIAMOCI</div><h2 id="poa-title">Presentazione delle opportunità di business<br>in presenza e in videoconferenza.</h2></div><p>Incontra Guillaume a Narbonne o partecipa a una presentazione della rete iad in videoconferenza.</p></div><div class="grid3" id="poa-dates"><article class="path-card" data-poa-start="2026-10-27T18:30:00+01:00" data-poa-format="online"><span class="num">Presentazione delle opportunità di business · Online</span><h3><time datetime="2026-10-27T18:30:00+01:00" data-localize-date="">27 ottobre 2026</time></h3><p><strong>18:30–19:15</strong><br>Ora di Parigi</p><p>Presentazione della rete iad<br>Online su Google Meet</p><a class="textlink" href="/it/presentation-opportunites-affaires?session=2026-10-27#inscription" data-evt="presentation-date">Mi iscrivo gratuitamente ↗</a></article><article class="path-card" data-poa-start="2026-11-10T18:30:00+01:00" data-poa-format="online"><span class="num">Presentazione delle opportunità di business · Online</span><h3><time datetime="2026-11-10T18:30:00+01:00" data-localize-date="">10 novembre 2026</time></h3><p><strong>18:30–19:15</strong><br>Ora di Parigi</p><p>Presentazione della rete iad<br>Online su Google Meet</p><a class="textlink" href="/it/presentation-opportunites-affaires?session=2026-11-10#inscription" data-evt="presentation-date">Mi iscrivo gratuitamente ↗</a></article><article class="path-card" data-poa-start="2026-11-24T18:30:00+01:00" data-poa-format="online"><span class="num">Presentazione delle opportunità di business · Online</span><h3><time datetime="2026-11-24T18:30:00+01:00" data-localize-date="">24 novembre 2026</time></h3><p><strong>18:30–19:15</strong><br>Ora di Parigi</p><p>Presentazione della rete iad<br>Online su Google Meet</p><a class="textlink" href="/it/presentation-opportunites-affaires?session=2026-11-24#inscription" data-evt="presentation-date">Mi iscrivo gratuitamente ↗</a></article><article class="path-card" data-poa-start="2026-12-08T18:30:00+01:00" data-poa-format="online"><span class="num">Presentazione delle opportunità di business · Online</span><h3><time datetime="2026-12-08T18:30:00+01:00" data-localize-date="">8 dicembre 2026</time></h3><p><strong>18:30–19:15</strong><br>Ora di Parigi</p><p>Presentazione della rete iad<br>Online su Google Meet</p><a class="textlink" href="/it/presentation-opportunites-affaires?session=2026-12-08#inscription" data-evt="presentation-date">Mi iscrivo gratuitamente ↗</a></article><article class="path-card" data-poa-start="2027-01-12T18:30:00+01:00"><span class="num">Presentazione delle opportunità di business · Narbonne</span><h3><time datetime="2027-01-12T18:30:00+01:00" data-localize-date="">12 gennaio 2027</time></h3><p><strong>18:30–19:30</strong><br>Ora di Parigi</p><p>2 Espace Soleil, 11100 Narbonne<br>Edificio C · Primo piano</p><a class="textlink" href="https://www.billetweb.fr/decouvrez-le-metier-de-conseiller-immobilier-iad-presentation-a-narbonne1" target="_blank" rel="noopener" data-evt="presentation-billetweb">Mi iscrivo su Billetweb ↗</a></article><article class="path-card" data-poa-start="2027-04-20T18:30:00+02:00"><span class="num">Presentazione delle opportunità di business · Narbonne</span><h3><time datetime="2027-04-20T18:30:00+02:00" data-localize-date="">20 aprile 2027</time></h3><p><strong>18:30–19:30</strong><br>Ora di Parigi</p><p>2 Espace Soleil, 11100 Narbonne<br>Edificio C · Primo piano</p><a class="textlink" href="https://www.billetweb.fr/decouvrez-le-metier-de-conseiller-immobilier-iad-presentation-a-narbonne2" target="_blank" rel="noopener" data-evt="presentation-billetweb">Mi iscrivo su Billetweb ↗</a></article><article class="path-card" data-poa-start="2027-06-29T18:30:00+02:00"><span class="num">Presentazione delle opportunità di business · Narbonne</span><h3><time datetime="2027-06-29T18:30:00+02:00" data-localize-date="">29 giugno 2027</time></h3><p><strong>18:30–19:30</strong><br>Ora di Parigi</p><p>2 Espace Soleil, 11100 Narbonne<br>Edificio C · Primo piano</p><a class="textlink" href="https://www.billetweb.fr/decouvrez-le-metier-de-conseiller-immobilier-iad-presentation-a-narbonne3" target="_blank" rel="noopener" data-evt="presentation-billetweb">Mi iscrivo su Billetweb ↗</a></article></div><details class="project-archive" data-presentation-archive><summary>Presentazioni passate</summary><ul><li>29 settembre 2026</li><li>5 ottobre 2026</li></ul></details><p id="poa-empty" hidden>Nessuna prossima data annunciata. <a href="mailto:guillaume.roque@iadfrance.fr">Contatta Guillaume per maggiori informazioni.</a></p><p class="notice">Data verificata il <time datetime="2026-10-26" data-localize-date="">26 ottobre 2026</time>.</p></section><script>// Archive expired presentations as text, without keeping registration links.
+.section-head h1{font-size:clamp(2rem,4vw,3.35rem);font-weight:800}.path-card>a+a{margin-top:16px}</style><script src="/languages.js" defer></script><meta name="robots" content="noindex, follow"><link rel="canonical" href="https://tribu-immo.com/it/"></head><body><a class="skip" href="#contenu-principal">Vai al contenuto</a><div class="topbar"><div class="wrap"><span>IL TUO PROGETTO. UNA SQUADRA AL TUO FIANCO.</span><a href="tel:+33662108396" data-evt="clic-telephone">Parliamo del tuo progetto · 06 62 10 83 96</a></div></div><header class="header"><nav class="language-bar" aria-label="Lingua"><div class="wrap language-inner"><span>Lingua :</span><a href="/" hreflang="fr" lang="fr">Français</a><a href="/es/" lang="es">Español</a><a href="/en/" lang="en">English</a><a href="/it/" lang="it" aria-current="page">Italiano</a><a href="/de/" lang="de">Deutsch</a><a href="/pt/" lang="pt">Português</a></div></nav><nav class="nav wrap" aria-label="Navigazione principale"><a href="/it/" class="brand"><img src="/assets/optimized/iad-logo-188-v1.webp" alt="iad Immobiliare" width="94" height="74" srcset="/assets/optimized/iad-logo-108-v1.webp 108w, /assets/optimized/iad-logo-188-v1.webp 188w" sizes="(max-width: 420px) 54px, (max-width: 800px) 78px, (max-width: 1050px) 86px, 94px" decoding="async"><img class="team-logo" src="/assets/optimized/tribu-logo-220-v2.webp" alt="Tribu Immo — la squadra di Guillaume Roque" width="220" height="220" srcset="/assets/optimized/tribu-logo-160-v2.webp 160w, /assets/optimized/tribu-logo-220-v2.webp 220w, /assets/optimized/tribu-logo-380-v2.webp 380w" sizes="(max-width: 420px) 66px, (max-width: 800px) 90px, 110px" decoding="async"><span class="team-signature">con <strong>Guillaume ROQUE</strong></span></a><button class="menu-toggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="main-menu">Menù</button><div class="nav-links" id="main-menu"><a href="/it/#accompagnement">Il supporto</a><a href="/it/#guillaume">Il tuo manager</a><a href="/it/#remuneration">La remunerazione</a><a href="/simulateur">Simulatore (FR)</a><a href="/it/#poa">Presentazione delle opportunità di business</a><a class="btn small" href="/it/#rejoindre">Parla con Guillaume <span aria-hidden="true">↗</span></a></div></nav></header><main id="contenu-principal"><section class="hero-new"><div class="hero-inner wrap"><div class="hero-copy"><div class="eyebrow">IL TUO NUOVO CAPITOLO INIZIA QUI</div><h1>Diventa consulente<br>immobiliare iad.<br><span class="accent">Con il giusto supporto.</span></h1><p>Che tu stia cambiando professione o lavori già nel settore immobiliare, sviluppa la tua attività con La Tribu Immo.<br>Guillaume Roque ti affianca come sponsor iad in tutta la Francia e a livello internazionale: Spagna, Italia, Portogallo, Germania, Gran Bretagna, Messico, oltre a Florida e Texas negli Stati Uniti.</p><div class="actions"><a class="btn dark" href="#rejoindre">Parliamo del tuo progetto <span aria-hidden="true">↗</span></a><a class="btn outline" href="#accompagnement">Scopri la squadra</a></div><div class="micro">Un primo colloquio con Guillaume · Senza impegno</div></div><div class="hero-visual"><div class="portrait-frame"><img src="/photo-guillaume-800.webp" width="800" height="1067" alt="Guillaume Roque, il tuo manager alla Tribu Immo" fetchpriority="high" srcset="/assets/optimized/guillaume-400-v2.webp 400w, /assets/optimized/guillaume-660-v2.webp 660w, /photo-guillaume-800.webp 800w" sizes="(max-width: 800px) 330px, 390px" decoding="async"></div><div class="portrait-label"><div><strong>Guillaume Roque</strong><span>Consulente immobiliare · Manager e formatore iad</span></div><b aria-hidden="true">↗</b></div><span class="vertical-note">INDIPENDENTI, INSIEME.</span></div></div></section><section class="proof" aria-label="Il Tribu in alcuni punti di riferimento"><div class="proof-inner wrap"><p class="proof-label">Un percorso umano.<br><strong>Un’esperienza da condividere.</strong></p><div class="proof-stat"><strong>130+</strong><span>consulenti nell’organizzazione</span></div><div class="proof-stat"><strong>2013</strong><span>l’inizio dell’avventura iad</span></div><div class="proof-stat proof-international"><strong>Francia e internazionale</strong><span>Sviluppo del team in Francia, Spagna, Italia, Portogallo, Germania, Gran Bretagna, Messico e Stati Uniti (Florida e Texas).</span></div></div></section><section class="section wrap" id="votre-projet"><div class="section-head"><div><div class="eyebrow">IL TUO PERCORSO, IL TUO POSTO</div><h2>E se il tuo futuro<br>rispecchiasse chi sei?</h2></div><p>Cambiare professione o dare una nuova dimensione alla tua attività: partiamo dalla tua situazione attuale.</p></div><div class="grid3"><article class="path-card"><span class="num">01 / CAMBIAMENTO DELLA PAC</span><h3>Stai considerando...<br>la conversione.</h3><p>Comprendere il lavoro, i costi e le fasi di iniziare a costruire un progetto che è personalizzato alla vostra situazione.</p><a class="textlink" href="/it/article-reconversion-2026">Preparazione per la mia conversione</a></article><article class="path-card"><span class="num">02 / IMPRESE</span><h3>Vuoi diventare<br>Sono indipendente.</h3><p>Organizza il tuo lavoro in autonomia e sviluppa la tua attività con gli strumenti iad e un supporto personale.</p><a class="textlink" href="/it/devenir-conseiller-immobilier-iad">Scoprire il commercio</a></article><article class="path-card"><span class="num">03 / VAI DI PIU' POSIZIONE</span><h3>Sei già...<br>nel settore immobiliare.</h3><p>Condividete la vostra esperienza, la vostra remunerazione e le vostre ambizioni di sviluppo all'interno di un team.</p><a class="textlink" href="/it/changer-reseau-immobilier">Preparazione per il cambio di rete</a></article></div></section><section class="blue-section" id="accompagnement"><div class="wrap support-layout"><div><div class="eyebrow">LA FORZA DEL TRIBU</div><h2>La tua attività.<br>La nostra energia<br>collettiva.</h2><p>Fare impresa richiede autonomia. Progredire diventa più concreto quando puoi fare domande, formarti e condividere esperienze.</p><a class="btn dark" style="margin-top:28px" href="/it/devenir-conseiller-immobilier-iad">Esplora l'accompagnamento</a></div><div><div class="support-row"><b>01</b><div><h3>Un manager con cui andare avanti</h3><p>Guillaume vi assisterà nella costruzione del vostro progetto e nello sviluppo della vostra attività.</p></div></div><div class="support-row"><b>02</b><div><h3>Costruire competenze</h3><p>iad Academy formazione, prospezione, stima, negoziazione: imparare i fondamentali e continuare a progredire.</p></div></div><div class="support-row"><b>03</b><div><h3>Una squadra che condivide</h3><p>Scambi, migliori pratiche e appuntamenti di squadra: beneficiare dell'esperienza di altri consulenti.</p></div></div><div class="support-row"><b>04</b><div><h3>Un sentiero che ti appartiene</h3><p>Sviluppa la tua attività di transazione e, se vuoi, scopri la sponsorizzazione e l'animazione di team.</p></div></div></div></div></section><section class="team-film section" id="vie-equipe" aria-labelledby="team-film-title"><div class="wrap team-film-layout"><div class="team-film-copy"><div class="eyebrow">LA VITA DELLA TRIBU</div><h2 id="team-film-title">Una squadra, legami,<br><span class="accent">energia da condividere.</span></h2><p>Rivivi il nostro team building: conoscerci meglio, condividere esperienze e crescere insieme. Scopri lo spirito Tribu Immo in immagini.</p><p><strong>E se partecipassi alla prossima avventura?</strong></p><a class="btn team-film-cta" href="#rejoindre">Unisciti alla Tribu</a></div><figure class="team-film-player"><video controls playsinline preload="none" width="720" height="1280" data-poster="/assets/optimized/team-building-tribu-immo-2026-poster-v1.webp" aria-label="Team building Tribu Immo con musica"><source src="/assets/videos/team-building-tribu-immo-2026.mp4" type="video/mp4"><a href="/assets/videos/team-building-tribu-immo-2026.mp4">Scarica il video</a></source></video><figcaption>Avvia il video e attiva l’audio per ascoltare la musica.</figcaption></figure></div></section><section class="section wrap tribu-testimonials" id="temoignages" aria-labelledby="tribu-testimonials-title"><div class="eyebrow">HANNO SCELTO LA TRIBU</div><h2 id="tribu-testimonials-title">Fanno parte di Tribu Immo</h2><p class="tribu-testimonials-intro">Perché hanno scelto iad e il team di Guillaume Roque? Scopri i loro percorsi e le ragioni della loro scelta, raccontati con le loro parole. Video in francese.</p><div class="tribu-testimonials-grid"><article class="tribu-testimonial"><video controls playsinline preload="none" width="480" height="848" data-poster="/assets/optimized/temoignage-1-poster-v1.webp" aria-label="Bruno Dambournet"><source src="/assets/videos/temoignages/temoignage-1.mp4" type="video/mp4"></source></video><div class="tribu-testimonial-caption"><img src="/assets/optimized/tribu-logo-160-v2.webp" alt="Tribu Immo" width="54" height="54" loading="lazy"><h3>Bruno Dambournet</h3><span>0:45</span></div></article><article class="tribu-testimonial"><video controls playsinline preload="none" width="480" height="848" data-poster="/assets/optimized/temoignage-2-poster-v1.webp" aria-label="Élodie Cimiotta"><source src="/assets/videos/temoignages/temoignage-2.mp4" type="video/mp4"></source></video><div class="tribu-testimonial-caption"><img src="/assets/optimized/tribu-logo-160-v2.webp" alt="Tribu Immo" width="54" height="54" loading="lazy"><h3>Élodie Cimiotta</h3><span>0:24</span></div></article><article class="tribu-testimonial"><video controls playsinline preload="none" width="480" height="848" data-poster="/assets/optimized/temoignage-3-poster-v1.webp" aria-label="Olivier Gioia"><source src="/assets/videos/temoignages/temoignage-3.mp4" type="video/mp4"></source></video><div class="tribu-testimonial-caption"><img src="/assets/optimized/tribu-logo-160-v2.webp" alt="Tribu Immo" width="54" height="54" loading="lazy"><h3>Olivier Gioia</h3><span>1:06</span></div></article><article class="tribu-testimonial"><video controls playsinline preload="none" width="480" height="848" data-poster="/assets/optimized/temoignage-4-poster-v1.webp" aria-label="Guillaume Roque"><source src="/assets/videos/temoignages/temoignage-4.mp4" type="video/mp4"></source></video><div class="tribu-testimonial-caption"><img src="/assets/optimized/tribu-logo-160-v2.webp" alt="Tribu Immo" width="54" height="54" loading="lazy"><h3>Guillaume Roque</h3><span>0:31</span></div></article><article class="tribu-testimonial"><video controls playsinline preload="none" width="480" height="848" data-poster="/assets/optimized/mathieu-parry-poster-v1.webp" aria-label="Mathieu Parry"><source src="/assets/videos/temoignages/mathieu-parry.mp4" type="video/mp4"></source></video><div class="tribu-testimonial-caption"><img src="/assets/optimized/tribu-logo-160-v2.webp" alt="Tribu Immo" width="54" height="54" loading="lazy"><h3>Mathieu Parry</h3><span>0:33</span></div></article></div><a class="btn" href="#rejoindre">Parliamo del tuo progetto</a></section><section class="section wrap" id="guillaume"><div class="manager-layout"><img class="manager-photo" src="/photo-guillaume-portrait-800.webp" width="800" height="1000" alt="Guillaume Roque, Consigliere Immobiliare e Formatore iad dal 2013" loading="lazy"><div class="manager-copy"><div class="eyebrow">CONOSCENZA</div><h2>Un progetto umano.<br>Un interlocutore<br><span class="accent">in carne e ossa.</span></h2><p>Sono Guillaume Roque, consulente immobiliare, manager e formatore della rete iad dal 2013.</p><p>Oggi La Tribu Immo riunisce un’organizzazione di oltre 130 consulenti. Il mio ruolo è aiutarti a comprendere la professione, strutturare il tuo percorso e progredire con indicazioni concrete.</p><div class="tags"><span>Il supporto</span><span>Formazione</span><span>Spiritualità della squadra</span></div><a class="btn outline" href="/it/guillaume-roque">Scopri il mio viaggio</a></div></div></section><section class="remuneration" id="remuneration"><div class="section wrap"><div class="section-head"><div><div class="eyebrow">Capire prima di partire</div><h2>Le tue ambizioni.<br>Un modello da scoprire.</h2></div><p>Compravendite, sviluppo della squadra e costi: prendiamoci il tempo di parlare di ciò che conta per il tuo progetto.</p></div><div class="money-grid"><article class="money-card"><div class="eyebrow">LA VOSTRA ATTIVITÀ DI TRANSACZIONE</div><h3>Una remunerazione connessa<br>le vendite effettuate.</h3><div class="big">69–85 <span>%*</span></div><p>Una quota delle provvigioni al netto dell’IVA, secondo le fasce di fatturato e le condizioni iad applicabili.</p><a class="textlink" href="/it/article-3">Comprensione delle compensazioni</a></article><article class="money-card"><div class="eyebrow">IL VOSTRO SVILUPPO</div><h3>Costruire una squadra,<br>che trasmettono la vostra esperienza.</h3><p>L’affiancamento permette di supportare altri consulenti e ricevere, a determinate condizioni, commissioni legate alla loro attività.</p><a class="textlink" href="/it/article-parrainage">Scopri lo sponsorizzazione</a><p style="margin-top:27px;margin-bottom:0"><a href="/it/dispositifs">Esplora dispositivi iad</a></p></article></div><p class="notice">* Scala prelevata dal sito Tribu Immo, indicata come verificata nell'agosto 2026. Tasse e condizioni contrattuali applicabili alla remunerazione dettagliata. L'attività è indipendente, con tasse professionali e una remunerazione completamente variabile. Nessun reddito o limite di tempo per la vendita è garantito.</p><div class="actions" style="margin-top:24px"><a class="btn dark" href="/simulateur">Simula i miei ricavi <span aria-hidden="true">↗</span></a></div></div></section><section class="section wrap"><div class="section-head"><div><div class="eyebrow">AVANZARE NELLA RIFLESSIONE</div><h2>Le domande giuste.<br>Punti di riferimento concreti.</h2></div><a class="textlink" href="/it/ressources">Tutti gli articoli e le guide</a></div><div class="grid3"><article class="resource-card"><div class="eyebrow">CAMBIARE RETE</div><h3>Che cosa succede ai mandati e alle provvigioni in corso?</h3><a href="/it/article-changer-reseau-mandats-commissions" class="textlink">Preparazione per la mia transizione</a></article><article class="resource-card"><div class="eyebrow">RICONVERSIONE</div><h3>È possibile diventare consulente immobiliare senza diploma?</h3><a href="/it/article-conseiller-immobilier-sans-diplome" class="textlink">Leggi le indicazioni ↗</a></article><article class="resource-card"><div class="eyebrow">Sviluppare la propria attività</div><h3>Come organizzare il rapporto con il venditore, anche senza visite?</h3><a href="/it/article-suivi-vendeur-sans-visite" class="textlink">Leggere il metodo ↗</a></article><article class="resource-card"><div class="eyebrow">Inizio</div><h3>I primi 90 giorni: mettere le giuste fondamenta.</h3><a class="textlink" href="/it/guide-1-mandataire-iad">Prepararmi per i miei inizi</a></article><article class="resource-card"><div class="eyebrow">GUIDA GRATUITA</div><h3>Cambiare rete o agenzia: i criteri da confrontare.</h3><a class="textlink" href="/it/changer-reseau-immobilier">Preparazione per la mia transizione</a></article></div></section><section class="section wrap" id="questions"><div class="eyebrow">LE VOTRE QUESTIONI ANCHE DALLA VIENE</div><h2>Conversione o modifica della rete:<br>i primi punti di riferimento.</h2><div class="seo-faq"><details><summary>Da dove iniziare una conversione immobiliare?</summary><p>Iniziate esaminando il vostro budget, disponibilità e conoscenza del settore. Quindi discutete il commercio e l'accompagnamento proposto prima di scegliere la vostra formazione e organizzazione. <a href="/it/article-reconversion-2026">Preparazione per la conversione →</a></p></details><details><summary>Come confrontare due reti immobiliari?</summary><p>Confronta le tariffe, la remunerazione, gli strumenti effettivamente inclusi e la disponibilità di accompagnamento. Chiedete documenti aggiornati e una dimostrazione di servizi, e poi confrontateli con le vostre esigenze. <a href="/it/changer-reseau-immobilier">Confronta le reti →</a></p></details><details><summary>Come si svolge un primo scambio con Guillaume?</summary><p>Il primo scambio ti permette di parlare della tua situazione, dei tuoi obiettivi, dei costi e dell'attività su base giornaliera. Una presentazione videoconferenza di 45 minuti può essere organizzata, senza impegno. <a href="/it/#rejoindre">Cambio con Guillaume →</a></p></details></div></section><!-- POA-AGENDA:START --><section class="section wrap" id="poa" aria-labelledby="poa-title"><div class="section-head"><div><div class="eyebrow">INCONTRIAMOCI</div><h2 id="poa-title">Presentazione delle opportunità di business<br>in presenza e in videoconferenza.</h2></div><p>Incontra Guillaume a Narbonne o partecipa a una presentazione della rete iad in videoconferenza.</p></div><div class="grid3" id="poa-dates"><article class="path-card" data-poa-start="2026-10-27T18:30:00+01:00" data-poa-format="online"><span class="num">Presentazione delle opportunità di business · Online</span><h3><time datetime="2026-10-27T18:30:00+01:00" data-localize-date="">27 ottobre 2026</time></h3><p><strong>18:30–19:15</strong><br>Ora di Parigi</p><p>Presentazione della rete iad<br>Online su Google Meet</p><a class="textlink" href="/it/presentation-opportunites-affaires?session=2026-10-27#inscription" data-evt="presentation-date">Mi iscrivo gratuitamente ↗</a></article><article class="path-card" data-poa-start="2026-11-10T18:30:00+01:00" data-poa-format="online"><span class="num">Presentazione delle opportunità di business · Online</span><h3><time datetime="2026-11-10T18:30:00+01:00" data-localize-date="">10 novembre 2026</time></h3><p><strong>18:30–19:15</strong><br>Ora di Parigi</p><p>Presentazione della rete iad<br>Online su Google Meet</p><a class="textlink" href="/it/presentation-opportunites-affaires?session=2026-11-10#inscription" data-evt="presentation-date">Mi iscrivo gratuitamente ↗</a></article><article class="path-card" data-poa-start="2026-11-24T18:30:00+01:00" data-poa-format="online"><span class="num">Presentazione delle opportunità di business · Online</span><h3><time datetime="2026-11-24T18:30:00+01:00" data-localize-date="">24 novembre 2026</time></h3><p><strong>18:30–19:15</strong><br>Ora di Parigi</p><p>Presentazione della rete iad<br>Online su Google Meet</p><a class="textlink" href="/it/presentation-opportunites-affaires?session=2026-11-24#inscription" data-evt="presentation-date">Mi iscrivo gratuitamente ↗</a></article><article class="path-card" data-poa-start="2026-12-08T18:30:00+01:00" data-poa-format="online"><span class="num">Presentazione delle opportunità di business · Online</span><h3><time datetime="2026-12-08T18:30:00+01:00" data-localize-date="">8 dicembre 2026</time></h3><p><strong>18:30–19:15</strong><br>Ora di Parigi</p><p>Presentazione della rete iad<br>Online su Google Meet</p><a class="textlink" href="/it/presentation-opportunites-affaires?session=2026-12-08#inscription" data-evt="presentation-date">Mi iscrivo gratuitamente ↗</a></article><article class="path-card" data-poa-start="2027-01-12T18:30:00+01:00"><span class="num">Presentazione delle opportunità di business · Narbonne</span><h3><time datetime="2027-01-12T18:30:00+01:00" data-localize-date="">12 gennaio 2027</time></h3><p><strong>18:30–19:30</strong><br>Ora di Parigi</p><p>2 Espace Soleil, 11100 Narbonne<br>Edificio C · Primo piano</p><a class="textlink" href="https://www.billetweb.fr/decouvrez-le-metier-de-conseiller-immobilier-iad-presentation-a-narbonne1" target="_blank" rel="noopener" data-evt="presentation-billetweb">Mi iscrivo su Billetweb ↗</a></article><article class="path-card" data-poa-start="2027-04-20T18:30:00+02:00"><span class="num">Presentazione delle opportunità di business · Narbonne</span><h3><time datetime="2027-04-20T18:30:00+02:00" data-localize-date="">20 aprile 2027</time></h3><p><strong>18:30–19:30</strong><br>Ora di Parigi</p><p>2 Espace Soleil, 11100 Narbonne<br>Edificio C · Primo piano</p><a class="textlink" href="https://www.billetweb.fr/decouvrez-le-metier-de-conseiller-immobilier-iad-presentation-a-narbonne2" target="_blank" rel="noopener" data-evt="presentation-billetweb">Mi iscrivo su Billetweb ↗</a></article><article class="path-card" data-poa-start="2027-06-29T18:30:00+02:00"><span class="num">Presentazione delle opportunità di business · Narbonne</span><h3><time datetime="2027-06-29T18:30:00+02:00" data-localize-date="">29 giugno 2027</time></h3><p><strong>18:30–19:30</strong><br>Ora di Parigi</p><p>2 Espace Soleil, 11100 Narbonne<br>Edificio C · Primo piano</p><a class="textlink" href="https://www.billetweb.fr/decouvrez-le-metier-de-conseiller-immobilier-iad-presentation-a-narbonne3" target="_blank" rel="noopener" data-evt="presentation-billetweb">Mi iscrivo su Billetweb ↗</a></article></div><details class="project-archive" data-presentation-archive><summary>Presentazioni passate</summary><ul><li>29 settembre 2026</li><li>5 ottobre 2026</li></ul></details><p id="poa-empty" hidden>Nessuna prossima data annunciata. <a href="mailto:guillaume.roque@iadfrance.fr">Contatta Guillaume per maggiori informazioni.</a></p><p class="notice">Data verificata il <time datetime="2026-10-26" data-localize-date="">26 ottobre 2026</time>.</p></section><script>// Archive expired presentations as text, without keeping registration links.
 (() => {
  const cards=[...document.querySelectorAll('[data-poa-start]')];
  const expired=cards.filter(c=>Date.parse(c.dataset.poaStart)<=Date.now());
@@ -253,7 +661,7 @@ h1,h2,h3{hyphens:none;word-break:normal;overflow-wrap:normal}
       <button type="submit" class="fsub" data-evt="envoi-formulaire-recrutement">Chiedi a Guillaume di contattarmi ↗</button>
       <div id="f-erreur" class="ferr" role="alert">La spedizione automatica non è riuscita. <a href="mailto:guillaume.roque@iadfrance.fr" data-evt="clic-email">Invia la tua richiesta via email</a> o chiamare il <a href="tel:+33662108396" data-evt="clic-telephone">06 62 10 83 96</a>.</div>
       <details class="privacy-details"><summary>Come vengono usate le tue informazioni?</summary><p class="frgpd">Le informazioni raccolte sono trattate da Guillaume Roque (La Tribu Immo, consulente iad France) esclusivamente per rispondere alla tua richiesta e presentarti la professione di consulente immobiliare indipendente. <strong>Base giuridica:</strong> il tuo consenso. <strong>Alla seguente:</strong> Guillaume Roque, unico destinatario della richiesta; nessuna vendita o rivendita a terzi. Il modulo è basato su: <strong>Google Workspace (Google Apps Script)</strong>, subappaltatore che fornisce la consegna e la registrazione del messaggio. <strong>Ritenzione:</strong> 3 anni dall'ultimo contatto. Avete un diritto di accesso, rettifica, cancellazione, limitazione, opposizione e portabilità, che può essere esercitato in <a href="mailto:guillaume.roque@iadfrance.fr" data-evt="clic-email">guillaume.roque@iadfrance.fr</a>, e del diritto di presentare un reclamo alla <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener">CNIL</a>. <a href="/it/mentions-legales">Avviso legale e privacy policy</a>.</p></details>
-    </form></div></div></section><section class="section"><div class="wrap"><p class="eyebrow">IL VOSTRO PROGETTO, TUTTE LE RISPOSTE</p><h2>Scoprite tutto l’universo iad.</h2><p>Modello, strumenti, formazione, affiancamento, remunerazione, offerte iniziali e sviluppo internazionale.</p><a class="btn" href="/decouvrir-iad">Tutto su iad</a></div></section></main><footer class="site-footer"><div class="wrap"><div class="footer-top"><div><div class="footer-brand"><img class="footer-team-logo" src="/assets/optimized/tribu-logo-220-v2.webp" alt="Tribu Immo" width="220" height="220" loading="lazy" srcset="/assets/optimized/tribu-logo-160-v2.webp 160w, /assets/optimized/tribu-logo-220-v2.webp 220w, /assets/optimized/tribu-logo-380-v2.webp 380w" sizes="(max-width: 800px) 160px, 190px" decoding="async"><span class="team-signature">con <strong>Guillaume ROQUE</strong></span></div><p>Sviluppa la tua attività immobiliare con Guillaume Roque e la rete iad.<br>Sviluppo di team in tutta la Francia e in tutti i paesi in cui si trova iad.</p></div><div class="footer-links"><div><a href="/decouvrir-iad">Tutto su iad</a><a href="/it/devenir-conseiller-immobilier-iad">Diventa un consulente iad</a><a href="/it/article-reconversion-2026">Preparazione per la conversione</a><a href="/it/guillaume-roque">Guillaume Roque</a><a href="/it/#rejoindre">Contattaci</a></div><div><a href="/it/ressources">Tutti gli articoli e le guide</a><a href="/it/changer-reseau-immobilier">Cambiare la rete immobiliare</a><a href="https://immobiliernarbonne.com" target="_blank" rel="noopener">Vuoi vendere una proprietà?</a><a href="https://www.google.com/maps?cid=10249811500579735043" target="_blank" rel="noopener">Consultare le recensioni dei clienti</a><a href="https://www.instagram.com/guillaumeroqueiad/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/guillaume-roque-07a3bb8a/" target="_blank" rel="noopener">LinkedIn</a></div></div></div><div class="footer-bottom"><span>© 2026 La Tribu Immo · Guillaume Roque, consulente immobiliare indipendente iad Francia.<br>Sito web indipendente, iad non ufficiale Francia.</span><a href="/it/mentions-legales">Legale &amp; Privacy</a></div></div><button type="button" class="lien-consentement" onclick="tribuRetirerConsentement()">Ritiro il mio consenso all'udienza</button></footer><div class="mobile-cta"><a class="btn" href="/it/#rejoindre">Parliamo del tuo progetto <span aria-hidden="true">↗</span></a></div><script src="/site.js" defer></script><div id="bandeau-cookies" class="bandeau-cookies" role="dialog" aria-live="polite" aria-label="Consenso all'udienza">
+    </form></div></div></section><section class="section"><div class="wrap"><p class="eyebrow">IL VOSTRO PROGETTO, TUTTE LE RISPOSTE</p><h2>Scoprite tutto l’universo iad.</h2><p>Modello, strumenti, formazione, affiancamento, remunerazione, offerte iniziali e sviluppo internazionale.</p><a class="btn" href="/decouvrir-iad">Tutto su iad</a></div></section></main><footer class="site-footer"><div class="wrap"><div class="footer-top"><div><div class="footer-brand"><img class="footer-team-logo" src="/assets/optimized/tribu-logo-220-v2.webp" alt="Tribu Immo" width="220" height="220" loading="lazy" srcset="/assets/optimized/tribu-logo-160-v2.webp 160w, /assets/optimized/tribu-logo-220-v2.webp 220w, /assets/optimized/tribu-logo-380-v2.webp 380w" sizes="(max-width: 800px) 160px, 190px" decoding="async"><span class="team-signature">con <strong>Guillaume ROQUE</strong></span></div><p>Sviluppa la tua attività immobiliare con Guillaume Roque e la rete iad.<br>Sviluppo di team in tutta la Francia e in tutti i paesi in cui si trova iad.</p></div><div class="footer-links"><div><a href="/decouvrir-iad">Tutto su iad</a><a href="/it/devenir-conseiller-immobilier-iad">Diventa un consulente iad</a><a href="/it/article-reconversion-2026">Preparazione per la conversione</a><a href="/it/guillaume-roque">Guillaume Roque</a><a href="/it/#rejoindre">Contattaci</a></div><div><a href="/it/ressources">Tutti gli articoli e le guide</a><a href="/it/changer-reseau-immobilier">Cambiare la rete immobiliare</a><a href="https://immobiliernarbonne.com" target="_blank" rel="noopener">Vuoi vendere una proprietà?</a><a href="https://www.google.com/maps?cid=10249811500579735043" target="_blank" rel="noopener">Consultare le recensioni dei clienti</a><a href="https://www.instagram.com/guillaumeroqueiad/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/in/guillaume-roque-07a3bb8a/" target="_blank" rel="noopener">LinkedIn</a></div></div></div><div class="footer-bottom"><span>© 2026 La Tribu Immo · Guillaume Roque, consulente immobiliare indipendente iad France.<br>Sito web indipendente, iad non ufficiale Francia.</span><a href="/it/mentions-legales">Legale &amp; Privacy</a></div></div><button type="button" class="lien-consentement" onclick="tribuRetirerConsentement()">Ritiro il mio consenso all'udienza</button></footer><div class="mobile-cta"><a class="btn" href="/it/#rejoindre">Parliamo del tuo progetto <span aria-hidden="true">↗</span></a></div><script src="/site.js" defer></script><div id="bandeau-cookies" class="bandeau-cookies" role="dialog" aria-live="polite" aria-label="Consenso all'udienza">
   <div class="bc-txt">
     <strong>Misurazione del pubblico</strong>
     <p>Questo sito utilizza Google Analytics per capire come vengono visualizzate le sue pagine. Questo strumento memorizza i cookie e trasmette dati a Google. Si innesca solo con il vostro consenso, e il sito funziona esattamente allo stesso modo se si rifiuta.
